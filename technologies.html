@@ -1,0 +1,1639 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cutting-Edge Technologies | Opticbee - AI, Cloud & Emerging Tech Solutions</title>
+    <meta name="description" content="Discover Opticbee's expertise in AI, Cloud Computing, and Emerging Technologies. Innovative solutions for digital transformation and business growth.">
+    <meta name="keywords" content="AI, Artificial Intelligence, Cloud Computing, Emerging Technologies, IoT, Blockchain, Machine Learning, Opticbee">
+    <meta name="author" content="Opticbee">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Cutting-Edge Technologies | Opticbee">
+    <meta property="og:description" content="Discover Opticbee's expertise in AI, Cloud Computing, and Emerging Technologies.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://opticbee.in/technologies.html">
+    <meta property="og:image" content="https://opticbee.in/images/tech-og-image.jpg">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://opticbee.in/technologies.html">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Favicons -->
+    <link href="images/favicon.ico" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+    <!-- Main CSS File -->
+    <link href="assets/css/main.css" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary: #0062ff;
+            --primary-dark: #004eca;
+            --secondary: #6c757d;
+            --dark: #212529;
+            --light: #f8f9fa;
+            --success: #198754;
+            --danger: #dc3545;
+            --warning: #ffc107;
+            --info: #0dcaf0;
+            --light-blue: #e8f4ff;
+            --gradient-primary: linear-gradient(135deg, #0062ff 0%, #2b7fff 100%);
+            --gradient-secondary: linear-gradient(135deg, #17a2b8 0%, #3bd1e8 100%);
+            --gradient-warning: linear-gradient(135deg, #ffc107 0%, #ffd54f 100%);
+            --gradient-dark: linear-gradient(135deg, #212529 0%, #343a40 100%);
+            --gradient-success: linear-gradient(135deg, #198754 0%, #2ea96a 100%);
+            --gradient-purple: linear-gradient(135deg, #6610f2 0%, #8a46ff 100%);
+            --box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            --box-shadow-hover: 0 15px 35px rgba(0, 0, 0, 0.15);
+            --border-radius: 12px;
+            --transition: all 0.4s ease;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            color: #333;
+            overflow-x: hidden;
+            line-height: 1.6;
+            background-color: #f9fbfd;
+        }
+        
+        h1, h2, h3, h4, h5, h6 {
+            font-weight: 700;
+            line-height: 1.3;
+            color: var(--dark);
+            margin-bottom: 0.5rem;
+        }
+        
+        .section-title {
+            position: relative;
+            margin-bottom: 50px;
+            font-weight: 700;
+            text-align: center;
+        }
+        
+        .section-title:after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 4px;
+            background: var(--primary);
+            margin: 15px auto 0;
+            border-radius: 2px;
+        }
+        
+        .text-gradient {
+            background: var(--gradient-primary);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        /* Hero Section */
+        .hero-section {
+            background: var(--gradient-primary);
+            color: white;
+            padding: 140px 0 100px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero-section h1 {
+            font-size: 3.5rem;
+            font-weight: 800;
+            margin-bottom: 20px;
+            color: white;
+        }
+        
+        .hero-section p {
+            font-size: 1.25rem;
+            max-width: 700px;
+            margin: 0 auto 30px;
+            opacity: 0.9;
+        }
+        
+        .hero-shape {
+            position: absolute;
+            bottom: -1px;
+            left: 0;
+            width: 100%;
+            height: 100px;
+            z-index: 1;
+        }
+        
+        /* Tech Cards */
+        .tech-card {
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            box-shadow: var(--box-shadow);
+            transition: var(--transition);
+            height: 100%;
+            background: white;
+            border: none;
+            position: relative;
+        }
+        
+        .tech-card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--box-shadow-hover);
+        }
+        
+        .tech-card .card-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.02);
+            opacity: 0;
+            transition: var(--transition);
+        }
+        
+        .tech-card:hover .card-overlay {
+            opacity: 1;
+        }
+        
+        .tech-icon {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            color: var(--primary);
+            display: inline-block;
+            padding: 20px;
+            border-radius: 50%;
+            background: rgba(0, 98, 255, 0.1);
+            transition: var(--transition);
+        }
+        
+        .tech-card:hover .tech-icon {
+            transform: scale(1.1);
+            background: rgba(0, 98, 255, 0.15);
+        }
+        
+        /* Backgrounds */
+        .ai-bg {
+            background: var(--gradient-primary);
+        }
+        
+        .cloud-bg {
+            background: var(--gradient-secondary);
+        }
+        
+        .emerging-bg {
+            background: var(--gradient-purple);
+        }
+        
+        .iot-bg {
+            background: var(--gradient-success);
+        }
+        
+        .blockchain-bg {
+            background: var(--gradient-dark);
+        }
+        
+        /* Stats */
+        .stat-number {
+            font-size: 3rem;
+            font-weight: 700;
+            color: var(--primary);
+        }
+        
+        .stat-card {
+            padding: 30px;
+            border-radius: var(--border-radius);
+            text-align: center;
+            background: white;
+            box-shadow: var(--box-shadow);
+            transition: var(--transition);
+            height: 100%;
+        }
+        
+        .stat-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--box-shadow-hover);
+        }
+        
+        /* Features */
+        .feature-box {
+            padding: 30px;
+            border-radius: var(--border-radius);
+            background: white;
+            box-shadow: var(--box-shadow);
+            transition: var(--transition);
+            height: 100%;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .feature-box:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--box-shadow-hover);
+        }
+        
+        .feature-box::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 5px;
+            height: 100%;
+            background: var(--primary);
+            transition: var(--transition);
+        }
+        
+        .feature-box:hover::before {
+            width: 100%;
+            opacity: 0.05;
+        }
+        
+        /* Animations */
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+        
+        .pulse {
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+        
+        .float {
+            animation: float 3s ease-in-out infinite;
+        }
+        
+        /* Backgrounds */
+        .gradient-bg {
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+        }
+        
+        .light-blue-bg {
+            background-color: var(--light-blue);
+        }
+        
+        /* Buttons */
+        .btn-primary {
+            background: var(--primary);
+            border: none;
+            padding: 12px 30px;
+            border-radius: 50px;
+            font-weight: 600;
+            transition: var(--transition);
+        }
+        
+        .btn-primary:hover {
+            background: var(--primary-dark);
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 98, 255, 0.3);
+        }
+        
+        .btn-outline-primary {
+            border: 2px solid var(--primary);
+            color: var(--primary);
+            background: transparent;
+            padding: 10px 28px;
+            border-radius: 50px;
+            font-weight: 600;
+            transition: var(--transition);
+        }
+        
+        .btn-outline-primary:hover {
+            background: var(--primary);
+            color: white;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 98, 255, 0.3);
+        }
+        
+        /* Tech Showcase */
+        .tech-showcase {
+            position: relative;
+            padding: 100px 0;
+            overflow: hidden;
+        }
+        
+        .floating-icon {
+            position: absolute;
+            font-size: 10rem;
+            opacity: 0.03;
+            z-index: 0;
+        }
+        
+        .icon-1 {
+            top: 10%;
+            left: 10%;
+            color: var(--primary);
+        }
+        
+        .icon-2 {
+            bottom: 10%;
+            right: 10%;
+            color: var(--info);
+        }
+        
+        /* Timeline */
+        .timeline {
+            position: relative;
+            padding: 20px 0;
+        }
+        
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            width: 4px;
+            height: 100%;
+            background: var(--primary);
+            transform: translateX(-50%);
+        }
+        
+        .timeline-item {
+            margin-bottom: 40px;
+            position: relative;
+            width: 50%;
+            padding-right: 40px;
+            box-sizing: border-box;
+        }
+        
+        .timeline-item:nth-child(even) {
+            left: 50%;
+            padding-left: 40px;
+            padding-right: 0;
+        }
+        
+        .timeline-content {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+        
+        .timeline-content::after {
+            content: '';
+            position: absolute;
+            top: 20px;
+            right: -10px;
+            width: 0;
+            height: 0;
+            border-top: 10px solid transparent;
+            border-bottom: 10px solid transparent;
+            border-left: 10px solid white;
+        }
+        
+        .timeline-item:nth-child(even) .timeline-content::after {
+            right: auto;
+            left: -10px;
+            border-left: none;
+            border-right: 10px solid white;
+        }
+        
+        .timeline-dot {
+            position: absolute;
+            top: 20px;
+            right: -13px;
+            width: 26px;
+            height: 26px;
+            background: var(--primary);
+            border-radius: 50%;
+            z-index: 1;
+        }
+        
+        .timeline-item:nth-child(even) .timeline-dot {
+            right: auto;
+            left: -13px;
+        }
+        
+        /* Process Steps */
+        .process-steps {
+            counter-reset: step-counter;
+        }
+        
+        .process-step {
+            position: relative;
+            padding-left: 80px;
+            margin-bottom: 40px;
+        }
+        
+        .process-step::before {
+            counter-increment: step-counter;
+            content: counter(step-counter);
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 60px;
+            height: 60px;
+            background: var(--primary);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+        
+        /* Testimonials */
+        .testimonial-card {
+            background: white;
+            padding: 30px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+            margin: 15px;
+            position: relative;
+        }
+        
+        .testimonial-card::before {
+            content: '"';
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            font-size: 5rem;
+            color: rgba(0, 98, 255, 0.1);
+            font-family: Georgia, serif;
+            line-height: 1;
+        }
+        
+        .testimonial-avatar {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin-right: 15px;
+            border: 3px solid var(--primary);
+        }
+        
+        /* FAQ */
+        .accordion-item {
+            border: none;
+            margin-bottom: 15px;
+            border-radius: var(--border-radius) !important;
+            overflow: hidden;
+            box-shadow: var(--box-shadow);
+        }
+        
+        .accordion-button {
+            background: white;
+            font-weight: 600;
+            padding: 20px;
+            border: none;
+            box-shadow: none;
+        }
+        
+        .accordion-button:not(.collapsed) {
+            background: var(--primary);
+            color: white;
+        }
+        
+        .accordion-body {
+            padding: 20px;
+        }
+        
+        /* Breadcrumb */
+        .breadcrumb {
+            background: transparent;
+            padding: 0;
+            margin-bottom: 20px;
+        }
+        
+        .breadcrumb-item a {
+            color: var(--primary);
+            text-decoration: none;
+        }
+        
+        /* Pagination */
+        .pagination .page-link {
+            color: var(--primary);
+            border: none;
+            padding: 10px 18px;
+            border-radius: var(--border-radius);
+            margin: 0 5px;
+        }
+        
+        .pagination .page-item.active .page-link {
+            background: var(--primary);
+            color: white;
+        }
+        
+        /* Badges */
+        .badge {
+            padding: 8px 15px;
+            border-radius: 30px;
+            font-weight: 500;
+        }
+        
+        /* Back to Top */
+        .back-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 50px;
+            height: 50px;
+            background: var(--primary);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            opacity: 0;
+            transition: var(--transition);
+            z-index: 1000;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .back-to-top.show {
+            opacity: 1;
+        }
+        
+        .back-to-top:hover {
+            background: var(--primary-dark);
+            transform: translateY(-3px);
+        }
+        
+        /* Loading Animation */
+        .loader-wrapper {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 9999;
+            transition: opacity 0.5s ease;
+        }
+        
+        .loader {
+            width: 50px;
+            height: 50px;
+            border: 5px solid rgba(0, 98, 255, 0.2);
+            border-radius: 50%;
+            border-top-color: var(--primary);
+            animation: spin 1s ease-in-out infinite;
+        }
+        
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .hero-section h1 {
+                font-size: 2.5rem;
+            }
+            
+            .hero-section p {
+                font-size: 1.1rem;
+            }
+            
+            .section-title {
+                font-size: 1.8rem;
+            }
+            
+            .timeline::before {
+                left: 30px;
+            }
+            
+            .timeline-item {
+                width: 100%;
+                padding-left: 70px;
+                padding-right: 0;
+            }
+            
+            .timeline-item:nth-child(even) {
+                left: 0;
+                padding-left: 70px;
+            }
+            
+            .timeline-content::after {
+                right: auto;
+                left: -10px;
+                border-left: none;
+                border-right: 10px solid white;
+            }
+            
+            .timeline-dot {
+                left: 17px;
+                right: auto;
+            }
+            
+            .timeline-item:nth-child(even) .timeline-dot {
+                left: 17px;
+            }
+            
+            .process-step {
+                padding-left: 60px;
+            }
+            
+            .process-step::before {
+                width: 45px;
+                height: 45px;
+                font-size: 1.2rem;
+            }
+            
+            .floating-icon {
+                font-size: 5rem;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .hero-section {
+                padding: 100px 0 80px;
+            }
+            
+            .hero-section h1 {
+                font-size: 2rem;
+            }
+            
+            .stat-number {
+                font-size: 2.5rem;
+            }
+            
+            .tech-icon {
+                font-size: 2.5rem;
+                padding: 15px;
+            }
+        }
+        
+        /* Print Styles */
+        @media print {
+            .hero-section {
+                background: white !important;
+                color: black;
+                padding: 50px 0;
+            }
+            
+            .hero-section h1 {
+                color: black;
+            }
+            
+            .btn, .back-to-top {
+                display: none;
+            }
+            
+            .tech-card {
+                box-shadow: none;
+                border: 1px solid #ddd;
+            }
+        }
+    </style>
+</head>
+<body>
+
+
+    <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="container position-relative d-flex align-items-center">
+
+        <a href="index.html" class="logo d-flex align-items-center me-auto">
+        <img src="images/oblogo.png" alt="Official logo" class="navbar-logo">
+        <h1 class="sitename">Optic Bee</h1>
+        </a>
+
+
+        <nav id="navmenu" class="navmenu">
+        <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            
+            <li class="dropdown">
+            <a href="#"><span>Technologies</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+                <li><a href="emerging-tech.html#programming">Programming Languages</a></li>
+                <li><a href="ai.html#ai">Artificial Intelligence</a></li>
+                <li><a href="ai.html#prompt-engineering">Prompt Engineering</a></li>
+                <li><a href="cloud-computing.html#edge">Quantum & Edge Computing</a></li>
+                <li><a href="connectivity-iot.html#5g">5G & Connectivity</a></li>
+                <li><a href="emerging-tech.html#xr">Extended Reality (VR/AR)</a></li>
+                <li><a href="connectivity-iot.html#digital-twins">Digital Twins</a></li>
+                <li><a href="connectivity-iot.html#blockchain">Blockchain</a></li>
+                <li><a href="connectivity-iot.html#iot">IOT/IIoT</a></li>
+                <li><a href="cloud-computing.html#cloud">Cloud</a></li>
+                <li><a href="cloud-computing.html#bigdata">Big Data Analytics</a></li>
+                <li><a href="cloud-computing.html#integration">Integration Services</a></li>
+                <li><a href="emerging-tech.html#3d-printing">3D Printing</a></li>
+                <li><a href="emerging-tech.html#rpa">RPA</a></li>
+                <li><a href="ai.html#robotics">Advanced Robotics</a></li>
+                <li><a href="ai.html#cybersecurity">AI in Cybersecurity</a></li>
+            </ul>
+            </li>
+            
+            <li class="dropdown">
+            <a href="#"><span>Business Solutions</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+                <li class="dropdown">
+                <a href="#"><span>ERP</span> <i class="bi bi-chevron-right toggle-dropdown"></i></a>
+                <ul>
+                    <li><a href="#">Oracle ERP Cloud</a></li>
+                </ul>
+                </li>
+                <li class="dropdown">
+                <a href="#"><span>EPM</span> <i class="bi bi-chevron-right toggle-dropdown"></i></a>
+                <ul>
+                    <li><a href="#">Oracle EPM Cloud</a></li>
+                </ul>
+                </li>
+                <li><a href="#">CPM</a></li>
+                <li><a href="#">CRM</a></li>
+                <li class="dropdown">
+                <a href="#"><span>SCM</span> <i class="bi bi-chevron-right toggle-dropdown"></i></a>
+                <ul>
+                    <li><a href="#">Oracle SCM Cloud</a></li>
+                </ul>
+                </li>
+                <li><a href="#">HCM</a></li>
+                <li><a href="#">Oracle PaaS Cloud</a></li>
+            </ul>
+            </li>
+            
+            <li class="dropdown">
+            <a href="#"><span>Services</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+                <li><a href="#">Training</a></li>
+                <li><a href="#">Support</a></li>
+                <li><a href="#">Consulting</a></li>
+                <li><a href="#">Implementation & Deployment</a></li>
+                <li><a href="#">Infrastructure Support</a></li>
+                <li><a href="#">Application Maintenance</a></li>
+                <li><a href="#">Application Development</a></li>
+                <li><a href="#">API Development</a></li>
+                <li><a href="#">Customer Software Support</a></li>
+                <li><a href="#">DevOps</a></li>
+                <li><a href="#">Digital Transformation</a></li>
+                <li><a href="#">Migrations & Upgrades</a></li>
+                <li><a href="#">Partner Product Support</a></li>
+                <li><a href="#">Startup & MVP Services</a></li>
+                <li><a href="#">System Integration</a></li>
+                <li><a href="#">PLM</a></li>
+                <li><a href="#">QA Testing</a></li>
+            </ul>
+            </li>
+            
+            <li class="dropdown">
+            <a href="#"><span>Development</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+                <li><a href="#">Digital Marketing</a></li>
+                <li class="dropdown">
+                <a href="#"><span>Web Development</span> <i class="bi bi-chevron-right toggle-dropdown"></i></a>
+                <ul>
+                    <li><a href="#">MERN Stack</a></li>
+                    <li><a href="#">HTML, CSS, JavaScript</a></li>
+                    <li><a href="#">Python, PHP</a></li>
+                </ul>
+                </li>
+                <li><a href="#">Mobile App Development</a></li>
+                <li class="dropdown">
+                <a href="#"><span>Databases</span> <i class="bi bi-chevron-right toggle-dropdown"></i></a>
+                <ul>
+                    <li><a href="#">Oracle</a></li>
+                    <li><a href="#">SQL Server</a></li>
+                    <li><a href="#">Teradata</a></li>
+                    <li><a href="#">MySQL</a></li>
+                    <li><a href="#">PostgreSQL</a></li>
+                    <li><a href="#">Sybase</a></li>
+                </ul>
+                </li>
+            </ul>
+            </li>
+            
+            <li class="dropdown">
+            <a href="#"><span>Industries</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+                <li><a href="#">Defence</a></li>
+                <li><a href="#">Aerospace</a></li>
+                <li><a href="#">Space Technology</a></li>
+                <li><a href="#">High Tech</a></li>
+                <li><a href="#">Education</a></li>
+                <li><a href="#">Healthcare</a></li>
+                <li><a href="#">Telecommunication</a></li>
+                <li><a href="#">BFSI</a></li>
+                <li><a href="#">Agri-Tech</a></li>
+                <li><a href="#">Manufacturing</a></li>
+                <li><a href="#">Industrial</a></li>
+                <li><a href="#">Civil/Construction</a></li>
+                <li><a href="#">Metallurgy</a></li>
+                <li><a href="#">Computers/IT</a></li>
+                <li><a href="#">Semiconductors</a></li>
+                <li><a href="#">Electrical/Electronics</a></li>
+                <li><a href="#">Media & Entertainment</a></li>
+            </ul>
+            </li>
+            
+            <li class="dropdown">
+                <a href="affiliate.html"><span>Affiliates</span> </a>
+            </li>
+            
+            <li class="dropdown">
+            <a href="#"><span>Projects</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+                <li><a href="#">Educational Projects</a></li>
+                <li><a href="#">Industry Projects</a></li>
+                <li><a href="#">Technology Case Studies</a></li>
+                <li><a href="#">Integration Projects</a></li>
+                <li><a href="#">Contract Projects</a></li>
+                <li><a href="#">Corp to Corp Projects</a></li>
+                <li><a href="#">Offshore/Remote Projects</a></li>
+                <li><a href="#">Training Projects</a></li>
+            </ul>
+            </li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        </nav>
+
+        <div class="header-social-links">
+        <a href="https://x.com/BeeOptic?t=9XDIJ7pA-ZHlrJaPQkSm_Q&s=09" class="twitter"><i class="bi bi-twitter-x"></i></a>
+        <a href="https://www.facebook.com/share/1AeUNhhRDu/" class="facebook"><i class="bi bi-facebook"></i></a>
+        <a href="https://www.instagram.com/optic.bee?igsh=M3lpc2U5ajFpYTA1" class="instagram"><i class="bi bi-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/optic-bee-246554375?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="linkedin"><i class="bi bi-linkedin"></i></a>
+        </div>
+
+    </div>
+    </header>
+
+    <!-- Loading Animation -->
+    <div class="loader-wrapper">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Breadcrumb -->
+    <section class="py-3 d-none d-md-block">
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item"><a href="#">Solutions</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Technologies</li>
+                </ol>
+            </nav>
+        </div>
+    </section>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10 text-center">
+                    <h1 data-aos="fade-down" data-aos-duration="1000">Cutting-Edge <span class="text-warning">Technologies</span></h1>
+                    <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">Discover how Opticbee leverages the latest advancements in AI, Cloud Computing, and Emerging Technologies to transform businesses and drive innovation</p>
+                    <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+                        <a href="#technologies" class="btn btn-light btn-lg me-3">Explore Technologies</a>
+                        <a href="#contact" class="btn btn-outline-light btn-lg">Get in Touch</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Wave Shape -->
+        <svg class="hero-shape" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" preserveAspectRatio="none">
+            <path fill="#ffffff" fill-opacity="1" d="M0,288L48,272C96,256,192,224,288,197.3C384,171,480,149,576,165.3C672,181,768,235,864,250.7C960,267,1056,245,1152,224C1248,203,1344,181,1392,170.7L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+        </svg>
+    </section>
+
+    <!-- Technologies Overview -->
+    <section id="technologies" class="py-5">
+        <div class="container py-5">
+            <div class="row text-center mb-5">
+                <div class="col-12">
+                    <h2 class="section-title" data-aos="fade-up">Our Technological Expertise</h2>
+                    <p class="lead" data-aos="fade-up" data-aos-delay="200">We harness the power of innovation to drive digital transformation and create sustainable competitive advantages</p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="0">
+                    <div class="tech-card">
+                        <div class="card-overlay"></div>
+                        <div class="card-body text-center p-5">
+                            <div class="tech-icon">
+                                <i class="fas fa-brain"></i>
+                            </div>
+                            <h3>Artificial Intelligence</h3>
+                            <p>Intelligent solutions that learn, adapt, and automate complex processes to deliver unprecedented efficiency and insights.</p>
+                            <ul class="list-unstyled mt-4 text-start">
+                                <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> Machine Learning</li>
+                                <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> Natural Language Processing</li>
+                                <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> Computer Vision</li>
+                                <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> Predictive Analytics</li>
+                                <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> Deep Learning</li>
+                            </ul>
+                            <a href="ai.html" class="btn btn-outline-primary mt-3">Explore AI Solutions</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="tech-card">
+                        <div class="card-overlay"></div>
+                        <div class="card-body text-center p-5">
+                            <div class="tech-icon">
+                                <i class="fas fa-cloud"></i>
+                            </div>
+                            <h3>Cloud Computing</h3>
+                            <p>Scalable, secure, and flexible cloud infrastructure that enables businesses to innovate faster and reduce IT complexity.</p>
+                            <ul class="list-unstyled mt-4 text-start">
+                                <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> Cloud Migration</li>
+                                <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> Multi-Cloud Solutions</li>
+                                <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> DevOps & Automation</li>
+                                <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> Serverless Architecture</li>
+                                <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> Cloud Security</li>
+                            </ul>
+                            <a href="cloud-computing.html" class="btn btn-outline-primary mt-3">Explore Cloud Solutions</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="400">
+                    <div class="tech-card">
+                        <div class="card-overlay"></div>
+                        <div class="card-body text-center p-5">
+                            <div class="tech-icon">
+                                <i class="fas fa-microchip"></i>
+                            </div>
+                            <h3>Emerging Technologies</h3>
+                            <p>Future-forward solutions that leverage cutting-edge innovations to create new possibilities and business models.</p>
+                            <ul class="list-unstyled mt-4 text-start">
+                                <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> Internet of Things</li>
+                                <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> Blockchain</li>
+                                <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> AR/VR Solutions</li>
+                                <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> Quantum Computing</li>
+                                <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> 5G Integration</li>
+                            </ul>
+                            <a href="emerging-tech.html" class="btn btn-outline-primary mt-3">Explore Emerging Tech</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="gradient-bg py-5">
+        <div class="container py-5">
+            <div class="row g-4">
+                <div class="col-md-3 col-6" data-aos="fade-up" data-aos-delay="0">
+                    <div class="stat-card">
+                        <i class="fas fa-project-diagram fa-2x text-primary mb-3"></i>
+                        <div class="stat-number">350+</div>
+                        <p>Projects Completed</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="stat-card">
+                        <i class="fas fa-users fa-2x text-primary mb-3"></i>
+                        <div class="stat-number">98%</div>
+                        <p>Client Satisfaction</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="stat-card">
+                        <i class="fas fa-rocket fa-2x text-primary mb-3"></i>
+                        <div class="stat-number">40%</div>
+                        <p>Faster Deployment</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="stat-card">
+                        <i class="fas fa-chart-line fa-2x text-primary mb-3"></i>
+                        <div class="stat-number">300%</div>
+                        <p>ROI Improvement</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technology Timeline -->
+    <section class="py-5">
+        <div class="container py-5">
+            <div class="row text-center mb-5">
+                <div class="col-12">
+                    <h2 class="section-title" data-aos="fade-up">Our Technology Evolution</h2>
+                    <p class="lead" data-aos="fade-up" data-aos-delay="200">How we've evolved with technological advancements to deliver cutting-edge solutions</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="timeline">
+                        <div class="timeline-item" data-aos="fade-right">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <h4>Cloud Infrastructure</h4>
+                                <p class="text-muted">2022 - Present</p>
+                                <p>Built scalable cloud solutions for enterprises, enabling digital transformation and remote work capabilities. Migrated 50+ legacy systems to cloud environments.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item" data-aos="fade-left">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <h4>AI & Machine Learning</h4>
+                                <p class="text-muted">2022 - Present</p>
+                                <p>Integrated AI capabilities into business processes, delivering predictive analytics and intelligent automation. Developed 20+ custom ML models for various industries.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item" data-aos="fade-right">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <h4>IoT Solutions</h4>
+                                <p class="text-muted">2023 - Present</p>
+                                <p>Developed connected device ecosystems that collect and analyze data for smart decision making. Implemented IoT solutions for manufacturing, healthcare, and smart cities.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item" data-aos="fade-left">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <h4>Blockchain Integration</h4>
+                                <p class="text-muted">2024 - Present</p>
+                                <p>Implemented secure, transparent distributed ledger technology for various business applications. Developed blockchain solutions for supply chain, finance, and identity verification.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item" data-aos="fade-right">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <h4>Quantum Computing Research</h4>
+                                <p class="text-muted">2025 - Present</p>
+                                <p>Exploring quantum algorithms and applications for complex problem solving. Partnering with research institutions to develop quantum-ready solutions.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="gradient-bg py-5">
+        <div class="container py-5">
+            <div class="row text-center mb-5">
+                <div class="col-12">
+                    <h2 class="section-title" data-aos="fade-up">Why Choose Our Tech Solutions</h2>
+                    <p class="lead" data-aos="fade-up" data-aos-delay="200">We deliver tangible business value through innovative technology implementations</p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="0">
+                    <div class="feature-box">
+                        <div class="text-center mb-4">
+                            <i class="fas fa-shield-alt fa-3x text-primary"></i>
+                        </div>
+                        <h4 class="text-center">Enterprise-Grade Security</h4>
+                        <p class="text-center">Our solutions incorporate robust security measures to protect your data and infrastructure from evolving threats. We implement end-to-end encryption and compliance frameworks.</p>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-box">
+                        <div class="text-center mb-4">
+                            <i class="fas fa-expand-arrows-alt fa-3x text-primary"></i>
+                        </div>
+                        <h4 class="text-center">Scalable Architecture</h4>
+                        <p class="text-center">Build systems that grow with your business, handling increased loads without performance degradation. Our cloud-native designs ensure elasticity and cost efficiency.</p>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="400">
+                    <div class="feature-box">
+                        <div class="text-center mb-4">
+                            <i class="fas fa-sync-alt fa-3x text-primary"></i>
+                        </div>
+                        <h4 class="text-center">Continuous Innovation</h4>
+                        <p class="text-center">We stay ahead of technology curves, ensuring your business benefits from the latest advancements. Our R&D team continuously explores emerging technologies.</p>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="0">
+                    <div class="feature-box">
+                        <div class="text-center mb-4">
+                            <i class="fas fa-tachometer-alt fa-3x text-primary"></i>
+                        </div>
+                        <h4 class="text-center">High Performance</h4>
+                        <p class="text-center">Optimized solutions that deliver exceptional speed and responsiveness. We leverage cutting-edge technologies to ensure your applications perform at their best.</p>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-box">
+                        <div class="text-center mb-4">
+                            <i class="fas fa-cogs fa-3x text-primary"></i>
+                        </div>
+                        <h4 class="text-center">Seamless Integration</h4>
+                        <p class="text-center">Our solutions integrate smoothly with your existing systems and workflows. We ensure minimal disruption during implementation and provide comprehensive API support.</p>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="400">
+                    <div class="feature-box">
+                        <div class="text-center mb-4">
+                            <i class="fas fa-headset fa-3x text-primary"></i>
+                        </div>
+                        <h4 class="text-center">24/7 Support</h4>
+                        <p class="text-center">Round-the-clock technical support to address any issues and ensure smooth operations. Our dedicated team provides proactive monitoring and rapid response.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technology Process -->
+    <section class="py-5">
+        <div class="container py-5">
+            <div class="row text-center mb-5">
+                <div class="col-12">
+                    <h2 class="section-title" data-aos="fade-up">Our Technology Implementation Process</h2>
+                    <p class="lead" data-aos="fade-up" data-aos-delay="200">A structured approach to delivering successful technology solutions</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-10 mx-auto">
+                    <div class="process-steps">
+                        <div class="process-step" data-aos="fade-right">
+                            <h4>Discovery & Analysis</h4>
+                            <p>We begin by thoroughly understanding your business objectives, challenges, and technical requirements. Our team conducts in-depth analysis to identify the best technological approach.</p>
+                        </div>
+                        <div class="process-step" data-aos="fade-left">
+                            <h4>Solution Design</h4>
+                            <p>Our architects design tailored solutions that align with your goals. We create detailed technical specifications, architecture diagrams, and implementation plans.</p>
+                        </div>
+                        <div class="process-step" data-aos="fade-right">
+                            <h4>Development & Integration</h4>
+                            <p>Using agile methodologies, we develop and integrate the technology solutions. We maintain transparent communication and provide regular updates throughout the process.</p>
+                        </div>
+                        <div class="process-step" data-aos="fade-left">
+                            <h4>Testing & Quality Assurance</h4>
+                            <p>We conduct rigorous testing to ensure functionality, performance, and security. Our QA team validates the solution against all requirements and use cases.</p>
+                        </div>
+                        <div class="process-step" data-aos="fade-right">
+                            <h4>Deployment & Training</h4>
+                            <p>We manage the deployment process to ensure smooth transition. Our team provides comprehensive training and documentation for your staff.</p>
+                        </div>
+                        <div class="process-step" data-aos="fade-left">
+                            <h4>Support & Optimization</h4>
+                            <p>We offer ongoing support and maintenance services. Our team continuously monitors performance and identifies opportunities for optimization.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tech Showcase -->
+    <section class="tech-showcase position-relative light-blue-bg">
+        <i class="floating-icon icon-1 fas fa-robot"></i>
+        <i class="floating-icon icon-2 fas fa-server"></i>
+        <div class="container">
+            <div class="row text-center mb-5">
+                <div class="col-12">
+                    <h2 class="section-title" data-aos="fade-up">Technology In Action</h2>
+                    <p class="lead" data-aos="fade-up" data-aos-delay="200">See how our solutions deliver real business impact across various industries</p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="0">
+                    <div class="card tech-card">
+                        <div class="card-body p-4">
+                            <div class="d-flex align-items-center mb-4">
+                                <div class="bg-primary p-3 rounded-circle me-3">
+                                    <i class="fas fa-industry fa-2x text-white"></i>
+                                </div>
+                                <div>
+                                    <h4 class="mb-0">Manufacturing Automation</h4>
+                                    <span class="text-muted">Industrial IoT & AI</span>
+                                </div>
+                            </div>
+                            <p>Implemented AI-powered visual inspection systems that reduced defect detection time by 75% and improved accuracy by 40% for a global manufacturer. The IoT integration enabled predictive maintenance, reducing downtime by 30%.</p>
+                            <div class="mt-4">
+                                <span class="badge bg-primary me-2">Computer Vision</span>
+                                <span class="badge bg-primary me-2">IoT</span>
+                                <span class="badge bg-primary">AI</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card tech-card">
+                        <div class="card-body p-4">
+                            <div class="d-flex align-items-center mb-4">
+                                <div class="bg-primary p-3 rounded-circle me-3">
+                                    <i class="fas fa-hand-holding-usd fa-2x text-white"></i>
+                                </div>
+                                <div>
+                                    <h4 class="mb-0">Financial Forecasting</h4>
+                                    <span class="text-muted">Banking & Finance</span>
+                                </div>
+                            </div>
+                            <p>Developed predictive analytics models for a financial services firm that improved forecasting accuracy by 35% and reduced risk exposure by 28%. The cloud-based solution enabled real-time data processing and reduced infrastructure costs by 40%.</p>
+                            <div class="mt-4">
+                                <span class="badge bg-primary me-2">Machine Learning</span>
+                                <span class="badge bg-primary me-2">Big Data</span>
+                                <span class="badge bg-primary">Cloud Computing</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
+                    <div class="card tech-card">
+                        <div class="card-body p-4">
+                            <div class="d-flex align-items-center mb-4">
+                                <div class="bg-primary p-3 rounded-circle me-3">
+                                    <i class="fas fa-hospital-user fa-2x text-white"></i>
+                                </div>
+                                <div>
+                                    <h4 class="mb-0">Healthcare Diagnostics</h4>
+                                    <span class="text-muted">Medical Technology</span>
+                                </div>
+                            </div>
+                            <p>Created an AI-assisted diagnostic system that improved detection accuracy for medical imaging by 45%. The solution reduced radiologist workload by 50% and decreased diagnosis time from days to hours for critical cases.</p>
+                            <div class="mt-4">
+                                <span class="badge bg-primary me-2">AI</span>
+                                <span class="badge bg-primary me-2">Cloud</span>
+                                <span class="badge bg-primary">Data Analytics</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="600">
+                    <div class="card tech-card">
+                        <div class="card-body p-4">
+                            <div class="d-flex align-items-center mb-4">
+                                <div class="bg-primary p-3 rounded-circle me-3">
+                                    <i class="fas fa-store fa-2x text-white"></i>
+                                </div>
+                                <div>
+                                    <h4 class="mb-0">Retail Personalization</h4>
+                                    <span class="text-muted">E-commerce</span>
+                                </div>
+                            </div>
+                            <p>Developed a personalized recommendation engine that increased conversion rates by 28% and average order value by 19% for an online retailer. The AI system processes real-time customer behavior to deliver highly relevant product suggestions.</p>
+                            <div class="mt-4">
+                                <span class="badge bg-primary me-2">AI</span>
+                                <span class="badge bg-primary me-2">Machine Learning</span>
+                                <span class="badge bg-primary">Big Data</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-5" data-aos="fade-up">
+                <a href="#" class="btn btn-primary btn-lg">View All Case Studies</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-5 gradient-bg">
+        <div class="container py-5">
+            <div class="row text-center mb-5">
+                <div class="col-12">
+                    <h2 class="section-title" data-aos="fade-up">What Our Clients Say</h2>
+                    <p class="lead" data-aos="fade-up" data-aos-delay="200">Hear from businesses that have transformed with our technology solutions</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-10 mx-auto">
+                    <div class="row">
+                        <div class="col-md-6" data-aos="fade-up" data-aos-delay="0">
+                            <div class="testimonial-card">
+                                <div class="d-flex align-items-center mb-4">
+                                    <div class="testimonial-avatar">
+                                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Client" class="img-fluid">
+                                    </div>
+                                    <div>
+                                        <h5 class="mb-0">Robert Johnson</h5>
+                                        <p class="text-muted mb-0">CTO, TechCorp International</p>
+                                    </div>
+                                </div>
+                                <p class="mb-0">"Opticbee's AI solutions transformed our customer service operations. The implementation was seamless, and the results exceeded our expectations. We've seen a 40% improvement in response times and significant cost savings."</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
+                            <div class="testimonial-card">
+                                <div class="d-flex align-items-center mb-4">
+                                    <div class="testimonial-avatar">
+                                        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Client" class="img-fluid">
+                                    </div>
+                                    <div>
+                                        <h5 class="mb-0">Sarah Williams</h5>
+                                        <p class="text-muted mb-0">CEO, InnovateTech Solutions</p>
+                                    </div>
+                                </div>
+                                <p class="mb-0">"The cloud migration strategy developed by Opticbee was exceptional. They guided us through every step of the process, and we've achieved 30% cost reduction while improving system reliability and scalability."</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6" data-aos="fade-up" data-aos-delay="400">
+                            <div class="testimonial-card">
+                                <div class="d-flex align-items-center mb-4">
+                                    <div class="testimonial-avatar">
+                                        <img src="https://randomuser.me/api/portraits/men/62.jpg" alt="Client" class="img-fluid">
+                                    </div>
+                                    <div>
+                                        <h5 class="mb-0">Michael Chen</h5>
+                                        <p class="text-muted mb-0">IT Director, Global Manufacturing Inc.</p>
+                                    </div>
+                                </div>
+                                <p class="mb-0">"The IoT implementation for our manufacturing facilities has been revolutionary. We've achieved 25% higher operational efficiency and significantly reduced downtime through predictive maintenance capabilities."</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6" data-aos="fade-up" data-aos-delay="600">
+                            <div class="testimonial-card">
+                                <div class="d-flex align-items-center mb-4">
+                                    <div class="testimonial-avatar">
+                                        <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Client" class="img-fluid">
+                                    </div>
+                                    <div>
+                                        <h5 class="mb-0">Jennifer Martinez</h5>
+                                        <p class="text-muted mb-0">Operations Director, HealthFirst Network</p>
+                                    </div>
+                                </div>
+                                <p class="mb-0">"Opticbee's emerging technology solutions have positioned us as an industry innovator. Their blockchain implementation for patient records has enhanced security while improving accessibility for authorized providers."</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-5">
+        <div class="container py-5">
+            <div class="row text-center mb-5">
+                <div class="col-12">
+                    <h2 class="section-title" data-aos="fade-up">Frequently Asked Questions</h2>
+                    <p class="lead" data-aos="fade-up" data-aos-delay="200">Find answers to common questions about our technology services</p>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="accordion" id="techFAQ">
+                        <div class="accordion-item" data-aos="fade-up">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                                    What industries do you specialize in?
+                                </button>
+                            </h2>
+                            <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#techFAQ">
+                                <div class="accordion-body">
+                                    We have extensive experience across multiple industries including healthcare, finance, manufacturing, retail, education, and telecommunications. Our technology solutions are tailored to address industry-specific challenges and opportunities.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item" data-aos="fade-up">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                                    How do you ensure the security of our data?
+                                </button>
+                            </h2>
+                            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#techFAQ">
+                                <div class="accordion-body">
+                                    We implement multi-layered security protocols including encryption, access controls, regular security audits, and compliance with industry standards. Our team follows secure development practices and stays updated on emerging threats to ensure your data remains protected.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item" data-aos="fade-up">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                                    What is your approach to cloud migration?
+                                </button>
+                            </h2>
+                            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#techFAQ">
+                                <div class="accordion-body">
+                                    We follow a structured 6-phase approach: assessment, planning, proof of concept, migration, optimization, and management. We carefully analyze your current infrastructure, determine the best cloud strategy (public, private, or hybrid), and create a detailed migration plan to minimize disruption.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item" data-aos="fade-up">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
+                                    How long does a typical AI implementation take?
+                                </button>
+                            </h2>
+                            <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#techFAQ">
+                                <div class="accordion-body">
+                                    The timeline varies based on project complexity, but typical AI implementations range from 3-9 months. This includes data preparation, model development, testing, and integration. We believe in iterative development, delivering value at each stage rather than waiting for a complete solution.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item" data-aos="fade-up">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5">
+                                    Do you provide training and support after implementation?
+                                </button>
+                            </h2>
+                            <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#techFAQ">
+                                <div class="accordion-body">
+                                    Yes, we offer comprehensive training programs tailored to different user roles within your organization. Additionally, we provide ongoing support and maintenance packages to ensure your technology continues to perform optimally and evolves with your business needs.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="contact" class="py-5 ai-bg text-white">
+        <div class="container py-5">
+            <div class="row justify-content-center text-center">
+                <div class="col-lg-8">
+                    <h2 class="mb-4" data-aos="fade-up">Ready to Transform Your Business with Technology?</h2>
+                    <p class="lead mb-4" data-aos="fade-up" data-aos-delay="200">Let's discuss how our technology expertise can drive innovation and growth for your organization.</p>
+                    <div data-aos="fade-up" data-aos-delay="400">
+                        <a href="about.html" class="btn btn-light btn-lg px-5 py-3 me-3">Know More</a>
+                        <a href="contact.html" class="btn btn-outline-light btn-lg px-5 py-3">Contact </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="footer" class="footer dark-background">
+
+        <div class="container footer-top">
+        <div class="row gy-4">
+            <div class="col-lg-4 col-md-6 footer-about">
+            <a href="index.html" class="logo d-flex align-items-center">
+                <span class="sitename">Optic Bee</span>
+            </a>
+            <div class="footer-contact pt-3">
+                <p>plot 21, flat 102, CVR Residency</p>
+                <p>Pragathi Nagar, Hyderabad, IN 500090</p>
+                <p class="mt-3"><strong>Phone:</strong> <span>+91 99087 93602</span></p>
+                <p><strong>Email:</strong> <span>support@opticbee.in</span></p>
+            </div>
+            <div class="social-links d-flex mt-4">
+                <a href="https://x.com/BeeOptic?t=9XDIJ7pA-ZHlrJaPQkSm_Q&s=09"><i class="bi bi-twitter-x"></i></a>
+                <a href="https://www.facebook.com/share/1AeUNhhRDu/"><i class="bi bi-facebook"></i></a>
+                <a href="https://www.instagram.com/optic.bee?igsh=M3lpc2U5ajFpYTA1"><i class="bi bi-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/optic-bee-246554375?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="bi bi-linkedin"></i></a>
+            </div>
+            </div>
+
+            <div class="col-lg-2 col-md-3 footer-links">
+            <h4 style="color: #fff;">Useful Links</h4>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="">Terms of service</a></li>
+                <li><a href="#">Privacy policy</a></li>
+            </ul>
+            </div>
+
+            <div class="col-lg-2 col-md-3 footer-links">
+            <h4 style="color: #fff;">Our Services</h4>
+            <ul>
+                <li><a href="#">Web Design</a></li>
+                <li><a href="#">Web Development</a></li>
+                <li><a href="#">Product Management</a></li>
+                <li><a href="#">Marketing</a></li>
+                <li><a href="#">Graphic Design</a></li>
+            </ul>
+            </div>
+
+            <div class="col-lg-4 col-md-12 footer-newsletter">
+            <h4 style="color: #fff;">Our Newsletter</h4>
+            <p>Subscribe to our newsletter and receive the latest news about our products and services!</p>
+            <form action="forms/newsletter.php" method="post" class="php-email-form">
+                <div class="newsletter-form"><input type="email" name="email"><input type="submit" value="Subscribe"></div>
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your subscription request has been sent. Thank you!</div>
+            </form>
+            </div>
+
+        </div>
+        </div>
+
+        <div class="container copyright text-center mt-4">
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">Optic Bee</strong> <span>All Rights Reserved</span></p>
+        <div class="credits"></div>
+        </div>
+
+    </footer>
+
+    <!-- Scroll Top -->
+    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+    <!-- Preloader -->
+    <div id="preloader"></div>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Main JS File -->
+    <script src="assets/js/main.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- AOS Animation Library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 1000,
+            once: true,
+            offset: 100
+        });
+        
+        // Loading animation
+        window.addEventListener('load', function() {
+            const loader = document.querySelector('.loader-wrapper');
+            setTimeout(function() {
+                loader.style.opacity = '0';
+                setTimeout(function() {
+                    loader.style.display = 'none';
+                }, 500);
+            }, 1000);
+        });
+        
+        // Back to top button
+        const backToTopButton = document.querySelector('.back-to-top');
+        
+        window.addEventListener('scroll', function() {
+            if (window.pageYOffset > 300) {
+                backToTopButton.classList.add('show');
+            } else {
+                backToTopButton.classList.remove('show');
+            }
+        });
+        
+        backToTopButton.addEventListener('click', function(e) {
+            e.preventDefault();
+            window.scrollTo({top: 0, behavior: 'smooth'});
+        });
+        
+        // Add animation to stats
+        const statNumbers = document.querySelectorAll('.stat-number');
+        const statsSection = document.querySelector('.gradient-bg');
+        
+        const animateStats = () => {
+            statNumbers.forEach(stat => {
+                const target = parseInt(stat.textContent);
+                let count = 0;
+                const duration = 2000;
+                const increment = target / (duration / 16);
+                
+                const updateCount = () => {
+                    if (count < target) {
+                        count += increment;
+                        stat.textContent = Math.round(count) + (stat.textContent.includes('%') ? '%' : '+');
+                        setTimeout(updateCount, 16);
+                    } else {
+                        stat.textContent = target + (stat.textContent.includes('%') ? '%' : '+');
+                    }
+                };
+                
+                updateCount();
+            });
+        };
+        
+        // Intersection Observer for stats animation
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    animateStats();
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.5 });
+        
+        observer.observe(statsSection);
+    </script>
+</body>
+</html>
