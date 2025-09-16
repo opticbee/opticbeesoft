@@ -1,0 +1,955 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional IT Support & Maintenance Services including Infrastructure Support, Application Maintenance, Custom Software Support, and Partner Product Support">
+    <meta name="keywords" content="IT support, maintenance services, infrastructure support, application maintenance, software support, IT services">
+    <title>Comprehensive Support & Maintenance Services | Your Technology Partner</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+      <!-- Favicons -->
+  <link href="images/favicon.ico" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #0d6efd;
+            --secondary: #6c757d;
+            --dark: #212529;
+            --light: #f8f9fa;
+            --success: #198754;
+            --warning: #ffc107;
+            --danger: #dc3545;
+            --info: #0dcaf0;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #333;
+            overflow-x: hidden;
+        }
+        
+        .section-title {
+            position: relative;
+            margin-bottom: 50px;
+            font-weight: 700;
+        }
+        
+        /* .section-title:after {
+            content: '';
+            position: absolute;
+            bottom: -15px;
+            left: 0;
+            width: 70px;
+            height: 4px;
+            background: var(--primary);
+        } */
+        
+        .section-title.center:after {
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        
+        .hero-section {
+            background-image: url(images/support.png);
+            background-size: cover;
+            background-position: center;
+            padding: 120px 0;
+            color: white;
+        }
+        
+        .service-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border-radius: 10px;
+            overflow: hidden;
+            height: 100%;
+            border: none;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+        }
+        
+        .service-icon {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            color: var(--primary);
+        }
+        
+        .benefit-item {
+            padding: 15px 0;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .process-step {
+            position: relative;
+            padding-left: 80px;
+            margin-bottom: 40px;
+        }
+        
+        .step-number {
+            position: absolute;
+            left: 0;
+            top: 0;
+            font-size: 3rem;
+            font-weight: 800;
+            color: rgba(13, 110, 253, 0.2);
+        }
+        
+        .testimonial-card {
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            margin: 20px 0;
+            background: white;
+        }
+        
+        .testimonial-avatar {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-right: 20px;
+        }
+        
+        .cta-section {
+            background: linear-gradient(to right, #0d6efd, #0dcaf0);
+            color: white;
+            padding: 80px 0;
+        }
+        
+        .faq-item {
+            margin-bottom: 20px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .faq-question {
+            padding: 20px;
+            background: var(--light);
+            font-weight: 600;
+            cursor: pointer;
+            position: relative;
+        }
+        
+        .faq-answer {
+            padding: 0 20px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease, padding 0.3s ease;
+        }
+        
+        .faq-active .faq-answer {
+            max-height: 500px;
+            padding: 20px;
+        }
+        
+        .stats-number {
+            font-size: 3rem;
+            font-weight: 700;
+            color: var(--primary);
+        }
+        
+        .feature-icon {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: rgba(13, 110, 253, 0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+            font-size: 1.5rem;
+            color: var(--primary);
+        }
+        
+        @media (max-width: 768px) {
+            .hero-section {
+                padding: 80px 0;
+            }
+            
+            .process-step {
+                padding-left: 60px;
+            }
+            
+            .step-number {
+                font-size: 2rem;
+            }
+        }
+        
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .animate-fadein {
+            animation: fadeIn 1s ease forwards;
+        }
+        
+        .delay-1 { animation-delay: 0.2s; }
+        .delay-2 { animation-delay: 0.4s; }
+        .delay-3 { animation-delay: 0.6s; }
+        .delay-4 { animation-delay: 0.8s; }
+        
+        /* Hover effects */
+        .hover-shine {
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hover-shine:before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: rgba(255, 255, 255, 0.1);
+            transform: rotate(45deg);
+            transition: all 0.6s ease;
+            opacity: 0;
+        }
+        
+        .hover-shine:hover:before {
+            opacity: 1;
+            animation: shine 1.5s ease;
+        }
+        
+        @keyframes shine {
+            0% { transform: translateX(-100%) rotate(45deg); }
+            100% { transform: translateX(100%) rotate(45deg); }
+        }
+    </style>
+</head>
+<body>
+
+    <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="container position-relative d-flex align-items-center">
+
+        <a href="index.html" class="logo d-flex align-items-center me-auto">
+        <img src="images/oblogo.png" alt="Official logo" class="navbar-logo">
+        <h1 class="sitename">Optic Bee</h1>
+        </a>
+
+
+        <nav id="navmenu" class="navmenu">
+        <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            
+            <li class="dropdown">
+            <a href="technologies.html"><span>Technologies</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+                <li><a href="emerging-tech.html#programming">Programming Languages</a></li>
+                <li><a href="ai.html#ai">Artificial Intelligence</a></li>
+                <li><a href="ai.html#prompt-engineering">Prompt Engineering</a></li>
+                <li><a href="cloud-computing.html#edge">Quantum & Edge Computing</a></li>
+                <li><a href="connectivity-iot.html#5g">5G & Connectivity</a></li>
+                <li><a href="emerging-tech.html#xr">Extended Reality (VR/AR)</a></li>
+                <li><a href="connectivity-iot.html#digital-twins">Digital Twins</a></li>
+                <li><a href="connectivity-iot.html#blockchain">Blockchain</a></li>
+                <li><a href="connectivity-iot.html#iot">IOT/IIoT</a></li>
+                <li><a href="cloud-computing.html#cloud">Cloud</a></li>
+                <li><a href="cloud-computing.html#bigdata">Big Data Analytics</a></li>
+                <li><a href="cloud-computing.html#integration">Integration Services</a></li>
+                <li><a href="emerging-tech.html#3d-printing">3D Printing</a></li>
+                <li><a href="emerging-tech.html#rpa">RPA</a></li>
+                <li><a href="ai.html#robotics">Advanced Robotics</a></li>
+                <li><a href="ai.html#cybersecurity">AI in Cybersecurity</a></li>
+            </ul>
+            </li>
+            
+            <li class="dropdown">
+            <a href="#"><span>Business Solutions</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+                <li class="dropdown">
+                <a href="#"><span>ERP</span> <i class="bi bi-chevron-right toggle-dropdown"></i></a>
+                <ul>
+                    <li><a href="#">Oracle ERP Cloud</a></li>
+                </ul>
+                </li>
+                <li class="dropdown">
+                <a href="#"><span>EPM</span> <i class="bi bi-chevron-right toggle-dropdown"></i></a>
+                <ul>
+                    <li><a href="#">Oracle EPM Cloud</a></li>
+                </ul>
+                </li>
+                <li><a href="#">CPM</a></li>
+                <li><a href="#">CRM</a></li>
+                <li class="dropdown">
+                <a href="#"><span>SCM</span> <i class="bi bi-chevron-right toggle-dropdown"></i></a>
+                <ul>
+                    <li><a href="#">Oracle SCM Cloud</a></li>
+                </ul>
+                </li>
+                <li><a href="#">HCM</a></li>
+                <li><a href="#">Oracle PaaS Cloud</a></li>
+            </ul>
+            </li>
+            
+            <li class="dropdown">
+            <a href="#"><span>Services</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+                <li><a href="#">Training</a></li>
+                <li><a href="support.html">Support</a></li>
+                <li><a href="consulting.html#services">Consulting</a></li>
+                <li><a href="#">Implementation & Deployment</a></li>
+                <li><a href="support.html#services">Infrastructure Support</a></li>
+                <li><a href="developmentServices.html#application-development">Application Maintenance</a></li>
+                <li><a href="support.html#services">Application Development</a></li>
+                <li><a href="developmentServices.html#api">API Development</a></li>
+                <li><a href="support.html#services">Customer Software Support</a></li>
+                <li><a href="#">DevOps</a></li>
+                <li><a href="consulting.html#services">Digital Transformation</a></li>
+                <li><a href="consulting.html#services">Migrations & Upgrades</a></li>
+                <li><a href="support.html#services">Partner Product Support</a></li>
+                <li><a href="developmentServices.html#mvp">Startup & MVP Services</a></li>
+                <li><a href="developmentServices.html#system">System Integration</a></li>
+                <li><a href="#">PLM</a></li>
+                <li><a href="#">QA Testing</a></li>
+            </ul>
+            </li>
+            
+            <li class="dropdown">
+            <a href="#"><span>Development</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+                <li><a href="#">Digital Marketing</a></li>
+                <li class="dropdown">
+                <a href="#"><span>Web Development</span> <i class="bi bi-chevron-right toggle-dropdown"></i></a>
+                <ul>
+                    <li><a href="#">MERN Stack</a></li>
+                    <li><a href="#">HTML, CSS, JavaScript</a></li>
+                    <li><a href="#">Python, PHP</a></li>
+                </ul>
+                </li>
+                <li><a href="#">Mobile App Development</a></li>
+                <li class="dropdown">
+                <a href="#"><span>Databases</span> <i class="bi bi-chevron-right toggle-dropdown"></i></a>
+                <ul>
+                    <li><a href="#">Oracle</a></li>
+                    <li><a href="#">SQL Server</a></li>
+                    <li><a href="#">Teradata</a></li>
+                    <li><a href="#">MySQL</a></li>
+                    <li><a href="#">PostgreSQL</a></li>
+                    <li><a href="#">Sybase</a></li>
+                </ul>
+                </li>
+            </ul>
+            </li>
+            
+            <li class="dropdown">
+            <a href="#"><span>Industries</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+                <li><a href="#">Defence</a></li>
+                <li><a href="#">Aerospace</a></li>
+                <li><a href="#">Space Technology</a></li>
+                <li><a href="#">High Tech</a></li>
+                <li><a href="#">Education</a></li>
+                <li><a href="#">Healthcare</a></li>
+                <li><a href="#">Telecommunication</a></li>
+                <li><a href="#">BFSI</a></li>
+                <li><a href="#">Agri-Tech</a></li>
+                <li><a href="#">Manufacturing</a></li>
+                <li><a href="#">Industrial</a></li>
+                <li><a href="#">Civil/Construction</a></li>
+                <li><a href="#">Metallurgy</a></li>
+                <li><a href="#">Computers/IT</a></li>
+                <li><a href="#">Semiconductors</a></li>
+                <li><a href="#">Electrical/Electronics</a></li>
+                <li><a href="#">Media & Entertainment</a></li>
+            </ul>
+            </li>
+            
+            <li class="dropdown">
+                <a href="affiliate.html"><span>Affiliates</span> </a>
+            </li>
+            
+            <li class="dropdown">
+            <a href="#"><span>Projects</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+                <li><a href="#">Educational Projects</a></li>
+                <li><a href="#">Industry Projects</a></li>
+                <li><a href="#">Technology Case Studies</a></li>
+                <li><a href="#">Integration Projects</a></li>
+                <li><a href="#">Contract Projects</a></li>
+                <li><a href="#">Corp to Corp Projects</a></li>
+                <li><a href="#">Offshore/Remote Projects</a></li>
+                <li><a href="#">Training Projects</a></li>
+            </ul>
+            </li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        </nav>
+
+        <div class="header-social-links">
+        <a href="https://x.com/BeeOptic?t=9XDIJ7pA-ZHlrJaPQkSm_Q&s=09" class="twitter"><i class="bi bi-twitter-x"></i></a>
+        <a href="https://www.facebook.com/share/1AeUNhhRDu/" class="facebook"><i class="bi bi-facebook"></i></a>
+        <a href="https://www.instagram.com/optic.bee?igsh=M3lpc2U5ajFpYTA1" class="instagram"><i class="bi bi-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/optic-bee-246554375?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="linkedin"><i class="bi bi-linkedin"></i></a>
+        </div>
+
+    </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center" data-aos="fade-up">
+                    <h1 class="display-4 fw-bold mb-4 text-white">Comprehensive Support & Maintenance Services</h1>
+                    <p class="lead mb-4">Ensuring your technology infrastructure operates at peak performance with 24/7 expert support, proactive maintenance, and rapid issue resolution.</p>
+                    <a href="contact.html" class="btn btn-primary btn-lg px-5 py-3 hover-shine">Get Support Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Overview -->
+    <section class="py-5 bg-light" id="services">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-lg-6 mx-auto text-center mb-5">
+                    <h2 class="section-title center">Our Support Services</h2>
+                    <p class="lead">We provide comprehensive technology support solutions tailored to your business needs, ensuring maximum uptime and optimal performance.</p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-card card h-100">
+                        <div class="card-body text-center p-4">
+                            <div class="service-icon">
+                                <i class="fas fa-server"></i>
+                            </div>
+                            <h3 class="h4">Infrastructure Support</h3>
+                            <p class="text-muted">Comprehensive management of your hardware, networks, servers, and cloud infrastructure with 24/7 monitoring and rapid response.</p>
+                            <ul class="list-unstyled text-start mt-4">
+                                <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> Network monitoring & management</li>
+                                <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> Server maintenance & optimization</li>
+                                <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> Cloud infrastructure management</li>
+                                <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> Disaster recovery planning</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-card card h-100">
+                        <div class="card-body text-center p-4">
+                            <div class="service-icon">
+                                <i class="fas fa-mobile-alt"></i>
+                            </div>
+                            <h3 class="h4">Application Maintenance</h3>
+                            <p class="text-muted">Ensure your software applications remain updated, secure, and performant with our proactive maintenance and enhancement services.</p>
+                            <ul class="list-unstyled text-start mt-4">
+                                <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> Regular updates & patching</li>
+                                <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> Performance optimization</li>
+                                <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> Bug fixes & troubleshooting</li>
+                                <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> Security enhancements</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-card card h-100">
+                        <div class="card-body text-center p-4">
+                            <div class="service-icon">
+                                <i class="fas fa-laptop-code"></i>
+                            </div>
+                            <h3 class="h4">Custom Software Support</h3>
+                            <p class="text-muted">Dedicated support for your bespoke software solutions, including feature enhancements, troubleshooting, and user training.</p>
+                            <ul class="list-unstyled text-start mt-4">
+                                <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> Custom feature development</li>
+                                <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> User training & documentation</li>
+                                <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> API integration support</li>
+                                <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> Code optimization</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
+                    <div class="service-card card h-100">
+                        <div class="card-body text-center p-4">
+                            <div class="service-icon">
+                                <i class="fas fa-handshake"></i>
+                            </div>
+                            <h3 class="h4">Partner Product Support</h3>
+                            <p class="text-muted">Expert support for third-party products and platforms integrated with your systems, ensuring seamless operation and compatibility.</p>
+                            <ul class="list-unstyled text-start mt-4">
+                                <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> Third-party software support</li>
+                                <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> Vendor coordination</li>
+                                <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> Integration maintenance</li>
+                                <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> License management</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="py-5">
+        <div class="container py-5">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-5 mb-lg-0" data-aos="fade-right">
+                    <h2 class="section-title mb-4">Benefits of Our Support Services</h2>
+                    <p class="lead">Our comprehensive support solutions deliver tangible value to your organization through enhanced efficiency, reduced costs, and improved reliability.</p>
+                    
+                    <div class="benefit-item">
+                        <h4><i class="fas fa-chart-line text-primary me-2"></i> Increased Operational Efficiency</h4>
+                        <p>Minimize downtime and maximize productivity with proactive monitoring and rapid issue resolution.</p>
+                    </div>
+                    
+                    <div class="benefit-item">
+                        <h4><i class="fas fa-shield-alt text-primary me-2"></i> Enhanced Security Posture</h4>
+                        <p>Protect your systems and data with regular security updates, vulnerability assessments, and threat mitigation.</p>
+                    </div>
+                    
+                    <div class="benefit-item">
+                        <h4><i class="fas fa-dollar-sign text-primary me-2"></i> Cost Optimization</h4>
+                        <p>Reduce total cost of ownership through predictable budgeting and preventing costly emergency repairs.</p>
+                    </div>
+                    
+                    <div class="benefit-item">
+                        <h4><i class="fas fa-rocket text-primary me-2"></i> Scalability & Future-Proofing</h4>
+                        <p>Easily scale your infrastructure and applications as your business grows with our expert guidance.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left">
+                    <img src="images/supportservice.png" alt="Benefits of IT Support" class="img-fluid rounded shadow">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="py-5 bg-light">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center mb-5">
+                    <h2 class="section-title center">Our Support Process</h2>
+                    <p class="lead">A structured approach to ensuring your technology needs are met efficiently and effectively</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-10 mx-auto">
+                    <div class="process-step" data-aos="fade-up">
+                        <span class="step-number">01</span>
+                        <h3>Initial Assessment & Planning</h3>
+                        <p>We begin with a comprehensive analysis of your current infrastructure, applications, and support needs. Our team identifies potential risks, areas for improvement, and develops a customized support plan aligned with your business objectives.</p>
+                    </div>
+                    
+                    <div class="process-step" data-aos="fade-up">
+                        <span class="step-number">02</span>
+                        <h3>Implementation & Integration</h3>
+                        <p>Our experts deploy monitoring tools, establish communication channels, and integrate with your systems. We ensure minimal disruption to your operations while setting up the necessary infrastructure for ongoing support.</p>
+                    </div>
+                    
+                    <div class="process-step" data-aos="fade-up">
+                        <span class="step-number">03</span>
+                        <h3>Proactive Monitoring & Maintenance</h3>
+                        <p>Using advanced monitoring tools, we continuously track system performance, security threats, and potential issues. Regular maintenance tasks are performed to prevent problems before they impact your business.</p>
+                    </div>
+                    
+                    <div class="process-step" data-aos="fade-up">
+                        <span class="step-number">04</span>
+                        <h3>Rapid Response & Issue Resolution</h3>
+                        <p>When issues arise, our support team springs into action with clearly defined escalation paths and resolution procedures. We prioritize problems based on impact and work diligently to restore normal operations.</p>
+                    </div>
+                    
+                    <div class="process-step" data-aos="fade-up">
+                        <span class="step-number">05</span>
+                        <h3>Continuous Improvement & Reporting</h3>
+                        <p>We provide detailed reports on system performance, resolved issues, and recommendations for enhancement. Our team continuously refines processes based on feedback and changing business needs.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="py-5">
+        <div class="container py-5">
+            <div class="row text-center">
+                <div class="col-md-3 col-6 mb-4" data-aos="fade-up">
+                    <div class="stats-number">99.9%</div>
+                    <p class="text-muted">Uptime Guarantee</p>
+                </div>
+                <div class="col-md-3 col-6 mb-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="stats-number">24/7</div>
+                    <p class="text-muted">Support Availability</p>
+                </div>
+                <div class="col-md-3 col-6 mb-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="stats-number">15</div>
+                    <p class="text-muted">Min Average Response Time</p>
+                </div>
+                <div class="col-md-3 col-6 mb-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="stats-number">200+</div>
+                    <p class="text-muted">Satisfied Clients</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-5 bg-light">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-lg-6 mx-auto text-center mb-5">
+                    <h2 class="section-title center">Key Features of Our Support</h2>
+                    <p class="lead">What sets our support and maintenance services apart from the competition</p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6" data-aos="fade-up">
+                    <div class="d-flex">
+                        <div class="feature-icon">
+                            <i class="fas fa-headset"></i>
+                        </div>
+                        <div class="ms-4">
+                            <h3>Dedicated Support Team</h3>
+                            <p class="text-muted">Assign a dedicated team of experts familiar with your systems and business needs, ensuring consistent, high-quality support.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="d-flex">
+                        <div class="feature-icon">
+                            <i class="fas fa-bell"></i>
+                        </div>
+                        <div class="ms-4">
+                            <h3>Proactive Alerting</h3>
+                            <p class="text-muted">Receive notifications about potential issues before they impact your operations, allowing for preventive action.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="d-flex">
+                        <div class="feature-icon">
+                            <i class="fas fa-chart-pie"></i>
+                        </div>
+                        <div class="ms-4">
+                            <h3>Comprehensive Reporting</h3>
+                            <p class="text-muted">Access detailed reports on system performance, support metrics, and improvement recommendations.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="d-flex">
+                        <div class="feature-icon">
+                            <i class="fas fa-sync-alt"></i>
+                        </div>
+                        <div class="ms-4">
+                            <h3>Continuous Improvement</h3>
+                            <p class="text-muted">Benefit from ongoing optimization of your systems based on performance data and evolving business requirements.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6" data-aos="fade-up" data-aos-delay="400">
+                    <div class="d-flex">
+                        <div class="feature-icon">
+                            <i class="fas fa-lock"></i>
+                        </div>
+                        <div class="ms-4">
+                            <h3>Enhanced Security</h3>
+                            <p class="text-muted">Regular security updates, vulnerability scanning, and compliance monitoring to protect your systems and data.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6" data-aos="fade-up" data-aos-delay="500">
+                    <div class="d-flex">
+                        <div class="feature-icon">
+                            <i class="fas fa-cogs"></i>
+                        </div>
+                        <div class="ms-4">
+                            <h3>Customizable SLAs</h3>
+                            <p class="text-muted">Tailor service level agreements to match your specific business requirements and priorities.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-5">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center mb-5">
+                    <h2 class="section-title center">What Our Clients Say</h2>
+                    <p class="lead">Hear from businesses that have transformed their operations with our support services</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-10 mx-auto">
+                    <div class="testimonial-card" data-aos="fade-up">
+                        <div class="d-flex align-items-center">
+                            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Client" class="testimonial-avatar">
+                            <div>
+                                <h4 class="mb-1">Michael Thompson</h4>
+                                <p class="text-muted mb-0">CTO, TechInnovate Solutions</p>
+                            </div>
+                        </div>
+                        <p class="mt-4">"The infrastructure support team has been instrumental in maintaining our mission-critical systems. Their proactive approach has reduced our downtime by 75% and their rapid response to issues has saved us countless hours of productivity."</p>
+                        <div class="text-warning">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="d-flex align-items-center">
+                            <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Client" class="testimonial-avatar">
+                            <div>
+                                <h4 class="mb-1">Sarah Johnson</h4>
+                                <p class="text-muted mb-0">IT Director, Global Retail Inc.</p>
+                            </div>
+                        </div>
+                        <p class="mt-4">"Their application maintenance service has transformed how we manage our software ecosystem. Regular updates, performance optimization, and their attention to security have given us peace of mind and allowed our team to focus on innovation rather than firefighting."</p>
+                        <div class="text-warning">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-5 bg-light">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <h2 class="section-title text-center mb-5">Frequently Asked Questions</h2>
+                    
+                    <div class="faq-item" data-aos="fade-up">
+                        <div class="faq-question" onclick="toggleFaq(this)">
+                            What response time can I expect for critical issues? <i class="fas fa-chevron-down float-end"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>For critical issues (P1 incidents affecting business operations), we guarantee an initial response within 15 minutes and continuous effort until resolution. Our SLA defines specific response times based on issue severity, ensuring appropriate attention to all problems.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item" data-aos="fade-up">
+                        <div class="faq-question" onclick="toggleFaq(this)">
+                            Do you provide 24/7 support coverage? <i class="fas fa-chevron-down float-end"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Yes, we offer round-the-clock support with our follow-the-sun model and dedicated night teams. Our support engineers are available 24/7/365 to address urgent issues, with full coverage during holidays and weekends.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item" data-aos="fade-up">
+                        <div class="faq-question" onclick="toggleFaq(this)">
+                            How do you handle security updates and patches? <i class="fas fa-chevron-down float-end"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>We follow a structured patch management process that includes evaluating patches for criticality, testing in non-production environments, scheduling deployments during maintenance windows, and validating successful implementation. Emergency security patches are expedited based on threat severity.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item" data-aos="fade-up">
+                        <div class="faq-question" onclick="toggleFaq(this)">
+                            Can you support our custom-built applications? <i class="fas fa-chevron-down float-end"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Absolutely. Our team includes experts in various technologies and frameworks. We begin with a knowledge transfer process to understand your custom applications, then provide ongoing support, troubleshooting, and enhancement services tailored to your specific needs.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item" data-aos="fade-up">
+                        <div class="faq-question" onclick="toggleFaq(this)">
+                            What reporting will I receive on support activities? <i class="fas fa-chevron-down float-end"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>We provide comprehensive monthly reports including incident metrics (volume, resolution times, etc.), system performance data, security status, completed maintenance activities, and recommendations for improvement. Custom reports can be developed based on your specific requirements.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center" data-aos="zoom-in">
+                    <h2 class="display-5 fw-bold mb-4">Ready to Transform Your Support Experience?</h2>
+                    <p class="lead mb-5">Join hundreds of satisfied clients who have experienced the difference of our comprehensive support and maintenance services.</p>
+                    <a href="contact.html" class="btn btn-light btn-lg px-5 py-3 hover-shine">Get Started Today</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Initialize animations
+        document.addEventListener('DOMContentLoaded', function() {
+            AOS.init({
+                duration: 1000,
+                easing: 'ease-in-out',
+                once: true,
+                mirror: false
+            });
+            
+            // Animate stats counting
+            const statsElements = document.querySelectorAll('.stats-number');
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        animateValue(entry.target, 0, parseInt(entry.target.textContent), 2000);
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.5 });
+            
+            statsElements.forEach(el => observer.observe(el));
+        });
+        
+        // Function to toggle FAQ items
+        function toggleFaq(element) {
+            const faqItem = element.parentElement;
+            faqItem.classList.toggle('faq-active');
+            
+            const icon = element.querySelector('i');
+            if (faqItem.classList.contains('faq-active')) {
+                icon.classList.remove('fa-chevron-down');
+                icon.classList.add('fa-chevron-up');
+            } else {
+                icon.classList.remove('fa-chevron-up');
+                icon.classList.add('fa-chevron-down');
+            }
+        }
+        
+        // Function to animate counting numbers
+        function animateValue(obj, start, end, duration) {
+            let startTimestamp = null;
+            const step = (timestamp) => {
+                if (!startTimestamp) startTimestamp = timestamp;
+                const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+                obj.innerHTML = Math.floor(progress * (end - start) + start);
+                if (progress < 1) {
+                    window.requestAnimationFrame(step);
+                }
+            };
+            window.requestAnimationFrame(step);
+        }
+    </script>
+
+
+    <footer id="footer" class="footer dark-background">
+
+        <div class="container footer-top">
+        <div class="row gy-4">
+            <div class="col-lg-4 col-md-6 footer-about">
+            <a href="index.html" class="logo d-flex align-items-center">
+                <span class="sitename">Optic Bee</span>
+            </a>
+            <div class="footer-contact pt-3">
+                <p>plot 21, flat 102, CVR Residency</p>
+                <p>Pragathi Nagar, Hyderabad, IN 500090</p>
+                <p class="mt-3"><strong>Phone:</strong> <span>+91 99087 93602</span></p>
+                <p><strong>Email:</strong> <span>support@opticbee.in</span></p>
+            </div>
+            <div class="social-links d-flex mt-4">
+                <a href="https://x.com/BeeOptic?t=9XDIJ7pA-ZHlrJaPQkSm_Q&s=09"><i class="bi bi-twitter-x"></i></a>
+                <a href="https://www.facebook.com/share/1AeUNhhRDu/"><i class="bi bi-facebook"></i></a>
+                <a href="https://www.instagram.com/optic.bee?igsh=M3lpc2U5ajFpYTA1"><i class="bi bi-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/optic-bee-246554375?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="bi bi-linkedin"></i></a>
+            </div>
+            </div>
+
+            <div class="col-lg-2 col-md-3 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="">Terms of service</a></li>
+                <li><a href="#">Privacy policy</a></li>
+            </ul>
+            </div>
+
+            <div class="col-lg-2 col-md-3 footer-links">
+            <h4>Our Services</h4>
+            <ul>
+                <li><a href="#">Web Design</a></li>
+                <li><a href="#">Web Development</a></li>
+                <li><a href="#">Product Management</a></li>
+                <li><a href="#">Marketing</a></li>
+                <li><a href="#">Graphic Design</a></li>
+            </ul>
+            </div>
+
+            <div class="col-lg-4 col-md-12 footer-newsletter">
+            <h4>Our Newsletter</h4>
+            <p>Subscribe to our newsletter and receive the latest news about our products and services!</p>
+            <form action="forms/newsletter.php" method="post" class="php-email-form">
+                <div class="newsletter-form"><input type="email" name="email"><input type="submit" value="Subscribe"></div>
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your subscription request has been sent. Thank you!</div>
+            </form>
+            </div>
+
+        </div>
+        </div>
+
+        <div class="container copyright text-center mt-4">
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">Optic Bee</strong> <span>All Rights Reserved</span></p>
+        <div class="credits"></div>
+        </div>
+
+    </footer>
+
+    <!-- Scroll Top -->
+    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+    <!-- Preloader -->
+    <div id="preloader"></div>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Main JS File -->
+    <script src="assets/js/main.js"></script>
+
+</body>
+</html>

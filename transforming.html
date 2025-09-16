@@ -1,0 +1,887 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Services | Opticbee - Engineering, DevOps, QA Testing & More</title>
+    <meta name="description" content="Opticbee offers comprehensive professional services including Engineering, Implementation, DevOps, QA Testing, PLM, and Training solutions for businesses.">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+      <!-- Favicons -->
+  <link href="images/favicon.ico" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #2c3e50;
+            --secondary: #3498db;
+            --accent: #e74c3c;
+            --light: #ecf0f1;
+            --dark: #2c3e50;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            color: #333;
+            overflow-x: hidden;
+        }
+        
+        .section-title {
+            position: relative;
+            margin-bottom: 45px;
+            font-weight: 700;
+        }
+        
+        .section-title:after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 4px;
+            background: var(--secondary);
+            margin-top: 15px;
+        }
+        
+        .section-title.center:after {
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .hero-section {
+            background: linear-gradient(135deg, var(--primary) 0%, #1a2530 100%);
+            color: white;
+            padding: 100px 0;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero-section:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 320'%3E%3Cpath fill='%23ffffff' fill-opacity='0.1' d='M0,224L48,213.3C96,203,192,181,288,160C384,139,480,117,576,122.7C672,128,768,160,864,170.7C960,181,1056,171,1152,165.3C1248,160,1344,160,1392,160L1440,160L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z'%3E%3C/path%3E%3C/svg%3E");
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .service-card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            transition: all 0.4s ease;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+            height: 100%;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+        }
+        
+        .service-icon {
+            font-size: 3rem;
+            color: var(--secondary);
+            margin-bottom: 20px;
+            transition: all 0.3s ease;
+        }
+        
+        .service-card:hover .service-icon {
+            color: var(--accent);
+            transform: scale(1.1);
+        }
+        
+        .counter-section {
+            background: linear-gradient(135deg, var(--secondary) 0%, #2980b9 100%);
+            color: white;
+            padding: 80px 0;
+        }
+        
+        .counter-item {
+            text-align: center;
+        }
+        
+        .counter {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+        
+        .process-step {
+            position: relative;
+            padding-left: 80px;
+            margin-bottom: 40px;
+        }
+        
+        .step-number {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 60px;
+            height: 60px;
+            background: var(--secondary);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+        
+        .testimonial-card {
+            background: white;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            margin: 15px;
+        }
+        
+        .testimonial-text {
+            font-style: italic;
+            margin-bottom: 20px;
+        }
+        
+        .client-image {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin-right: 15px;
+        }
+        
+        .cta-section {
+            background: linear-gradient(135deg, var(--primary) 0%, #1a2530 100%);
+            color: white;
+            padding: 80px 0;
+            text-align: center;
+        }
+        
+        .btn-primary {
+            background-color: var(--secondary);
+            border-color: var(--secondary);
+            padding: 12px 30px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-primary:hover {
+            background-color: var(--accent);
+            border-color: var(--accent);
+            transform: translateY(-3px);
+        }
+        
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .animate {
+            opacity: 0;
+        }
+        
+        .fadeInUp {
+            animation: fadeInUp 0.8s forwards;
+        }
+        
+        .delay-1 {
+            animation-delay: 0.2s;
+        }
+        
+        .delay-2 {
+            animation-delay: 0.4s;
+        }
+        
+        .delay-3 {
+            animation-delay: 0.6s;
+        }
+        
+        .delay-4 {
+            animation-delay: 0.8s;
+        }
+        .hero-fixed {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            z-index: -1; /* push background behind content */
+        }
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .hero-section {
+                padding: 60px 0;
+            }
+            
+            .section-title {
+                font-size: 1.8rem;
+            }
+            
+            .process-step {
+                padding-left: 0;
+                padding-top: 70px;
+                text-align: center;
+            }
+            
+            .step-number {
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+    </style>
+</head>
+<body>
+
+
+<header id="header" class="header d-flex align-items-center sticky-top">
+  <div class="container position-relative d-flex align-items-center">
+
+    <a href="index.html" class="logo d-flex align-items-center me-auto">
+      <img src="images/oblogo.png" alt="Official logo" class="navbar-logo">
+      <h1 class="sitename">Optic Bee</h1>
+    </a>
+
+
+    <nav id="navmenu" class="navmenu">
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        
+        <li class="dropdown">
+          <a href="technologies.html"><span>Technologies</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+          <ul>
+            <li><a href="emerging-tech.html#programming">Programming Languages</a></li>
+            <li><a href="ai.html#ai">Artificial Intelligence</a></li>
+            <li><a href="ai.html#prompt-engineering">Prompt Engineering</a></li>
+            <li><a href="cloud-computing.html#edge">Quantum & Edge Computing</a></li>
+            <li><a href="connectivity-iot.html#5g">5G & Connectivity</a></li>
+            <li><a href="emerging-tech.html#xr">Extended Reality (VR/AR)</a></li>
+            <li><a href="connectivity-iot.html#digital-twins">Digital Twins</a></li>
+            <li><a href="connectivity-iot.html#blockchain">Blockchain</a></li>
+            <li><a href="connectivity-iot.html#iot">IOT/IIoT</a></li>
+            <li><a href="cloud-computing.html#cloud">Cloud</a></li>
+            <li><a href="cloud-computing.html#bigdata">Big Data Analytics</a></li>
+            <li><a href="cloud-computing.html#integration">Integration Services</a></li>
+            <li><a href="emerging-tech.html#3d-printing">3D Printing</a></li>
+            <li><a href="emerging-tech.html#rpa">RPA</a></li>
+            <li><a href="ai.html#robotics">Advanced Robotics</a></li>
+            <li><a href="ai.html#cybersecurity">AI in Cybersecurity</a></li>
+          </ul>
+        </li>
+        
+        <li class="dropdown">
+          <a href="#"><span>Business Solutions</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+          <ul>
+            <li class="dropdown">
+              <a href="#"><span>ERP</span> <i class="bi bi-chevron-right toggle-dropdown"></i></a>
+              <ul>
+                <li><a href="#">Oracle ERP Cloud</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#"><span>EPM</span> <i class="bi bi-chevron-right toggle-dropdown"></i></a>
+              <ul>
+                <li><a href="#">Oracle EPM Cloud</a></li>
+              </ul>
+            </li>
+            <li><a href="#">CPM</a></li>
+            <li><a href="#">CRM</a></li>
+            <li class="dropdown">
+              <a href="#"><span>SCM</span> <i class="bi bi-chevron-right toggle-dropdown"></i></a>
+              <ul>
+                <li><a href="#">Oracle SCM Cloud</a></li>
+              </ul>
+            </li>
+            <li><a href="#">HCM</a></li>
+            <li><a href="#">Oracle PaaS Cloud</a></li>
+          </ul>
+        </li>
+        
+        <li class="dropdown">
+          <a href="#"><span>Services</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+          <ul>
+            <li><a href="transforming.html#services">Training</a></li>
+            <li><a href="support.html">Support</a></li>
+            <li><a href="consulting.html#services">Consulting</a></li>
+            <li><a href="transforming.html#services">Implementation & Deployment</a></li>
+            <li><a href="support.html#services">Infrastructure Support</a></li>
+            <li><a href="developmentServices.html#application-development">Application Maintenance</a></li>
+            <li><a href="support.html#services">Application Development</a></li>
+            <li><a href="developmentServices.html#api">API Development</a></li>
+            <li><a href="support.html#services">Customer Software Support</a></li>
+            <li><a href="transforming.html#services">DevOps</a></li>
+            <li><a href="consulting.html#services">Digital Transformation</a></li>
+            <li><a href="consulting.html#services">Migrations & Upgrades</a></li>
+            <li><a href="support.html#services">Partner Product Support</a></li>
+            <li><a href="developmentServices.html#mvp">Startup & MVP Services</a></li>
+            <li><a href="developmentServices.html#system">System Integration</a></li>
+            <li><a href="transforming.html#services">PLM</a></li>
+            <li><a href="transforming.html#services">QA Testing</a></li>
+          </ul>
+        </li>
+        
+        <li class="dropdown">
+          <a href="#"><span>Development</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+          <ul>
+            <li><a href="#">Digital Marketing</a></li>
+            <li class="dropdown">
+              <a href="#"><span>Web Development</span> <i class="bi bi-chevron-right toggle-dropdown"></i></a>
+              <ul>
+                <li><a href="#">MERN Stack</a></li>
+                <li><a href="#">HTML, CSS, JavaScript</a></li>
+                <li><a href="#">Python, PHP</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Mobile App Development</a></li>
+            <li class="dropdown">
+              <a href="#"><span>Databases</span> <i class="bi bi-chevron-right toggle-dropdown"></i></a>
+              <ul>
+                <li><a href="#">Oracle</a></li>
+                <li><a href="#">SQL Server</a></li>
+                <li><a href="#">Teradata</a></li>
+                <li><a href="#">MySQL</a></li>
+                <li><a href="#">PostgreSQL</a></li>
+                <li><a href="#">Sybase</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        
+        <li class="dropdown">
+          <a href="#"><span>Industries</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+          <ul>
+            <li><a href="#">Defence</a></li>
+            <li><a href="#">Aerospace</a></li>
+            <li><a href="#">Space Technology</a></li>
+            <li><a href="#">High Tech</a></li>
+            <li><a href="#">Education</a></li>
+            <li><a href="#">Healthcare</a></li>
+            <li><a href="#">Telecommunication</a></li>
+            <li><a href="#">BFSI</a></li>
+            <li><a href="#">Agri-Tech</a></li>
+            <li><a href="#">Manufacturing</a></li>
+            <li><a href="#">Industrial</a></li>
+            <li><a href="#">Civil/Construction</a></li>
+            <li><a href="#">Metallurgy</a></li>
+            <li><a href="#">Computers/IT</a></li>
+            <li><a href="#">Semiconductors</a></li>
+            <li><a href="#">Electrical/Electronics</a></li>
+            <li><a href="#">Media & Entertainment</a></li>
+          </ul>
+        </li>
+        
+        <li class="dropdown">
+            <a href="affiliate.html"><span>Affiliates</span> </a>
+        </li>
+        
+        <li class="dropdown">
+          <a href="#"><span>Projects</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+          <ul>
+            <li><a href="#">Educational Projects</a></li>
+            <li><a href="#">Industry Projects</a></li>
+            <li><a href="#">Technology Case Studies</a></li>
+            <li><a href="#">Integration Projects</a></li>
+            <li><a href="#">Contract Projects</a></li>
+            <li><a href="#">Corp to Corp Projects</a></li>
+            <li><a href="#">Offshore/Remote Projects</a></li>
+            <li><a href="#">Training Projects</a></li>
+          </ul>
+        </li>
+      </ul>
+      <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+    </nav>
+
+    <div class="header-social-links">
+      <a href="https://x.com/BeeOptic?t=9XDIJ7pA-ZHlrJaPQkSm_Q&s=09" class="twitter"><i class="bi bi-twitter-x"></i></a>
+      <a href="https://www.facebook.com/share/1AeUNhhRDu/" class="facebook"><i class="bi bi-facebook"></i></a>
+      <a href="https://www.instagram.com/optic.bee?igsh=M3lpc2U5ajFpYTA1" class="instagram"><i class="bi bi-instagram"></i></a>
+      <a href="https://www.linkedin.com/in/optic-bee-246554375?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="linkedin"><i class="bi bi-linkedin"></i></a>
+    </div>
+
+  </div>
+</header>
+
+<!-- Hero Section -->
+<section class="hero-section d-flex align-items-center text-center hero-stick" 
+         style="background: url('images/innovative.png') no-repeat center center/cover; height: 60vh; color: #fff;">
+    
+    <!-- Optional Dark Overlay for Readability -->
+    <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.5); z-index: 1;"></div>
+
+    <div class="container position-relative z-2">
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+                <h1 class="display-4 fw-bold mb-4 animate fadeInUp text-white">
+                    Transforming Businesses Through <span class="text-warning">Innovative Solutions</span>
+                </h1>
+                <p class="lead mb-4 animate fadeInUp delay-1">
+                    Opticbee delivers comprehensive professional services that drive digital transformation, 
+                    enhance operational efficiency, and accelerate growth for organizations worldwide.
+                </p>
+                <a href="#services" class="btn btn-light btn-lg px-5 py-3 fw-bold animate fadeInUp delay-2">
+                    Explore Our Services
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Services Section -->
+<section id="services" class="py-5">
+    <div class="container py-5">
+        <div class="row">
+            <div class="col-lg-8 mx-auto text-center mb-5">
+                <h2 class="section-title center animate fadeInUp">Our Professional Services</h2>
+                <p class="lead animate fadeInUp delay-1">We offer end-to-end solutions that empower businesses to thrive in the digital age. Our comprehensive service portfolio is designed to address every aspect of your technology needs.</p>
+            </div>
+        </div>
+        
+        <!-- Engineering & Delivery -->
+        <div class="row mb-5 align-items-center">
+            <div class="col-lg-6 animate fadeInUp">
+                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 400'%3E%3Crect x='0' y='0' width='600' height='400' fill='%23f8f9fa'/%3E%3Cpath d='M150,200 L250,100 L450,300 L350,400 Z' fill='%233498db' opacity='0.2'/%3E%3Cpath d='M100,150 L200,50 L500,350 L400,450 Z' fill='none' stroke='%232c3e50' stroke-width='3'/%3E%3Ccircle cx='300' cy='200' r='80' fill='none' stroke='%23e74c3c' stroke-width='5'/%3E%3Cpath d='M250,150 L350,250 M250,250 L350,150' stroke='%233498db' stroke-width='5'/%3E%3C/svg%3E" class="img-fluid rounded shadow" alt="Engineering & Delivery">
+            </div>
+            <div class="col-lg-6 animate fadeInUp delay-1">
+                <h3 class="mb-4"><i class="fas fa-cogs me-3 text-primary"></i> Engineering & Delivery</h3>
+                <p>Our Engineering & Delivery services provide robust, scalable, and innovative solutions tailored to your specific business requirements. We combine technical expertise with industry best practices to deliver exceptional results.</p>
+                <ul class="list-unstyled">
+                    <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> Full-cycle software development</li>
+                    <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> System architecture design</li>
+                    <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> Custom application development</li>
+                    <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> Legacy system modernization</li>
+                    <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> Quality assurance integration</li>
+                </ul>
+                <a href="#" class="btn btn-outline-primary mt-3">Learn More</a>
+            </div>
+        </div>
+        <hr>
+        
+        <!-- Implementation & Deployment -->
+        <div class="row mb-5 align-items-center flex-lg-row-reverse">
+            <div class="col-lg-6 animate fadeInUp">
+                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 400'%3E%3Crect x='0' y='0' width='600' height='400' fill='%23f8f9fa'/%3E%3Cpath d='M100,100 L500,100 L500,350 L100,350 Z' fill='%233498db' opacity='0.2'/%3E%3Cpath d='M150,150 L450,150 L450,300 L150,300 Z' fill='none' stroke='%232c3e50' stroke-width='3'/%3E%3Ccircle cx='300' cy='225' r='30' fill='%23e74c3c'/%3E%3Cpath d='M200,200 L250,200 M350,200 L400,200' stroke='%233498db' stroke-width='3'/%3E%3Cpath d='M200,250 L250,250 M350,250 L400,250' stroke='%233498db' stroke-width='3'/%3E%3C/svg%3E" class="img-fluid rounded shadow" alt="Implementation & Deployment">
+            </div>
+            <div class="col-lg-6 animate fadeInUp delay-1">
+                <h3 class="mb-4"><i class="fas fa-rocket me-3 text-primary"></i> Implementation & Deployment</h3>
+                <p>Our seamless Implementation & Deployment process ensures that your solutions are delivered on time, within budget, and with minimal disruption to your operations. We follow a structured approach to guarantee success.</p>
+                <ul class="list-unstyled">
+                    <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> Project planning and management</li>
+                    <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> System integration services</li>
+                    <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> Data migration and conversion</li>
+                    <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> Environment configuration</li>
+                    <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> Go-live support and transition</li>
+                </ul>
+                <a href="#" class="btn btn-outline-primary mt-3">Learn More</a>
+            </div>
+        </div>
+        <hr>
+        
+        <!-- DevOps -->
+        <div class="row mb-5 align-items-center">
+            <div class="col-lg-6 animate fadeInUp">
+                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 400'%3E%3Crect x='0' y='0' width='600' height='400' fill='%23f8f9fa'/%3E%3Ccircle cx='150' cy='150' r='80' fill='%233498db' opacity='0.2'/%3E%3Ccircle cx='450' cy='150' r='80' fill='%23e74c3c' opacity='0.2'/%3E%3Ccircle cx='300' cy='300' r='80' fill='%232c3e50' opacity='0.2'/%3E%3Cpath d='M150,150 L300,300 M450,150 L300,300' stroke='%232c3e50' stroke-width='3'/%3E%3Ccircle cx='150' cy='150' r='30' fill='%233498db'/%3E%3Ccircle cx='450' cy='150' r='30' fill='%23e74c3c'/%3E%3Ccircle cx='300' cy='300' r='30' fill='%232c3e50'/%3E%3C/svg%3E" class="img-fluid rounded shadow" alt="DevOps">
+            </div>
+            <div class="col-lg-6 animate fadeInUp delay-1">
+                <h3 class="mb-4"><i class="fas fa-code-branch me-3 text-primary"></i> DevOps</h3>
+                <p>Our DevOps practices bridge the gap between development and operations, enabling faster delivery of features, more frequent releases, and greater reliability. We implement automation and collaboration to streamline your software delivery process.</p>
+                <ul class="list-unstyled">
+                    <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> Continuous integration and deployment</li>
+                    <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> Infrastructure as code</li>
+                    <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> Automated testing and monitoring</li>
+                    <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> Containerization and orchestration</li>
+                    <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> Cloud infrastructure management</li>
+                </ul>
+                <a href="#" class="btn btn-outline-primary mt-3">Learn More</a>
+            </div>
+        </div>
+        <hr>
+        
+        <!-- QA Testing -->
+        <div class="row mb-5 align-items-center flex-lg-row-reverse">
+            <div class="col-lg-6 animate fadeInUp">
+                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 400'%3E%3Crect x='0' y='0' width='600' height='400' fill='%23f8f9fa'/%3E%3Cpath d='M100,100 L500,100 L500,300 L100,300 Z' fill='%233498db' opacity='0.2'/%3E%3Cpath d='M150,150 L250,150 L250,250 L150,250 Z' fill='%23e74c3c' opacity='0.5'/%3E%3Cpath d='M350,150 L450,150 L450,250 L350,250 Z' fill='%232c3e50' opacity='0.5'/%3E%3Cpath d='M150,150 L450,250 M150,250 L450,150' stroke='%232c3e50' stroke-width='3'/%3E%3C/svg%3E" class="img-fluid rounded shadow" alt="QA Testing">
+            </div>
+            <div class="col-lg-6 animate fadeInUp delay-1">
+                <h3 class="mb-4"><i class="fas fa-vial me-3 text-primary"></i> QA Testing</h3>
+                <p>Our comprehensive QA Testing services ensure that your software meets the highest standards of quality, reliability, and performance. We employ rigorous testing methodologies to identify and resolve issues before they impact your users.</p>
+                <ul class="list-unstyled">
+                    <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> Test strategy and planning</li>
+                    <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> Functional and regression testing</li>
+                    <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> Performance and load testing</li>
+                    <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> Security vulnerability assessment</li>
+                    <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> Test automation framework development</li>
+                </ul>
+                <a href="#" class="btn btn-outline-primary mt-3">Learn More</a>
+            </div>
+        </div>
+        <hr>
+        
+        <!-- PLM -->
+        <div class="row mb-5 align-items-center">
+            <div class="col-lg-6 animate fadeInUp">
+                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 400'%3E%3Crect x='0' y='0' width='600' height='400' fill='%23f8f9fa'/%3E%3Cpath d='M150,100 L450,100 L450,300 L150,300 Z' fill='%233498db' opacity='0.2'/%3E%3Ccircle cx='300' cy='200' r='100' fill='none' stroke='%232c3e50' stroke-width='3'/%3E%3Cpath d='M200,200 L400,200 M300,100 L300,300' stroke='%23e74c3c' stroke-width='3'/%3E%3Ccircle cx='200' cy='150' r='20' fill='%233498db'/%3E%3Ccircle cx='400' cy='150' r='20' fill='%233498db'/%3E%3Ccircle cx='200' cy='250' r='20' fill='%233498db'/%3E%3Ccircle cx='400' cy='250' r='20' fill='%233498db'/%3E%3C/svg%3E" class="img-fluid rounded shadow" alt="PLM">
+            </div>
+            <div class="col-lg-6 animate fadeInUp delay-1">
+                <h3 class="mb-4"><i class="fas fa-project-diagram me-3 text-primary"></i> Product Lifecycle Management (PLM)</h3>
+                <p>Our PLM solutions help you manage the entire lifecycle of a product from inception, through engineering design and manufacture, to service and disposal. We integrate people, data, processes, and business systems to provide a product information backbone.</p>
+                <ul class="list-unstyled">
+                    <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> Product data management</li>
+                    <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> Change management and configuration control</li>
+                    <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> Bill of materials management</li>
+                    <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> Quality management integration</li>
+                    <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> Supplier collaboration</li>
+                </ul>
+                <a href="#" class="btn btn-outline-primary mt-3">Learn More</a>
+            </div>
+        </div>
+        <hr>
+        
+        <!-- Training -->
+        <div class="row mb-5 align-items-center flex-lg-row-reverse">
+            <div class="col-lg-6 animate fadeInUp">
+                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 400'%3E%3Crect x='0' y='0' width='600' height='400' fill='%23f8f9fa'/%3E%3Cpath d='M100,100 L500,100 L500,300 L100,300 Z' fill='%233498db' opacity='0.2'/%3E%3Ccircle cx='300' cy='200' r='80' fill='none' stroke='%232c3e50' stroke-width='3'/%3E%3Cpath d='M250,150 L350,250 M250,250 L350,150' stroke='%23e74c3c' stroke-width='5'/%3E%3Ccircle cx='200' cy='150' r='30' fill='%233498db'/%3E%3Ccircle cx='400' cy='150' r='30' fill='%233498db'/%3E%3Ccircle cx='300' cy='250' r='30' fill='%233498db'/%3E%3C/svg%3E" class="img-fluid rounded shadow" alt="Training">
+            </div>
+            <div class="col-lg-6 animate fadeInUp delay-1">
+                <h3 class="mb-4"><i class="fas fa-chalkboard-teacher me-3 text-primary"></i> Training</h3>
+                <p>Our comprehensive Training programs equip your team with the knowledge and skills needed to maximize the value of your technology investments. We offer customized training solutions tailored to your specific needs and objectives.</p>
+                <ul class="list-unstyled">
+                    <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> Customized training curriculum development</li>
+                    <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> End-user training and certification</li>
+                    <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> Administrator and power user training</li>
+                    <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> Train-the-trainer programs</li>
+                    <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> Ongoing support and refresher courses</li>
+                </ul>
+                <a href="#" class="btn btn-outline-primary mt-3">Learn More</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Process Section -->
+<section class="py-5 bg-light">
+    <div class="container py-5">
+        <div class="row">
+            <div class="col-lg-8 mx-auto text-center mb-5">
+                <h2 class="section-title center animate fadeInUp">Our Proven Process</h2>
+                <p class="lead animate fadeInUp delay-1">We follow a structured approach to ensure successful delivery of projects and maximum value for our clients.</p>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-lg-10 mx-auto">
+                <div class="process-step animate fadeInUp">
+                    <div class="step-number">1</div>
+                    <h4>Discovery & Planning</h4>
+                    <p>We begin by thoroughly understanding your business objectives, challenges, and requirements. Our team collaborates with you to define project scope, goals, and success metrics, ensuring alignment with your strategic vision.</p>
+                </div>
+                
+                <div class="process-step animate fadeInUp delay-1">
+                    <div class="step-number">2</div>
+                    <h4>Design & Development</h4>
+                    <p>Our experts create innovative solutions tailored to your specific needs. We follow agile methodologies to develop, test, and refine solutions, ensuring they meet the highest standards of quality and performance.</p>
+                </div>
+                
+                <div class="process-step animate fadeInUp delay-2">
+                    <div class="step-number">3</div>
+                    <h4>Implementation & Integration</h4>
+                    <p>We deploy solutions with minimal disruption to your operations. Our team manages the entire implementation process, including data migration, system integration, and configuration, ensuring a smooth transition.</p>
+                </div>
+                
+                <div class="process-step animate fadeInUp delay-3">
+                    <div class="step-number">4</div>
+                    <h4>Training & Knowledge Transfer</h4>
+                    <p>We empower your team with the knowledge and skills needed to effectively use and maintain the new solutions. Our comprehensive training programs ensure rapid adoption and maximum return on investment.</p>
+                </div>
+                
+                <div class="process-step animate fadeInUp delay-4">
+                    <div class="step-number">5</div>
+                    <h4>Support & Optimization</h4>
+                    <p>Our relationship continues after implementation with ongoing support, maintenance, and optimization services. We help you continuously improve and adapt your solutions to meet evolving business needs.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Counter Section -->
+<section class="counter-section">
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-md-3 col-6 mb-5 mb-md-0">
+                <div class="counter-item animate fadeInUp">
+                    <div class="counter" data-count="250">0</div>
+                    <p>Projects Completed</p>
+                </div>
+            </div>
+            <div class="col-md-3 col-6 mb-5 mb-md-0">
+                <div class="counter-item animate fadeInUp delay-1">
+                    <div class="counter" data-count="98">0</div>
+                    <p>Client Satisfaction Rate</p>
+                </div>
+            </div>
+            <div class="col-md-3 col-6">
+                <div class="counter-item animate fadeInUp delay-2">
+                    <div class="counter" data-count="50">0</div>
+                    <p>Expert Team Members</p>
+                </div>
+            </div>
+            <div class="col-md-3 col-6">
+                <div class="counter-item animate fadeInUp delay-3">
+                    <div class="counter" data-count="15">0</div>
+                    <p>Years of Experience</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Testimonials Section -->
+<section class="py-5">
+    <div class="container py-5">
+        <div class="row">
+            <div class="col-lg-8 mx-auto text-center mb-5">
+                <h2 class="section-title center animate fadeInUp">What Our Clients Say</h2>
+                <p class="lead animate fadeInUp delay-1">We take pride in delivering exceptional value to our clients. Here's what they have to say about working with us.</p>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-lg-4 mb-4 animate fadeInUp">
+                <div class="testimonial-card">
+                    <div class="testimonial-text">
+                        "Opticbee's Engineering & Delivery team transformed our legacy systems into modern, scalable solutions. Their expertise and commitment to quality were evident throughout the project."
+                    </div>
+                    <div class="d-flex align-items-center">
+                        <div class="client-image bg-primary rounded-circle d-flex align-items-center justify-content-center text-white">
+                            <i class="fas fa-user fa-2x"></i>
+                        </div>
+                        <div>
+                            <h5 class="mb-0">John Smith</h5>
+                            <p class="text-muted mb-0">CTO, TechCorp Inc.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-4 mb-4 animate fadeInUp delay-1">
+                <div class="testimonial-card">
+                    <div class="testimonial-text">
+                        "The DevOps implementation by Opticbee has dramatically improved our deployment frequency and reduced failure rates. Their team was knowledgeable and professional throughout the engagement."
+                    </div>
+                    <div class="d-flex align-items-center">
+                        <div class="client-image bg-primary rounded-circle d-flex align-items-center justify-content-center text-white">
+                            <i class="fas fa-user fa-2x"></i>
+                        </div>
+                        <div>
+                            <h5 class="mb-0">Sarah Johnson</h5>
+                            <p class="text-muted mb-0">DevOps Lead, InnovateTech</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-4 mb-4 animate fadeInUp delay-2">
+                <div class="testimonial-card">
+                    <div class="testimonial-text">
+                        "Opticbee's Training program equipped our team with the skills needed to effectively use the new system. The trainers were patient, knowledgeable, and tailored the content to our specific needs."
+                    </div>
+                    <div class="d-flex align-items-center">
+                        <div class="client-image bg-primary rounded-circle d-flex align-items-center justify-content-center text-white">
+                            <i class="fas fa-user fa-2x"></i>
+                        </div>
+                        <div>
+                            <h5 class="mb-0">Michael Brown</h5>
+                            <p class="text-muted mb-0">Operations Director, Global Solutions</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="cta-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto text-center animate fadeInUp">
+                <h2 class="mb-4 text-white">Ready to Transform Your Business?</h2>
+                <p class="lead mb-5">Contact us today to discuss how our professional services can help you achieve your business objectives and drive growth.</p>
+                <a href="#" class="btn btn-primary btn-lg px-5 py-3">Get in Touch</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    // Animation on scroll
+    document.addEventListener('DOMContentLoaded', function() {
+        const animatedElements = document.querySelectorAll('.animate');
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const animation = entry.target.getAttribute('data-animation');
+                    const delay = entry.target.getAttribute('data-delay') || 0;
+                    
+                    setTimeout(() => {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                    }, delay);
+                }
+            });
+        }, {
+            threshold: 0.1
+        });
+        
+        animatedElements.forEach(element => {
+            observer.observe(element);
+        });
+        
+        // Counter animation
+        const counters = document.querySelectorAll('.counter');
+        const speed = 200;
+        
+        counters.forEach(counter => {
+            const updateCount = () => {
+                const target = +counter.getAttribute('data-count');
+                const count = +counter.innerText;
+                
+                const inc = target / speed;
+                
+                if (count < target) {
+                    counter.innerText = Math.ceil(count + inc);
+                    setTimeout(updateCount, 1);
+                } else {
+                    counter.innerText = target;
+                }
+            };
+            
+            const startCounter = () => {
+                const counterPosition = counter.getBoundingClientRect().top;
+                const screenPosition = window.innerHeight / 1.3;
+                
+                if (counterPosition < screenPosition) {
+                    updateCount();
+                }
+            };
+            
+            window.addEventListener('scroll', startCounter);
+            // Initial check in case counter is already in view
+            startCounter();
+        });
+    });
+</script>
+
+
+  <!-- Footer -->
+  <footer id="footer" class="footer dark-background">
+
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-4 col-md-6 footer-about">
+          <a href="index.html" class="logo d-flex align-items-center">
+            <span class="sitename">Optic Bee</span>
+          </a>
+          <div class="footer-contact pt-3">
+            <p>plot 21, flat 102, CVR Residency</p>
+            <p>Pragathi Nagar, Hyderabad, IN 500090</p>
+            <p class="mt-3"><strong>Phone:</strong> <span>+91 99087 93602</span></p>
+            <p><strong>Email:</strong> <span>support@opticbee.in</span></p>
+          </div>
+          <div class="social-links d-flex mt-4">
+            <a href="https://x.com/BeeOptic?t=9XDIJ7pA-ZHlrJaPQkSm_Q&s=09"><i class="bi bi-twitter-x"></i></a>
+            <a href="https://www.facebook.com/share/1AeUNhhRDu/"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.instagram.com/optic.bee?igsh=M3lpc2U5ajFpYTA1"><i class="bi bi-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/optic-bee-246554375?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="">Terms of service</a></li>
+            <li><a href="#">Privacy policy</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Our Services</h4>
+          <ul>
+            <li><a href="#">Web Design</a></li>
+            <li><a href="#">Web Development</a></li>
+            <li><a href="#">Product Management</a></li>
+            <li><a href="#">Marketing</a></li>
+            <li><a href="#">Graphic Design</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-4 col-md-12 footer-newsletter">
+          <h4>Our Newsletter</h4>
+          <p>Subscribe to our newsletter and receive the latest news about our products and services!</p>
+          <form action="forms/newsletter.php" method="post" class="php-email-form">
+            <div class="newsletter-form"><input type="email" name="email"><input type="submit" value="Subscribe"></div>
+            <div class="loading">Loading</div>
+            <div class="error-message"></div>
+            <div class="sent-message">Your subscription request has been sent. Thank you!</div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container copyright text-center mt-4">
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">Optic Bee</strong> <span>All Rights Reserved</span></p>
+      <div class="credits"></div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+</html>
