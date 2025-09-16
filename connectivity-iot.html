@@ -1,0 +1,890 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore OpticBee's cutting-edge solutions in 5G connectivity, IoT, Digital Twins, and Blockchain technology for industrial transformation.">
+    <meta name="keywords" content="5G, IoT, IIoT, Digital Twins, Blockchain, connectivity solutions, industrial automation, smart technology">
+    <title>Connectivity & IoT Solutions | OpticBee</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <!-- Favicons -->
+    <link href="images/favicon.ico" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+    <!-- Main CSS File -->
+    <link href="assets/css/main.css" rel="stylesheet">
+
+    <style>
+        :root {
+            --primary: #0a4da2;
+            --secondary: #00b4d8;
+            --accent: #7209b7;
+            --light: #f8f9fa;
+            --dark: #212529;
+        }
+        
+        body {
+            font-family: 'Roboto', sans-serif;
+            color: #333;
+            overflow-x: hidden;
+        }
+        
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+        }
+        
+        .hero-section {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+            padding: 120px 0 80px;
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero-section::before {
+            content: '';
+            position: absolute;
+            width: 200%;
+            height: 200%;
+            top: -50%;
+            left: -50%;
+            background: radial-gradient(circle, transparent 20%, rgba(255,255,255,0.1) 20%, rgba(255,255,255,0.1) 25%, transparent 25%, transparent);
+            background-size: 50px 50px;
+            animation: moveBackground 20s linear infinite;
+            z-index: 1;
+        }
+        
+        @keyframes moveBackground {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        .hero-content {
+            position: relative;
+            z-index: 2;
+        }
+        
+        .section-title {
+            position: relative;
+            margin-bottom: 40px;
+            padding-bottom: 15px;
+        }
+        
+        /* .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 70px;
+            height: 4px;
+            background: var(--secondary);
+            border-radius: 2px;
+        } */
+        
+        .card {
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            transition: all 0.3s ease;
+            overflow: hidden;
+            margin-bottom: 20px;
+        }
+        
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+        }
+        
+        .icon-box {
+            width: 80px;
+            height: 80px;
+            background: rgba(10, 77, 162, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+            transition: all 0.3s ease;
+        }
+        
+        .card:hover .icon-box {
+            background: var(--primary);
+            color: white;
+        }
+        
+        .feature-icon {
+            font-size: 2rem;
+            color: var(--primary);
+            transition: all 0.3s ease;
+        }
+        
+        .card:hover .feature-icon {
+            color: white;
+        }
+        
+        .animate-on-scroll {
+            opacity: 0;
+            transform: translateY(50px);
+            transition: all 0.8s ease;
+        }
+        
+        .animate-on-scroll.animated {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        .stats-box {
+            text-align: center;
+            padding: 30px 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+            margin-bottom: 20px;
+        }
+        
+        .stats-number {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 10px;
+        }
+        
+        .cta-section {
+            background-color: #5d7ba8;
+            padding: 80px 0;
+            color: white;
+            text-align: center;
+        }
+        
+        .btn-primary {
+            background-color: var(--primary);
+            border-color: var(--primary);
+            padding: 12px 30px;
+            border-radius: 30px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-primary:hover {
+            background-color: var(--secondary);
+            border-color: var(--secondary);
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .hero-section {
+                padding: 100px 0 60px;
+            }
+            
+            .section-title {
+                font-size: 1.8rem;
+            }
+            
+            .stats-number {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="container position-relative d-flex align-items-center">
+
+        <a href="index.html" class="logo d-flex align-items-center me-auto">
+        <img src="images/oblogo.png" alt="Official logo" class="navbar-logo">
+        <h1 class="sitename">Optic Bee</h1>
+        </a>
+
+
+        <nav id="navmenu" class="navmenu">
+        <ul>
+            <li><a href="#hero" class="active">Home</a></li>
+            
+            <li class="dropdown">
+            <a href="#"><span>Technologies</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+                <li><a href="emerging-tech.html#programming">Programming Languages</a></li>
+                <li><a href="ai.html#ai">Artificial Intelligence</a></li>
+                <li><a href="ai.html#prompt-engineering">Prompt Engineering</a></li>
+                <li><a href="cloud-computing.html#edge">Quantum & Edge Computing</a></li>
+                <li><a href="connectivity-iot.html#5g">5G & Connectivity</a></li>
+                <li><a href="emerging-tech.html#xr">Extended Reality (VR/AR)</a></li>
+                <li><a href="connectivity-iot.html#digital-twins">Digital Twins</a></li>
+                <li><a href="connectivity-iot.html#blockchain">Blockchain</a></li>
+                <li><a href="connectivity-iot.html#iot">IOT/IIoT</a></li>
+                <li><a href="cloud-computing.html#cloud">Cloud</a></li>
+                <li><a href="cloud-computing.html#bigdata">Big Data Analytics</a></li>
+                <li><a href="cloud-computing.html#integration">Integration Services</a></li>
+                <li><a href="emerging-tech.html#3d-printing">3D Printing</a></li>
+                <li><a href="emerging-tech.html#rpa">RPA</a></li>
+                <li><a href="ai.html#robotics">Advanced Robotics</a></li>
+                <li><a href="ai.html#cybersecurity">AI in Cybersecurity</a></li>
+            </ul>
+            </li>
+            
+            <li class="dropdown">
+            <a href="#"><span>Business Solutions</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+                <li class="dropdown">
+                <a href="#"><span>ERP</span> <i class="bi bi-chevron-right toggle-dropdown"></i></a>
+                <ul>
+                    <li><a href="#">Oracle ERP Cloud</a></li>
+                </ul>
+                </li>
+                <li class="dropdown">
+                <a href="#"><span>EPM</span> <i class="bi bi-chevron-right toggle-dropdown"></i></a>
+                <ul>
+                    <li><a href="#">Oracle EPM Cloud</a></li>
+                </ul>
+                </li>
+                <li><a href="#">CPM</a></li>
+                <li><a href="#">CRM</a></li>
+                <li class="dropdown">
+                <a href="#"><span>SCM</span> <i class="bi bi-chevron-right toggle-dropdown"></i></a>
+                <ul>
+                    <li><a href="#">Oracle SCM Cloud</a></li>
+                </ul>
+                </li>
+                <li><a href="#">HCM</a></li>
+                <li><a href="#">Oracle PaaS Cloud</a></li>
+            </ul>
+            </li>
+            
+            <li class="dropdown">
+            <a href="#"><span>Services</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+                <li><a href="#">Training</a></li>
+                <li><a href="#">Support</a></li>
+                <li><a href="#">Consulting</a></li>
+                <li><a href="#">Implementation & Deployment</a></li>
+                <li><a href="#">Infrastructure Support</a></li>
+                <li><a href="#">Application Maintenance</a></li>
+                <li><a href="#">Application Development</a></li>
+                <li><a href="#">API Development</a></li>
+                <li><a href="#">Customer Software Support</a></li>
+                <li><a href="#">DevOps</a></li>
+                <li><a href="#">Digital Transformation</a></li>
+                <li><a href="#">Migrations & Upgrades</a></li>
+                <li><a href="#">Partner Product Support</a></li>
+                <li><a href="#">Startup & MVP Services</a></li>
+                <li><a href="#">System Integration</a></li>
+                <li><a href="#">PLM</a></li>
+                <li><a href="#">QA Testing</a></li>
+            </ul>
+            </li>
+            
+            <li class="dropdown">
+            <a href="#"><span>Development</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+                <li><a href="#">Digital Marketing</a></li>
+                <li class="dropdown">
+                <a href="#"><span>Web Development</span> <i class="bi bi-chevron-right toggle-dropdown"></i></a>
+                <ul>
+                    <li><a href="#">MERN Stack</a></li>
+                    <li><a href="#">HTML, CSS, JavaScript</a></li>
+                    <li><a href="#">Python, PHP</a></li>
+                </ul>
+                </li>
+                <li><a href="#">Mobile App Development</a></li>
+                <li class="dropdown">
+                <a href="#"><span>Databases</span> <i class="bi bi-chevron-right toggle-dropdown"></i></a>
+                <ul>
+                    <li><a href="#">Oracle</a></li>
+                    <li><a href="#">SQL Server</a></li>
+                    <li><a href="#">Teradata</a></li>
+                    <li><a href="#">MySQL</a></li>
+                    <li><a href="#">PostgreSQL</a></li>
+                    <li><a href="#">Sybase</a></li>
+                </ul>
+                </li>
+            </ul>
+            </li>
+            
+            <li class="dropdown">
+            <a href="#"><span>Industries</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+                <li><a href="#">Defence</a></li>
+                <li><a href="#">Aerospace</a></li>
+                <li><a href="#">Space Technology</a></li>
+                <li><a href="#">High Tech</a></li>
+                <li><a href="#">Education</a></li>
+                <li><a href="#">Healthcare</a></li>
+                <li><a href="#">Telecommunication</a></li>
+                <li><a href="#">BFSI</a></li>
+                <li><a href="#">Agri-Tech</a></li>
+                <li><a href="#">Manufacturing</a></li>
+                <li><a href="#">Industrial</a></li>
+                <li><a href="#">Civil/Construction</a></li>
+                <li><a href="#">Metallurgy</a></li>
+                <li><a href="#">Computers/IT</a></li>
+                <li><a href="#">Semiconductors</a></li>
+                <li><a href="#">Electrical/Electronics</a></li>
+                <li><a href="#">Media & Entertainment</a></li>
+            </ul>
+            </li>
+            
+            <li class="dropdown">
+                <a href="affiliate.html"><span>Affiliates</span> </a>
+            </li>
+            
+            <li class="dropdown">
+            <a href="#"><span>Projects</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+                <li><a href="#">Educational Projects</a></li>
+                <li><a href="#">Industry Projects</a></li>
+                <li><a href="#">Technology Case Studies</a></li>
+                <li><a href="#">Integration Projects</a></li>
+                <li><a href="#">Contract Projects</a></li>
+                <li><a href="#">Corp to Corp Projects</a></li>
+                <li><a href="#">Offshore/Remote Projects</a></li>
+                <li><a href="#">Training Projects</a></li>
+            </ul>
+            </li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        </nav>
+
+        <div class="header-social-links">
+        <a href="https://x.com/BeeOptic?t=9XDIJ7pA-ZHlrJaPQkSm_Q&s=09" class="twitter"><i class="bi bi-twitter-x"></i></a>
+        <a href="https://www.facebook.com/share/1AeUNhhRDu/" class="facebook"><i class="bi bi-facebook"></i></a>
+        <a href="https://www.instagram.com/optic.bee?igsh=M3lpc2U5ajFpYTA1" class="instagram"><i class="bi bi-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/optic-bee-246554375?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="linkedin"><i class="bi bi-linkedin"></i></a>
+        </div>
+
+    </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section d-flex align-items-center text-center" 
+            style="background: url('images/connectivity-hero.png') center/cover no-repeat; position: relative; height: 60vh;">
+        
+        <!-- Transparent overlay -->
+        <div style="position:absolute; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.5);"></div>
+
+        <div class="container position-relative" style="z-index:2;">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <h1 class="display-4 fw-bold mb-4 text-white">
+                        <i class="fas fa-broadcast-tower me-2"></i> Next-Gen Connectivity & IoT Solutions
+                    </h1>
+                    <p class="lead mb-4 text-white">
+                        Transform your business with cutting-edge 5G, IoT, Digital Twin, and Blockchain technologies. 
+                        We provide integrated solutions for the connected future.
+                    </p>
+                    <a href="#solutions" class="btn btn-light btn-lg rounded-pill px-4 py-2">Explore Solutions</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- 5G & Connectivity Section -->
+    <section id="5g" class="py-5">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-lg-6 mb-4 mb-lg-0 animate-on-scroll">
+                    <h2 class="section-title">5G & Connectivity Solutions</h2>
+                    <p class="lead">Revolutionizing communication with ultra-fast, low-latency 5G networks that enable transformative technologies across industries.</p>
+                    <p>Our 5G solutions provide the backbone for next-generation applications, offering unprecedented speed and reliability. With multi-gigabit per second peak rates and ultra-low latency, 5G enables real-time connectivity that powers everything from autonomous vehicles to remote surgery.</p>
+                    <p>We design and implement customized 5G infrastructure that supports massive IoT deployments, mission-critical communications, and enhanced mobile broadband. Our network solutions are scalable, secure, and future-proof.</p>
+                    <div class="row mt-4">
+                        <div class="col-md-6">
+                            <ul class="list-unstyled">
+                                <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i> Ultra-reliable low latency communication</li>
+                                <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i> Enhanced mobile broadband</li>
+                                <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i> Massive machine-type communications</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <ul class="list-unstyled">
+                                <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i> Network slicing for customized connectivity</li>
+                                <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i> Edge computing integration</li>
+                                <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i> Private 5G network deployment</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 animate-on-scroll">
+                    <div class="row">
+                        <div class="col-md-6 mb-4">
+                            <div class="card h-100">
+                                <div class="card-body text-center p-4">
+                                    <div class="icon-box">
+                                        <i class="fas fa-bolt feature-icon"></i>
+                                    </div>
+                                    <h4>Ultra-Fast Speeds</h4>
+                                    <p>Experience multi-gigabit speeds that enable seamless streaming, downloading, and real-time applications.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-4">
+                            <div class="card h-100">
+                                <div class="card-body text-center p-4">
+                                    <div class="icon-box">
+                                        <i class="fas fa-tachometer-alt feature-icon"></i>
+                                    </div>
+                                    <h4>Low Latency</h4>
+                                    <p>Near real-time response enables mission-critical applications and immersive experiences.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-4">
+                            <div class="card h-100">
+                                <div class="card-body text-center p-4">
+                                    <div class="icon-box">
+                                        <i class="fas fa-link feature-icon"></i>
+                                    </div>
+                                    <h4>Massive Connectivity</h4>
+                                    <p>Connect millions of devices per square kilometer for comprehensive IoT deployment.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-4">
+                            <div class="card h-100">
+                                <div class="card-body text-center p-4">
+                                    <div class="icon-box">
+                                        <i class="fas fa-shield-alt feature-icon"></i>
+                                    </div>
+                                    <h4>Enhanced Security</h4>
+                                    <p>Advanced encryption and security protocols protect your data and communications.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- IoT / IIoT Section -->
+    <section id="iot" class="py-5 bg-light">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-12 text-center mb-5 animate-on-scroll">
+                    <h2 class="section-title mx-auto">IoT & IIoT Solutions</h2>
+                    <p class="lead">Connecting devices, sensors, and machines to unlock new insights and operational efficiencies.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 mb-4 animate-on-scroll">
+                    <div class="card h-100">
+                        <div class="card-body p-4">
+                            <div class="icon-box">
+                                <i class="fas fa-industry feature-icon"></i>
+                            </div>
+                            <h3 class="h4">Industrial IoT (IIoT)</h3>
+                            <p>Transform manufacturing and industrial operations with connected devices that enable predictive maintenance, optimize supply chains, and enhance worker safety.</p>
+                            <ul class="list-unstyled">
+                                <li class="mb-2"><i class="fas fa-cog text-primary me-2"></i> Smart manufacturing</li>
+                                <li class="mb-2"><i class="fas fa-chart-line text-primary me-2"></i> Predictive maintenance</li>
+                                <li class="mb-2"><i class="fas fa-robot text-primary me-2"></i> Automated quality control</li>
+                                <li class="mb-2"><i class="fas fa-hard-hat text-primary me-2"></i> Worker safety monitoring</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4 animate-on-scroll">
+                    <div class="card h-100">
+                        <div class="card-body p-4">
+                            <div class="icon-box">
+                                <i class="fas fa-city feature-icon"></i>
+                            </div>
+                            <h3 class="h4">Smart Cities</h3>
+                            <p>Create sustainable, efficient urban environments with IoT solutions that manage traffic, reduce energy consumption, and improve public services.</p>
+                            <ul class="list-unstyled">
+                                <li class="mb-2"><i class="fas fa-traffic-light text-primary me-2"></i> Intelligent traffic management</li>
+                                <li class="mb-2"><i class="fas fa-lightbulb text-primary me-2"></i> Smart street lighting</li>
+                                <li class="mb-2"><i class="fas fa-trash text-primary me-2"></i> Waste management optimization</li>
+                                <li class="mb-2"><i class="fas fa-shield-alt text-primary me-2"></i> Public safety enhancements</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4 animate-on-scroll">
+                    <div class="card h-100">
+                        <div class="card-body p-4">
+                            <div class="icon-box">
+                                <i class="fas fa-home feature-icon"></i>
+                            </div>
+                            <h3 class="h4">Smart Buildings</h3>
+                            <p>Optimize energy usage, improve occupant comfort, and reduce operational costs with integrated building management systems.</p>
+                            <ul class="list-unstyled">
+                                <li class="mb-2"><i class="fas fa-thermometer-half text-primary me-2"></i> HVAC optimization</li>
+                                <li class="mb-2"><i class="fas fa-door-open text-primary me-2"></i> Access control systems</li>
+                                <li class="mb-2"><i class="fas fa-bolt text-primary me-2"></i> Energy consumption monitoring</li>
+                                <li class="mb-2"><i class="fas fa-video text-primary me-2"></i> Integrated security solutions</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-md-3 col-6 text-center animate-on-scroll">
+                    <div class="stats-box">
+                        <div class="stats-number" data-count="25">0</div>
+                        <div class="stats-label">Billion Connected Devices</div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6 text-center animate-on-scroll">
+                    <div class="stats-box">
+                        <div class="stats-number" data-count="87">0</div>
+                        <div class="stats-label">% Operational Efficiency</div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6 text-center animate-on-scroll">
+                    <div class="stats-box">
+                        <div class="stats-number" data-count="45">0</div>
+                        <div class="stats-label">% Cost Reduction</div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6 text-center animate-on-scroll">
+                    <div class="stats-box">
+                        <div class="stats-number" data-count="500">0</div>
+                        <div class="stats-label">Million Data Points</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Digital Twins Section -->
+    <section id="digital-twins" class="py-5">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-lg-6 mb-4 mb-lg-0 animate-on-scroll">
+                    <h2 class="section-title">Digital Twins Technology</h2>
+                    <p class="lead">Create virtual replicas of physical systems to simulate, predict, and optimize performance in real-time.</p>
+                    <p>Digital twins are dynamic virtual representations of physical objects, processes, or systems that enable unprecedented insights and control. By bridging the physical and digital worlds, digital twins allow for simulation, analysis, and control that drives innovation and performance.</p>
+                    <p>Our digital twin solutions span the entire lifecycle of assets, from design to decommissioning, providing valuable insights that reduce downtime, extend asset life, and improve operational efficiency.</p>
+                    <div class="mt-4">
+                        <div class="d-flex mb-3">
+                            <div class="me-4">
+                                <i class="fas fa-sync-alt fa-2x text-primary"></i>
+                            </div>
+                            <div>
+                                <h4>Real-time Synchronization</h4>
+                                <p>Continuous data flow between physical assets and their digital counterparts</p>
+                            </div>
+                        </div>
+                        <div class="d-flex mb-3">
+                            <div class="me-4">
+                                <i class="fas fa-project-diagram fa-2x text-primary"></i>
+                            </div>
+                            <div>
+                                <h4>Predictive Analytics</h4>
+                                <p>Anticipate failures and optimize maintenance schedules</p>
+                            </div>
+                        </div>
+                        <div class="d-flex">
+                            <div class="me-4">
+                                <i class="fas fa-cogs fa-2x text-primary"></i>
+                            </div>
+                            <div>
+                                <h4>Simulation & Testing</h4>
+                                <p>Test scenarios and modifications in the virtual environment before implementation</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 animate-on-scroll">
+                    <div class="card border-0 shadow-lg">
+                        <div class="card-body p-4">
+                            <h3 class="card-title h4 mb-4">Digital Twin Applications</h3>
+                            <div class="application-item mb-4">
+                                <h5><i class="fas fa-industry text-primary me-2"></i> Manufacturing</h5>
+                                <p>Optimize production lines, reduce downtime, and improve product quality through virtual simulations and real-time monitoring.</p>
+                            </div>
+                            <div class="application-item mb-4">
+                                <h5><i class="fas fa-hard-hat text-primary me-2"></i> Construction & Infrastructure</h5>
+                                <p>Monitor structural health, plan maintenance, and simulate the impact of changes on buildings and infrastructure projects.</p>
+                            </div>
+                            <div class="application-item mb-4">
+                                <h5><i class="fas fa-tools text-primary me-2"></i> Product Development</h5>
+                                <p>Accelerate design processes, test virtual prototypes, and gather usage data to improve future iterations.</p>
+                            </div>
+                            <div class="application-item">
+                                <h5><i class="fas fa-bolt text-primary me-2"></i> Energy Management</h5>
+                                <p>Optimize energy consumption, predict equipment failures, and simulate the impact of renewable energy integration.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blockchain Section -->
+    <section id="blockchain" class="py-5 bg-light">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-12 text-center mb-5 animate-on-scroll">
+                    <h2 class="section-title mx-auto">Blockchain Solutions</h2>
+                    <p class="lead">Secure, transparent, and decentralized solutions for trust and efficiency in digital transactions.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 animate-on-scroll">
+                    <div class="card h-100 border-0 shadow">
+                        <div class="card-body p-4">
+                            <h3 class="card-title h4 mb-4">Why Blockchain?</h3>
+                            <p>Blockchain technology provides an immutable, decentralized ledger that enables secure, transparent transactions without intermediaries. This creates unprecedented trust and efficiency in digital interactions.</p>
+                            <div class="row mt-4">
+                                <div class="col-md-6">
+                                    <div class="d-flex align-items-start mb-4">
+                                        <div class="me-3">
+                                            <i class="fas fa-lock fa-2x text-primary"></i>
+                                        </div>
+                                        <div>
+                                            <h5>Enhanced Security</h5>
+                                            <p>Cryptographic principles make data tamper-evident and secure</p>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-start mb-4">
+                                        <div class="me-3">
+                                            <i class="fas fa-eye fa-2x text-primary"></i>
+                                        </div>
+                                        <div>
+                                            <h5>Transparency</h5>
+                                            <p>All participants share the same view of data and transactions</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="d-flex align-items-start mb-4">
+                                        <div class="me-3">
+                                            <i class="fas fa-bolt fa-2x text-primary"></i>
+                                        </div>
+                                        <div>
+                                            <h5>Efficiency</h5>
+                                            <p>Streamlined processes with reduced intermediaries and paperwork</p>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-start">
+                                        <div class="me-3">
+                                            <i class="fas fa-fingerprint fa-2x text-primary"></i>
+                                        </div>
+                                        <div>
+                                            <h5>Traceability</h5>
+                                            <p>Complete audit trail of all transactions and data changes</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 animate-on-scroll">
+                    <div class="card h-100 border-0 shadow">
+                        <div class="card-body p-4">
+                            <h3 class="card-title h4 mb-4">Blockchain Applications</h3>
+                            <div class="application-item mb-4">
+                                <h5><i class="fas fa-link text-primary me-2"></i> Supply Chain Transparency</h5>
+                                <p>Track products from origin to consumer, verifying authenticity and ethical sourcing at every step.</p>
+                            </div>
+                            <div class="application-item mb-4">
+                                <h5><i class="fas fa-file-contract text-primary me-2"></i> Smart Contracts</h5>
+                                <p>Automate contractual agreements with self-executing code that triggers actions when conditions are met.</p>
+                            </div>
+                            <div class="application-item mb-4">
+                                <h5><i class="fas fa-credit-card text-primary me-2"></i> Secure Transactions</h5>
+                                <p>Enable peer-to-peer transactions without intermediaries, reducing costs and increasing speed.</p>
+                            </div>
+                            <div class="application-item">
+                                <h5><i class="fas fa-database text-primary me-2"></i> Identity Management</h5>
+                                <p>Provide individuals with self-sovereign identity control while reducing fraud and streamlining verification.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- Call to Action -->
+<section id="contact" class="cta-section text-white d-flex align-items-center" 
+         style="background: url('images/connectivity-cta.png') center/cover no-repeat fixed; position: relative; min-height: 70vh;">
+    
+    <!-- Transparent overlay -->
+    <div style="position:absolute; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.6);"></div>
+    
+    <div class="container position-relative" style="z-index:2;">
+        <div class="row justify-content-center">
+            <div class="col-lg-8 text-center animate-on-scroll">
+                <h2 class="mb-4" style="color: #fff;">Ready to Transform Your Business with Connectivity & IoT?</h2>
+                <p class="lead mb-5">
+                    Contact our experts today to discuss how our solutions can drive innovation 
+                    and efficiency in your organization.
+                </p>
+                <a href="#" class="btn btn-light btn-lg rounded-pill px-5 py-3">Get Started</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+  <footer id="footer" class="footer dark-background">
+
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-4 col-md-6 footer-about">
+          <a href="index.html" class="logo d-flex align-items-center">
+            <span class="sitename">Optic Bee</span>
+          </a>
+          <div class="footer-contact pt-3">
+            <p>plot 21, flat 102, CVR Residency</p>
+            <p>Pragathi Nagar, Hyderabad, IN 500090</p>
+            <p class="mt-3"><strong>Phone:</strong> <span>+91 99087 93602</span></p>
+            <p><strong>Email:</strong> <span>support@opticbee.in</span></p>
+          </div>
+          <div class="social-links d-flex mt-4">
+            <a href="https://x.com/BeeOptic?t=9XDIJ7pA-ZHlrJaPQkSm_Q&s=09"><i class="bi bi-twitter-x"></i></a>
+            <a href="https://www.facebook.com/share/1AeUNhhRDu/"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.instagram.com/optic.bee?igsh=M3lpc2U5ajFpYTA1"><i class="bi bi-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/optic-bee-246554375?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="">Terms of service</a></li>
+            <li><a href="#">Privacy policy</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Our Services</h4>
+          <ul>
+            <li><a href="#">Web Design</a></li>
+            <li><a href="#">Web Development</a></li>
+            <li><a href="#">Product Management</a></li>
+            <li><a href="#">Marketing</a></li>
+            <li><a href="#">Graphic Design</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-4 col-md-12 footer-newsletter">
+          <h4>Our Newsletter</h4>
+          <p>Subscribe to our newsletter and receive the latest news about our products and services!</p>
+          <form action="forms/newsletter.php" method="post" class="php-email-form">
+            <div class="newsletter-form"><input type="email" name="email"><input type="submit" value="Subscribe"></div>
+            <div class="loading">Loading</div>
+            <div class="error-message"></div>
+            <div class="sent-message">Your subscription request has been sent. Thank you!</div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container copyright text-center mt-4">
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">Optic Bee</strong> <span>All Rights Reserved</span></p>
+      <div class="credits"></div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Animation on scroll
+        document.addEventListener('DOMContentLoaded', function() {
+            const animatedElements = document.querySelectorAll('.animate-on-scroll');
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('animated');
+                    }
+                });
+            }, {
+                threshold: 0.1
+            });
+            
+            animatedElements.forEach(element => {
+                observer.observe(element);
+            });
+            
+            // Stats counter animation
+            const statsElements = document.querySelectorAll('.stats-number');
+            const statsObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const finalValue = parseInt(entry.target.getAttribute('data-count'));
+                        const duration = 2000; // in milliseconds
+                        const steps = 60;
+                        const increment = finalValue / steps;
+                        let current = 0;
+                        
+                        const timer = setInterval(() => {
+                            current += increment;
+                            if (current >= finalValue) {
+                                clearInterval(timer);
+                                entry.target.textContent = finalValue;
+                            } else {
+                                entry.target.textContent = Math.round(current);
+                            }
+                        }, duration / steps);
+                        
+                        statsObserver.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.5 });
+            
+            statsElements.forEach(element => {
+                statsObserver.observe(element);
+            });
+            
+            // Navbar background change on scroll
+            const navbar = document.querySelector('.navbar');
+            window.addEventListener('scroll', function() {
+                if (window.scrollY > 50) {
+                    navbar.classList.add('bg-dark');
+                } else {
+                    navbar.classList.remove('bg-dark');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

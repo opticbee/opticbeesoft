@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emerging Technologies - Extended Reality, 3D Printing, RPA & Programming Languages</title>
+    <meta name="description" content="Explore cutting-edge emerging technologies including Extended Reality (XR), 3D Printing, Robotic Process Automation (RPA), and modern Programming Languages.">
+    <meta name="keywords" content="emerging technologies, extended reality, virtual reality, augmented reality, 3D printing, RPA, robotic process automation, programming languages">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Favicons -->
+    <link href="images/favicon.ico" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+    <!-- Main CSS File -->
+    <link href="assets/css/main.css" rel="stylesheet">
+
+    <style>
+        :root {
+            --primary-color: #4e54c8;
+            --secondary-color: #8f94fb;
+            --accent-color: #ff6b6b;
+            --dark-color: #2c2c54;
+            --light-color: #f7f7f7;
+        }
+        
+        body {
+            font-family: 'Roboto', sans-serif;
+            color: #333;
+            overflow-x: hidden;
+            background-color: #fafafa;
+        }
+        
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+        }
+        
+
+        
+        .hero-section {
+            background: linear-gradient(to right, #4e54c8, #8f94fb);
+            color: white;
+            padding: 120px 0 80px;
+            clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="%23ffffff" fill-opacity="0.1" d="M0,128L48,117.3C96,107,192,85,288,112C384,139,480,213,576,218.7C672,224,768,160,864,138.7C960,117,1056,139,1152,149.3C1248,160,1344,160,1392,160L1440,160L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>');
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .hero-title {
+            font-size: 3.5rem;
+            font-weight: 800;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        }
+        
+        .hero-subtitle {
+            font-size: 1.5rem;
+            margin-bottom: 30px;
+            font-weight: 300;
+        }
+        
+        .section-title {
+            position: relative;
+            margin-bottom: 50px;
+            font-weight: 700;
+            color: var(--dark-color);
+        }
+        
+        /* .section-title::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -15px;
+            width: 70px;
+            height: 5px;
+            background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+            border-radius: 10px;
+        } */
+        
+        .tech-card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            height: 100%;
+            margin-bottom: 20px;
+        }
+        
+        .tech-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+        }
+        
+        .tech-icon {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            color: var(--primary-color);
+        }
+        
+        .tech-header {
+            padding: 30px 20px 10px;
+            background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+            color: white;
+            text-align: center;
+        }
+        
+        .tech-body {
+            padding: 25px;
+        }
+        
+        .tech-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-bottom: 5px solid var(--primary-color);
+        }
+        
+        .highlight {
+            color: var(--primary-color);
+            font-weight: 600;
+        }
+        
+        .benefit-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        
+        .benefit-list li {
+            margin-bottom: 15px;
+            padding-left: 30px;
+            position: relative;
+        }
+        
+        .benefit-list li:before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: var(--primary-color);
+            font-weight: bold;
+        }
+        
+        .cta-section {
+            background: linear-gradient(to right, #4e54c8, #8f94fb);
+            padding: 80px 0;
+            color: white;
+            text-align: center;
+            clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
+        }
+        
+        footer {
+            background: var(--dark-color);
+            color: white;
+            padding: 60px 0 30px;
+        }
+        
+        .social-links a {
+            color: white;
+            font-size: 1.5rem;
+            margin: 0 10px;
+            transition: all 0.3s ease;
+        }
+        
+        .social-links a:hover {
+            color: var(--secondary-color);
+        }
+        
+        .back-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 50px;
+            height: 50px;
+            background: var(--primary-color);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
+            z-index: 1000;
+            opacity: 0;
+            visibility: hidden;
+        }
+        
+        .back-to-top.active {
+            opacity: 1;
+            visibility: visible;
+        }
+        
+        .back-to-top:hover {
+            background: var(--secondary-color);
+            transform: translateY(-5px);
+        }
+        
+        /* Animation keyframes */
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-15px); }
+            100% { transform: translateY(0px); }
+        }
+        
+        .floating {
+            animation: float 5s ease-in-out infinite;
+        }
+        
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .hero-title {
+                font-size: 2.5rem;
+            }
+            
+            .hero-subtitle {
+                font-size: 1.2rem;
+            }
+            
+            .section-title {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="container position-relative d-flex align-items-center">
+
+        <a href="index.html" class="logo d-flex align-items-center me-auto">
+        <img src="images/oblogo.png" alt="Official logo" class="navbar-logo">
+        <h1 class="sitename">Optic Bee</h1>
+        </a>
+
+
+        <nav id="navmenu" class="navmenu">
+        <ul>
+            <li><a href="#hero" class="active">Home</a></li>
+            
+            <li class="dropdown">
+            <a href="#"><span>Technologies</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+                <li><a href="emerging-tech.html#programming">Programming Languages</a></li>
+                <li><a href="ai.html#ai">Artificial Intelligence</a></li>
+                <li><a href="ai.html#prompt-engineering">Prompt Engineering</a></li>
+                <li><a href="cloud-computing.html#edge">Quantum & Edge Computing</a></li>
+                <li><a href="connectivity-iot.html#5g">5G & Connectivity</a></li>
+                <li><a href="emerging-tech.html#xr">Extended Reality (VR/AR)</a></li>
+                <li><a href="connectivity-iot.html#digital-twins">Digital Twins</a></li>
+                <li><a href="connectivity-iot.html#blockchain">Blockchain</a></li>
+                <li><a href="connectivity-iot.html#iot">IOT/IIoT</a></li>
+                <li><a href="cloud-computing.html#cloud">Cloud</a></li>
+                <li><a href="cloud-computing.html#bigdata">Big Data Analytics</a></li>
+                <li><a href="cloud-computing.html#integration">Integration Services</a></li>
+                <li><a href="emerging-tech.html#3d-printing">3D Printing</a></li>
+                <li><a href="emerging-tech.html#rpa">RPA</a></li>
+                <li><a href="ai.html#robotics">Advanced Robotics</a></li>
+                <li><a href="ai.html#cybersecurity">AI in Cybersecurity</a></li>
+            </ul>
+            </li>
+            
+            <li class="dropdown">
+            <a href="#"><span>Business Solutions</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+                <li class="dropdown">
+                <a href="#"><span>ERP</span> <i class="bi bi-chevron-right toggle-dropdown"></i></a>
+                <ul>
+                    <li><a href="#">Oracle ERP Cloud</a></li>
+                </ul>
+                </li>
+                <li class="dropdown">
+                <a href="#"><span>EPM</span> <i class="bi bi-chevron-right toggle-dropdown"></i></a>
+                <ul>
+                    <li><a href="#">Oracle EPM Cloud</a></li>
+                </ul>
+                </li>
+                <li><a href="#">CPM</a></li>
+                <li><a href="#">CRM</a></li>
+                <li class="dropdown">
+                <a href="#"><span>SCM</span> <i class="bi bi-chevron-right toggle-dropdown"></i></a>
+                <ul>
+                    <li><a href="#">Oracle SCM Cloud</a></li>
+                </ul>
+                </li>
+                <li><a href="#">HCM</a></li>
+                <li><a href="#">Oracle PaaS Cloud</a></li>
+            </ul>
+            </li>
+            
+            <li class="dropdown">
+            <a href="#"><span>Services</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+                <li><a href="#">Training</a></li>
+                <li><a href="#">Support</a></li>
+                <li><a href="#">Consulting</a></li>
+                <li><a href="#">Implementation & Deployment</a></li>
+                <li><a href="#">Infrastructure Support</a></li>
+                <li><a href="#">Application Maintenance</a></li>
+                <li><a href="#">Application Development</a></li>
+                <li><a href="#">API Development</a></li>
+                <li><a href="#">Customer Software Support</a></li>
+                <li><a href="#">DevOps</a></li>
+                <li><a href="#">Digital Transformation</a></li>
+                <li><a href="#">Migrations & Upgrades</a></li>
+                <li><a href="#">Partner Product Support</a></li>
+                <li><a href="#">Startup & MVP Services</a></li>
+                <li><a href="#">System Integration</a></li>
+                <li><a href="#">PLM</a></li>
+                <li><a href="#">QA Testing</a></li>
+            </ul>
+            </li>
+            
+            <li class="dropdown">
+            <a href="#"><span>Development</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+                <li><a href="#">Digital Marketing</a></li>
+                <li class="dropdown">
+                <a href="#"><span>Web Development</span> <i class="bi bi-chevron-right toggle-dropdown"></i></a>
+                <ul>
+                    <li><a href="#">MERN Stack</a></li>
+                    <li><a href="#">HTML, CSS, JavaScript</a></li>
+                    <li><a href="#">Python, PHP</a></li>
+                </ul>
+                </li>
+                <li><a href="#">Mobile App Development</a></li>
+                <li class="dropdown">
+                <a href="#"><span>Databases</span> <i class="bi bi-chevron-right toggle-dropdown"></i></a>
+                <ul>
+                    <li><a href="#">Oracle</a></li>
+                    <li><a href="#">SQL Server</a></li>
+                    <li><a href="#">Teradata</a></li>
+                    <li><a href="#">MySQL</a></li>
+                    <li><a href="#">PostgreSQL</a></li>
+                    <li><a href="#">Sybase</a></li>
+                </ul>
+                </li>
+            </ul>
+            </li>
+            
+            <li class="dropdown">
+            <a href="#"><span>Industries</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+                <li><a href="#">Defence</a></li>
+                <li><a href="#">Aerospace</a></li>
+                <li><a href="#">Space Technology</a></li>
+                <li><a href="#">High Tech</a></li>
+                <li><a href="#">Education</a></li>
+                <li><a href="#">Healthcare</a></li>
+                <li><a href="#">Telecommunication</a></li>
+                <li><a href="#">BFSI</a></li>
+                <li><a href="#">Agri-Tech</a></li>
+                <li><a href="#">Manufacturing</a></li>
+                <li><a href="#">Industrial</a></li>
+                <li><a href="#">Civil/Construction</a></li>
+                <li><a href="#">Metallurgy</a></li>
+                <li><a href="#">Computers/IT</a></li>
+                <li><a href="#">Semiconductors</a></li>
+                <li><a href="#">Electrical/Electronics</a></li>
+                <li><a href="#">Media & Entertainment</a></li>
+            </ul>
+            </li>
+            
+            <li class="dropdown">
+                <a href="affiliate.html"><span>Affiliates</span> </a>
+            </li>
+            
+            <li class="dropdown">
+            <a href="#"><span>Projects</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+                <li><a href="#">Educational Projects</a></li>
+                <li><a href="#">Industry Projects</a></li>
+                <li><a href="#">Technology Case Studies</a></li>
+                <li><a href="#">Integration Projects</a></li>
+                <li><a href="#">Contract Projects</a></li>
+                <li><a href="#">Corp to Corp Projects</a></li>
+                <li><a href="#">Offshore/Remote Projects</a></li>
+                <li><a href="#">Training Projects</a></li>
+            </ul>
+            </li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        </nav>
+
+        <div class="header-social-links">
+        <a href="https://x.com/BeeOptic?t=9XDIJ7pA-ZHlrJaPQkSm_Q&s=09" class="twitter"><i class="bi bi-twitter-x"></i></a>
+        <a href="https://www.facebook.com/share/1AeUNhhRDu/" class="facebook"><i class="bi bi-facebook"></i></a>
+        <a href="https://www.instagram.com/optic.bee?igsh=M3lpc2U5ajFpYTA1" class="instagram"><i class="bi bi-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/optic-bee-246554375?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="linkedin"><i class="bi bi-linkedin"></i></a>
+        </div>
+
+    </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <h1 class="hero-title">Emerging Technologies Shaping Our Future</h1>
+                    <p class="hero-subtitle">Discover how Extended Reality, 3D Printing, RPA, and modern Programming Languages are revolutionizing industries and transforming our world.</p>
+                    <a href="#technologies" class="btn btn-light btn-lg">Explore Technologies</a>
+                </div>
+                <div class="col-lg-6 text-center" data-aos="fade-left">
+                    <img src="images/emergingtech.png" class="img-fluid floating" alt="Emerging Technologies" style="max-width: 100%;">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technologies Section -->
+    <section id="technologies" class="py-5">
+        <div class="container py-5">
+            <h2 class="text-center section-title" data-aos="fade-up">Cutting-Edge Technologies</h2>
+            <p class="text-center mb-5" data-aos="fade-up">Explore the transformative technologies that are reshaping industries and creating new possibilities</p>
+            
+            <div class="row">
+                <!-- XR Card -->
+                <div class="col-lg-3 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="tech-card">
+                        <div class="tech-header">
+                            <i class="fas fa-vr-cardboard tech-icon"></i>
+                            <h3>Extended Reality</h3>
+                        </div>
+                        <div class="tech-body">
+                            <p>XR encompasses Virtual Reality (VR), Augmented Reality (AR), and Mixed Reality (MR), creating immersive digital experiences that blend the physical and virtual worlds.</p>
+                            <a href="#xr" class="btn btn-outline-primary mt-3">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 3D Printing Card -->
+                <div class="col-lg-3 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="tech-card">
+                        <div class="tech-header">
+                            <i class="fas fa-print tech-icon"></i>
+                            <h3>3D Printing</h3>
+                        </div>
+                        <div class="tech-body">
+                            <p>Additive manufacturing technology that creates three-dimensional objects layer by layer from digital models, revolutionizing prototyping and production across industries.</p>
+                            <a href="#3d-printing" class="btn btn-outline-primary mt-3">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- RPA Card -->
+                <div class="col-lg-3 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="tech-card">
+                        <div class="tech-header">
+                            <i class="fas fa-robot tech-icon"></i>
+                            <h3>RPA</h3>
+                        </div>
+                        <div class="tech-body">
+                            <p>Robotic Process Automation uses software robots to automate repetitive, rule-based tasks, increasing efficiency and freeing human workers for higher-value activities.</p>
+                            <a href="#rpa" class="btn btn-outline-primary mt-3">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Programming Card -->
+                <div class="col-lg-3 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="400">
+                    <div class="tech-card">
+                        <div class="tech-header">
+                            <i class="fas fa-code tech-icon"></i>
+                            <h3>Programming</h3>
+                        </div>
+                        <div class="tech-body">
+                            <p>Modern programming languages and frameworks that enable the development of sophisticated applications, from AI systems to blockchain and IoT solutions.</p>
+                            <a href="#programming" class="btn btn-outline-primary mt-3">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Extended Reality Section -->
+    <section id="xr" class="py-5 bg-light">
+        <div class="container py-5">
+            <h2 class="section-title" data-aos="fade-up">Extended Reality (XR)</h2>
+            <div class="row align-items-center">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <img src="images/xr.png" class="img-fluid rounded shadow" alt="Extended Reality">
+                </div>
+                <div class="col-lg-6" data-aos="fade-left">
+                    <h3 class="mb-4">Blending Physical and Digital Realities</h3>
+                    <p>Extended Reality (XR) is an umbrella term encompassing <span class="highlight">Virtual Reality (VR)</span>, <span class="highlight">Augmented Reality (AR)</span>, and <span class="highlight">Mixed Reality (MR)</span>. These technologies are transforming how we interact with digital content and the world around us.</p>
+                    
+                    <h4 class="mt-4">Key Components:</h4>
+                    <ul class="benefit-list">
+                        <li><strong>Virtual Reality (VR):</strong> Immersive digital environments that replace the real world</li>
+                        <li><strong>Augmented Reality (AR):</strong> Digital overlays on the physical world</li>
+                        <li><strong>Mixed Reality (MR):</strong> Blends physical and digital worlds where they coexist and interact</li>
+                    </ul>
+                    
+                    <h4 class="mt-4">Applications:</h4>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <ul class="benefit-list">
+                                <li>Immersive training simulations</li>
+                                <li>Virtual product prototyping</li>
+                                <li>Enhanced retail experiences</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <ul class="benefit-list">
+                                <li>Interactive educational content</li>
+                                <li>Remote collaboration tools</li>
+                                <li>Therapeutic healthcare applications</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3D Printing Section -->
+    <section id="3d-printing" class="py-5">
+        <div class="container py-5">
+            <h2 class="section-title" data-aos="fade-up">3D Printing & Additive Manufacturing</h2>
+            <div class="row align-items-center">
+                <div class="col-lg-6 order-lg-2" data-aos="fade-left">
+                    <img src="images/3dprinting.png" class="img-fluid rounded shadow" alt="3D Printing">
+                </div>
+                <div class="col-lg-6 order-lg-1" data-aos="fade-right">
+                    <h3 class="mb-4">Revolutionizing Manufacturing</h3>
+                    <p><span class="highlight">3D printing</span>, also known as additive manufacturing, creates physical objects from digital designs by building them layer by layer. This technology has transformed prototyping and production across numerous industries.</p>
+                    
+                    <h4 class="mt-4">Key Technologies:</h4>
+                    <ul class="benefit-list">
+                        <li><strong>Fused Deposition Modeling (FDM):</strong> Most common method using thermoplastic filaments</li>
+                        <li><strong>Stereolithography (SLA):</strong> Uses UV laser to cure liquid resin into hardened plastic</li>
+                        <li><strong>Selective Laser Sintering (SLS):</strong> Uses laser to fuse powdered materials</li>
+                        <li><strong>Digital Light Processing (DLP):</strong> Similar to SLA but uses digital light projector</li>
+                    </ul>
+                    
+                    <h4 class="mt-4">Industry Applications:</h4>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <ul class="benefit-list">
+                                <li>Healthcare (prosthetics, implants)</li>
+                                <li>Aerospace (lightweight components)</li>
+                                <li>Automotive (prototyping, custom parts)</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <ul class="benefit-list">
+                                <li>Construction (architectural models)</li>
+                                <li>Consumer goods (customized products)</li>
+                                <li>Education (teaching aids, models)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- RPA Section -->
+    <section id="rpa" class="py-5 bg-light">
+        <div class="container py-5">
+            <h2 class="section-title" data-aos="fade-up">Robotic Process Automation (RPA)</h2>
+            <div class="row align-items-center">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <img src="images/rpa.png" class="img-fluid rounded shadow" alt="Robotic Process Automation">
+                </div>
+                <div class="col-lg-6" data-aos="fade-left">
+                    <h3 class="mb-4">Automating Business Processes</h3>
+                    <p><span class="highlight">Robotic Process Automation (RPA)</span> uses software robots to automate repetitive, rule-based digital tasks. These bots mimic human actions interacting with digital systems and software, significantly improving efficiency and accuracy.</p>
+                    
+                    <h4 class="mt-4">Key Benefits:</h4>
+                    <ul class="benefit-list">
+                        <li><strong>Increased Efficiency:</strong> Bots work 24/7 without breaks, dramatically reducing process time</li>
+                        <li><strong>Improved Accuracy:</strong> Eliminates human error in repetitive tasks</li>
+                        <li><strong>Cost Reduction:</strong> Lowers operational costs by automating routine processes</li>
+                        <li><strong>Enhanced Compliance:</strong> Provides detailed audit trails and ensures process consistency</li>
+                    </ul>
+                    
+                    <h4 class="mt-4">Implementation Areas:</h4>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <ul class="benefit-list">
+                                <li>Data entry and migration</li>
+                                <li>Invoice processing</li>
+                                <li>Customer onboarding</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <ul class="benefit-list">
+                                <li>Report generation</li>
+                                <li>HR processes</li>
+                                <li>Inventory management</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Programming Languages Section -->
+    <section id="programming" class="py-5">
+    <div class="container py-5">
+        <h2 class="section-title" data-aos="fade-up">Modern Programming Languages</h2>
+        <div class="row align-items-center">
+        <div class="col-lg-6 order-lg-2" data-aos="fade-left">
+            <img src="images/languages.png" class="img-fluid rounded shadow" alt="Programming Languages">
+        </div>
+        <div class="col-lg-6 order-lg-1" data-aos="fade-right">
+            <h3 class="mb-4">Powering Digital Transformation</h3>
+            <p>Modern <span class="highlight">programming languages</span> and frameworks are the foundation of digital innovation. They enable developers to create sophisticated applications, from artificial intelligence systems to blockchain solutions and IoT platforms.</p>
+            
+            <h4 class="mt-4">Key Languages:</h4>
+            <ul class="benefit-list">
+            <li><strong>Python:</strong> Versatile language popular in data science, AI, and web development</li>
+            <li><strong>JavaScript:</strong> Essential for web development, both front-end and back-end (Node.js)</li>
+            <li><strong>Rust:</strong> Systems programming language focused on safety and performance</li>
+            <li><strong>Go:</strong> Developed by Google for efficient, scalable system programming</li>
+            <li><strong>Kotlin:</strong> Modern language for Android development and beyond</li>
+            </ul>
+            
+            <h4 class="mt-4">Emerging Trends:</h4>
+            <div class="row">
+            <div class="col-md-6">
+                <ul class="benefit-list">
+                <li>AI-assisted programming</li>
+                <li>Low-code/no-code platforms</li>
+                <li>WebAssembly (WASM)</li>
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <ul class="benefit-list">
+                <li>Serverless architectures</li>
+                <li>Quantum computing languages</li>
+                <li>Domain-specific languages</li>
+                </ul>
+            </div>
+            </div>
+
+            <!-- Button for Tech Stack -->
+            <div class="mt-4">
+            <a href="about.html#tech-stack" class="btn btn-primary btn-lg">
+                View Our Tech Stack
+            </a>
+            </div>
+        </div>
+        </div>
+    </div>
+    </section>
+
+
+    <!-- Call to Action -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center" data-aos="zoom-in">
+                    <h2 class="mb-4">Ready to Leverage These Emerging Technologies?</h2>
+                    <p class="mb-4">Contact us to discover how these cutting-edge technologies can transform your business and give you a competitive advantage.</p>
+                    <a href="contact.html" class="btn btn-light btn-lg me-3">Contact Us</a>
+                    <a href="about.html" class="btn btn-outline-light btn-lg">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer" class="footer dark-background">
+
+        <div class="container footer-top">
+        <div class="row gy-4">
+            <div class="col-lg-4 col-md-6 footer-about">
+            <a href="index.html" class="logo d-flex align-items-center">
+                <span class="sitename">Optic Bee</span>
+            </a>
+            <div class="footer-contact pt-3">
+                <p>plot 21, flat 102, CVR Residency</p>
+                <p>Pragathi Nagar, Hyderabad, IN 500090</p>
+                <p class="mt-3"><strong>Phone:</strong> <span>+91 99087 93602</span></p>
+                <p><strong>Email:</strong> <span>support@opticbee.in</span></p>
+            </div>
+            <div class="social-links d-flex mt-4">
+                <a href="https://x.com/BeeOptic?t=9XDIJ7pA-ZHlrJaPQkSm_Q&s=09"><i class="bi bi-twitter-x"></i></a>
+                <a href="https://www.facebook.com/share/1AeUNhhRDu/"><i class="bi bi-facebook"></i></a>
+                <a href="https://www.instagram.com/optic.bee?igsh=M3lpc2U5ajFpYTA1"><i class="bi bi-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/optic-bee-246554375?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="bi bi-linkedin"></i></a>
+            </div>
+            </div>
+
+            <div class="col-lg-2 col-md-3 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="">Terms of service</a></li>
+                <li><a href="#">Privacy policy</a></li>
+            </ul>
+            </div>
+
+            <div class="col-lg-2 col-md-3 footer-links">
+            <h4>Our Services</h4>
+            <ul>
+                <li><a href="#">Web Design</a></li>
+                <li><a href="#">Web Development</a></li>
+                <li><a href="#">Product Management</a></li>
+                <li><a href="#">Marketing</a></li>
+                <li><a href="#">Graphic Design</a></li>
+            </ul>
+            </div>
+
+            <div class="col-lg-4 col-md-12 footer-newsletter">
+            <h4>Our Newsletter</h4>
+            <p>Subscribe to our newsletter and receive the latest news about our products and services!</p>
+            <form action="forms/newsletter.php" method="post" class="php-email-form">
+                <div class="newsletter-form"><input type="email" name="email"><input type="submit" value="Subscribe"></div>
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your subscription request has been sent. Thank you!</div>
+            </form>
+            </div>
+
+        </div>
+        </div>
+
+        <div class="container copyright text-center mt-4">
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">Optic Bee</strong> <span>All Rights Reserved</span></p>
+        <div class="credits"></div>
+        </div>
+
+    </footer>
+
+    <!-- Scroll Top -->
+    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+    <!-- Preloader -->
+    <div id="preloader"></div>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Main JS File -->
+    <script src="assets/js/main.js"></script>
+
+    <!-- Back to Top Button -->
+    <!-- <a href="#" class="back-to-top"><i class="fas fa-arrow-up"></i></a> -->
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- AOS Animation Library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 1000,
+            once: true,
+            offset: 100
+        });
+        
+        // Back to top button
+        $(document).ready(function(){
+            $(window).scroll(function(){
+                if($(this).scrollTop() > 200){
+                    $('.back-to-top').addClass('active');
+                } else {
+                    $('.back-to-top').removeClass('active');
+                }
+            });
+            
+            $('.back-to-top').click(function(){
+                $('html, body').animate({scrollTop : 0}, 800);
+                return false;
+            });
+            
+            // Navbar background change on scroll
+            $(window).scroll(function(){
+                if($(window).scrollTop() > 50) {
+                    $('.navbar').addClass('shadow-sm');
+                } else {
+                    $('.navbar').removeClass('shadow-sm');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
