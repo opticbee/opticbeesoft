@@ -1,0 +1,1461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Expert mobile app development services for iOS, Android & cross-platform solutions. We build high-performance apps with stunning UI/UX that drive business growth.">
+    <meta name="keywords" content="mobile app development, iOS app development, Android apps, cross-platform apps, React Native, Flutter, mobile UI/UX design">
+    <meta name="author" content="Opticbee">
+    <link rel="canonical" href="https://opticbee.in/mobileappdevelopment.html">
+    
+      <!-- Favicons -->
+  <link href="images/favicon.ico" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://opticbee.in/mobileappdevelopment.html">
+    <meta property="og:title" content="Mobile App Development Services - iOS, Android & Cross-Platform">
+    <meta property="og:description" content="Expert mobile app development services for iOS, Android & cross-platform solutions. We build high-performance apps that drive business growth.">
+    <meta property="og:image" content="https://opticbee.in/images/mobile-app-development-og.jpg">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://opticbee.in/mobileappdevelopment.html">
+    <meta property="twitter:title" content="Mobile App Development Services - iOS, Android & Cross-Platform">
+    <meta property="twitter:description" content="Expert mobile app development services for iOS, Android & cross-platform solutions. We build high-performance apps that drive business growth.">
+    <meta property="twitter:image" content="https://opticbee.in/images/mobile-app-development-twitter.jpg">
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <title>Mobile App Development Services - iOS, Android & Cross-Platform Solutions</title>
+    
+    <style>
+        :root {
+            --primary: #2563eb;
+            --primary-dark: #1d4ed8;
+            --secondary: #4f46e5;
+            --dark: #1e293b;
+            --light: #f8fafc;
+            --gray: #64748b;
+            --success: #10b981;
+        }
+        
+        body {
+            font-family: 'Inter', 'Segoe UI', system-ui, -apple-system, sans-serif;
+            color: var(--dark);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+        
+        /* Hero Section */
+        .hero {
+            background-image: url(images/mobileappbg.png);
+            background-size: cover;
+            background-position: center;
+            background-color: #64748b;
+            height: 60vh;
+            display: flex;
+            align-items: center;
+            color: white;
+            position: relative;
+            z-index: 1; /* ensures text stays above */
+        }
+
+        .hero::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.6); /* adjust opacity 0.4–0.7 */
+            z-index: -1; /* keeps overlay behind text */
+        }
+
+        
+        /* Quick Links */
+        .quick-links {
+            background-color: var(--light);
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        /* Section Padding */
+        section {
+            padding: 5rem 0;
+        }
+        
+        .section-title {
+            position: relative;
+            margin-bottom: 3rem;
+            font-weight: 700;
+        }
+        
+        /* .section-title:after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 4px;
+            background: var(--primary);
+            margin-top: 15px;
+        } */
+        
+        /* Process Timeline */
+        .process-timeline {
+            position: relative;
+            padding: 2rem 0;
+        }
+        
+        .process-timeline:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 50%;
+            margin-left: -2px;
+            width: 4px;
+            height: 100%;
+            background: var(--primary);
+            z-index: 1;
+        }
+        
+        .timeline-item {
+            margin-bottom: 4rem;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .timeline-icon {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: var(--primary);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            box-shadow: 0 0 0 8px var(--light);
+        }
+        
+        /* Pricing Cards */
+        .pricing-card {
+            border-radius: 15px;
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: none;
+        }
+        
+        .pricing-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        .pricing-header {
+            background: var(--primary);
+            color: white;
+            padding: 2rem;
+        }
+        
+        /* Testimonial Cards */
+        .testimonial-card {
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            height: 100%;
+        }
+        
+        /* FAQ Accordion */
+        .accordion-button:not(.collapsed) {
+            background-color: var(--primary);
+            color: white;
+        }
+        
+        /* Form Styles */
+        .form-control:focus {
+            border-color: var(--primary);
+            box-shadow: 0 0 0 0.25rem rgba(37, 99, 235, 0.25);
+        }
+        
+        /* Buttons */
+        .btn-primary {
+            background-color: var(--primary);
+            border-color: var(--primary);
+        }
+        
+        .btn-primary:hover {
+            background-color: var(--primary-dark);
+            border-color: var(--primary-dark);
+        }
+        
+        .btn-outline-primary {
+            color: var(--primary);
+            border-color: var(--primary);
+        }
+        
+        .btn-outline-primary:hover {
+            background-color: var(--primary);
+            color: white;
+        }
+        
+        /* Animations */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease, transform 0.6s ease;
+        }
+        
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        /* Hover Effects */
+        .hover-lift {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .hover-lift:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+        
+        /* Technology Icons */
+        .tech-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            color: var(--primary);
+        }
+        
+        /* Accessibility */
+        @media (prefers-reduced-motion: reduce) {
+            * {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+            }
+        }
+        
+        /* Responsive Adjustments */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.2rem;
+            }
+            
+            .process-timeline:before {
+                left: 30px;
+            }
+            
+            .timeline-icon {
+                left: 30px;
+            }
+            
+            .timeline-content {
+                margin-left: 80px;
+            }
+        }
+    </style>
+    
+    <!-- JSON-LD Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "Mobile App Development Services",
+      "description": "Expert mobile app development services for iOS, Android & cross-platform solutions",
+      "url": "https://opticbee.in/mobileappdevelopment.html",
+      "breadcrumb": {
+        "@type": "BreadcrumbList",
+        "itemListElement": [{
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://opticbee.in"
+        },{
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Mobile App Development Services"
+        }]
+      },
+      "mainEntity": {
+        "@type": "Service",
+        "name": "Mobile App Development",
+        "serviceType": "Mobile application development",
+        "provider": {
+          "@type": "Organization",
+          "name": "Opticbee",
+          "url": "https://opticbee.in"
+        },
+        "areaServed": "Worldwide",
+        "availableChannel": {
+          "@type": "ServiceChannel",
+          "serviceUrl": "https://opticbee.in/mobileappdevelopment.html"
+        }
+      }
+    }
+    </script>
+</head>
+<body>
+
+
+<!-- header -->
+<header id="header" class="header d-flex align-items-center sticky-top">
+  <div class="container position-relative d-flex align-items-center">
+
+    <a href="index.html" class="logo d-flex align-items-center me-auto">
+      <img src="images/oblogo.png" alt="Official logo" class="navbar-logo">
+      <h1 class="sitename">Optic Bee</h1>
+    </a>
+
+
+    <nav id="navmenu" class="navmenu">
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        
+        <li class="dropdown">
+          <a href="technologies.html"><span>Technologies</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+          <ul>
+            <li><a href="emerging-tech.html#programming">Programming Languages</a></li>
+            <li><a href="ai.html#ai">Artificial Intelligence</a></li>
+            <li><a href="ai.html#prompt-engineering">Prompt Engineering</a></li>
+            <li><a href="cloud-computing.html#edge">Quantum & Edge Computing</a></li>
+            <li><a href="connectivity-iot.html#5g">5G & Connectivity</a></li>
+            <li><a href="emerging-tech.html#xr">Extended Reality (VR/AR)</a></li>
+            <li><a href="connectivity-iot.html#digital-twins">Digital Twins</a></li>
+            <li><a href="connectivity-iot.html#blockchain">Blockchain</a></li>
+            <li><a href="connectivity-iot.html#iot">IOT/IIoT</a></li>
+            <li><a href="cloud-computing.html#cloud">Cloud</a></li>
+            <li><a href="cloud-computing.html#bigdata">Big Data Analytics</a></li>
+            <li><a href="cloud-computing.html#integration">Integration Services</a></li>
+            <li><a href="emerging-tech.html#3d-printing">3D Printing</a></li>
+            <li><a href="emerging-tech.html#rpa">RPA</a></li>
+            <li><a href="ai.html#robotics">Advanced Robotics</a></li>
+            <li><a href="ai.html#cybersecurity">AI in Cybersecurity</a></li>
+          </ul>
+        </li>
+        
+        <li class="dropdown">
+          <a href="#"><span>Business Solutions</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+          <ul>
+            <li class="dropdown">
+              <a href="#"><span>ERP</span> <i class="bi bi-chevron-right toggle-dropdown"></i></a>
+              <ul>
+                <li><a href="#">Oracle ERP Cloud</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#"><span>EPM</span> <i class="bi bi-chevron-right toggle-dropdown"></i></a>
+              <ul>
+                <li><a href="#">Oracle EPM Cloud</a></li>
+              </ul>
+            </li>
+            <li><a href="#">CPM</a></li>
+            <li><a href="#">CRM</a></li>
+            <li class="dropdown">
+              <a href="#"><span>SCM</span> <i class="bi bi-chevron-right toggle-dropdown"></i></a>
+              <ul>
+                <li><a href="#">Oracle SCM Cloud</a></li>
+              </ul>
+            </li>
+            <li><a href="#">HCM</a></li>
+            <li><a href="#">Oracle PaaS Cloud</a></li>
+          </ul>
+        </li>
+        
+        <li class="dropdown">
+          <a href="#"><span>Services</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+          <ul>
+            <li><a href="transforming.html#services">Training</a></li>
+            <li><a href="support.html">Support</a></li>
+            <li><a href="consulting.html#services">Consulting</a></li>
+            <li><a href="transforming.html#services">Implementation & Deployment</a></li>
+            <li><a href="support.html#services">Infrastructure Support</a></li>
+            <li><a href="developmentServices.html#application-development">Application Maintenance</a></li>
+            <li><a href="support.html#services">Application Development</a></li>
+            <li><a href="developmentServices.html#api">API Development</a></li>
+            <li><a href="support.html#services">Customer Software Support</a></li>
+            <li><a href="transforming.html#services">DevOps</a></li>
+            <li><a href="consulting.html#services">Digital Transformation</a></li>
+            <li><a href="consulting.html#services">Migrations & Upgrades</a></li>
+            <li><a href="support.html#services">Partner Product Support</a></li>
+            <li><a href="developmentServices.html#mvp">Startup & MVP Services</a></li>
+            <li><a href="developmentServices.html#system">System Integration</a></li>
+            <li><a href="transforming.html#services">PLM</a></li>
+            <li><a href="transforming.html#services">QA Testing</a></li>
+          </ul>
+        </li>
+        
+        <li class="dropdown">
+          <a href="#"><span>Development</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+          <ul>
+            <li><a href="#">Digital Marketing</a></li>
+            <li class="dropdown">
+              <a href="#"><span>Web Development</span> <i class="bi bi-chevron-right toggle-dropdown"></i></a>
+              <ul>
+                <li><a href="#">MERN Stack</a></li>
+                <li><a href="#">HTML, CSS, JavaScript</a></li>
+                <li><a href="#">Python, PHP</a></li>
+              </ul>
+            </li>
+            <li><a href="MobileApp-Development.html">Mobile App Development</a></li>
+            <li class="dropdown">
+              <a href="#"><span>Databases</span> <i class="bi bi-chevron-right toggle-dropdown"></i></a>
+              <ul>
+                <li><a href="#">Oracle</a></li>
+                <li><a href="#">SQL Server</a></li>
+                <li><a href="#">Teradata</a></li>
+                <li><a href="#">MySQL</a></li>
+                <li><a href="#">PostgreSQL</a></li>
+                <li><a href="#">Sybase</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        
+        <li class="dropdown">
+          <a href="#"><span>Industries</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+          <ul>
+            <li><a href="#">Defence</a></li>
+            <li><a href="#">Aerospace</a></li>
+            <li><a href="#">Space Technology</a></li>
+            <li><a href="#">High Tech</a></li>
+            <li><a href="#">Education</a></li>
+            <li><a href="#">Healthcare</a></li>
+            <li><a href="#">Telecommunication</a></li>
+            <li><a href="#">BFSI</a></li>
+            <li><a href="#">Agri-Tech</a></li>
+            <li><a href="#">Manufacturing</a></li>
+            <li><a href="#">Industrial</a></li>
+            <li><a href="#">Civil/Construction</a></li>
+            <li><a href="#">Metallurgy</a></li>
+            <li><a href="#">Computers/IT</a></li>
+            <li><a href="#">Semiconductors</a></li>
+            <li><a href="#">Electrical/Electronics</a></li>
+            <li><a href="#">Media & Entertainment</a></li>
+          </ul>
+        </li>
+        
+        <li class="dropdown">
+            <a href="affiliate.html"><span>Affiliates</span> </a>
+        </li>
+        
+        <li class="dropdown">
+          <a href="#"><span>Projects</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+          <ul>
+            <li><a href="#">Educational Projects</a></li>
+            <li><a href="#">Industry Projects</a></li>
+            <li><a href="#">Technology Case Studies</a></li>
+            <li><a href="#">Integration Projects</a></li>
+            <li><a href="#">Contract Projects</a></li>
+            <li><a href="#">Corp to Corp Projects</a></li>
+            <li><a href="#">Offshore/Remote Projects</a></li>
+            <li><a href="#">Training Projects</a></li>
+          </ul>
+        </li>
+      </ul>
+      <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+    </nav>
+
+    <div class="header-social-links">
+      <a href="https://x.com/BeeOptic?t=9XDIJ7pA-ZHlrJaPQkSm_Q&s=09" class="twitter"><i class="bi bi-twitter-x"></i></a>
+      <a href="https://www.facebook.com/share/1AeUNhhRDu/" class="facebook"><i class="bi bi-facebook"></i></a>
+      <a href="https://www.instagram.com/optic.bee?igsh=M3lpc2U5ajFpYTA1" class="instagram"><i class="bi bi-instagram"></i></a>
+      <a href="https://www.linkedin.com/in/optic-bee-246554375?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="linkedin"><i class="bi bi-linkedin"></i></a>
+    </div>
+
+  </div>
+</header>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div class="container">
+            <div class="row justify-content-center text-center">
+                <div class="col-lg-8">
+                    <h1 class="display-3 fw-bold mb-4">Mobile App Development That Delivers: iOS, Android & Cross-Platform Solutions</h1>
+                    <p class="lead mb-5">We craft high-performance mobile applications that drive engagement, increase revenue, and transform your business vision into reality.</p>
+                    <div class="d-grid gap-3 d-sm-flex justify-content-sm-center">
+                        <a href="contact.html" class="btn btn-primary btn-lg px-4 gap-3">Get a Free Consultation</a>
+                        <a href="#process" class="btn btn-outline-light btn-lg px-4">Our Process</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- QUICK LINKS NAVIGATION -->
+    <div class="quick-links">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <p class="mb-0 text-center fw-bold">On this page:</p>
+                    <div class="d-flex flex-wrap justify-content-center">
+                        <a href="#overview" class="btn btn-sm btn-link text-decoration-none">Overview</a>
+                        <a href="#native" class="btn btn-sm btn-link text-decoration-none">Native Apps</a>
+                        <a href="#cross-platform" class="btn btn-sm btn-link text-decoration-none">Cross-Platform</a>
+                        <a href="#uiux" class="btn btn-sm btn-link text-decoration-none">UI/UX</a>
+                        <a href="#technologies" class="btn btn-sm btn-link text-decoration-none">Technologies</a>
+                        <a href="#process" class="btn btn-sm btn-link text-decoration-none">Process</a>
+                        <a href="#case-studies" class="btn btn-sm btn-link text-decoration-none">Case Studies</a>
+                        <a href="#why-us" class="btn btn-sm btn-link text-decoration-none">Why Choose Us</a>
+                        <a href="#testimonials" class="btn btn-sm btn-link text-decoration-none">Testimonials</a>
+                        <a href="#faq" class="btn btn-sm btn-link text-decoration-none">FAQ</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- OVERVIEW SECTION -->
+    <section id="overview" class="bg-light">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10 text-center">
+                    <h2 class="section-title">Mobile App Development Overview</h2>
+                    <p class="lead mb-5">In today's mobile-first world, having a robust mobile presence is no longer optional—it's essential for business growth and customer engagement.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <p>Mobile applications have transformed how businesses connect with their customers, offering unprecedented opportunities for engagement, revenue generation, and brand building. With over 6.3 billion smartphone users worldwide, mobile apps provide direct access to your target audience, enabling personalized experiences that drive loyalty and growth.</p>
+                    <p>Our mobile app development services focus on creating solutions that deliver tangible business results. Whether you need to streamline operations, enhance customer experience, or create new revenue streams, we build apps that align with your strategic objectives and deliver measurable ROI.</p>
+                </div>
+                <div class="col-lg-6">
+                    <p>We understand that successful mobile apps combine technical excellence with business acumen. Our approach balances cutting-edge development practices with user-centered design, ensuring your app not only functions flawlessly but also delivers an experience that keeps users coming back.</p>
+                    <p>From initial concept to post-launch optimization, we partner with you through every stage of the development process, providing expert guidance and transparent communication to ensure your mobile app becomes a valuable asset for your business.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NATIVE APP DEVELOPMENT SECTION -->
+    <section id="native">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h2 class="section-title">Native App Development</h2>
+                    <p class="lead">Leverage the full power of iOS and Android with high-performance native applications.</p>
+                    <p>Native mobile app development involves creating applications specifically for a single platform (iOS or Android) using platform-specific programming languages and tools. This approach delivers superior performance, seamless user experience, and full access to device capabilities.</p>
+                    <p>Our native app development team specializes in Swift and Objective-C for iOS applications, and Kotlin and Java for Android development. We follow platform-specific design guidelines (Human Interface Guidelines for iOS and Material Design for Android) to ensure your app feels intuitive and natural to users.</p>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> Optimal performance and responsiveness</li>
+                        <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> Access to all device hardware and features</li>
+                        <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> Enhanced security for sensitive data</li>
+                        <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> Offline functionality and data persistence</li>
+                        <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> Seamless integration with platform ecosystems</li>
+                    </ul>
+                    <a href="contact.html" class="btn btn-primary mt-3">Discuss Your Native App Project</a>
+                </div>
+                <div class="col-lg-6">
+                    <div class="position-relative">
+                        <img src="images/mobile-app.png" alt="Native mobile app development for iOS and Android" class="img-fluid rounded shadow hover-lift" loading="lazy">
+                        <div class="position-absolute top-0 start-0 w-100 h-100 rounded opacity-10"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CROSS-PLATFORM APP DEVELOPMENT SECTION -->
+    <section id="cross-platform" class="bg-light">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 order-lg-2">
+                    <h2 class="section-title">Cross-Platform App Development</h2>
+                    <p class="lead">Reach both iOS and Android users with a single codebase, reducing development time and cost.</p>
+                    <p>Cross-platform development allows you to build applications that run on multiple operating systems from a single codebase. Using frameworks like React Native, Flutter, and Ionic, we create apps that deliver near-native performance while significantly reducing development time and cost.</p>
+                    <p>This approach is ideal for startups and businesses looking to validate their app idea across both major platforms without the investment required for separate native applications. With advances in cross-platform technologies, performance gaps have narrowed considerably, making this a viable option for many use cases.</p>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> Single codebase for iOS and Android</li>
+                        <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> Faster development and time-to-market</li>
+                        <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> Reduced development and maintenance costs</li>
+                        <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> Consistent UI/UX across platforms</li>
+                        <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> Hot reload for faster iteration</li>
+                    </ul>
+                    <a href="contact.html" class="btn btn-primary mt-3">Explore Cross-Platform Options</a>
+                </div>
+                <div class="col-lg-6 order-lg-1">
+                    
+                    <div class="bg-dark text-white p-4 rounded">
+                        <h5 class="mb-3">Sample React Native Code</h5>
+                        <pre class="bg-gray-800 p-3 rounded text-light"><code>import React from 'react';
+import { View, Text, StyleSheet } from 'react-native';
+
+const WelcomeScreen = () => {
+  return (
+    &lt;View style={styles.container}&gt;
+      &lt;Text style={styles.title}&gt;Welcome to Our App!&lt;/Text&gt;
+      &lt;Text style={styles.subtitle}&gt;
+        Experience the best mobile experience.
+      &lt;/Text&gt;
+    &lt;/View&gt;
+  );
+};
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: '#ffffff',
+  },
+  title: {
+    fontSize: 24,
+    fontWeight: 'bold',
+    marginBottom: 10,
+  },
+  subtitle: {
+    fontSize: 16,
+    color: '#64748b',
+  },
+});
+
+export default WelcomeScreen;</code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- UI/UX DESIGN SECTION -->
+    <section id="uiux">
+        <div class="container">
+            <div class="row justify-content-center text-center mb-5">
+                <div class="col-lg-8">
+                    <h2 class="section-title">UI/UX Design Excellence</h2>
+                    <p class="lead">Beautiful, intuitive interfaces that delight users and drive engagement.</p>
+                </div>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <p>Exceptional user experience is at the heart of every successful mobile application. Our design process begins with deep user research to understand your audience's needs, behaviors, and pain points. We then create intuitive interfaces that not only look beautiful but also provide seamless, frictionless experiences.</p>
+                    <p>Our UI/UX designers follow industry best practices and accessibility guidelines (WCAG 2.1) to ensure your app is usable by everyone, regardless of ability. We create interactive prototypes that allow you to experience and test the app flow before development begins, saving time and reducing costly changes later in the process.</p>
+                    <p>Through iterative design and user testing, we refine the experience until it meets the highest standards of usability and satisfaction. The result is an app that users love to engage with, leading to higher retention rates and increased conversions.</p>
+                    <div class="row mt-4">
+                        <div class="col-md-6">
+                            <ul class="list-unstyled">
+                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i> User Research & Personas</li>
+                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i> Information Architecture</li>
+                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i> Wireframing & Prototyping</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <ul class="list-unstyled">
+                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i> Visual Design & Branding</li>
+                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i> Usability Testing</li>
+                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i> Accessibility Compliance</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="position-relative">
+                        <img src="images/uiux.png" alt="Mobile app UI/UX design process with wireframes and prototypes" class="img-fluid rounded shadow hover-lift" loading="lazy">
+                        <div class="position-absolute top-0 start-0 w-100 h-100  rounded opacity-10"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TECHNOLOGIES SECTION -->
+    <section id="technologies" class="bg-light">
+        <div class="container">
+            <div class="row justify-content-center text-center mb-5">
+                <div class="col-lg-8">
+                    <h2 class="section-title">Technologies We Use</h2>
+                    <p class="lead">Leveraging cutting-edge technologies to build robust, scalable mobile applications.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3 col-6 text-center mb-5 visible">
+                    <i class="fab fa-apple tech-icon"></i>
+                    <h5>iOS Development</h5>
+                    <p class="small">Swift, Objective-C, Xcode, Cocoa Touch</p>
+                </div>
+                <div class="col-md-3 col-6 text-center mb-5 visible">
+                    <i class="fab fa-android tech-icon"></i>
+                    <h5>Android Development</h5>
+                    <p class="small">Kotlin, Java, Android Studio</p>
+                </div>
+                <div class="col-md-3 col-6 text-center mb-5 visible">
+                    <i class="fab fa-react tech-icon"></i>
+                    <h5>React Native</h5>
+                    <p class="small">Cross-platform apps with native performance</p>
+                </div>
+                <div class="col-md-3 col-6 text-center mb-5 visible">
+                    <i class="fab fa-google tech-icon"></i>
+                    <h5>Flutter</h5>
+                    <p class="small">Google's UI toolkit for beautiful native apps</p>
+                </div>
+                <div class="col-md-3 col-6 text-center mb-5 visible">
+                    <i class="fas fa-database tech-icon"></i>
+                    <h5>Backend Integration</h5>
+                    <p class="small">REST APIs, GraphQL, Firebase, AWS Amplify</p>
+                </div>
+                <div class="col-md-3 col-6 text-center mb-5 visible">
+                    <i class="fas fa-cloud tech-icon"></i>
+                    <h5>Cloud Services</h5>
+                    <p class="small">AWS, Google Cloud, Azure, Cloud Functions</p>
+                </div>
+                <div class="col-md-3 col-6 text-center mb-5 visible">
+                    <i class="fas fa-shield-alt tech-icon"></i>
+                    <h5>Security</h5>
+                    <p class="small">Data encryption, OAuth, biometric authentication</p>
+                </div>
+                <div class="col-md-3 col-6 text-center mb-5 visible">
+                    <i class="fas fa-chart-bar tech-icon"></i>
+                    <h5>Analytics</h5>
+                    <p class="small">Google Analytics, Mixpanel, Amplitude, Firebase</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROCESS SECTION -->
+    <section id="process">
+        <div class="container">
+            <div class="row justify-content-center text-center mb-5">
+                <div class="col-lg-8">
+                    <h2 class="section-title">Our Development Process</h2>
+                    <p class="lead">A structured, transparent approach that ensures quality and aligns with your business goals.</p>
+                </div>
+            </div>
+            
+            <div class="process-timeline">
+                <!-- Step 1 -->
+                <div class="row timeline-item align-items-center">
+                    <div class="col-md-6">
+                        <div class="timeline-content p-4 bg-light rounded shadow-sm">
+                            <h4>Discovery & Strategy</h4>
+                            <p>We begin by thoroughly understanding your business objectives, target audience, and technical requirements. Through workshops and research, we define project scope, create user personas, and establish success metrics.</p>
+                            <ul>
+                                <li>Requirements gathering</li>
+                                <li>Competitive analysis</li>
+                                <li>Technical feasibility study</li>
+                                <li>Project roadmap creation</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-6 text-center">
+                        <div class="timeline-icon">
+                            <i class="fas fa-search"></i>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Step 2 -->
+                <div class="row timeline-item align-items-center">
+                    <div class="col-md-6 order-md-2">
+                        <div class="timeline-content p-4 bg-light rounded shadow-sm">
+                            <h4>UI/UX Design</h4>
+                            <p>Our designers create wireframes and interactive prototypes that bring your app to life. We focus on intuitive navigation, accessibility, and creating delightful user experiences that align with your brand identity.</p>
+                            <ul>
+                                <li>Information architecture</li>
+                                <li>Wireframing & prototyping</li>
+                                <li>Visual design</li>
+                                <li>Usability testing</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-6 order-md-1 text-center">
+                        <div class="timeline-icon">
+                            <i class="fas fa-pencil-ruler"></i>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Step 3 -->
+                <div class="row timeline-item align-items-center">
+                    <div class="col-md-6">
+                        <div class="timeline-content p-4 bg-light rounded shadow-sm">
+                            <h4>Development</h4>
+                            <p>Our developers use agile methodologies to build your app in iterative sprints. We prioritize clean, maintainable code and implement robust testing throughout the development process.</p>
+                            <ul>
+                                <li>Agile development sprints</li>
+                                <li>Regular code reviews</li>
+                                <li>Continuous integration</li>
+                                <li>Third-party API integration</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-6 text-center">
+                        <div class="timeline-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Step 4 -->
+                <div class="row timeline-item align-items-center">
+                    <div class="col-md-6 order-md-2">
+                        <div class="timeline-content p-4 bg-light rounded shadow-sm">
+                            <h4>Quality Assurance</h4>
+                            <p>Our QA team conducts comprehensive testing across multiple devices and scenarios to ensure your app performs flawlessly. We test for functionality, usability, performance, and security.</p>
+                            <ul>
+                                <li>Functional testing</li>
+                                <li>Performance testing</li>
+                                <li>Security testing</li>
+                                <li>User acceptance testing</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-6 order-md-1 text-center">
+                        <div class="timeline-icon">
+                            <i class="fas fa-bug"></i>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Step 5 -->
+                <div class="row timeline-item align-items-center">
+                    <div class="col-md-6">
+                        <div class="timeline-content p-4 bg-light rounded shadow-sm">
+                            <h4>Deployment</h4>
+                            <p>We guide you through the app store submission process, ensuring compliance with all guidelines and requirements. Our team handles the technical aspects of deployment to make the process seamless.</p>
+                            <ul>
+                                <li>App store optimization</li>
+                                <li>Store listing creation</li>
+                                <li>Submission assistance</li>
+                                <li>Launch planning</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-6 text-center">
+                        <div class="timeline-icon">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Step 6 -->
+                <div class="row timeline-item align-items-center">
+                    <div class="col-md-6 order-md-2">
+                        <div class="timeline-content p-4 bg-light rounded shadow-sm">
+                            <h4>Support & Maintenance</h4>
+                            <p>Our relationship continues after launch with ongoing support, maintenance, and optimization services. We monitor performance, address issues, and implement updates to keep your app current.</p>
+                            <ul>
+                                <li>Performance monitoring</li>
+                                <li>Regular updates</li>
+                                <li>Bug fixes & troubleshooting</li>
+                                <li>Feature enhancements</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-6 order-md-1 text-center">
+                        <div class="timeline-icon">
+                            <i class="fas fa-headset"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CASE STUDIES SECTION -->
+    <section id="case-studies" class="bg-light">
+        <div class="container">
+            <div class="row justify-content-center text-center mb-5">
+                <div class="col-lg-8">
+                    <h2 class="section-title">Case Studies</h2>
+                    <p class="lead">Real-world examples of mobile apps we've developed and the results they've achieved.</p>
+                </div>
+            </div>
+            
+            <div class="row">
+                <!-- Case Study 1 -->
+                <div class="col-lg-6 mb-4 visible">
+                    <div class="card h-100 shadow-sm hover-lift">
+                        <img src="images/befit.png" class="card-img-top" alt="Fitness tracking mobile app case study" loading="lazy">
+                        <div class="card-body">
+                            <span class="badge bg-primary mb-2">Health & Fitness</span>
+                            <h4 class="card-title">BeFit: Personal Fitness App</h4>
+                            <p class="card-text"><strong>Challenge:</strong> Create an engaging fitness app that helps users track workouts, nutrition, and progress with personalized recommendations.</p>
+                            <p class="card-text"><strong>Solution:</strong> Developed a React Native application with AI-powered workout suggestions, integration with wearable devices, and social features for community motivation.</p>
+                            <p class="card-text"><strong>Results:</strong></p>
+                            <ul>
+                                <li>4.8-star rating on app stores</li>
+                                <li>45% increase in user retention</li>
+                                <li>120,000+ downloads in first 6 months</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Case Study 2 -->
+                <div class="col-lg-6 mb-4 visible">
+                    <div class="card h-100 shadow-sm hover-lift">
+                        <img src="images/gadicart-logo.png" class="card-img-top" alt="E-commerce mobile app case study" loading="lazy">
+                        <div class="card-body">
+                            <span class="badge bg-primary mb-2">E-Commerce</span>
+                            <h4 class="card-title">Gadi Cart : Fashion Retail App</h4>
+                            <p class="card-text"><strong>Challenge:</strong> Develop a shopping app that provides a seamless browsing and purchasing experience with AR try-on capabilities.</p>
+                            <p class="card-text"><strong>Solution:</strong> Built a native iOS and Android app with augmented reality features, personalized recommendations, and one-click checkout.</p>
+                            <p class="card-text"><strong>Results:</strong></p>
+                            <ul>
+                                <li>32% higher conversion rate than web</li>
+                                <li>28% increase in average order value</li>
+                                <li>60% of revenue from mobile app</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Case Study 3 -->
+                <div class="col-lg-6 mb-4 visible">
+                    <div class="card h-100 shadow-sm hover-lift">
+                        <img src="images/financial.jpg" class="card-img-top" alt="Finance mobile app case study" loading="lazy">
+                        <div class="card-body">
+                            <span class="badge bg-primary mb-2">FinTech</span>
+                            <h4 class="card-title">WealthSimple: Investment Platform</h4>
+                            <p class="card-text"><strong>Challenge:</strong> Create a secure, user-friendly investment app that simplifies portfolio management for beginner investors.</p>
+                            <p class="card-text"><strong>Solution:</strong> Developed a Flutter application with biometric authentication, real-time portfolio tracking, and educational content.</p>
+                            <p class="card-text"><strong>Results:</strong></p>
+                            <ul>
+                                <li>70,000+ active users in first year</li>
+                                <li>95% positive user feedback</li>
+                                <li>Zero security incidents</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Case Study 4 -->
+                <div class="col-lg-6 mb-4 visible">
+                    <div class="card h-100 shadow-sm hover-lift">
+                        <img src="images/zest.png" class="card-img-top" alt="Food delivery mobile app case study" loading="lazy">
+                        <div class="card-body">
+                            <span class="badge bg-primary mb-2">Food Delivery</span>
+                            <h4 class="card-title">QuickBite: Restaurant Delivery App</h4>
+                            <p class="card-text"><strong>Challenge:</strong> Build a food delivery app that connects local restaurants with customers, with real-time order tracking.</p>
+                            <p class="card-text"><strong>Solution:</strong> Created a cross-platform app with geolocation, push notifications, in-app chat, and multiple payment options.</p>
+                            <p class="card-text"><strong>Results:</strong></p>
+                            <ul>
+                                <li>40% faster order processing</li>
+                                <li>4.7-star average rating</li>
+                                <li>Partnership with 200+ local restaurants</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WHY CHOOSE US SECTION -->
+    <section id="why-us" class="bg-light">
+        <div class="container">
+            <div class="row justify-content-center text-center mb-5">
+                <div class="col-lg-8">
+                    <h2 class="section-title">Why Choose Opticbee</h2>
+                    <p class="lead">What sets us apart in the competitive mobile app development landscape.</p>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-md-6 col-lg-4 mb-4 visible">
+
+                    <div class="d-flex">
+                        <div class="me-4">
+                            <i class="fas fa-trophy fa-2x text-primary"></i>
+                        </div>
+                        <div>
+                            <h5>Proven Expertise</h5>
+                            <p>With over 8 years of experience and 150+ successful apps delivered, we have the expertise to bring your vision to life.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-4 mb-4 visible">
+
+                    <div class="d-flex">
+                        <div class="me-4">
+                            <i class="fas fa-lock fa-2x text-primary"></i>
+                        </div>
+                        <div>
+                            <h5>Security First</h5>
+                            <p>We implement industry-best security practices to protect your data and your users' information from potential threats.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-4 mb-4 visible">
+
+                    <div class="d-flex">
+                        <div class="me-4">
+                            <i class="fas fa-headset fa-2x text-primary"></i>
+                        </div>
+                        <div>
+                            <h5>Ongoing Support</h5>
+                            <p>Our relationship doesn't end at launch. We provide continuous support and maintenance to keep your app performing optimally.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-4 mb-4 visible">
+                    <div class="d-flex">
+                        <div class="me-4">
+                            <i class="fas fa-balance-scale fa-2x text-primary"></i>
+                        </div>
+                        <div>
+                            <h5>Transparent Pricing</h5>
+                            <p>No hidden costs or surprises. We provide detailed quotes and maintain open communication about project budgets.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-4 mb-4 visible">
+                    <div class="d-flex">
+                        <div class="me-4">
+                            <i class="fas fa-project-diagram fa-2x text-primary"></i>
+                        </div>
+                        <div>
+                            <h5>Agile Methodology</h5>
+                            <p>We work in short sprints with regular demos, ensuring you're always informed and able to provide feedback.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-4 mb-4 visible">
+                    <div class="d-flex">
+                        <div class="me-4">
+                            <i class="fas fa-users fa-2x text-primary"></i>
+                        </div>
+                        <div>
+                            <h5>Dedicated Teams</h5>
+                            <p>You'll work with a dedicated project team that becomes an extension of your own organization.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS SECTION -->
+    <section id="testimonials">
+        <div class="container">
+            <div class="row justify-content-center text-center mb-5">
+                <div class="col-lg-8">
+                    <h2 class="section-title">What Our Clients Say</h2>
+                    <p class="lead">Don't just take our word for it - hear from businesses we've helped succeed.</p>
+                </div>
+            </div>
+            
+            <div class="row">
+                <!-- Testimonial 1 -->
+                <div class="col-md-6 col-lg-4 mb-4 visible">
+                    <div class="testimonial-card">
+                        <div class="card-body">
+                            <div class="d-flex mb-4">
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                            </div>
+                            <p class="card-text">"Opticbee transformed our business with a stunning mobile app that our customers love. Their attention to detail and understanding of our industry made all the difference."</p>
+                            <div class="d-flex align-items-center mt-4">
+                                <div class="flex-shrink-0">
+                                    <img src="images/rashmika.png" alt="Sarah Johnson, CEO of TechSolutions" class="rounded-circle" width="50" height="50" loading="lazy">
+                                </div>
+                                <div class="flex-grow-1 ms-3">
+                                    <h6 class="mb-0">Sarah Johnson</h6>
+                                    <small class="text-muted">CEO, TechSolutions</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="col-md-6 col-lg-4 mb-4 visible">
+                    <div class="testimonial-card">
+                        <div class="card-body">
+                            <div class="d-flex mb-4">
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                            </div>
+                            <p class="card-text">"The team at Opticbee delivered our app on time and within budget. Their technical expertise and creative solutions helped us create an app that stands out in a crowded market."</p>
+                            <div class="d-flex align-items-center mt-4">
+                                <div class="flex-shrink-0">
+                                    <img src="images/rashmika.png" alt="Michael Chen, Founder of HealthPlus" class="rounded-circle" width="50" height="50" loading="lazy">
+                                </div>
+                                <div class="flex-grow-1 ms-3">
+                                    <h6 class="mb-0">Michael Chen</h6>
+                                    <small class="text-muted">Founder, HealthPlus</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="col-md-6 col-lg-4 mb-4 visible">
+                    <div class="testimonial-card">
+                        <div class="card-body">
+                            <div class="d-flex mb-4">
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                            </div>
+                            <p class="card-text">"Working with Opticbee was a game-changer for our startup. They guided us through the entire process and built an app that has become central to our business model."</p>
+                            <div class="d-flex align-items-center mt-4">
+                                <div class="flex-shrink-0">
+                                    <img src="images/rashmika.png" alt="Alex Rodriguez, CTO of Finovate" class="rounded-circle" width="50" height="50" loading="lazy">
+                                </div>
+                                <div class="flex-grow-1 ms-3">
+                                    <h6 class="mb-0">Alex Rodriguez</h6>
+                                    <small class="text-muted">CTO, Finovate</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Client Logos -->
+            <div class="row mt-5">
+                <div class="col-12">
+                    <h4 class="text-center mb-4">Trusted By Industry Leaders</h4>
+                    <div class="d-flex flex-wrap justify-content-center align-items-center">
+                        <img src="images/" alt="TechSolutions logo" class="img-fluid m-4 client-logo" height="60" loading="lazy">
+                        <img src="images/" alt="HealthPlus logo" class="img-fluid m-4 client-logo" height="60" loading="lazy">
+                        <img src="images/.png" alt="Finovate logo" class="img-fluid m-4 client-logo" height="60" loading="lazy">
+                        <img src="images/.png" alt="StyleMart logo" class="img-fluid m-4 client-logo" height="60" loading="lazy">
+                        <img src="images/.png" alt="QuickBite logo" class="img-fluid m-4 client-logo" height="60" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ SECTION -->
+    <section id="faq" class="bg-light">
+        <div class="container">
+            <div class="row justify-content-center text-center mb-5">
+                <div class="col-lg-8">
+                    <h2 class="section-title">Frequently Asked Questions</h2>
+                    <p class="lead">Get answers to common questions about our mobile app development process.</p>
+                </div>
+            </div>
+            
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="accordion" id="faqAccordion">
+                        <!-- FAQ Item 1 -->
+                        <div class="accordion-item">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1" aria-expanded="true" aria-controls="faq1">
+                                    How long does it take to develop a mobile app?
+                                </button>
+                            </h3>
+                            <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    The timeline for mobile app development varies based on complexity, features, and platforms. A simple app can take 2-3 months, while more complex applications may require 6 months or longer. During our discovery phase, we'll provide a detailed timeline specific to your project requirements.
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- FAQ Item 2 -->
+                        <div class="accordion-item">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2" aria-expanded="false" aria-controls="faq2">
+                                    Should I choose native or cross-platform development?
+                                </button>
+                            </h3>
+                            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    The choice between native and cross-platform depends on your specific needs. Native apps offer superior performance and access to all device features but require separate codebases for iOS and Android. Cross-platform apps use a single codebase for both platforms, reducing development time and cost, with near-native performance. We'll help you determine the best approach during our consultation.
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- FAQ Item 3 -->
+                        <div class="accordion-item">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3" aria-expanded="false" aria-controls="faq3">
+                                    What is included in your maintenance and support services?
+                                </button>
+                            </h3>
+                            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Our maintenance and support services include bug fixes, performance optimization, compatibility updates for new OS versions, feature enhancements, and 24/7 monitoring. We offer flexible support packages tailored to your needs, ensuring your app remains secure, stable, and up-to-date.
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- FAQ Item 4 -->
+                        <div class="accordion-item">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4" aria-expanded="false" aria-controls="faq4">
+                                    How do you ensure the security of my app?
+                                </button>
+                            </h3>
+                            <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    We follow industry best practices for mobile app security, including data encryption, secure authentication methods, regular security testing, and compliance with relevant regulations. Our team stays updated on the latest security threats and mitigation strategies to protect your app and user data.
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- FAQ Item 5 -->
+                        <div class="accordion-item">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5" aria-expanded="false" aria-controls="faq5">
+                                    Can you help with app store submission?
+                                </button>
+                            </h3>
+                            <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Yes, we provide complete app store submission assistance for both Apple App Store and Google Play Store. Our team handles the technical aspects, prepares required assets, ensures compliance with guidelines, and manages the submission process from start to finish.
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- FAQ Item 6 -->
+                        <div class="accordion-item">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq6" aria-expanded="false" aria-controls="faq6">
+                                    What is your approach to UI/UX design?
+                                </button>
+                            </h3>
+                            <div id="faq6" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Our UI/UX design process is user-centered and research-driven. We begin with understanding your target audience and their needs, then create wireframes and prototypes that we test and refine. We focus on intuitive navigation, accessibility, and creating delightful experiences that keep users engaged with your app.
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- FAQ Item 7 -->
+                        <div class="accordion-item">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq7" aria-expanded="false" aria-controls="faq7">
+                                    Do you provide post-launch analytics?
+                                </button>
+                            </h3>
+                            <div id="faq7" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Yes, we integrate analytics tools to track user behavior, engagement metrics, performance data, and conversion rates. We provide regular reports and insights to help you understand how users interact with your app and identify opportunities for improvement and growth.
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- FAQ Item 8 -->
+                        <div class="accordion-item">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq8" aria-expanded="false" aria-controls="faq8">
+                                    How much does it cost to develop a mobile app?
+                                </button>
+                            </h3>
+                            <div id="faq8" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Mobile app development costs vary based on complexity, features, platforms, and design requirements. Our projects typically range from $15,000 for basic apps to $75,000+ for complex enterprise solutions. We provide transparent pricing and detailed quotes after understanding your specific requirements during the discovery phase.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JavaScript -->
+    <script>
+        // Form validation
+        (function () {
+            'use strict'
+            
+            // Fetch the form we want to apply custom validation styles to
+            var form = document.getElementById('contactForm')
+            
+            form.addEventListener('submit', function (event) {
+                if (!form.checkValidity()) {
+                    event.preventDefault()
+                    event.stopPropagation()
+                } else {
+                    event.preventDefault()
+                    // In a real scenario, you would submit the form data to a server here
+                    // For demonstration, we'll just show the success message
+                    document.getElementById('successMessage').classList.remove('d-none')
+                    form.reset()
+                    form.classList.remove('was-validated')
+                    
+                    // Scroll to success message
+                    document.getElementById('successMessage').scrollIntoView({ behavior: 'smooth' })
+                }
+                
+                form.classList.add('was-validated')
+            }, false)
+        })()
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault()
+                
+                const targetId = this.getAttribute('href')
+                if (targetId === '#') return
+                
+                const targetElement = document.querySelector(targetId)
+                if (targetElement) {
+                    targetElement.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    })
+                    
+                    // Update URL hash without scrolling
+                    if (history.pushState) {
+                        history.pushState(null, null, targetId)
+                    } else {
+                        location.hash = targetId
+                    }
+                }
+            })
+        })
+        
+        // Intersection Observer for fade-in animations
+        const fadeElements = document.querySelectorAll('.fade-in')
+        
+        const fadeObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible')
+                    fadeObserver.unobserve(entry.target)
+                }
+            })
+        }, {
+            threshold: 0.1
+        })
+        
+        fadeElements.forEach(element => {
+            fadeObserver.observe(element)
+        })
+        
+        // Reduce motion for accessibility
+        if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+            const animatedElements = document.querySelectorAll('*')
+            animatedElements.forEach(element => {
+                element.style.animation = 'none'
+                element.style.transition = 'none'
+            })
+        }
+    </script>
+
+  <footer id="footer" class="footer dark-background">
+
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-4 col-md-6 footer-about">
+          <a href="index.html" class="logo d-flex align-items-center">
+            <span class="sitename">Optic Bee</span>
+          </a>
+          <div class="footer-contact pt-3">
+            <p>plot 21, flat 102, CVR Residency</p>
+            <p>Pragathi Nagar, Hyderabad, IN 500090</p>
+            <p class="mt-3"><strong>Phone:</strong> <span>+91 99087 93602</span></p>
+            <p><strong>Email:</strong> <span>support@opticbee.in</span></p>
+          </div>
+          <div class="social-links d-flex mt-4">
+            <a href="https://x.com/BeeOptic?t=9XDIJ7pA-ZHlrJaPQkSm_Q&s=09"><i class="bi bi-twitter-x"></i></a>
+            <a href="https://www.facebook.com/share/1AeUNhhRDu/"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.instagram.com/optic.bee?igsh=M3lpc2U5ajFpYTA1"><i class="bi bi-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/optic-bee-246554375?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="">Terms of service</a></li>
+            <li><a href="#">Privacy policy</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Our Services</h4>
+          <ul>
+            <li><a href="#">Web Design</a></li>
+            <li><a href="#">Web Development</a></li>
+            <li><a href="#">Product Management</a></li>
+            <li><a href="#">Marketing</a></li>
+            <li><a href="#">Graphic Design</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-4 col-md-12 footer-newsletter">
+          <h4>Our Newsletter</h4>
+          <p>Subscribe to our newsletter and receive the latest news about our products and services!</p>
+          <form action="forms/newsletter.php" method="post" class="php-email-form">
+            <div class="newsletter-form"><input type="email" name="email"><input type="submit" value="Subscribe"></div>
+            <div class="loading">Loading</div>
+            <div class="error-message"></div>
+            <div class="sent-message">Your subscription request has been sent. Thank you!</div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container copyright text-center mt-4">
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">Optic Bee</strong> <span>All Rights Reserved</span></p>
+      <div class="credits"></div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+  
+</body>
+</html>

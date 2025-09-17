@@ -1,0 +1,1945 @@
+<!-- webdevelopment.html — generated for Opticbee; replace placeholders as needed -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Development Services | MERN Stack, Python & PHP Experts | Opticbee</title>
+    <meta name="description" content="Professional web development services using MERN stack, Python, PHP. We build scalable, secure web applications with modern frameworks and best practices.">
+    <link rel="canonical" href="https://opticbee.in/webdevelopment.html">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://opticbee.in/webdevelopment.html">
+    <meta property="og:title" content="Web Development Services | MERN Stack, Python & PHP Experts">
+    <meta property="og:description" content="Professional web development services using MERN stack, Python, PHP. We build scalable, secure web applications with modern frameworks.">
+    <meta property="og:image" content="https://opticbee.in/images/webdev-og-image.jpg">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://opticbee.in/webdevelopment.html">
+    <meta property="twitter:title" content="Web Development Services | MERN Stack, Python & PHP Experts">
+    <meta property="twitter:description" content="Professional web development services using MERN stack, Python, PHP. We build scalable, secure web applications.">
+    <meta property="twitter:image" content="https://opticbee.in/images/webdev-twitter-image.jpg">
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- TODO: Consider adding Google Fonts for enhanced typography -->
+    <!--
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    -->
+    
+    <style>
+        :root {
+            --primary: #0d6efd;
+            --primary-dark: #0a58ca;
+            --secondary: #6c757d;
+            --dark: #212529;
+            --light: #f8f9fa;
+            --success: #198754;
+            --danger: #dc3545;
+            --warning: #ffc107;
+            --info: #0dcaf0;
+        }
+        
+        /* Base styles */
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            overflow-x: hidden;
+        }
+        
+        /* Section spacing */
+        section {
+            padding: 5rem 0;
+        }
+        
+        .section-title {
+            font-weight: 700;
+            margin-bottom: 1rem;
+            position: relative;
+            padding-bottom: 0.5rem;
+        }
+        
+        .section-title:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 60px;
+            height: 3px;
+            background-color: var(--primary);
+        }
+        
+        .section-title.center {
+            text-align: center;
+        }
+        
+        .section-title.center:after {
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        
+        .section-subtitle {
+            color: var(--secondary);
+            margin-bottom: 3rem;
+            text-align: center;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        /* Hero section */
+        .hero {
+            position: relative;
+            height: 100vh;
+            min-height: 600px;
+            background-image: url('images/webdev-hero.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+        }
+        
+        @media (prefers-reduced-motion: reduce), (max-width: 768px) {
+            .hero {
+                background-attachment: scroll;
+            }
+        }
+        
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+        
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            max-width: 800px;
+            padding: 0 20px;
+        }
+        
+        .hero h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            line-height: 1.2;
+        }
+        
+        .hero p {
+            font-size: 1.5rem;
+            margin-bottom: 2.5rem;
+        }
+        
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .hero p {
+                font-size: 1.2rem;
+            }
+        }
+        
+        /* Button styles */
+        .btn-primary {
+            background-color: var(--primary);
+            border-color: var(--primary);
+            padding: 0.75rem 2rem;
+            font-weight: 600;
+            border-radius: 0.375rem;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-primary:hover {
+            background-color: var(--primary-dark);
+            border-color: var(--primary-dark);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+        }
+        
+        .btn-outline-light {
+            padding: 0.75rem 2rem;
+            font-weight: 600;
+            border-radius: 0.375rem;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-outline-light:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(255, 255, 255, 0.15);
+        }
+        
+        /* Quick links */
+        .quick-links {
+            background-color: var(--light);
+            padding: 1.5rem 0;
+        }
+        
+        .quick-links .nav-link {
+            color: var(--dark);
+            font-weight: 500;
+            padding: 0.5rem 1rem;
+            transition: all 0.2s ease;
+        }
+        
+        .quick-links .nav-link:hover {
+            color: var(--primary);
+        }
+        
+        /* Service cards */
+        .service-card {
+            height: 100%;
+            transition: all 0.3s ease;
+            border: none;
+            border-radius: 0.5rem;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+            overflow: hidden;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+        }
+        
+        .service-icon {
+            font-size: 2.5rem;
+            color: var(--primary);
+            margin-bottom: 1rem;
+        }
+        
+        /* Code blocks */
+        pre {
+            background-color: #f8f9fa;
+            border-radius: 0.375rem;
+            padding: 1rem;
+            overflow-x: auto;
+            border-left: 4px solid var(--primary);
+        }
+        
+        code {
+            color: #e83e8c;
+            word-wrap: break-word;
+        }
+        
+        /* Pricing cards */
+        .pricing-card {
+            border: 1px solid #dee2e6;
+            border-radius: 0.5rem;
+            transition: all 0.3s ease;
+            overflow: hidden;
+        }
+        
+        .pricing-card.popular {
+            border-color: var(--primary);
+            box-shadow: 0 0 15px rgba(13, 110, 253, 0.2);
+            transform: scale(1.03);
+        }
+        
+        .pricing-header {
+            background-color: var(--light);
+            padding: 2rem;
+            text-align: center;
+            border-bottom: 1px solid #dee2e6;
+        }
+        
+        .pricing-price {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--dark);
+        }
+        
+        .pricing-period {
+            color: var(--secondary);
+        }
+        
+        .pricing-features {
+            padding: 2rem;
+        }
+        
+        .pricing-features ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .pricing-features li {
+            padding: 0.5rem 0;
+            border-bottom: 1px solid #f1f1f1;
+        }
+        
+        .pricing-features li:last-child {
+            border-bottom: none;
+        }
+        
+        .pricing-cta {
+            padding: 0 2rem 2rem;
+            text-align: center;
+        }
+        
+        /* Timeline */
+        .timeline {
+            position: relative;
+            padding-left: 3rem;
+            margin: 2rem 0;
+        }
+        
+        .timeline:before {
+            content: '';
+            position: absolute;
+            left: 7px;
+            top: 0;
+            height: 100%;
+            width: 2px;
+            background-color: var(--primary);
+        }
+        
+        .timeline-step {
+            position: relative;
+            margin-bottom: 2rem;
+        }
+        
+        .timeline-step:last-child {
+            margin-bottom: 0;
+        }
+        
+        .timeline-icon {
+            position: absolute;
+            left: -3rem;
+            top: 0;
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            background-color: var(--primary);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+        
+        /* Testimonials */
+        .testimonial-card {
+            background-color: white;
+            border-radius: 0.5rem;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+            padding: 2rem;
+            height: 100%;
+            position: relative;
+        }
+        
+        .testimonial-card:before {
+            content: '"';
+            position: absolute;
+            top: 10px;
+            left: 20px;
+            font-size: 4rem;
+            color: #f1f1f1;
+            font-family: Georgia, serif;
+            line-height: 1;
+        }
+        
+        .testimonial-text {
+            position: relative;
+            z-index: 1;
+        }
+        
+        .testimonial-author {
+            font-weight: 600;
+            margin-top: 1.5rem;
+            margin-bottom: 0;
+        }
+        
+        .testimonial-role {
+            color: var(--secondary);
+            font-size: 0.9rem;
+        }
+        
+        /* Client logos */
+        .client-logo {
+            filter: grayscale(100%);
+            opacity: 0.7;
+            transition: all 0.3s ease;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .client-logo:hover {
+            filter: grayscale(0);
+            opacity: 1;
+        }
+        
+        /* FAQ */
+        .faq-item {
+            margin-bottom: 1rem;
+            border: 1px solid #dee2e6;
+            border-radius: 0.375rem;
+            overflow: hidden;
+        }
+        
+        .faq-question {
+            padding: 1.25rem;
+            background-color: #f8f9fa;
+            font-weight: 600;
+            cursor: pointer;
+            position: relative;
+            margin: 0;
+            transition: background-color 0.2s ease;
+        }
+        
+        .faq-question:hover {
+            background-color: #e9ecef;
+        }
+        
+        .faq-question:after {
+            content: '+';
+            position: absolute;
+            right: 1.25rem;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 1.5rem;
+            line-height: 1;
+        }
+        
+        .faq-question[aria-expanded="true"]:after {
+            content: '-';
+        }
+        
+        .faq-answer {
+            padding: 1.25rem;
+            border-top: 1px solid #dee2e6;
+        }
+        
+        /* Form styles */
+        .form-control {
+            padding: 0.75rem 1rem;
+            border-radius: 0.375rem;
+            border: 1px solid #ced4da;
+            transition: all 0.2s ease;
+        }
+        
+        .form-control:focus {
+            border-color: var(--primary);
+            box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+        }
+        
+        /* Animations */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease, transform 0.6s ease;
+        }
+        
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        @media (prefers-reduced-motion: reduce) {
+            .fade-in {
+                transition: none;
+                opacity: 1;
+                transform: none;
+            }
+        }
+        
+        /* Card hover effects */
+        .hover-lift {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .hover-lift:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+        }
+        
+        /* Ripple effect for buttons */
+        .btn-ripple {
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .btn-ripple:after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 5px;
+            height: 5px;
+            background: rgba(255, 255, 255, 0.5);
+            opacity: 0;
+            border-radius: 100%;
+            transform: scale(1, 1) translate(-50%);
+            transform-origin: 50% 50%;
+        }
+        
+        .btn-ripple:focus:not(:active)::after {
+            animation: ripple 1s ease-out;
+        }
+        
+        @keyframes ripple {
+            0% {
+                transform: scale(0, 0);
+                opacity: 0.5;
+            }
+            20% {
+                transform: scale(50, 50);
+                opacity: 0.3;
+            }
+            100% {
+                transform: scale(100, 100);
+                opacity: 0;
+            }
+        }
+        
+        /* Tech badges */
+        .tech-badge {
+            display: inline-block;
+            background-color: #f1f1f1;
+            color: #333;
+            padding: 0.35rem 0.65rem;
+            border-radius: 0.25rem;
+            font-size: 0.75rem;
+            font-weight: 600;
+            margin: 0.25rem;
+            transition: all 0.2s ease;
+        }
+        
+        .tech-badge:hover {
+            background-color: var(--primary);
+            color: white;
+            transform: translateY(-2px);
+        }
+        
+        /* Accessibility improvements */
+        @media (prefers-reduced-motion: reduce) {
+            * {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+            }
+        }
+        
+        .focus-visible:focus {
+            outline: 2px solid var(--primary);
+            outline-offset: 2px;
+        }
+        
+        /* Print styles */
+        @media print {
+            .hero, .quick-links, .btn, .pricing-cta, .contact-form {
+                display: none !important;
+            }
+            
+            section {
+                padding: 2rem 0;
+                page-break-inside: avoid;
+            }
+            
+            .container {
+                max-width: 100%;
+            }
+        }
+    </style>
+    
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Opticbee",
+      "url": "https://opticbee.in",
+      "logo": "https://opticbee.in/images/logo.png",
+      "contactPoint": [{
+        "@type": "ContactPoint",
+        "telephone": "+91-XXXXXXXXXX",
+        "contactType": "customer service",
+        "email": "contact@opticbee.in"
+      }],
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "123 Tech Park",
+        "addressLocality": "Bangalore",
+        "addressRegion": "KA",
+        "postalCode": "560001",
+        "addressCountry": "IN"
+      }
+    }
+    </script>
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "Web Development Services",
+      "description": "Professional web development services using MERN stack, Python, PHP. We build scalable, secure web applications with modern frameworks and best practices.",
+      "url": "https://opticbee.in/webdevelopment.html",
+      "breadcrumb": {
+        "@type": "BreadcrumbList",
+        "itemListElement": [{
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://opticbee.in"
+        },{
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Services",
+          "item": "https://opticbee.in/services"
+        },{
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Web Development"
+        }]
+      }
+    }
+    </script>
+</head>
+<body>
+    <!-- TODO: This page is designed to be inserted into the Opticbee site template -->
+    <!-- The global navbar and footer should wrap this content when integrated -->
+    
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Web Development That Scales: MERN, Modern Frontend & Backend Solutions</h1>
+            <p>We build high-performance web applications with cutting-edge technologies, delivering exceptional user experiences and robust backend systems.</p>
+            <div class="d-flex gap-3 justify-content-center flex-wrap">
+                <a href="#contact" class="btn btn-primary btn-ripple">Get a Free Quote</a>
+                <a href="#services" class="btn btn-outline-light btn-ripple">View Our Services</a>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Quick Links -->
+    <div class="quick-links">
+        <div class="container">
+            <h2 class="visually-hidden">Page Navigation</h2>
+            <nav class="d-flex flex-wrap justify-content-center">
+                <a class="nav-link" href="#services">Services Overview</a>
+                <a class="nav-link" href="#mern">MERN Stack</a>
+                <a class="nav-link" href="#frontend">Frontend Development</a>
+                <a class="nav-link" href="#python">Python Backend</a>
+                <a class="nav-link" href="#php">PHP Backend</a>
+                <a class="nav-link" href="#case-studies">Case Studies</a>
+                <a class="nav-link" href="#process">Development Process</a>
+                <a class="nav-link" href="#pricing">Pricing</a>
+                <a class="nav-link" href="#tech-stack">Tech Stack</a>
+                <a class="nav-link" href="#testimonials">Testimonials</a>
+                <a class="nav-link" href="#faq">FAQ</a>
+                <a class="nav-link" href="#contact">Contact</a>
+            </nav>
+        </div>
+    </div>
+    
+    <main>
+        <!-- Services Overview -->
+        <section id="services" class="bg-light">
+            <div class="container">
+                <h2 class="section-title center">Web Development Services</h2>
+                <p class="section-subtitle">We offer end-to-end web development solutions tailored to your business needs, from responsive frontends to scalable backends.</p>
+                
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card service-card h-100 hover-lift">
+                            <div class="card-body text-center p-4">
+                                <div class="service-icon">
+                                    <svg width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
+                                        <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm5.5 10a.5.5 0 0 0 .832.374l4.5-4a.5.5 0 0 0 0-.748l-4.5-4A.5.5 0 0 0 5.5 4v8z"/>
+                                    </svg>
+                                </div>
+                                <h3 class="h5">Web Applications</h3>
+                                <p class="text-muted">Custom web apps with responsive design, intuitive UX, and cross-browser compatibility.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card service-card h-100 hover-lift">
+                            <div class="card-body text-center p-4">
+                                <div class="service-icon">
+                                    <svg width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
+                                        <path d="M3 2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm5 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm5 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm-10 5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm5 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm5 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm-10 5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm5 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm5 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z"/>
+                                    </svg>
+                                </div>
+                                <h3 class="h5">Progressive Web Apps</h3>
+                                <p class="text-muted">Native-like web experiences with offline capabilities, push notifications, and app-like interactions.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card service-card h-100 hover-lift">
+                            <div class="card-body text-center p-4">
+                                <div class="service-icon">
+                                    <svg width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
+                                        <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm5.5 10a.5.5 0 0 0 .832.374l4.5-4a.5.5 0 0 0 0-.748l-4.5-4A.5.5 0 0 0 5.5 4v8z"/>
+                                    </svg>
+                                </div>
+                                <h3 class="h5">APIs & Microservices</h3>
+                                <p class="text-muted">RESTful APIs, GraphQL endpoints, and microservices architecture for scalable backend systems.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card service-card h-100 hover-lift">
+                            <div class="card-body text-center p-4">
+                                <div class="service-icon">
+                                    <svg width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
+                                        <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm5.5 10a.5.5 0 0 0 .832.374l4.5-4a.5.5 0 0 0 0-.748l-4.5-4A.5.5 0 0 0 5.5 4v8z"/>
+                                    </svg>
+                                </div>
+                                <h3 class="h5">E-commerce Solutions</h3>
+                                <p class="text-muted">Secure, scalable online stores with payment integration, inventory management, and analytics.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card service-card h-100 hover-lift">
+                            <div class="card-body text-center p-4">
+                                <div class="service-icon">
+                                    <svg width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
+                                        <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm5.5 10a.5.5 0 0 0 .832.374l4.5-4a.5.5 0 0 0 0-.748l-4.5-4A.5.5 0 0 0 5.5 4v8z"/>
+                                    </svg>
+                                </div>
+                                <h3 class="h5">Content Management</h3>
+                                <p class="text-muted">Custom CMS solutions and WordPress development for easy content updates and management.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card service-card h-100 hover-lift">
+                            <div class="card-body text-center p-4">
+                                <div class="service-icon">
+                                    <svg width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
+                                        <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm5.5 10a.5.5 0 0 0 .832.374l4.5-4a.5.5 0 0 0 0-.748l-4.5-4A.5.5 0 0 0 5.5 4v8z"/>
+                                    </svg>
+                                </div>
+                                <h3 class="h5">DevOps & CI/CD</h3>
+                                <p class="text-muted">Automated deployment pipelines, containerization, and cloud infrastructure management.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card service-card h-100 hover-lift">
+                            <div class="card-body text-center p-4">
+                                <div class="service-icon">
+                                    <svg width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
+                                        <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm5.5 10a.5.5 0 0 0 .832.374l4.5-4a.5.5 0 0 0 0-.748l-4.5-4A.5.5 0 0 0 5.5 4v8z"/>
+                                    </svg>
+                                </div>
+                                <h3 class="h5">Performance Optimization</h3>
+                                <p class="text-muted">Speed optimization, caching strategies, and database tuning for faster load times.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card service-card h-100 hover-lift">
+                            <div class="card-body text-center p-4">
+                                <div class="service-icon">
+                                    <svg width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
+                                        <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm5.5 10a.5.5 0 0 0 .832.374l4.5-4a.5.5 0 0 0 0-.748l-4.5-4A.5.5 0 0 0 5.5 4v8z"/>
+                                    </svg>
+                                </div>
+                                <h3 class="h5">Security & Audits</h3>
+                                <p class="text-muted">Security assessments, vulnerability testing, and implementation of best security practices.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="text-center mt-5">
+                    <a href="#contact" class="btn btn-primary btn-lg btn-ripple">Discuss Your Project</a>
+                </div>
+            </div>
+        </section>
+        
+        <!-- MERN Stack Section -->
+        <section id="mern">
+            <div class="container">
+                <h2 class="section-title">MERN Stack Development</h2>
+                <p class="lead">Full-stack JavaScript solutions with MongoDB, Express, React, and Node.js</p>
+                
+                <div class="row align-items-center mb-5">
+                    <div class="col-lg-6">
+                        <p>The MERN stack is our preferred choice for building modern, scalable web applications that require real-time capabilities, seamless data flow, and interactive user interfaces. This JavaScript-centric approach allows for efficient development with a unified language across both frontend and backend.</p>
+                        
+                        <p>We leverage MERN for applications that need:</p>
+                        <ul>
+                            <li>Real-time data updates and interactions</li>
+                            <li>Single Page Application (SPA) architecture</li>
+                            <li>JSON-based API communication</li>
+                            <li>Fast prototyping and iterative development</li>
+                            <li>Scalable cloud-native deployments</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6">
+                        <!-- TODO: Replace with actual MERN architecture diagram -->
+                        <div class="bg-light rounded p-4 text-center">
+                            <p class="mb-0">[MERN Architecture Diagram]</p>
+                            <small class="text-muted">Visual representation of MongoDB, Express, React, and Node.js interaction</small>
+                        </div>
+                    </div>
+                </div>
+                
+                <h3>Typical Project Structure</h3>
+                <div class="row mb-5">
+                    <div class="col-md-6">
+                        <pre><code>project-root/
+├── client/                 # React frontend
+│   ├── public/
+│   ├── src/
+│   │   ├── components/
+│   │   ├── pages/
+│   │   ├── utils/
+│   │   └── App.js
+│   └── package.json
+├── server/                 # Express backend
+│   ├── models/            # MongoDB models
+│   ├── routes/            # API routes
+│   ├── middleware/        # Custom middleware
+│   ├── config/            # DB configuration
+│   └── server.js          # Entry point
+├── package.json
+└── README.md</code></pre>
+                    </div>
+                    <div class="col-md-6">
+                        <h4>Development Workflow</h4>
+                        <ol>
+                            <li>Requirement analysis and architecture planning</li>
+                            <li>Database schema design and API specification</li>
+                            <li>Simultaneous frontend and backend development</li>
+                            <li>Integration testing and bug fixes</li>
+                            <li>Performance optimization and security hardening</li>
+                            <li>Deployment with CI/CD pipeline</li>
+                        </ol>
+                        
+                        <h4>Key Performance Indicators</h4>
+                        <ul>
+                            <li>Time to Interactive: &lt; 3.5 seconds</li>
+                            <li>API response time: &lt; 200ms</li>
+                            <li>Successful deployment frequency: Multiple times per week</li>
+                            <li>Error rate: &lt; 0.1% of requests</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <h3>Code Example: Basic Server Setup</h3>
+                <div class="row">
+                    <div class="col-md-6">
+                        <p>Backend server.js with Express and MongoDB connection:</p>
+                        <pre><code>const express = require('express');
+const mongoose = require('mongoose');
+const cors = require('cors');
+require('dotenv').config();
+
+const app = express();
+const PORT = process.env.PORT || 5000;
+
+// Middleware
+app.use(cors());
+app.use(express.json());
+
+// MongoDB connection
+mongoose.connect(process.env.MONGODB_URI, {
+  useNewUrlParser: true,
+  useUnifiedTopology: true
+})
+.then(() => console.log('MongoDB connected successfully'))
+.catch(err => console.log(err));
+
+// Basic route
+app.get('/api/status', (req, res) => {
+  res.json({ message: 'Server is running!' });
+});
+
+// Start server
+app.listen(PORT, () => {
+  console.log(`Server is running on port: ${PORT}`);
+});</code></pre>
+                    </div>
+                    <div class="col-md-6">
+                        <p>React frontend App.js component with API call:</p>
+                        <pre><code>import React, { useState, useEffect } from 'react';
+import './App.css';
+
+function App() {
+  const [message, setMessage] = useState('');
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    fetch('/api/status')
+      .then(res => res.json())
+      .then(data => {
+        setMessage(data.message);
+        setLoading(false);
+      })
+      .catch(err => {
+        console.error('API call failed:', err);
+        setLoading(false);
+      });
+  }, []);
+
+  return (
+    <div className="App">
+      <header className="App-header">
+        <h1>Welcome to Our MERN App</h1>
+        {loading ? (
+          <p>Loading...</p>
+        ) : (
+          <p>Server Status: {message}</p>
+        )}
+      </header>
+    </div>
+  );
+}
+
+export default App;</code></pre>
+                    </div>
+                </div>
+                
+                <div class="mt-5 text-center">
+                    <a href="#contact" class="btn btn-primary btn-lg btn-ripple">Start Your MERN Project</a>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Frontend Development Section -->
+        <section id="frontend" class="bg-light">
+            <div class="container">
+                <h2 class="section-title">Frontend Development</h2>
+                <p class="lead">HTML, CSS, and JavaScript for modern, accessible, and performant user interfaces</p>
+                
+                <div class="row mb-5">
+                    <div class="col-lg-6">
+                        <p>Our frontend development approach combines semantic HTML, modular CSS, and modern JavaScript to create accessible, responsive, and high-performance user interfaces. We follow industry best practices and W3C standards to ensure compatibility across browsers and devices.</p>
+                        
+                        <p>We focus on:</p>
+                        <ul>
+                            <li>Semantic HTML5 markup for better SEO and accessibility</li>
+                            <li>CSS methodologies (BEM) for maintainable stylesheets</li>
+                            <li>Progressive enhancement and graceful degradation</li>
+                            <li>Performance optimization through code splitting and lazy loading</li>
+                            <li>Cross-browser testing and compatibility</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6">
+                        <h3>Responsive Image Example</h3>
+                        <pre><code>&lt;img src="image-small.jpg" 
+     srcset="image-small.jpg 500w,
+             image-medium.jpg 1000w,
+             image-large.jpg 2000w"
+     sizes="(max-width: 600px) 100vw,
+            (max-width: 1200px) 50vw,
+            33vw"
+     alt="Descriptive alt text explaining the image content"
+     loading="lazy"&gt;</code></pre>
+                        
+                        <h3>Accessible Form Example</h3>
+                        <pre><code>&lt;div class="mb-3"&gt;
+  &lt;label for="email" class="form-label"&gt;Email address&lt;/label&gt;
+  &lt;input type="email" class="form-control" 
+         id="email" aria-describedby="emailHelp"
+         required aria-required="true"&gt;
+  &lt;div id="emailHelp" class="form-text"&gt;
+    We'll never share your email with anyone else.
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-md-6">
+                        <h3>CSS Utility Classes Example</h3>
+                        <pre><code>&lt;div class="card shadow-sm rounded-3 overflow-hidden mb-4"&gt;
+  &lt;div class="card-header bg-primary text-white py-3"&gt;
+    &lt;h4 class="card-title mb-0"&gt;Card Title&lt;/h4&gt;
+  &lt;/div&gt;
+  &lt;div class="card-body p-4"&gt;
+    &lt;p class="card-text"&gt;This is an example of using 
+    Bootstrap utility classes for rapid UI development.&lt;/p&gt;
+    &lt;button class="btn btn-outline-primary mt-3"&gt;
+      Learn More
+    &lt;/button&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                    </div>
+                    <div class="col-md-6">
+                        <h3>Performance Techniques</h3>
+                        <ul>
+                            <li>Critical CSS inlined in the head</li>
+                            <li>Non-critical CSS loaded asynchronously</li>
+                            <li>JavaScript deferred or loaded as modules</li>
+                            <li>Assets preloaded for important resources</li>
+                            <li>Lazy loading for images below the fold</li>
+                            <li>Efficient caching strategies</li>
+                        </ul>
+                        
+                        <h3>Accessibility Checklist</h3>
+                        <ul>
+                            <li>Proper heading structure</li>
+                            <li>Sufficient color contrast</li>
+                            <li>Keyboard navigation support</li>
+                            <li>ARIA landmarks and roles</li>
+                            <li>Form label associations</li>
+                            <li>Focus indicators</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="mt-5 text-center">
+                    <a href="#contact" class="btn btn-primary btn-lg btn-ripple">Discuss Frontend Needs</a>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Python Development Section -->
+        <section id="python">
+            <div class="container">
+                <h2 class="section-title">Python Web Development</h2>
+                <p class="lead">Django, Flask, and FastAPI for robust, scalable backend solutions</p>
+                
+                <div class="row mb-5">
+                    <div class="col-lg-6">
+                        <p>Python is our framework of choice for data-intensive applications, scientific computing, and projects requiring rapid development with clean, maintainable code. We leverage Django for full-featured applications, Flask for lightweight APIs, and FastAPI for high-performance endpoints.</p>
+                        
+                        <p>We recommend Python for:</p>
+                        <ul>
+                            <li>Data-driven applications and analytics dashboards</li>
+                            <li>Machine learning and AI integration</li>
+                            <li>Content management systems and admin panels</li>
+                            <li>RESTful APIs with complex business logic</li>
+                            <li>Projects requiring strong security foundations</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6">
+                        <h3>Deployment Architecture</h3>
+                        <p>Our typical Python deployment stack includes:</p>
+                        <ul>
+                            <li>Gunicorn or uWSGI as application server</li>
+                            <li>Nginx as reverse proxy and static file server</li>
+                            <li>PostgreSQL or MySQL as database</li>
+                            <li>Redis for caching and session storage</li>
+                            <li>Docker containers for consistent environments</li>
+                            <li>Celery for asynchronous task processing</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-md-6">
+                        <h3>Database Integration</h3>
+                        <p>We use Django ORM or SQLAlchemy for database interactions, providing:</p>
+                        <ul>
+                            <li>Object-relational mapping for simplified queries</li>
+                            <li>Database migration management</li>
+                            <li>Connection pooling for performance</li>
+                            <li>Multiple database support when needed</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <h3>API Development with FastAPI</h3>
+                        <p>For high-performance APIs, we use FastAPI with automatic OpenAPI documentation:</p>
+                        <pre><code>from fastapi import FastAPI
+from pydantic import BaseModel
+
+app = FastAPI()
+
+class Item(BaseModel):
+    name: str
+    price: float
+    is_offer: bool = None
+
+@app.get("/")
+def read_root():
+    return {"Hello": "World"}
+
+@app.get("/items/{item_id}")
+def read_item(item_id: int, q: str = None):
+    return {"item_id": item_id, "q": q}
+
+@app.put("/items/{item_id}")
+def update_item(item_id: int, item: Item):
+    return {"item_name": item.name, "item_id": item_id}</code></pre>
+                    </div>
+                </div>
+                
+                <div class="mt-5 text-center">
+                    <a href="#contact" class="btn btn-primary btn-lg btn-ripple">Start Your Python Project</a>
+                </div>
+            </div>
+        </section>
+        
+        <!-- PHP Development Section -->
+        <section id="php" class="bg-light">
+            <div class="container">
+                <h2 class="section-title">PHP Web Development</h2>
+                <p class="lead">Laravel, Symfony, and modern PHP for enterprise-grade applications</p>
+                
+                <div class="row mb-5">
+                    <div class="col-lg-6">
+                        <p>PHP remains a powerful choice for web development, particularly with modern frameworks like Laravel that provide elegant syntax and robust features. We use PHP for projects that benefit from its extensive ecosystem, rapid development capabilities, and cost-effective hosting options.</p>
+                        
+                        <p>We recommend PHP for:</p>
+                        <ul>
+                            <li>Content management systems and WordPress sites</li>
+                            <li>E-commerce platforms (Magento, WooCommerce)</li>
+                            <li>Enterprise applications with complex business rules</li>
+                            <li>Legacy system modernization and migration</li>
+                            <li>Projects requiring extensive package ecosystem</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6">
+                        <h3>Modern PHP Practices</h3>
+                        <p>Our PHP development follows contemporary standards:</p>
+                        <ul>
+                            <li>PHP 8.x with strict typing and modern features</li>
+                            <li>Composer for dependency management</li>
+                            <li>Laravel or Symfony frameworks</li>
+                            <li>Test-driven development with PHPUnit</li>
+                            <li>PSR standards for coding style</li>
+                            <li>Security best practices (prepared statements, CSRF protection)</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-md-6">
+                        <h3>Security Practices</h3>
+                        <ul>
+                            <li>Input validation and sanitization</li>
+                            <li>Prepared statements to prevent SQL injection</li>
+                            <li>CSRF protection for forms</li>
+                            <li>XSS prevention through output escaping</li>
+                            <li>Secure session management</li>
+                            <li>Regular dependency vulnerability scanning</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <h3>Laravel Example: Basic Controller</h3>
+                        <pre><code>&lt;?php
+
+namespace App\Http\Controllers;
+
+use App\Models\User;
+use Illuminate\Http\Request;
+use Illuminate\View\View;
+
+class UserController extends Controller
+{
+    /**
+     * Display a listing of the resource.
+     */
+    public function index(): View
+    {
+        return view('users.index', [
+            'users' => User::all()
+        ]);
+    }
+
+    /**
+     * Store a newly created resource in storage.
+     */
+    public function store(Request $request)
+    {
+        $validated = $request->validate([
+            'name' => 'required|string|max:255',
+            'email' => 'required|email|unique:users',
+            'password' => 'required|confirmed|min:8',
+        ]);
+
+        $user = User::create($validated);
+
+        return redirect()->route('users.show', $user);
+    }
+}</code></pre>
+                    </div>
+                </div>
+                
+                <div class="mt-5 text-center">
+                    <a href="#contact" class="btn btn-primary btn-lg btn-ripple">Discuss PHP Solutions</a>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Case Studies Section -->
+        <section id="case-studies">
+            <div class="container">
+                <h2 class="section-title center">Real Projects & Case Studies</h2>
+                <p class="section-subtitle">See how we've helped businesses solve complex challenges with our web development expertise</p>
+                
+                <div class="row g-4">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card h-100 hover-lift">
+                            <!-- TODO: Replace with actual project image -->
+                            <div class="bg-light" style="height: 200px; display: flex; align-items: center; justify-content: center;">
+                                <p>[Project Image]</p>
+                            </div>
+                            <div class="card-body">
+                                <h3 class="h5">E-commerce Platform Migration</h3>
+                                <p class="text-muted">Retail Industry</p>
+                                <p><strong>Challenge:</strong> Legacy system with poor performance, limited scalability, and outdated security practices.</p>
+                                <p><strong>Solution:</strong> Migrated to MERN stack with microservices architecture, React PWA frontend, and Node.js API services.</p>
+                                <p><strong>Results:</strong> 68% faster page loads, 42% increase in mobile conversions, and 99.9% uptime.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card h-100 hover-lift">
+                            <!-- TODO: Replace with actual project image -->
+                            <div class="bg-light" style="height: 200px; display: flex; align-items: center; justify-content: center;">
+                                <p>[Project Image]</p>
+                            </div>
+                            <div class="card-body">
+                                <h3 class="h5">Healthcare Data Portal</h3>
+                                <p class="text-muted">Healthcare Industry</p>
+                                <p><strong>Challenge:</strong> Needed secure, HIPAA-compliant platform for patient data management with real-time analytics.</p>
+                                <p><strong>Solution:</strong> Python Django backend with React frontend, robust authentication, and encrypted data storage.</p>
+                                <p><strong>Results:</strong> 50% reduction in data entry time, full regulatory compliance, and improved patient engagement.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card h-100 hover-lift">
+                            <!-- TODO: Replace with actual project image -->
+                            <div class="bg-light" style="height: 200px; display: flex; align-items: center; justify-content: center;">
+                                <p>[Project Image]</p>
+                            </div>
+                            <div class="card-body">
+                                <h3 class="h5">SaaS Productivity Tool</h3>
+                                <p class="text-muted">Technology Industry</p>
+                                <p><strong>Challenge:</strong> Startup needed MVP quickly with ability to scale for enterprise customers.</p>
+                                <p><strong>Solution:</strong> Laravel backend with Vue.js frontend, Docker containers, and automated testing pipeline.</p>
+                                <p><strong>Results:</strong> Launched in 4 months, scaled to 10,000+ users, and secured Series A funding.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="text-center mt-5">
+                    <a href="#contact" class="btn btn-primary btn-lg btn-ripple">See More Case Studies</a>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Development Process Section -->
+        <section id="process" class="bg-light">
+            <div class="container">
+                <h2 class="section-title center">Development Process & Methodology</h2>
+                <p class="section-subtitle">Our structured approach ensures quality, transparency, and timely delivery</p>
+                
+                <div class="timeline">
+                    <div class="timeline-step">
+                        <div class="timeline-icon">1</div>
+                        <div class="timeline-content">
+                            <h3>Requirements Gathering</h3>
+                            <p>We begin with in-depth discovery sessions to understand your business goals, user needs, and technical requirements. This phase includes stakeholder interviews, competitive analysis, and feasibility studies.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-step">
+                        <div class="timeline-icon">2</div>
+                        <div class="timeline-content">
+                            <h3>Architecture & Planning</h3>
+                            <p>Our architects design the system blueprint, including technology selection, database schema, API design, and infrastructure planning. We create detailed documentation and project timelines.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-step">
+                        <div class="timeline-icon">3</div>
+                        <div class="timeline-content">
+                            <h3>Implementation</h3>
+                            <p>We develop using agile methodologies with two-week sprints, regular demos, and continuous feedback. Our code follows best practices with comprehensive testing and version control.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-step">
+                        <div class="timeline-icon">4</div>
+                        <div class="timeline-content">
+                            <h3>QA & Testing</h3>
+                            <p>Our quality assurance process includes automated testing, manual testing, security scanning, performance testing, and user acceptance testing to ensure bug-free delivery.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-step">
+                        <div class="timeline-icon">5</div>
+                        <div class="timeline-content">
+                            <h3>Deployment</h3>
+                            <p>We handle the complete deployment process with CI/CD pipelines, environment configuration, database migration, and DNS management for seamless go-live.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-step">
+                        <div class="timeline-icon">6</div>
+                        <div class="timeline-content">
+                            <h3>Monitoring & Iteration</h3>
+                            <p>Post-launch, we monitor performance, gather user feedback, and implement improvements. We offer ongoing maintenance and support packages.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="text-center mt-5">
+                    <a href="#contact" class="btn btn-primary btn-lg btn-ripple">Discuss Our Process</a>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Pricing Section -->
+        <section id="pricing">
+            <div class="container">
+                <h2 class="section-title center">Packages & Pricing</h2>
+                <p class="section-subtitle">Transparent pricing for web development projects</p>
+                
+                <div class="row g-4">
+                    <div class="col-lg-4">
+                        <div class="pricing-card h-100">
+                            <div class="pricing-header">
+                                <h3>Starter</h3>
+                                <div class="pricing-price">$5,000 - $15,000</div>
+                                <div class="pricing-period">One-time project cost</div>
+                            </div>
+                            <div class="pricing-features">
+                                <ul>
+                                    <li>Up to 5 pages</li>
+                                    <li>Responsive design</li>
+                                    <li>Basic SEO setup</li>
+                                    <li>Contact form</li>
+                                    <li>CMS integration</li>
+                                    <li>2 rounds of revisions</li>
+                                    <li>2-week delivery</li>
+                                </ul>
+                            </div>
+                            <div class="pricing-cta">
+                                <a href="#contact" class="btn btn-outline-primary w-100">Get Started</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4">
+                        <div class="pricing-card h-100 popular">
+                            <div class="pricing-header">
+                                <h3>Growth</h3>
+                                <div class="pricing-price">$15,000 - $50,000</div>
+                                <div class="pricing-period">One-time project cost</div>
+                            </div>
+                            <div class="pricing-features">
+                                <ul>
+                                    <li>Up to 15 pages</li>
+                                    <li>Custom design</li>
+                                    <li>Advanced SEO</li>
+                                    <li>E-commerce functionality</li>
+                                    <li>User authentication</li>
+                                    <li>API integration</li>
+                                    <li>4 rounds of revisions</li>
+                                    <li>4-6 week delivery</li>
+                                </ul>
+                            </div>
+                            <div class="pricing-cta">
+                                <a href="#contact" class="btn btn-primary w-100">Get Quote</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4">
+                        <div class="pricing-card h-100">
+                            <div class="pricing-header">
+                                <h3>Enterprise</h3>
+                                <div class="pricing-price">$50,000+</div>
+                                <div class="pricing-period">Custom pricing</div>
+                            </div>
+                            <div class="pricing-features">
+                                <ul>
+                                    <li>Unlimited pages</li>
+                                    <li>Custom web application</li>
+                                    <li>Multi-user roles</li>
+                                    <li>Advanced functionality</li>
+                                    <li>Third-party integrations</li>
+                                    <li>Database architecture</li>
+                                    <li>Ongoing support</li>
+                                    <li>8+ week delivery</li>
+                                </ul>
+                            </div>
+                            <div class="pricing-cta">
+                                <a href="#contact" class="btn btn-outline-primary w-100">Contact Sales</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="alert alert-info mt-5">
+                    <p class="mb-0"><strong>Need something different?</strong> All projects are customizable. Contact us for a tailored quote based on your specific requirements.</p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Tech Stack Section -->
+        <section id="tech-stack" class="bg-light">
+            <div class="container">
+                <h2 class="section-title center">Technology Stack & Tools</h2>
+                <p class="section-subtitle">We use industry-leading technologies to build robust, scalable web solutions</p>
+                
+                <div class="row mb-5">
+                    <div class="col-md-6">
+                        <h3>Frontend Technologies</h3>
+                        <div class="mb-3">
+                            <span class="tech-badge">HTML5</span>
+                            <span class="tech-badge">CSS3</span>
+                            <span class="tech-badge">JavaScript (ES6+)</span>
+                            <span class="tech-badge">React</span>
+                            <span class="tech-badge">Vue.js</span>
+                            <span class="tech-badge">Angular</span>
+                            <span class="tech-badge">TypeScript</span>
+                            <span class="tech-badge">Bootstrap</span>
+                            <span class="tech-badge">SASS/SCSS</span>
+                            <span class="tech-badge">Webpack</span>
+                            <span class="tech-badge">Vite</span>
+                        </div>
+                        
+                        <h3>Backend Technologies</h3>
+                        <div class="mb-3">
+                            <span class="tech-badge">Node.js</span>
+                            <span class="tech-badge">Express</span>
+                            <span class="tech-badge">Python</span>
+                            <span class="tech-badge">Django</span>
+                            <span class="tech-badge">Flask</span>
+                            <span class="tech-badge">FastAPI</span>
+                            <span class="tech-badge">PHP</span>
+                            <span class="tech-badge">Laravel</span>
+                            <span class="tech-badge">Symfony</span>
+                            <span class="tech-badge">Ruby on Rails</span>
+                            <span class="tech-badge">Java Spring</span>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6">
+                        <h3>Databases & Storage</h3>
+                        <div class="mb-3">
+                            <span class="tech-badge">MongoDB</span>
+                            <span class="tech-badge">PostgreSQL</span>
+                            <span class="tech-badge">MySQL</span>
+                            <span class="tech-badge">Redis</span>
+                            <span class="tech-badge">Elasticsearch</span>
+                            <span class="tech-badge">Firebase</span>
+                            <span class="tech-badge">AWS S3</span>
+                        </div>
+                        
+                        <h3>DevOps & Infrastructure</h3>
+                        <div class="mb-3">
+                            <span class="tech-badge">Docker</span>
+                            <span class="tech-badge">Kubernetes</span>
+                            <span class="tech-badge">AWS</span>
+                            <span class="tech-badge">Google Cloud</span>
+                            <span class="tech-badge">Azure</span>
+                            <span class="tech-badge">Nginx</span>
+                            <span class="tech-badge">GitHub Actions</span>
+                            <span class="tech-badge">GitLab CI</span>
+                            <span class="tech-badge">Jenkins</span>
+                            <span class="tech-badge">Terraform</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="text-center">
+                    <a href="#contact" class="btn btn-primary btn-lg btn-ripple">Discuss Technology Options</a>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Security & Performance Section -->
+        <section id="security">
+            <div class="container">
+                <h2 class="section-title center">Security & Performance</h2>
+                <p class="section-subtitle">We build applications with security and performance as core principles</p>
+                
+                <div class="row">
+                    <div class="col-lg-6">
+                        <h3>Security Checklist</h3>
+                        <ul>
+                            <li>OWASP Top 10 compliance</li>
+                            <li>Input validation and sanitization</li>
+                            <li>Protection against XSS, CSRF, and SQL injection</li>
+                            <li>Secure authentication and session management</li>
+                            <li>Role-based access control (RBAC)</li>
+                            <li>HTTPS enforcement with TLS 1.3</li>
+                            <li>Security headers (CSP, X-Frame-Options, etc.)</li>
+                            <li>Regular security audits and penetration testing</li>
+                            <li>Dependency vulnerability scanning</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="col-lg-6">
+                        <h3>Performance Optimization</h3>
+                        <ul>
+                            <li>CDN integration for global delivery</li>
+                            <li>Image optimization and modern formats (WebP)</li>
+                            <li>Code splitting and lazy loading</li>
+                            <li>Database indexing and query optimization</li>
+                            <li>Caching strategies (Redis, Memcached)</li>
+                            <li>Frontend performance budgeting</li>
+                            <li>Critical CSS inlining</li>
+                            <li>HTTP/2 and server push implementation</li>
+                            <li>Continuous performance monitoring</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="text-center mt-5">
+                    <a href="#contact" class="btn btn-primary btn-lg btn-ripple">Request Security Audit</a>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Testimonials Section -->
+        <section id="testimonials" class="bg-light">
+            <div class="container">
+                <h2 class="section-title center">What Our Clients Say</h2>
+                <p class="section-subtitle">Hear from businesses we've helped achieve their digital goals</p>
+                
+                <div class="row g-4 mb-5">
+                    <div class="col-lg-6">
+                        <div class="testimonial-card">
+                            <div class="testimonial-text">
+                                <p>Opticbee transformed our outdated web application into a modern, responsive platform. Their expertise in MERN stack was evident throughout the project. The team was professional, met all deadlines, and delivered beyond our expectations.</p>
+                            </div>
+                            <p class="testimonial-author">Sarah Johnson</p>
+                            <p class="testimonial-role">CTO, TechSolutions Inc.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-6">
+                        <div class="testimonial-card">
+                            <div class="testimonial-text">
+                                <p>We needed a complex e-commerce solution with multiple integrations. Opticbee delivered a robust system that handles our high traffic volumes seamlessly. Their attention to security and performance gave us complete peace of mind.</p>
+                            </div>
+                            <p class="testimonial-author">Michael Chen</p>
+                            <p class="testimonial-role">E-commerce Director, FashionRetail Group</p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-6">
+                        <div class="testimonial-card">
+                            <div class="testimonial-text">
+                                <p>As a startup, we needed to move quickly without compromising on quality. Opticbee's agile approach and technical expertise helped us launch our MVP in record time. Their ongoing support has been invaluable as we scale.</p>
+                            </div>
+                            <p class="testimonial-author">Alex Rivera</p>
+                            <p class="testimonial-role">Founder, FinTech Startup</p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-6">
+                        <div class="testimonial-card">
+                            <div class="testimonial-text">
+                                <p>The migration from our legacy PHP system to a modern Python backend was handled flawlessly by Opticbee. They minimized downtime and ensured data integrity throughout the process. Our team now has tools that dramatically improve productivity.</p>
+                            </div>
+                            <p class="testimonial-author">Jennifer Williams</p>
+                            <p class="testimonial-role">Operations Manager, HealthCare Solutions</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <h3 class="text-center mb-4">Trusted By Industry Leaders</h3>
+                <div class="row align-items-center">
+                    <!-- TODO: Replace with actual client logos -->
+                    <div class="col-6 col-md-3 col-lg-2 mb-4">
+                        <div class="client-logo">
+                            <p>[Client Logo 1]</p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3 col-lg-2 mb-4">
+                        <div class="client-logo">
+                            <p>[Client Logo 2]</p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3 col-lg-2 mb-4">
+                        <div class="client-logo">
+                            <p>[Client Logo 3]</p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3 col-lg-2 mb-4">
+                        <div class="client-logo">
+                            <p>[Client Logo 4]</p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3 col-lg-2 mb-4">
+                        <div class="client-logo">
+                            <p>[Client Logo 5]</p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3 col-lg-2 mb-4">
+                        <div class="client-logo">
+                            <p>[Client Logo 6]</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Resources Section -->
+        <section id="resources">
+            <div class="container">
+                <h2 class="section-title center">Resources & Insights</h2>
+                <p class="section-subtitle">Latest articles and guides on web development best practices</p>
+                
+                <div class="row g-4">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card h-100 hover-lift">
+                            <!-- TODO: Replace with actual blog post image -->
+                            <div class="bg-light" style="height: 200px; display: flex; align-items: center; justify-content: center;">
+                                <p>[Blog Image]</p>
+                            </div>
+                            <div class="card-body">
+                                <h3 class="h5">Choosing Between MERN and Python Stacks</h3>
+                                <p class="text-muted">5 min read</p>
+                                <p>A comprehensive guide to help you select the right technology stack for your next web application project based on requirements, team skills, and scalability needs.</p>
+                                <a href="/blog/mern-vs-python" class="btn btn-link p-0">Read More →</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card h-100 hover-lift">
+                            <!-- TODO: Replace with actual blog post image -->
+                            <div class="bg-light" style="height: 200px; display: flex; align-items: center; justify-content: center;">
+                                <p>[Blog Image]</p>
+                            </div>
+                            <div class="card-body">
+                                <h3 class="h5">Web Performance Optimization Techniques</h3>
+                                <p class="text-muted">7 min read</p>
+                                <p>Learn practical strategies to improve your website's loading speed, responsiveness, and overall user experience with these performance optimization techniques.</p>
+                                <a href="/blog/web-performance" class="btn btn-link p-0">Read More →</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card h-100 hover-lift">
+                            <!-- TODO: Replace with actual blog post image -->
+                            <div class="bg-light" style="height: 200px; display: flex; align-items: center; justify-content: center;">
+                                <p>[Blog Image]</p>
+                            </div>
+                            <div class="card-body">
+                                <h3 class="h5">Securing Modern Web Applications</h3>
+                                <p class="text-muted">6 min read</p>
+                                <p>Essential security practices every developer should implement to protect web applications from common vulnerabilities and cyber threats in 2023.</p>
+                                <a href="/blog/web-security" class="btn btn-link p-0">Read More →</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="text-center mt-5">
+                    <a href="/blog" class="btn btn-outline-primary btn-lg">View All Articles</a>
+                </div>
+            </div>
+        </section>
+        
+        <!-- FAQ Section -->
+        <section id="faq" class="bg-light">
+            <div class="container">
+                <h2 class="section-title center">Frequently Asked Questions</h2>
+                <p class="section-subtitle">Common questions about our web development services</p>
+                
+                <div class="accordion" id="faqAccordion">
+                    <div class="faq-item">
+                        <h3 class="faq-question" id="faqHeading1" data-bs-toggle="collapse" data-bs-target="#faqCollapse1" aria-expanded="false" aria-controls="faqCollapse1" role="button">
+                            What is your typical project timeline?
+                        </h3>
+                        <div id="faqCollapse1" class="collapse" aria-labelledby="faqHeading1" data-bs-parent="#faqAccordion">
+                            <div class="faq-answer">
+                                <p>Project timelines vary based on complexity. A simple website may take 2-4 weeks, while a complex web application can take 3-6 months. We provide detailed timelines after understanding your requirements.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <h3 class="faq-question" id="faqHeading2" data-bs-toggle="collapse" data-bs-target="#faqCollapse2" aria-expanded="false" aria-controls="faqCollapse2" role="button">
+                            Do you work with startups?
+                        </h3>
+                        <div id="faqCollapse2" class="collapse" aria-labelledby="faqHeading2" data-bs-parent="#faqAccordion">
+                            <div class="faq-answer">
+                                <p>Yes, we frequently work with startups and offer flexible engagement models. We can help with MVP development, product validation, and scaling as your business grows.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <h3 class="faq-question" id="faqHeading3" data-bs-toggle="collapse" data-bs-target="#faqCollapse3" aria-expanded="false" aria-controls="faqCollapse3" role="button">
+                            What is your approach to project management?
+                        </h3>
+                        <div id="faqCollapse3" class="collapse" aria-labelledby="faqHeading3" data-bs-parent="#faqAccordion">
+                            <div class="faq-answer">
+                                <p>We use agile methodologies with 2-week sprints, regular demos, and transparent communication. You'll have access to project management tools to track progress in real-time.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <h3 class="faq-question" id="faqHeading4" data-bs-toggle="collapse" data-bs-target="#faqCollapse4" aria-expanded="false" aria-controls="faqCollapse4" role="button">
+                            Can you work with our existing development team?
+                        </h3>
+                        <div id="faqCollapse4" class="collapse" aria-labelledby="faqHeading4" data-bs-parent="#faqAccordion">
+                            <div class="faq-answer">
+                                <p>Absolutely. We often augment existing teams with specialized expertise. We follow your processes and ensure seamless integration with your developers.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <h3 class="faq-question" id="faqHeading5" data-bs-toggle="collapse" data-bs-target="#faqCollapse5" aria-expanded="false" aria-controls="faqCollapse5" role="button">
+                            How do you ensure code quality?
+                        </h3>
+                        <div id="faqCollapse5" class="collapse" aria-labelledby="faqHeading5" data-bs-parent="#faqAccordion">
+                            <div class="faq-answer">
+                                <p>We follow coding standards, conduct code reviews, implement comprehensive testing (unit, integration, e2e), and use static analysis tools. All code is version controlled with Git.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <h3 class="faq-question" id="faqHeading6" data-bs-toggle="collapse" data-bs-target="#faqCollapse6" aria-expanded="false" aria-controls="faqCollapse6" role="button">
+                            What about ongoing maintenance and support?
+                        </h3>
+                        <div id="faqCollapse6" class="collapse" aria-labelledby="faqHeading6" data-bs-parent="#faqAccordion">
+                            <div class="faq-answer">
+                                <p>We offer flexible maintenance plans that include bug fixes, security updates, performance monitoring, and feature enhancements. Plans can be monthly or quarterly.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <h3 class="faq-question" id="faqHeading7" data-bs-toggle="collapse" data-bs-target="#faqCollapse7" aria-expanded="false" aria-controls="faqCollapse7" role="button">
+                            Do you provide hosting and deployment services?
+                        </h3>
+                        <div id="faqCollapse7" class="collapse" aria-labelledby="faqHeading7" data-bs-parent="#faqAccordion">
+                            <div class="faq-answer">
+                                <p>Yes, we can handle deployment to your preferred cloud provider or recommend optimal hosting solutions. We also set up CI/CD pipelines for automated deployments.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <h3 class="faq-question" id="faqHeading8" data-bs-toggle="collapse" data-bs-target="#faqCollapse8" aria-expanded="false" aria-controls="faqCollapse8" role="button">
+                            What is your pricing model?
+                        </h3>
+                        <div id="faqCollapse8" class="collapse" aria-labelledby="faqHeading8" data-bs-parent="#faqAccordion">
+                            <div class="faq-answer">
+                                <p>We offer fixed-price projects for well-defined scope and time-and-materials for agile projects. We provide detailed estimates and transparent pricing with no hidden costs.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="text-center mt-5">
+                    <a href="#contact" class="btn btn-primary btn-lg btn-ripple">Have More Questions?</a>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Contact Section -->
+        <section id="contact">
+            <div class="container">
+                <h2 class="section-title center">Get In Touch</h2>
+                <p class="section-subtitle">Ready to start your web development project? Contact us for a free consultation.</p>
+                
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <form class="contact-form" method="post" action="#">
+                            <!-- Honeypot field for spam detection -->
+                            <div class="d-none" aria-hidden="true">
+                                <label for="website">Website</label>
+                                <input type="text" id="website" name="website" tabindex="-1">
+                            </div>
+                            
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="mb-3">
+                                        <label for="name" class="form-label">Full Name *</label>
+                                        <input type="text" class="form-control" id="name" name="name" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="mb-3">
+                                        <label for="company" class="form-label">Company</label>
+                                        <input type="text" class="form-control" id="company" name="company">
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="mb-3">
+                                        <label for="email" class="form-label">Email Address *</label>
+                                        <input type="email" class="form-control" id="email" name="email" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="mb-3">
+                                        <label for="phone" class="form-label">Phone Number</label>
+                                        <input type="tel" class="form-control" id="phone" name="phone">
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="mb-3">
+                                <label for="budget" class="form-label">Project Budget</label>
+                                <select class="form-select" id="budget" name="budget">
+                                    <option value="" selected>Select a range</option>
+                                    <option value="5k-15k">$5,000 - $15,000</option>
+                                    <option value="15k-50k">$15,000 - $50,000</option>
+                                    <option value="50k-100k">$50,000 - $100,000</option>
+                                    <option value="100k+">$100,000+</option>
+                                    <option value="not-sure">Not sure</option>
+                                </select>
+                            </div>
+                            
+                            <div class="mb-3">
+                                <label for="scope" class="form-label">Project Details *</label>
+                                <textarea class="form-control" id="scope" name="scope" rows="5" required placeholder="Please describe your project requirements, goals, and timeline..."></textarea>
+                            </div>
+                            
+                            <div class="mb-3 form-check">
+                                <input type="checkbox" class="form-check-input" id="terms" name="terms" required>
+                                <label class="form-check-label" for="terms">I agree to the <a href="/privacy" target="_blank">privacy policy</a> and terms of service</label>
+                            </div>
+                            
+                            <div class="text-center">
+                                <button type="submit" class="btn btn-primary btn-lg btn-ripple">Send Message</button>
+                            </div>
+                            
+                            <p class="small text-muted text-center mt-3">We'll get back to you within 24 hours. Your information is secure and will never be shared with third parties.</p>
+                        </form>
+                        
+                        <!-- Success message placeholder (hidden by default) -->
+                        <div class="alert alert-success mt-4 d-none" role="alert" id="form-success">
+                            <strong>Thank you!</strong> Your message has been sent successfully. We'll contact you shortly.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- TODO: This page is designed to be inserted into the Opticbee site template -->
+    <!-- The global footer should be added here when integrated -->
+    
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <script>
+        // Simple fade-in animation on scroll
+        document.addEventListener('DOMContentLoaded', function() {
+            const fadeElements = document.querySelectorAll('.fade-in');
+            
+            const fadeOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+            
+            const fadeObserver = new IntersectionObserver(function(entries, observer) {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, fadeOptions);
+            
+            fadeElements.forEach(element => {
+                fadeObserver.observe(element);
+            });
+            
+            // FAQ accessibility
+            const faqQuestions = document.querySelectorAll('.faq-question');
+            faqQuestions.forEach(question => {
+                question.addEventListener('keydown', function(e) {
+                    if (e.key === 'Enter' || e.key === ' ') {
+                        e.preventDefault();
+                        this.click();
+                    }
+                });
+            });
+            
+            // Form validation
+            const contactForm = document.querySelector('.contact-form');
+            if (contactForm) {
+                contactForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    
+                    // Simple validation
+                    let isValid = true;
+                    const requiredFields = this.querySelectorAll('[required]');
+                    
+                    requiredFields.forEach(field => {
+                        if (!field.value.trim()) {
+                            isValid = false;
+                            field.classList.add('is-invalid');
+                        } else {
+                            field.classList.remove('is-invalid');
+                        }
+                    });
+                    
+                    // Email validation
+                    const emailField = this.querySelector('input[type="email"]');
+                    if (emailField && emailField.value) {
+                        const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                        if (!emailPattern.test(emailField.value)) {
+                            isValid = false;
+                            emailField.classList.add('is-invalid');
+                        }
+                    }
+                    
+                    // Honeypot check
+                    const honeypot = this.querySelector('#website');
+                    if (honeypot && honeypot.value) {
+                        isValid = false; // Likely spam
+                    }
+                    
+                    if (isValid) {
+                        // In a real scenario, you would submit the form to a server
+                        // This is just a simulation
+                        const successMessage = document.getElementById('form-success');
+                        if (successMessage) {
+                            successMessage.classList.remove('d-none');
+                            this.reset();
+                            
+                            // Scroll to success message
+                            successMessage.scrollIntoView({ behavior: 'smooth' });
+                        }
+                    }
+                });
+            }
+            
+            // Add focus-visible class for keyboard navigation
+            document.addEventListener('keydown', function() {
+                document.body.classList.add('using-keyboard');
+            });
+            
+            document.addEventListener('mousedown', function() {
+                document.body.classList.remove('using-keyboard');
+            });
+        });
+    </script>
+</body>
+</html>
