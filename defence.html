@@ -1,0 +1,923 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Defence & Aerospace Solutions | Opticbee - Advanced Technology Systems</title>
+    <meta name="description" content="Opticbee delivers cutting-edge defence systems, aerospace technologies, and space solutions. Secure communications, surveillance, AI/ML, and mission-critical systems.">
+    <link rel="canonical" href="https://opticbee.in/defence-aerospace.html">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://opticbee.in/defence-aerospace.html">
+    <meta property="og:title" content="Defence & Aerospace Solutions | Opticbee">
+    <meta property="og:description" content="Advanced defence systems, aerospace technologies, and space solutions for mission-critical operations.">
+    <meta property="og:image" content="https://opticbee.in/images/defence-hero.jpg">
+    
+    <!-- Twitter Card -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://opticbee.in/defence-aerospace.html">
+    <meta property="twitter:title" content="Defence & Aerospace Solutions | Opticbee">
+    <meta property="twitter:description" content="Advanced defence systems, aerospace technologies, and space solutions for mission-critical operations.">
+    <meta property="twitter:image" content="https://opticbee.in/images/defence-hero.jpg">
+    
+    <!-- Bootstrap 5 CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        :root {
+            --primary: #0a2463;
+            --secondary: #d4af37;
+            --accent: #1e88e5;
+            --dark: #151e3f;
+            --light: #f8f9fa;
+            --success: #28a745;
+            --danger: #dc3545;
+            --warning: #ffc107;
+            --info: #17a2b8;
+        }
+        
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            overflow-x: hidden;
+        }
+        
+        /* Hero Section */
+        .hero-section {
+            height: 100vh;
+            background: linear-gradient(rgba(21, 30, 63, 0.8), rgba(10, 36, 99, 0.9)), url('images/defence-hero.jpg') no-repeat center center/cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            position: relative;
+        }
+        
+        .hero-content {
+            max-width: 800px;
+            padding: 2rem;
+        }
+        
+        .hero-title {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        
+        .hero-subtitle {
+            font-size: 1.5rem;
+            margin-bottom: 2.5rem;
+            font-weight: 300;
+        }
+        
+        .btn-hero {
+            padding: 0.8rem 2rem;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 1.1rem;
+            margin: 0 0.5rem;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-primary-custom {
+            background-color: var(--secondary);
+            border: none;
+            color: var(--dark);
+        }
+        
+        .btn-primary-custom:hover {
+            background-color: #c19b2e;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+        
+        .btn-outline-light-custom {
+            border: 2px solid white;
+            color: white;
+            background: transparent;
+        }
+        
+        .btn-outline-light-custom:hover {
+            background: white;
+            color: var(--dark);
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+        
+        /* Quick Links Navigation */
+        .quick-links {
+            background-color: var(--light);
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .quick-links .nav-link {
+            color: var(--dark);
+            font-weight: 500;
+            padding: 0.5rem 1rem;
+            transition: all 0.3s ease;
+        }
+        
+        .quick-links .nav-link:hover {
+            color: var(--secondary);
+        }
+        
+        /* Content Sections */
+        .content-section {
+            padding: 5rem 0;
+        }
+        
+        .section-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 2rem;
+            color: var(--primary);
+            position: relative;
+        }
+        
+        .section-title:after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            width: 80px;
+            height: 4px;
+            background-color: var(--secondary);
+        }
+        
+        .section-img {
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+        
+        .section-img:hover {
+            transform: scale(1.02);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+        }
+        
+        .benefit-item {
+            margin-bottom: 1.5rem;
+            padding-left: 2rem;
+            position: relative;
+        }
+        
+        .benefit-item:before {
+            content: '\f00c';
+            font-family: 'Font Awesome 5 Free';
+            font-weight: 900;
+            position: absolute;
+            left: 0;
+            top: 0;
+            color: var(--success);
+        }
+        
+        /* Innovation Grid */
+        .innovation-card {
+            border: none;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            height: 100%;
+        }
+        
+        .innovation-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+        }
+        
+        .innovation-icon {
+            font-size: 2.5rem;
+            color: var(--secondary);
+            margin-bottom: 1rem;
+        }
+        
+        /* Timeline */
+        .timeline {
+            position: relative;
+            padding: 2rem 0;
+        }
+        
+        .timeline:before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            top: 0;
+            bottom: 0;
+            width: 4px;
+            background: var(--secondary);
+            transform: translateX(-50%);
+        }
+        
+        .timeline-item {
+            position: relative;
+            margin-bottom: 3rem;
+            width: 50%;
+            padding: 0 3rem;
+        }
+        
+        .timeline-item:nth-child(odd) {
+            left: 0;
+            padding-right: 3rem;
+        }
+        
+        .timeline-item:nth-child(even) {
+            left: 50%;
+            padding-left: 3rem;
+        }
+        
+        .timeline-content {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+        
+        .timeline-content:after {
+            content: '';
+            position: absolute;
+            top: 20px;
+            width: 20px;
+            height: 20px;
+            background: white;
+            transform: rotate(45deg);
+        }
+        
+        .timeline-item:nth-child(odd) .timeline-content:after {
+            right: -10px;
+        }
+        
+        .timeline-item:nth-child(even) .timeline-content:after {
+            left: -10px;
+        }
+        
+        .timeline-date {
+            font-weight: 700;
+            color: var(--secondary);
+            margin-bottom: 0.5rem;
+        }
+        
+        /* Why Choose Us */
+        .feature-card {
+            text-align: center;
+            padding: 2rem 1.5rem;
+            border-radius: 10px;
+            transition: all 0.3s ease;
+            height: 100%;
+            border: 1px solid #eee;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            border-color: var(--secondary);
+        }
+        
+        .feature-icon {
+            font-size: 2.5rem;
+            color: var(--secondary);
+            margin-bottom: 1.5rem;
+        }
+        
+        /* Case Studies */
+        .case-study-card {
+            border: none;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            height: 100%;
+        }
+        
+        .case-study-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+        }
+        
+        .case-study-img {
+            height: 200px;
+            object-fit: cover;
+        }
+        
+        /* FAQ */
+        .accordion-item {
+            border: 1px solid rgba(0, 0, 0, 0.125);
+            border-radius: 0.5rem;
+            margin-bottom: 1rem;
+            overflow: hidden;
+        }
+        
+        .accordion-button {
+            font-weight: 600;
+            padding: 1.25rem;
+        }
+        
+        .accordion-button:not(.collapsed) {
+            background-color: var(--primary);
+            color: white;
+        }
+        
+        .accordion-button:focus {
+            box-shadow: none;
+            border-color: rgba(0, 0, 0, 0.125);
+        }
+        
+        .accordion-body {
+            padding: 1.25rem;
+        }
+        
+        /* Animations */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+        
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        /* Responsive Adjustments */
+        @media (max-width: 992px) {
+            .hero-title {
+                font-size: 2.8rem;
+            }
+            
+            .hero-subtitle {
+                font-size: 1.2rem;
+            }
+            
+            .section-title {
+                font-size: 2rem;
+            }
+            
+            .timeline:before {
+                left: 30px;
+            }
+            
+            .timeline-item {
+                width: 100%;
+                padding-left: 70px;
+                padding-right: 0;
+            }
+            
+            .timeline-item:nth-child(even) {
+                left: 0;
+            }
+            
+            .timeline-content:after {
+                left: -10px !important;
+                right: auto !important;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .hero-title {
+                font-size: 2.2rem;
+            }
+            
+            .btn-hero {
+                display: block;
+                margin: 0.5rem auto;
+                width: 80%;
+            }
+            
+            .quick-links .nav {
+                flex-wrap: nowrap;
+                overflow-x: auto;
+                padding-bottom: 0.5rem;
+            }
+            
+            .quick-links .nav-link {
+                white-space: nowrap;
+            }
+        }
+        
+        @media (prefers-reduced-motion: reduce) {
+            * {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+            }
+        }
+    </style>
+    
+    <!-- JSON-LD Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "Defence & Aerospace Solutions | Opticbee",
+      "description": "Advanced defence systems, aerospace technologies, and space solutions for mission-critical operations.",
+      "url": "https://opticbee.in/defence-aerospace.html",
+      "breadcrumb": {
+        "@type": "BreadcrumbList",
+        "itemListElement": [{
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://opticbee.in"
+        },{
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Defence & Aerospace Solutions"
+        }]
+      },
+      "mainEntity": {
+        "@type": "Organization",
+        "name": "Opticbee",
+        "url": "https://opticbee.in",
+        "logo": "https://opticbee.in/images/logo.png",
+        "sameAs": [
+          "https://twitter.com/opticbee",
+          "https://www.linkedin.com/company/opticbee",
+          "https://www.facebook.com/opticbee"
+        ]
+      }
+    }
+    </script>
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-content">
+            <h1 class="hero-title">Innovating Defence, Aerospace & Space Technology for a Secure Future</h1>
+            <p class="hero-subtitle">Cutting-edge solutions for mission-critical operations with advanced AI, secure communications, and next-generation surveillance systems.</p>
+            <div class="hero-buttons">
+                <a href="#defence" class="btn btn-hero btn-primary-custom">Explore Defence</a>
+                <a href="#aerospace" class="btn btn-hero btn-outline-light-custom">Explore Aerospace</a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Quick Links Navigation -->
+    <section class="quick-links">
+        <div class="container">
+            <nav class="nav justify-content-center">
+                <a class="nav-link" href="#defence">Defence</a>
+                <a class="nav-link" href="#aerospace">Aerospace</a>
+                <a class="nav-link" href="#space">Space Technology</a>
+                <a class="nav-link" href="#why-us">Why Choose Us</a>
+                <a class="nav-link" href="#case-studies">Case Studies</a>
+                <a class="nav-link" href="#faq">FAQ</a>
+            </nav>
+        </div>
+    </section>
+    
+    <!-- DEFENCE SECTION -->
+    <section id="defence" class="content-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h2 class="section-title">Defence Solutions</h2>
+                    <p>Opticbee delivers cutting-edge defence technology systems designed to enhance national security and mission readiness. Our solutions integrate advanced AI and machine learning algorithms with robust hardware to create intelligent defence ecosystems capable of responding to evolving threats in real-time.</p>
+                    <p>We specialize in secure communication networks that ensure uninterrupted command and control capabilities even in the most challenging environments. Our surveillance systems leverage multi-spectral imaging, signal intelligence, and predictive analytics to provide comprehensive situational awareness for defence personnel.</p>
+                    <ul class="list-unstyled">
+                        <li class="benefit-item">Advanced threat detection and response systems</li>
+                        <li class="benefit-item">Secure, encrypted communication networks</li>
+                        <li class="benefit-item">AI-powered intelligence and surveillance platforms</li>
+                        <li class="benefit-item">Unmanned systems and autonomous operations</li>
+                        <li class="benefit-item">Cyber security solutions for critical infrastructure</li>
+                    </ul>
+                </div>
+                <div class="col-lg-6">
+                    <img src="images/defence-systems.jpg" alt="Advanced defence systems and technology by Opticbee" class="img-fluid section-img" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- AEROSPACE SECTION -->
+    <section id="aerospace" class="content-section bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="section-title mx-auto">Aerospace Technologies</h2>
+                    <p class="lead">Revolutionizing aviation with next-generation technologies and innovative solutions</p>
+                </div>
+            </div>
+            <div class="row align-items-center mb-5">
+                <div class="col-lg-6 order-lg-2">
+                    <p>Opticbee's aerospace division focuses on developing advanced avionics, aircraft systems, and aviation technology that push the boundaries of what's possible in aerial operations. Our team of engineers and aviation experts work closely with industry leaders to create solutions that enhance safety, efficiency, and performance.</p>
+                    <p>We specialize in predictive maintenance systems that utilize IoT sensors and machine learning to anticipate component failures before they occur, significantly reducing downtime and maintenance costs. Our lightweight composite materials and aerodynamic designs contribute to improved fuel efficiency and reduced environmental impact.</p>
+                    <p>From commercial aviation to specialized aircraft, our technologies are transforming how aircraft are designed, operated, and maintained in the modern era.</p>
+                </div>
+                <div class="col-lg-6 order-lg-1">
+                    <img src="images/aerospace-tech.jpg" alt="Aerospace technology and innovation by Opticbee" class="img-fluid section-img" loading="lazy">
+                </div>
+            </div>
+            
+            <div class="row mt-5">
+                <div class="col-12">
+                    <h3 class="text-center mb-4">Key Innovations</h3>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="innovation-card">
+                        <div class="card-body text-center p-4">
+                            <div class="innovation-icon">
+                                <i class="fas fa-brain"></i>
+                            </div>
+                            <h4>AI in Aerospace</h4>
+                            <p>Intelligent systems for flight operations, navigation, and autonomous decision-making that enhance safety and efficiency.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="innovation-card">
+                        <div class="card-body text-center p-4">
+                            <div class="innovation-icon">
+                                <i class="fas fa-weight-hanging"></i>
+                            </div>
+                            <h4>Lightweight Composites</h4>
+                            <p>Advanced materials that reduce weight while maintaining structural integrity, leading to improved fuel efficiency.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="innovation-card">
+                        <div class="card-body text-center p-4">
+                            <div class="innovation-icon">
+                                <i class="fas fa-digital-tachograph"></i>
+                            </div>
+                            <h4>Digital Twin Technology</h4>
+                            <p>Virtual replicas of physical assets that enable simulation, analysis, and control for optimal performance.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- SPACE TECHNOLOGY SECTION -->
+    <section id="space" class="content-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="section-title mx-auto">Space Technology</h2>
+                    <p class="lead">Pushing the boundaries of space exploration and satellite technology</p>
+                </div>
+            </div>
+            <div class="row align-items-center mb-5">
+                <div class="col-lg-6">
+                    <p>Opticbee is at the forefront of space technology innovation, providing advanced solutions for satellite systems, launch vehicle support, and space exploration missions. Our expertise spans earth observation, deep-space communication, and space data analytics that transform how we understand and utilize space.</p>
+                    <p>We develop robust satellite systems capable of withstanding the harsh conditions of space while delivering critical data for communication, navigation, and scientific research. Our ground station technology ensures reliable communication with spacecraft across vast distances, enabling mission success even in the most challenging scenarios.</p>
+                    <p>With a focus on reliability and innovation, our space technology solutions support both governmental space agencies and commercial space ventures in their quest to explore and utilize the final frontier.</p>
+                </div>
+                <div class="col-lg-6">
+                    <img src="images/space-tech.jpg" alt="Space technology and satellite systems by Opticbee" class="img-fluid section-img" loading="lazy">
+                </div>
+            </div>
+            
+            <div class="row mt-5">
+                <div class="col-12">
+                    <h3 class="text-center mb-4">Space Technology Roadmap</h3>
+                </div>
+                <div class="col-12">
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-content fade-in">
+                                <div class="timeline-date">2020</div>
+                                <h4>Satellite Communication Systems</h4>
+                                <p>Developed advanced satellite communication protocols enabling faster data transmission and more reliable connections for remote operations.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-content fade-in">
+                                <div class="timeline-date">2022</div>
+                                <h4>Earth Observation Platforms</h4>
+                                <p>Launched high-resolution earth observation systems for climate monitoring, disaster management, and resource mapping applications.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-content fade-in">
+                                <div class="timeline-date">2023</div>
+                                <h4>Deep Space Communication</h4>
+                                <p>Implemented next-generation deep space network technology enabling communication at unprecedented distances with minimal signal loss.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-content fade-in">
+                                <div class="timeline-date">2024</div>
+                                <h4>Lunar Exploration Support</h4>
+                                <p>Providing navigation and communication systems for upcoming lunar missions, supporting humanity's return to the Moon.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-content fade-in">
+                                <div class="timeline-date">2025+</div>
+                                <h4>Mars Mission Preparation</h4>
+                                <p>Developing advanced systems for future Mars missions, including autonomous navigation and life support monitoring technology.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- WHY CHOOSE US SECTION -->
+    <section id="why-us" class="content-section bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="section-title mx-auto">Why Choose Opticbee</h2>
+                    <p class="lead">Our differentiators that set us apart in defence, aerospace, and space technology</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="feature-card fade-in">
+                        <div class="feature-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h4>Security-First Approach</h4>
+                        <p>We prioritize security in every solution, implementing multi-layered protection protocols to safeguard critical systems and data.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="feature-card fade-in">
+                        <div class="feature-icon">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <h4>Global Compliance</h4>
+                        <p>Our solutions adhere to international standards and regulations, ensuring compliance across different markets and jurisdictions.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="feature-card fade-in">
+                        <div class="feature-icon">
+                            <i class="fas fa-flask"></i>
+                        </div>
+                        <h4>R&D Driven Innovation</h4>
+                        <p>We invest significantly in research and development, continuously pushing technological boundaries to deliver cutting-edge solutions.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="feature-card fade-in">
+                        <div class="feature-icon">
+                            <i class="fas fa-cogs"></i>
+                        </div>
+                        <h4>Advanced Manufacturing</h4>
+                        <p>State-of-the-art manufacturing facilities equipped with precision tools and quality control processes for exceptional product reliability.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="feature-card fade-in">
+                        <div class="feature-icon">
+                            <i class="fas fa-bolt"></i>
+                        </div>
+                        <h4>Agile Methodologies</h4>
+                        <p>We employ agile development processes that enable rapid iteration, adaptation to changing requirements, and faster time-to-market.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="feature-card fade-in">
+                        <div class="feature-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h4>Dedicated Teams</h4>
+                        <p>Expert teams with deep domain knowledge who are committed to understanding your unique challenges and delivering tailored solutions.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- CASE STUDIES SECTION -->
+    <section id="case-studies" class="content-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="section-title mx-auto">Case Studies</h2>
+                    <p class="lead">Real-world applications of our defence, aerospace, and space technology solutions</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="case-study-card fade-in">
+                        <img src="images/defence-case-study.jpg" class="card-img-top case-study-img" alt="Secure communication network implementation for defence" loading="lazy">
+                        <div class="card-body">
+                            <h4>Secure Military Communications</h4>
+                            <h6 class="text-primary">Challenge</h6>
+                            <p>A defence agency needed a secure, jam-resistant communication system for remote operations with minimal latency.</p>
+                            <h6 class="text-success">Solution</h6>
+                            <p>We developed a quantum-resistant encrypted communication network with satellite backup capabilities.</p>
+                            <h6 class="text-info">Results</h6>
+                            <p>99.9% uptime achieved with zero successful interception attempts over 18 months of operation.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="case-study-card fade-in">
+                        <img src="images/aerospace-case-study.jpg" class="card-img-top case-study-img" alt="Predictive maintenance system for commercial aircraft" loading="lazy">
+                        <div class="card-body">
+                            <h4>Aircraft Predictive Maintenance</h4>
+                            <h6 class="text-primary">Challenge</h6>
+                            <p>An airline faced frequent unscheduled maintenance causing flight delays and increased operational costs.</p>
+                            <h6 class="text-success">Solution</h6>
+                            <p>Implemented AI-powered predictive maintenance system with IoT sensors and analytics platform.</p>
+                            <h6 class="text-info">Results</h6>
+                            <p>46% reduction in unscheduled maintenance and 22% decrease in overall maintenance costs within first year.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="case-study-card fade-in">
+                        <img src="images/space-case-study.jpg" class="card-img-top case-study-img" alt="Satellite imaging system for environmental monitoring" loading="lazy">
+                        <div class="card-body">
+                            <h4>Environmental Satellite Monitoring</h4>
+                            <h6 class="text-primary">Challenge</h6>
+                            <p>Government agency needed high-resolution, frequent earth observation for climate change monitoring.</p>
+                            <h6 class="text-success">Solution</h6>
+                            <p>Designed and launched a constellation of small satellites with multi-spectral imaging capabilities.</p>
+                            <h6 class="text-info">Results</h6>
+                            <p>Daily coverage of critical areas with 95% reduction in data cost compared to traditional satellite systems.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- FAQ SECTION -->
+    <section id="faq" class="content-section bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="section-title mx-auto">Frequently Asked Questions</h2>
+                    <p class="lead">Find answers to common questions about our defence, aerospace, and space technology solutions</p>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="accordion" id="faqAccordion">
+                        <div class="accordion-item fade-in">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1" aria-expanded="true" aria-controls="faq1">
+                                    What security certifications do your defence solutions have?
+                                </button>
+                            </h3>
+                            <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Our defence solutions comply with multiple international security standards including ISO 27001, NIST SP 800-171, and Common Criteria. We also hold specific certifications required by defence agencies in various countries, which we can discuss under appropriate non-disclosure agreements.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item fade-in">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2" aria-expanded="false" aria-controls="faq2">
+                                    How do your aerospace solutions contribute to sustainability?
+                                </button>
+                            </h3>
+                            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Our aerospace technologies focus on reducing environmental impact through multiple approaches: lightweight composite materials that decrease fuel consumption, AI-optimized flight paths that reduce emissions, and predictive maintenance systems that extend aircraft lifespan. We're also developing electric propulsion technologies for future aircraft.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item fade-in">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3" aria-expanded="false" aria-controls="faq3">
+                                    Can your space technology be customized for specific mission requirements?
+                                </button>
+                            </h3>
+                            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Absolutely. We specialize in developing customized space technology solutions tailored to specific mission parameters. Whether you need specialized sensors for earth observation, unique communication protocols for deep space missions, or specific form factors for small satellite constellations, our engineering team can develop solutions that meet your exact requirements.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item fade-in">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4" aria-expanded="false" aria-controls="faq4">
+                                    What is your approach to cybersecurity in defence systems?
+                                </button>
+                            </h3>
+                            <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    We implement a multi-layered cybersecurity approach that includes hardware-based security modules, end-to-end encryption, regular penetration testing, and continuous monitoring. Our systems are designed with zero-trust architecture principles and include AI-powered threat detection that can identify and respond to emerging threats in real-time.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item fade-in">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5" aria-expanded="false" aria-controls="faq5">
+                                    How do you ensure reliability in extreme aerospace environments?
+                                </button>
+                            </h3>
+                            <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Our aerospace components undergo rigorous testing that exceeds standard industry requirements. We subject systems to extreme temperature variations, vibration tests, pressure changes, and electromagnetic interference scenarios. Additionally, we use redundant design principles and fault-tolerant architectures to ensure continued operation even if individual components experience issues.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item fade-in">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq6" aria-expanded="false" aria-controls="faq6">
+                                    What support do you provide after deploying your solutions?
+                                </button>
+                            </h3>
+                            <div id="faq6" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    We offer comprehensive post-deployment support including 24/7 technical assistance, regular software updates, remote monitoring services, and on-site maintenance when required. Our support packages are customizable based on your specific needs and can include training programs for your technical staff to ensure optimal utilization of our systems.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item fade-in">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq7" aria-expanded="false" aria-controls="faq7">
+                                    Do you work with international clients and what are the export restrictions?
+                                </button>
+                            </h3>
+                            <div id="faq7" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Yes, we work with international clients across the globe. However, certain defence and space technologies are subject to export controls and regulations. We comply fully with all international trade laws and regulations, including ITAR and EAR. During the initial consultation phase, we identify any restrictions that may apply to your specific requirements and work within those parameters to deliver solutions that comply with all applicable laws.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item fade-in">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq8" aria-expanded="false" aria-controls="faq8">
+                                    How do you incorporate AI and machine learning in your solutions?
+                                </button>
+                            </h3>
+                            <div id="faq8" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    AI and machine learning are integral to many of our solutions. In defence systems, we use AI for threat detection, pattern recognition, and predictive analytics. In aerospace, we employ machine learning for predictive maintenance, fuel optimization, and autonomous operations. For space technology, AI helps with data analysis from satellite imagery, autonomous navigation, and system health monitoring. Our approach focuses on practical, explainable AI that enhances capabilities without introducing unnecessary complexity.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bootstrap JS and Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+    
+    <script>
+        // Intersection Observer for fade-in animations
+        document.addEventListener('DOMContentLoaded', function() {
+            const fadeElements = document.querySelectorAll('.fade-in');
+            
+            const fadeOptions = {
+                threshold: 0.2,
+                rootMargin: '0px 0px -50px 0px'
+            };
+            
+            const fadeObserver = new IntersectionObserver(function(entries, observer) {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, fadeOptions);
+            
+            fadeElements.forEach(element => {
+                fadeObserver.observe(element);
+            });
+            
+            // Smooth scrolling for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    
+                    const targetId = this.getAttribute('href');
+                    if (targetId === '#') return;
+                    
+                    const targetElement = document.querySelector(targetId);
+                    if (targetElement) {
+                        window.scrollTo({
+                            top: targetElement.offsetTop - 80, // Adjust for sticky header
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+            
+            // Reduce motion if preferred
+            const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+            if (reduceMotion.matches) {
+                document.documentElement.style.scrollBehavior = 'auto';
+            }
+        });
+    </script>
+</body>
+</html>
