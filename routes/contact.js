@@ -56,14 +56,11 @@ router.post('/contact', async (req, res) => {
             INSERT INTO contacts (id, name, email, subject, message, submittedAt)
             VALUES (?, ?, ?, ?, ?, ?)
         `;
-        await db.query(insertQuery, [
-            submissionId,
-            name,
-            email,
-            subject,
-            message,
-            submissionDate
-        ]);
+            db.query(insertQuery, [submissionId, name, email, subject, message, submissionDate], (err, result) => {
+            if (err) { console.error(err); return res.status(500).json({ message: 'DB error' }); }
+         
+            });
+
 
         console.log('✅ Contact form saved to MySQL:', submissionId);
 

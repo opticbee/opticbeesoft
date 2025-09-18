@@ -431,7 +431,7 @@
           </div>
 
           <div class="col-lg-8">
-            <!-- Updated form to point to Node.js API -->
+            <!-- No changes needed to the form itself -->
             <form id="contactForm" class="contact-form">
               <div class="row">
                 <div class="col-md-6 form-group">
@@ -563,7 +563,6 @@
         errorMessage.style.display = 'none';
         sentMessage.style.display = 'none';
         
-        // Change the URL to your actual Node.js API endpoint
         fetch('https://www.hitaishihealthcare.com/api/contact', {
           method: 'POST',
           headers: {
@@ -572,8 +571,12 @@
           body: JSON.stringify(formData)
         })
         .then(response => {
+            // Check if the response is not OK, then parse the error JSON
             if (!response.ok) {
-                 return response.json().then(err => { throw new Error(err.message || 'Something went wrong') });
+                 return response.json().then(err => { 
+                   // Construct a more informative error message
+                   throw new Error(err.message || 'An unknown server error occurred.');
+                 });
             }
             return response.json();
         })
@@ -585,7 +588,8 @@
         })
         .catch(error => {
           loading.style.display = 'none';
-          errorMessage.innerHTML = error.message;
+          // This will now display the detailed error from the server
+          errorMessage.innerHTML = `Error: ${error.message}`;
           errorMessage.style.display = 'block';
         });
       });
