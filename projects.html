@@ -1,0 +1,1241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects Overview | Academic, Industry, Technology, Global Remote Projects – Opticbee</title>
+    <meta name="description" content="Explore Opticbee's comprehensive project portfolio across academic, industry, technology and global remote domains. Driving innovation through cutting-edge solutions worldwide.">
+    <link rel="canonical" href="https://opticbee.in/projects.html">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Projects Overview | Academic, Industry, Technology, Global Remote Projects – Opticbee">
+    <meta property="og:description" content="Explore Opticbee's comprehensive project portfolio across academic, industry, technology and global remote domains.">
+    <meta property="og:image" content="https://opticbee.in/images/projects-hero.jpg">
+    <meta property="og:url" content="https://opticbee.in/projects.html">
+    <meta property="og:type" content="website">
+    
+    <!-- Bootstrap 5 CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Favicons -->
+    <link href="images/favicon.ico" rel="icon">
+    <link href="images/favicon.ico" rel="apple-touch-icon">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+    <!-- Main CSS File -->
+    <link href="assets/css/main.css" rel="stylesheet">
+
+    <style>
+        :root {
+            --primary: #0d6efd;
+            --secondary: #6c757d;
+            --success: #198754;
+            --dark: #212529;
+            --light: #f8f9fa;
+            --opticbee-primary: #3a86ff;
+            --opticbee-secondary: #8338ec;
+        }
+        
+        /* Base Styles */
+        body {
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            overflow-x: hidden;
+        }
+        
+        /* Animation Utilities */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+        
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        .zoom-in {
+            transform: scale(0.95);
+            transition: transform 0.5s ease;
+        }
+        
+        .zoom-in.visible {
+            transform: scale(1);
+        }
+        
+        .slide-up {
+            transform: translateY(50px);
+            opacity: 0;
+            transition: transform 0.8s ease, opacity 0.8s ease;
+        }
+        
+        .slide-up.visible {
+            transform: translateY(0);
+            opacity: 1;
+        }
+        
+        .hero-section {
+            position: relative;
+            height: 70vh; /* adjust height */
+            background-image: url(images/projectsbg.png); /* replace with your background */
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center; /* horizontal center */
+            align-items: center;     /* vertical center */
+            text-align: center;
+            color: #fff;
+        }
+
+        .hero-section .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.55);
+            z-index: 1;
+        }
+
+        .hero-section .container {
+            position: relative;
+            z-index: 2; /* keeps text above overlay */
+        }
+
+        .hero-btn {
+            background: #0d6efd;
+            color: #fff;
+            border-radius: 30px;
+            padding: 12px 28px;
+            transition: all 0.3s ease;
+        }
+        .hero-btn:hover {
+            background: #084298;
+        }
+
+        
+        .hero-content {
+            width: auto;
+            z-index: 2;
+        }
+        
+        .hero-btn {
+            padding: 12px 30px;
+            font-weight: 600;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+            background-color: var(--opticbee-primary);
+            border: none;
+        }
+        
+        .hero-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            background-color: var(--opticbee-secondary);
+        }
+        
+        /* Quick Links Navigation */
+        .quick-links-section {
+            padding: 5rem 0;
+            background-color: var(--light);
+        }
+        
+        .quick-link-card {
+            height: 100%;
+            transition: all 0.3s ease;
+            border: none;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+        }
+        
+        .quick-link-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+        }
+        
+        .quick-link-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: var(--opticbee-primary);
+        }
+        
+        /* Section Headers */
+        .section-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        
+        .section-header h2 {
+            font-weight: 700;
+            position: relative;
+            padding-bottom: 1rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        /* .section-header h2::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background: var(--opticbee-primary);
+            border-radius: 2px;
+        } */
+        
+        /* Content Sections */
+        .content-section {
+            padding: 5rem 0;
+        }
+        
+        .content-section:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        
+        .subsection {
+            margin-bottom: 3rem;
+        }
+        
+        .subsection h3 {
+            margin-bottom: 1.5rem;
+            font-weight: 600;
+            color: var(--dark);
+        }
+        
+        /* Project Cards */
+        .project-card {
+            border: none;
+            border-radius: 12px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+            height: 100%;
+        }
+        
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.12);
+        }
+        
+        .project-card-img {
+            height: 200px;
+            object-fit: cover;
+        }
+        
+        /* Interactive List */
+        .interactive-list {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .interactive-list li {
+            padding: 1rem 1.5rem;
+            margin-bottom: 1rem;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+            transition: all 0.3s ease;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+        }
+        
+        .interactive-list li:hover {
+            transform: translateX(5px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .interactive-list i {
+            margin-right: 1rem;
+            color: var(--opticbee-primary);
+        }
+        
+        /* Process Grid */
+        .process-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+        }
+        
+        .process-item {
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+            transition: all 0.3s ease;
+        }
+        
+        .process-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+        
+        .process-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: var(--opticbee-primary);
+        }
+        
+        /* Cross-link Cards */
+        .cross-link-card {
+            background: linear-gradient(135deg, var(--opticbee-primary), var(--opticbee-secondary));
+            color: white;
+            border-radius: 12px;
+            padding: 2.5rem;
+            text-align: center;
+            margin-top: 2rem;
+        }
+        
+        .cross-link-btn {
+            background: white;
+            color: var(--opticbee-primary);
+            border: none;
+            padding: 10px 25px;
+            border-radius: 50px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        
+        .cross-link-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            background: rgba(255, 255, 255, 0.9);
+        }
+        
+        /* Accessibility: Reduced Motion */
+        @media (prefers-reduced-motion: reduce) {
+            .fade-in, .zoom-in, .slide-up,
+            .hero-btn, .quick-link-card, .project-card,
+            .interactive-list li, .process-item,
+            .cross-link-btn {
+                transition: none;
+            }
+            
+            .fade-in, .zoom-in, .slide-up {
+                opacity: 1;
+                transform: none;
+            }
+        }
+        
+        /* Responsive Adjustments */
+        @media (max-width: 768px) {
+            .hero-section {
+                min-height: 500px;
+                padding: 2rem 0;
+            }
+            
+            .hero-content h1 {
+                font-size: 2.2rem;
+            }
+            
+            .content-section {
+                padding: 3rem 0;
+            }
+            
+            .quick-link-card {
+                margin-bottom: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="container position-relative d-flex align-items-center">
+
+        <a href="index.html" class="logo d-flex align-items-center me-auto">
+        <img src="images/oblogo.png" alt="Official logo" class="navbar-logo">
+        <h1 class="sitename">Optic Bee</h1>
+        </a>
+
+
+        <nav id="navmenu" class="navmenu">
+        <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            
+            <li class="dropdown">
+            <a href="technologies.html"><span>Technologies</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+                <li><a href="emerging-tech.html#programming">Programming Languages</a></li>
+                <li><a href="ai.html#ai">Artificial Intelligence</a></li>
+                <li><a href="ai.html#prompt-engineering">Prompt Engineering</a></li>
+                <li><a href="cloud-computing.html#edge">Quantum & Edge Computing</a></li>
+                <li><a href="connectivity-iot.html#5g">5G & Connectivity</a></li>
+                <li><a href="emerging-tech.html#xr">Extended Reality (VR/AR)</a></li>
+                <li><a href="connectivity-iot.html#digital-twins">Digital Twins</a></li>
+                <li><a href="connectivity-iot.html#blockchain">Blockchain</a></li>
+                <li><a href="connectivity-iot.html#iot">IOT/IIoT</a></li>
+                <li><a href="cloud-computing.html#cloud">Cloud</a></li>
+                <li><a href="cloud-computing.html#bigdata">Big Data Analytics</a></li>
+                <li><a href="cloud-computing.html#integration">Integration Services</a></li>
+                <li><a href="emerging-tech.html#3d-printing">3D Printing</a></li>
+                <li><a href="emerging-tech.html#rpa">RPA</a></li>
+                <li><a href="ai.html#robotics">Advanced Robotics</a></li>
+                <li><a href="ai.html#cybersecurity">AI in Cybersecurity</a></li>
+            </ul>
+            </li>
+            
+            <li class="dropdown">
+            <a href="#"><span>Business Solutions</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+                <li class="dropdown">
+                <a href="#"><span>ERP</span> <i class="bi bi-chevron-right toggle-dropdown"></i></a>
+                <ul>
+                    <li><a href="#">Oracle ERP Cloud</a></li>
+                </ul>
+                </li>
+                <li class="dropdown">
+                <a href="#"><span>EPM</span> <i class="bi bi-chevron-right toggle-dropdown"></i></a>
+                <ul>
+                    <li><a href="#">Oracle EPM Cloud</a></li>
+                </ul>
+                </li>
+                <li><a href="#">CPM</a></li>
+                <li><a href="#">CRM</a></li>
+                <li class="dropdown">
+                <a href="#"><span>SCM</span> <i class="bi bi-chevron-right toggle-dropdown"></i></a>
+                <ul>
+                    <li><a href="#">Oracle SCM Cloud</a></li>
+                </ul>
+                </li>
+                <li><a href="#">HCM</a></li>
+                <li><a href="#">Oracle PaaS Cloud</a></li>
+            </ul>
+            </li>
+            
+            <li class="dropdown">
+            <a href="#"><span>Services</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+                <li><a href="transforming.html#services">Training</a></li>
+                <li><a href="support.html">Support</a></li>
+                <li><a href="consulting.html#services">Consulting</a></li>
+                <li><a href="transforming.html#services">Implementation & Deployment</a></li>
+                <li><a href="support.html#services">Infrastructure Support</a></li>
+                <li><a href="developmentServices.html#application-development">Application Maintenance</a></li>
+                <li><a href="support.html#services">Application Development</a></li>
+                <li><a href="developmentServices.html#api">API Development</a></li>
+                <li><a href="support.html#services">Customer Software Support</a></li>
+                <li><a href="transforming.html#services">DevOps</a></li>
+                <li><a href="consulting.html#services">Digital Transformation</a></li>
+                <li><a href="consulting.html#services">Migrations & Upgrades</a></li>
+                <li><a href="support.html#services">Partner Product Support</a></li>
+                <li><a href="developmentServices.html#mvp">Startup & MVP Services</a></li>
+                <li><a href="developmentServices.html#system">System Integration</a></li>
+                <li><a href="transforming.html#services">PLM</a></li>
+                <li><a href="transforming.html#services">QA Testing</a></li>
+            </ul>
+            </li>
+            
+            <li class="dropdown">
+            <a href="#"><span>Development</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+                <li><a href="Digital-Marketing.html">Digital Marketing</a></li>
+                <li class="dropdown">
+                <a href="WebDevelopment.html"><span>Web Development</span> <i class="bi bi-chevron-right toggle-dropdown"></i></a>
+                <ul>
+                    <li><a href="WebDevelopment.html#mern">MERN Stack</a></li>
+                    <li><a href="WebDevelopment.html#frontend">HTML, CSS, JavaScript</a></li>
+                    <li><a href="WebDevelopment.html#python">Python, PHP</a></li>
+                </ul>
+                </li>
+                <li><a href="MobileApp-Development.html">Mobile App Development</a></li>
+                <li class="dropdown">
+                <a href="database.html"><span>Databases</span> <i class="bi bi-chevron-right toggle-dropdown"></i></a>
+                <ul>
+                    <li><a href="database.html#oracle">Oracle</a></li>
+                    <li><a href="database.html#sql-server">SQL Server</a></li>
+                    <li><a href="database.html#teradata">Teradata</a></li>
+                    <li><a href="database.html#mysql">MySQL</a></li>
+                    <li><a href="database.html#postgresql">PostgreSQL</a></li>
+                    <li><a href="database.html#sybase">Sybase</a></li>
+                </ul>
+                </li>
+            </ul>
+            </li>
+            
+            <!-- industries -->
+            <li class="dropdown">
+            <a href="#"><span>Industries</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+                <li><a href="defence.html#defence">Defence</a></li>
+                <li><a href="defence.html#aerospace">Aerospace</a></li>
+                <li><a href="defence.html#space">Space Technology</a></li>
+                <li><a href="technologies.html#hightech">High Tech</a></li>
+                <li><a href="education-healthcare.html#education">Education</a></li>
+                <li><a href="education-healthcare.html#healthcare">Healthcare</a></li>
+                <li><a href="telecom.html#telecom">Telecommunication</a></li>
+                <li><a href="telecom.html#bfsi">BFSI</a></li>
+                <li><a href="agriculture.html#agri-tech">Agri-Tech</a></li>
+                <li><a href="agriculture.html#manufacturing">Manufacturing</a></li>
+                <li><a href="agriculture.html#industrial">Industrial</a></li>
+                <li><a href="agriculture.html#construction">Civil/Construction</a></li>
+                <li><a href="agriculture.html#metallurgy">Metallurgy</a></li>
+                <li><a href="technologies.html#computers">Computers/IT</a></li>
+                <li><a href="technologies.html#semiconductors">Semiconductors</a></li>
+                <li><a href="technologies.html#electronics">Electrical/Electronics</a></li>
+                <li><a href="media.html">Media & Entertainment</a></li>
+            </ul>
+            </li>
+            
+            <li class="dropdown">
+                <a href="affiliate.html"><span>Affiliates</span> </a>
+            </li>
+            
+            <li class="dropdown">
+            <a href="#"><span>Projects</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+                <li><a href="#">Educational Projects</a></li>
+                <li><a href="#">Industry Projects</a></li>
+                <li><a href="#">Technology Case Studies</a></li>
+                <li><a href="#">Integration Projects</a></li>
+                <li><a href="#">Contract Projects</a></li>
+                <li><a href="#">Corp to Corp Projects</a></li>
+                <li><a href="#">Offshore/Remote Projects</a></li>
+                <li><a href="#">Training Projects</a></li>
+            </ul>
+            </li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        </nav>
+
+        <div class="header-social-links">
+        <a href="https://x.com/BeeOptic?t=9XDIJ7pA-ZHlrJaPQkSm_Q&s=09" class="twitter"><i class="bi bi-twitter-x"></i></a>
+        <a href="https://www.facebook.com/share/1AeUNhhRDu/" class="facebook"><i class="bi bi-facebook"></i></a>
+        <a href="https://www.instagram.com/optic.bee?igsh=M3lpc2U5ajFpYTA1" class="instagram"><i class="bi bi-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/optic-bee-246554375?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="linkedin"><i class="bi bi-linkedin"></i></a>
+        </div>
+
+    </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero-section">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="hero-content slide-up text-center">
+                <h1 class="display-4 fw-bold mb-4 text-white">Projects & Solutions: Driving Innovation Across Domains</h1>
+                <p class="lead mb-5">Opticbee delivers cutting-edge solutions across academic, industry, technology, and global collaboration domains with precision-engineered approaches tailored to each client's unique requirements.</p>
+                <a href="#quick-links" class="btn btn-lg hero-btn">Explore All Categories</a>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- QUICK LINKS NAVIGATION -->
+    <section id="quick-links" class="quick-links-section content-section">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2 class="display-5 fw-bold">Project Categories</h2>
+                <p class="lead">Navigate to our specialized project domains</p>
+            </div>
+            
+            <div class="row">
+                <div class="col-md-6 col-lg-3 mb-4 fade-in">
+                    <a href="#academic" class="card quick-link-card text-decoration-none text-dark smooth-scroll">
+                        <div class="card-body text-center p-4">
+                            <div class="quick-link-icon">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div>
+                            <h3 class="h4">Academic & Training</h3>
+                            <p class="mb-0">Educational initiatives and skill development programs</p>
+                        </div>
+                    </a>
+                </div>
+                
+                <div class="col-md-6 col-lg-3 mb-4 fade-in">
+                    <a href="#industry" class="card quick-link-card text-decoration-none text-dark smooth-scroll">
+                        <div class="card-body text-center p-4">
+                            <div class="quick-link-icon">
+                                <i class="fas fa-industry"></i>
+                            </div>
+                            <h3 class="h4">Industry & Corporate</h3>
+                            <p class="mb-0">Business solutions and corporate partnerships</p>
+                        </div>
+                    </a>
+                </div>
+                
+                <div class="col-md-6 col-lg-3 mb-4 fade-in">
+                    <a href="#technology" class="card quick-link-card text-decoration-none text-dark smooth-scroll">
+                        <div class="card-body text-center p-4">
+                            <div class="quick-link-icon">
+                                <i class="fas fa-microchip"></i>
+                            </div>
+                            <h3 class="h4">Technology & Integration</h3>
+                            <p class="mb-0">Advanced tech implementations and system integrations</p>
+                        </div>
+                    </a>
+                </div>
+                
+                <div class="col-md-6 col-lg-3 mb-4 fade-in">
+                    <a href="#global" class="card quick-link-card text-decoration-none text-dark smooth-scroll">
+                        <div class="card-body text-center p-4">
+                            <div class="quick-link-icon">
+                                <i class="fas fa-globe"></i>
+                            </div>
+                            <h3 class="h4">Global / Remote</h3>
+                            <p class="mb-0">International collaborations and distributed team projects</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ACADEMIC & TRAINING SECTION -->
+    <section id="academic" class="content-section">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2 class="display-5 fw-bold">Academic & Training</h2>
+                <p class="lead">Fostering innovation through education and skill development</p>
+            </div>
+            
+            <!-- Educational Projects Subsection -->
+            <div class="subsection fade-in">
+                <h3>Educational Projects</h3>
+                <p>Opticbee's academic projects division specializes in creating impactful educational experiences through technology-enhanced learning solutions. We collaborate with universities, colleges, and educational institutions to develop curriculum-aligned projects that bridge theory with practical application. Our team works closely with faculty to design projects that address real-world challenges while meeting learning objectives.</p>
+                
+                <p>From STEM education initiatives to digital humanities projects, we've supported over 200 educational institutions in implementing innovative learning solutions. Our approach combines pedagogical expertise with technical excellence, resulting in projects that enhance student engagement, improve learning outcomes, and prepare students for professional challenges. We specialize in creating interactive learning platforms, virtual labs, and simulation environments that bring complex concepts to life.</p>
+                
+                <div class="row mt-4">
+                    <div class="col-md-4 mb-4">
+                        <div class="card project-card h-100">
+                            <!-- TODO: Replace image paths with real assets -->
+                            <img src="images/interactivelearning.png" class="card-img-top project-card-img" alt="Interactive learning platform for STEM education">
+                            <div class="card-body">
+                                <h4 class="card-title">STEM Learning Platform</h4>
+                                <p class="card-text">Interactive platform with virtual labs for science and engineering students.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-4 mb-4">
+                        <div class="card project-card h-100">
+                            <img src="images/digitalhumanities.png" class="card-img-top project-card-img" alt="Digital humanities research portal">
+                            <div class="card-body">
+                                <h4 class="card-title">Digital Humanities Portal</h4>
+                                <p class="card-text">Research platform facilitating collaborative digital humanities projects.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-4 mb-4">
+                        <div class="card project-card h-100">
+                            <img src="images/curriculam.png" class="card-img-top project-card-img" alt="Curriculum development framework">
+                            <div class="card-body">
+                                <h4 class="card-title">Curriculum Framework</h4>
+                                <p class="card-text">Modular curriculum design system for adaptive learning pathways.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Training Projects Subsection -->
+            <div class="subsection fade-in">
+                <h3>Training Projects</h3>
+                <p>Our training projects are designed to bridge the skills gap between academic learning and industry requirements. Opticbee develops comprehensive training programs that combine theoretical knowledge with hands-on practical experience. We've trained over 5,000 professionals across various domains, with a focus on emerging technologies and industry-specific skills.</p>
+                
+                <p>Our methodology includes needs assessment, customized curriculum design, implementation, and evaluation. We employ a blended learning approach that combines instructor-led sessions, self-paced modules, and practical projects. Our training programs are continuously updated to reflect the latest industry trends and technological advancements, ensuring participants gain relevant, future-proof skills.</p>
+                
+                <div class="row mt-4">
+                    <div class="col-md-8 mx-auto">
+                        <ul class="interactive-list">
+                            <li>
+                                <i class="fas fa-laptop-code"></i>
+                                <div>
+                                    <h5 class="mb-1">Technical Skills Development</h5>
+                                    <p class="mb-0">Programming, data science, cloud computing, and cybersecurity training</p>
+                                </div>
+                            </li>
+                            <li>
+                                <i class="fas fa-chalkboard-teacher"></i>
+                                <div>
+                                    <h5 class="mb-1">Corporate Training Programs</h5>
+                                    <p class="mb-0">Customized training solutions for organizational skill enhancement</p>
+                                </div>
+                            </li>
+                            <li>
+                                <i class="fas fa-certificate"></i>
+                                <div>
+                                    <h5 class="mb-1">Certification Preparation</h5>
+                                    <p class="mb-0">Structured programs for industry-recognized certifications</p>
+                                </div>
+                            </li>
+                            <li>
+                                <i class="fas fa-users-cog"></i>
+                                <div>
+                                    <h5 class="mb-1">Soft Skills Training</h5>
+                                    <p class="mb-0">Communication, leadership, and teamwork development programs</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Cross-link Card -->
+            <div class="cross-link-card fade-in">
+                <h3>Explore Our Academic Initiatives</h3>
+                <p class="mb-4">Discover how our educational and training projects are transforming learning experiences</p>
+                <a href="academic.html" class="btn cross-link-btn">View Academic Projects</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- INDUSTRY & CORPORATE SECTION -->
+    <section id="industry" class="content-section">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2 class="display-5 fw-bold">Industry & Corporate</h2>
+                <p class="lead">Delivering business solutions that drive growth and innovation</p>
+            </div>
+            
+            <!-- Industry Projects Subsection -->
+            <div class="subsection fade-in">
+                <h3>Industry Projects</h3>
+                <p>Opticbee's industry projects are designed to address specific business challenges across sectors including manufacturing, healthcare, finance, and retail. We combine domain expertise with technological innovation to develop solutions that enhance operational efficiency, reduce costs, and create competitive advantages. Our industry projects follow a structured approach from requirement analysis to implementation and support.</p>
+                
+                <p>We've successfully delivered over 150 industry projects, with a client retention rate of 95%. Our solutions range from process automation and data analytics to IoT implementations and digital transformation initiatives. Each project is backed by rigorous quality assurance and post-implementation support to ensure long-term success and maximum ROI for our clients.</p>
+                
+                <div class="row mt-4">
+                    <div class="col-md-4 mb-4">
+                        <div class="card project-card h-100">
+                            <!-- TODO: Replace image paths with real assets -->
+                            <img src="images/manufacturing.png" class="card-img-top project-card-img" alt="Manufacturing process optimization dashboard">
+                            <div class="card-body">
+                                <h4 class="card-title">Process Optimization</h4>
+                                <p class="card-text">IoT-enabled monitoring and optimization of manufacturing processes.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-4 mb-4">
+                        <div class="card project-card h-100">
+                            <img src="images/retailsanalytics.png" class="card-img-top project-card-img" alt="Retail analytics platform">
+                            <div class="card-body">
+                                <h4 class="card-title">Retail Analytics</h4>
+                                <p class="card-text">AI-powered analytics platform for inventory and customer behavior prediction.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-4 mb-4">
+                        <div class="card project-card h-100">
+                            <img src="images/healthcaredata.png" class="card-img-top project-card-img" alt="Healthcare data management system">
+                            <div class="card-body">
+                                <h4 class="card-title">Healthcare Data Management</h4>
+                                <p class="card-text">Secure, compliant patient data management and analysis system.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Corp to Corp Projects Subsection -->
+            <div class="subsection fade-in">
+                <h3>Corp to Corp Projects</h3>
+                <p>Our Corporation to Corporation (C2C) projects facilitate strategic partnerships between organizations, enabling knowledge transfer, resource sharing, and collaborative innovation. Opticbee serves as a bridge between enterprises, managing the complexities of inter-corporate collaborations while ensuring alignment of goals, processes, and outcomes.</p>
+                
+                <p>We've established over 50 successful C2C partnerships, creating synergies that drive mutual growth. Our C2C framework includes structured governance models, clear communication protocols, and performance metrics to ensure transparency and accountability. These partnerships often result in innovative solutions that neither organization could develop independently, creating unique market advantages.</p>
+                
+                <div class="row mt-4">
+                    <div class="col-lg-10 mx-auto">
+                        <div class="card bg-light border-0">
+                            <div class="card-body p-4">
+                                <div class="row text-center">
+                                    <div class="col-md-4 mb-3 mb-md-0">
+                                        <div class="process-icon">
+                                            <i class="fas fa-handshake"></i>
+                                        </div>
+                                        <h5>Partnership Establishment</h5>
+                                        <p>Identifying compatible partners and defining collaboration terms</p>
+                                    </div>
+                                    <div class="col-md-4 mb-3 mb-md-0">
+                                        <div class="process-icon">
+                                            <i class="fas fa-project-diagram"></i>
+                                        </div>
+                                        <h5>Project Architecture</h5>
+                                        <p>Designing collaboration frameworks and workflow integration</p>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="process-icon">
+                                            <i class="fas fa-chart-line"></i>
+                                        </div>
+                                        <h5>Performance Management</h5>
+                                        <p>Monitoring outcomes and optimizing collaborative efficiency</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Contract Projects Subsection -->
+            <div class="subsection fade-in">
+                <h3>Contract Projects</h3>
+                <p>Opticbee's contract-based project model offers flexibility and specialized expertise for organizations with specific, time-bound requirements. Our contract projects are designed to deliver targeted solutions without long-term commitments, making them ideal for specialized initiatives, peak workload periods, or projects requiring niche expertise.</p>
+                
+                <p>We offer various engagement models including fixed-price contracts, time-and-materials contracts, and dedicated team contracts. Each model is tailored to project requirements, risk profiles, and client preferences. Our contract project framework includes clear deliverables, milestones, and communication protocols to ensure transparency and successful outcomes.</p>
+                
+                <div class="row mt-4">
+                    <div class="col-md-6 mb-4">
+                        <div class="card project-card h-100">
+                            <div class="card-body p-4">
+                                <h4 class="card-title">Fixed-Price Contracts</h4>
+                                <p class="card-text">Well-defined projects with predetermined scope, timeline, and budget. Ideal for projects with clear requirements and deliverables.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6 mb-4">
+                        <div class="card project-card h-100">
+                            <div class="card-body p-4">
+                                <h4 class="card-title">Time-and-Materials</h4>
+                                <p class="card-text">Flexible engagement model based on actual effort and resources expended. Suitable for evolving requirements and agile projects.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Cross-link Card -->
+            <div class="cross-link-card fade-in">
+                <h3>Explore Our Industry Solutions</h3>
+                <p class="mb-4">Discover how our industry projects drive business transformation and growth</p>
+                <a href="industry.html" class="btn cross-link-btn">View Industry Projects</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- TECHNOLOGY & INTEGRATION SECTION -->
+    <section id="technology" class="content-section">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2 class="display-5 fw-bold">Technology & Integration</h2>
+                <p class="lead">Leveraging cutting-edge technologies to create seamless solutions</p>
+            </div>
+            
+            <!-- Technology Case Studies Subsection -->
+            <div class="subsection fade-in">
+                <h3>Technology Case Studies</h3>
+                <p>Our technology case studies showcase how Opticbee leverages emerging technologies to solve complex challenges across industries. Each case study represents a unique blend of technical expertise, innovative thinking, and practical implementation. We specialize in AI/ML solutions, blockchain applications, cloud migrations, and IoT ecosystems that transform business operations.</p>
+                
+                <p>From conceptualization to deployment, our technology projects follow a rigorous methodology that emphasizes scalability, security, and maintainability. We've developed over 80 proprietary frameworks and tools that accelerate development while ensuring quality. Our case studies demonstrate measurable outcomes including efficiency improvements, cost reductions, and new revenue generation opportunities for our clients.</p>
+                
+                <div class="row mt-4">
+                    <div class="col-md-6 mb-4">
+                        <div class="card project-card h-100">
+                            <!-- TODO: Replace image paths with real assets -->
+                            <img src="images/aisupplychain.png" class="card-img-top project-card-img" alt="AI-powered supply chain optimization">
+                            <div class="card-body">
+                                <h4 class="card-title">AI Supply Chain Optimization</h4>
+                                <p class="card-text">Machine learning algorithms that reduced inventory costs by 27% while improving delivery times.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="badge bg-primary">AI/ML</span>
+                                    <span class="badge bg-success">Logistics</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6 mb-4">
+                        <div class="card project-card h-100">
+                            <img src="images/blackchain.png" class="card-img-top project-card-img" alt="Blockchain-based digital identity verification">
+                            <div class="card-body">
+                                <h4 class="card-title">Blockchain Identity Verification</h4>
+                                <p class="card-text">Decentralized identity management system that enhanced security while simplifying user authentication.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="badge bg-primary">Blockchain</span>
+                                    <span class="badge bg-success">Security</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6 mb-4">
+                        <div class="card project-card h-100">
+                            <img src="images/cloud.png" class="card-img-top project-card-img" alt="Cloud migration for enterprise applications">
+                            <div class="card-body">
+                                <h4 class="card-title">Enterprise Cloud Migration</h4>
+                                <p class="card-text">Seamless migration of legacy systems to cloud infrastructure, reducing operational costs by 35%.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="badge bg-primary">Cloud</span>
+                                    <span class="badge bg-success">Migration</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6 mb-4">
+                        <div class="card project-card h-100">
+                            <img src="images/iotequipment.png" class="card-img-top project-card-img" alt="IoT monitoring system for industrial equipment">
+                            <div class="card-body">
+                                <h4 class="card-title">IoT Equipment Monitoring</h4>
+                                <p class="card-text">Real-time monitoring system that reduced equipment downtime by 42% through predictive maintenance.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="badge bg-primary">IoT</span>
+                                    <span class="badge bg-success">Manufacturing</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Integration Projects Subsection -->
+            <div class="subsection fade-in">
+                <h3>Integration Projects</h3>
+                <p>Opticbee's integration projects focus on creating seamless connections between disparate systems, applications, and data sources. We specialize in API development, middleware solutions, and data pipeline architectures that enable information flow across organizational silos. Our integration approach emphasizes scalability, reliability, and security while minimizing disruption to existing operations.</p>
+                
+                <p>We've successfully integrated over 300 systems across various platforms and technologies. Our integration framework includes comprehensive testing protocols, monitoring systems, and documentation to ensure long-term maintainability. Whether implementing microservices architectures, designing event-driven systems, or creating data lakes, our integration projects deliver cohesive technology ecosystems that support business objectives.</p>
+                
+                <div class="mt-4">
+                    <div class="process-grid">
+                        <div class="process-item">
+                            <div class="process-icon">
+                                <i class="fas fa-plug"></i>
+                            </div>
+                            <h4>API Integration</h4>
+                            <p>RESTful and GraphQL APIs for seamless system communication</p>
+                        </div>
+                        
+                        <div class="process-item">
+                            <div class="process-icon">
+                                <i class="fas fa-database"></i>
+                            </div>
+                            <h4>Data Integration</h4>
+                            <p>ETL processes and data pipeline development</p>
+                        </div>
+                        
+                        <div class="process-item">
+                            <div class="process-icon">
+                                <i class="fas fa-cloud"></i>
+                            </div>
+                            <h4>Cloud Integration</h4>
+                            <p>Hybrid and multi-cloud environment connectivity</p>
+                        </div>
+                        
+                        <div class="process-item">
+                            <div class="process-icon">
+                                <i class="fas fa-mobile-alt"></i>
+                            </div>
+                            <h4>Application Integration</h4>
+                            <p>Cross-platform application interoperability</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Cross-link Card -->
+            <div class="cross-link-card fade-in">
+                <h3>Explore Our Technology Solutions</h3>
+                <p class="mb-4">Discover how our technology projects drive innovation and digital transformation</p>
+                <a href="technology.html" class="btn cross-link-btn">View Technology Projects</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- GLOBAL / REMOTE SECTION -->
+    <section id="global" class="content-section">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2 class="display-5 fw-bold">Global / Remote</h2>
+                <p class="lead">Connecting talent and expertise across borders for exceptional outcomes</p>
+            </div>
+            
+            <!-- Offshore / Remote Projects Subsection -->
+            <div class="subsection fade-in">
+                <h3>Offshore / Remote Projects</h3>
+                <p>Opticbee's offshore and remote project delivery model enables access to global talent while maintaining quality, security, and efficiency. We've perfected distributed team management through robust processes, communication protocols, and collaboration tools. Our remote project framework ensures seamless coordination across time zones and cultural contexts.</p>
+                
+                <p>We've successfully delivered over 120 remote projects for clients across North America, Europe, and Asia-Pacific regions. Our distributed teams include specialists in development, design, quality assurance, and project management working in synchronized workflows. The remote model offers significant advantages including cost efficiency, access to specialized skills, and around-the-clock productivity through follow-the-sun delivery approaches.</p>
+                
+                <div class="row mt-4">
+                    <div class="col-lg-6 mb-4">
+                        <div class="card project-card h-100">
+                            <!-- TODO: Replace image paths with real assets -->
+                            <img src="images/distributedteam.png" class="card-img-top project-card-img" alt="Distributed team collaboration platform">
+                            <div class="card-body">
+                                <h4 class="card-title">Global Team Collaboration</h4>
+                                <p class="card-text">Platform enabling seamless collaboration across distributed international teams.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-6 mb-4">
+                        <div class="card project-card h-100">
+                            <img src="images/remoteproject.png" class="card-img-top project-card-img" alt="Remote project management dashboard">
+                            <div class="card-body">
+                                <h4 class="card-title">Remote Project Management</h4>
+                                <p class="card-text">Comprehensive dashboard for monitoring and managing distributed projects.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row mt-5">
+                    <div class="col-md-6">
+                        <h4>Methodology & Approach</h4>
+                        <p>Our remote project methodology combines agile practices with distributed team management best practices. We employ structured communication protocols, overlapping work hours for critical collaboration, and clear documentation practices. Regular sync-ups, virtual stand-ups, and digital collaboration tools ensure alignment and transparency across the team.</p>
+                        
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Agile remote development cycles</li>
+                            <li class="list-group-item">Dedicated communication channels</li>
+                            <li class="list-group-item">Comprehensive documentation practices</li>
+                            <li class="list-group-item">Regular virtual sync-up meetings</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="col-md-6">
+                        <h4>Tools & Technologies</h4>
+                        <p>We leverage a suite of collaboration and development tools optimized for remote work environments. Our toolstack includes project management platforms, version control systems, communication channels, and virtual meeting solutions. Security is integrated throughout our tool ecosystem to protect sensitive information and intellectual property.</p>
+                        
+                        <div class="d-flex flex-wrap gap-2 mt-3">
+                            <span class="badge bg-primary p-2">Jira & Confluence</span>
+                            <span class="badge bg-primary p-2">Slack & Teams</span>
+                            <span class="badge bg-primary p-2">Git & GitHub</span>
+                            <span class="badge bg-primary p-2">Zoom & Meet</span>
+                            <span class="badge bg-primary p-2">Figma & Miro</span>
+                            <span class="badge bg-primary p-2">CI/CD Pipelines</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Cross-link Card -->
+            <div class="cross-link-card fade-in">
+                <h3>Explore Our Global Projects</h3>
+                <p class="mb-4">Discover how our remote and offshore delivery model creates value across borders</p>
+                <a href="globalremote.html" class="btn cross-link-btn">View Global Projects</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Schema Markup for SEO -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Projects Overview | Academic, Industry, Technology, Global Remote Projects – Opticbee",
+        "description": "Explore Opticbee's comprehensive project portfolio across academic, industry, technology and global remote domains. Driving innovation through cutting-edge solutions worldwide.",
+        "url": "https://opticbee.in/projects.html",
+        "keywords": "academic projects, training projects, industry projects, corporate contracts, technology integration, global remote projects",
+        "mainEntity": {
+            "@type": "ItemList",
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Academic & Training Projects",
+                    "url": "https://opticbee.in/projects.html#academic"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "Industry & Corporate Projects",
+                    "url": "https://opticbee.in/projects.html#industry"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 3,
+                    "name": "Technology & Integration Projects",
+                    "url": "https://opticbee.in/projects.html#technology"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 4,
+                    "name": "Global Remote Projects",
+                    "url": "https://opticbee.in/projects.html#global"
+                }
+            ]
+        }
+    }
+    </script>
+
+    <!-- JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Animation on scroll
+        document.addEventListener('DOMContentLoaded', function() {
+            const animatedElements = document.querySelectorAll('.fade-in, .zoom-in, .slide-up');
+            
+            // Check if reduced motion is preferred
+            const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+            
+            if (!reducedMotion) {
+                // Initialize Intersection Observer for scroll animations
+                const observer = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add('visible');
+                        }
+                    });
+                }, {
+                    threshold: 0.1
+                });
+                
+                // Observe all animated elements
+                animatedElements.forEach(el => {
+                    observer.observe(el);
+                });
+            } else {
+                // If reduced motion is preferred, make all elements immediately visible
+                animatedElements.forEach(el => {
+                    el.classList.add('visible');
+                });
+            }
+            
+            // Smooth scrolling for navigation links
+            document.querySelectorAll('.smooth-scroll').forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    
+                    const targetId = this.getAttribute('href');
+                    const targetElement = document.querySelector(targetId);
+                    
+                    if (targetElement) {
+                        window.scrollTo({
+                            top: targetElement.offsetTop - 20,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+            
+            // Lazy loading for images
+            if ('loading' in HTMLImageElement.prototype) {
+                // Native lazy loading is supported
+                const images = document.querySelectorAll('img[loading="lazy"]');
+                images.forEach(img => {
+                    img.src = img.dataset.src;
+                });
+            } else {
+                // Fallback to Intersection Observer for lazy loading
+                const lazyImages = document.querySelectorAll('img[data-src]');
+                
+                const imageObserver = new IntersectionObserver((entries, observer) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            const img = entry.target;
+                            img.src = img.dataset.src;
+                            img.classList.remove('lazy');
+                            imageObserver.unobserve(img);
+                        }
+                    });
+                });
+                
+                lazyImages.forEach(img => {
+                    imageObserver.observe(img);
+                });
+            }
+        });
+    </script>
+
+    <footer id="footer" class="footer dark-background">
+
+        <div class="container footer-top">
+        <div class="row gy-4">
+            <div class="col-lg-4 col-md-6 footer-about">
+            <a href="index.html" class="logo d-flex align-items-center">
+                <span class="sitename">Optic Bee</span>
+            </a>
+            <div class="footer-contact pt-3">
+                <p>plot 21, flat 102, CVR Residency</p>
+                <p>Pragathi Nagar, Hyderabad, IN 500090</p>
+                <p class="mt-3"><strong>Phone:</strong> <span>+91 99087 93602</span></p>
+                <p><strong>Email:</strong> <span>support@opticbee.in</span></p>
+            </div>
+            <div class="social-links d-flex mt-4">
+                <a href="https://x.com/BeeOptic?t=9XDIJ7pA-ZHlrJaPQkSm_Q&s=09"><i class="bi bi-twitter-x"></i></a>
+                <a href="https://www.facebook.com/share/1AeUNhhRDu/"><i class="bi bi-facebook"></i></a>
+                <a href="https://www.instagram.com/optic.bee?igsh=M3lpc2U5ajFpYTA1"><i class="bi bi-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/optic-bee-246554375?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="bi bi-linkedin"></i></a>
+            </div>
+            </div>
+
+            <div class="col-lg-2 col-md-3 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="">Terms of service</a></li>
+                <li><a href="#">Privacy policy</a></li>
+            </ul>
+            </div>
+
+            <div class="col-lg-2 col-md-3 footer-links">
+            <h4>Our Services</h4>
+            <ul>
+                <li><a href="#">Web Design</a></li>
+                <li><a href="#">Web Development</a></li>
+                <li><a href="#">Product Management</a></li>
+                <li><a href="#">Marketing</a></li>
+                <li><a href="#">Graphic Design</a></li>
+            </ul>
+            </div>
+
+            <div class="col-lg-4 col-md-12 footer-newsletter">
+            <h4>Our Newsletter</h4>
+            <p>Subscribe to our newsletter and receive the latest news about our products and services!</p>
+            <form action="forms/newsletter.php" method="post" class="php-email-form">
+                <div class="newsletter-form"><input type="email" name="email"><input type="submit" value="Subscribe"></div>
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your subscription request has been sent. Thank you!</div>
+            </form>
+            </div>
+
+        </div>
+        </div>
+
+        <div class="container copyright text-center mt-4">
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">Optic Bee</strong> <span>All Rights Reserved</span></p>
+        <div class="credits"></div>
+        </div>
+
+    </footer>
+
+    <!-- Scroll Top -->
+    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+    <!-- Preloader -->
+    <div id="preloader"></div>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Main JS File -->
+    <script src="assets/js/main.js"></script>
+
+
+</body>
+</html>

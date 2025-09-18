@@ -1,0 +1,11 @@
+/* Remove underline from all nav and footer links */
+.navmenu a,
+.footer a {
+    text-decoration: none !important;
+}
+
+.navmenu a:hover,
+.footer a:hover {
+    text-decoration: none !important;
+    color: var(--primary); /* optional hover effect */
+}

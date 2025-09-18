@@ -1,0 +1,913 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academic & Training Projects | Opticbee</title>
+    <meta name="description" content="Opticbee provides comprehensive academic and training projects to empower students and professionals with industry-relevant skills through hands-on learning experiences.">
+    <link rel="canonical" href="https://opticbee.in/academictraining.html">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://opticbee.in/academictraining.html">
+    <meta property="og:title" content="Academic & Training Projects | Opticbee">
+    <meta property="og:description" content="Empowering students and professionals through academic and training projects with industry-relevant skills and hands-on learning.">
+    <meta property="og:image" content="https://opticbee.in/images/academic-og.jpg">
+    
+    <!-- Favicons -->
+    <link href="images/favicon.ico" rel="icon">
+    <link href="images/favicon.ico" rel="apple-touch-icon">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+    <!-- Main CSS File -->
+    <link href="assets/css/main.css" rel="stylesheet">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://opticbee.in/academictraining.html">
+    <meta property="twitter:title" content="Academic & Training Projects | Opticbee">
+    <meta property="twitter:description" content="Empowering students and professionals through academic and training projects with industry-relevant skills and hands-on learning.">
+    <meta property="twitter:image" content="https://opticbee.in/images/academic-twitter.jpg">
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Favicons -->
+    <link href="images/favicon.ico" rel="icon">
+    <link href="images/favicon.ico" rel="apple-touch-icon">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+    <!-- Main CSS File -->
+    <link href="assets/css/main.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #0d6efd;
+            --secondary: #6c757d;
+            --success: #198754;
+            --dark: #212529;
+            --light: #f8f9fa;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            overflow-x: hidden;
+        }
+        /* Remove underline from all nav and footer links */
+        .navmenu a,
+        .footer a {
+            text-decoration: none !important;
+        }
+
+        .navmenu a:hover,
+        .footer a:hover {
+            text-decoration: none !important;
+            color: var(--primary); /* optional hover effect */
+        }
+
+        /* Hero Section */
+        .hero-section {
+            height: 60vh;
+            background-image: url(images/educationtrainingbg.png);
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            color: white;
+        }
+        
+        /* General Section Styling */
+        .section-padding {
+            padding: 5rem 0;
+        }
+        
+        .dark-bg {
+            background-color: var(--dark);
+            color: white;
+        }
+        
+        .light-bg {
+            background-color: var(--light);
+        }
+        
+        /* Cards Styling */
+        .service-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            height: 100%;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        /* Timeline Styling */
+        .timeline {
+            position: relative;
+            padding-left: 3rem;
+        }
+        
+        .timeline:before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 4px;
+            height: 100%;
+            background: var(--primary);
+        }
+        
+        .timeline-step {
+            position: relative;
+            margin-bottom: 2.5rem;
+        }
+        
+        .timeline-step:before {
+            content: '';
+            position: absolute;
+            left: -3.3rem;
+            top: 0.5rem;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background: var(--primary);
+            border: 4px solid white;
+        }
+        
+        /* Why Choose Us Cards */
+        .feature-card {
+            padding: 2rem 1.5rem;
+            border-radius: 10px;
+            text-align: center;
+            transition: all 0.3s ease;
+            height: 100%;
+        }
+        
+        .feature-card:hover {
+            background-color: white;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+            transform: translateY(-5px);
+        }
+        
+        .feature-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: var(--primary);
+        }
+        
+        /* Case Study Cards */
+        .case-study-card {
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            height: 100%;
+        }
+        
+        .case-study-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+        }
+        
+        /* Animations */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease, transform 0.6s ease;
+        }
+        
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        /* Responsive Adjustments */
+        @media (max-width: 768px) {
+            .hero-section {
+                height: 80vh;
+            }
+            
+            .section-padding {
+                padding: 3rem 0;
+            }
+        }
+    </style>
+    
+    <!-- JSON-LD Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "EducationalOrganization",
+      "name": "Opticbee",
+      "description": "Opticbee provides comprehensive academic and training projects to empower students and professionals with industry-relevant skills.",
+      "url": "https://opticbee.in",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Your City",
+        "addressCountry": "Your Country"
+      },
+      "offers": {
+        "@type": "Offer",
+        "category": "Educational and Training Programs"
+      }
+    }
+    </script>
+</head>
+<body>
+
+
+    <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="container position-relative d-flex align-items-center">
+
+        <a href="index.html" class="logo d-flex align-items-center me-auto">
+        <img src="images/oblogo.png" alt="Official logo" class="navbar-logo">
+        <h1 class="sitename">Optic Bee</h1>
+        </a>
+
+
+        <nav id="navmenu" class="navmenu">
+        <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            
+            <li class="dropdown">
+            <a href="technologies.html"><span>Technologies</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+                <li><a href="emerging-tech.html#programming">Programming Languages</a></li>
+                <li><a href="ai.html#ai">Artificial Intelligence</a></li>
+                <li><a href="ai.html#prompt-engineering">Prompt Engineering</a></li>
+                <li><a href="cloud-computing.html#edge">Quantum & Edge Computing</a></li>
+                <li><a href="connectivity-iot.html#5g">5G & Connectivity</a></li>
+                <li><a href="emerging-tech.html#xr">Extended Reality (VR/AR)</a></li>
+                <li><a href="connectivity-iot.html#digital-twins">Digital Twins</a></li>
+                <li><a href="connectivity-iot.html#blockchain">Blockchain</a></li>
+                <li><a href="connectivity-iot.html#iot">IOT/IIoT</a></li>
+                <li><a href="cloud-computing.html#cloud">Cloud</a></li>
+                <li><a href="cloud-computing.html#bigdata">Big Data Analytics</a></li>
+                <li><a href="cloud-computing.html#integration">Integration Services</a></li>
+                <li><a href="emerging-tech.html#3d-printing">3D Printing</a></li>
+                <li><a href="emerging-tech.html#rpa">RPA</a></li>
+                <li><a href="ai.html#robotics">Advanced Robotics</a></li>
+                <li><a href="ai.html#cybersecurity">AI in Cybersecurity</a></li>
+            </ul>
+            </li>
+            
+            <li class="dropdown">
+            <a href="#"><span>Business Solutions</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+                <li class="dropdown">
+                <a href="#"><span>ERP</span> <i class="bi bi-chevron-right toggle-dropdown"></i></a>
+                <ul>
+                    <li><a href="#">Oracle ERP Cloud</a></li>
+                </ul>
+                </li>
+                <li class="dropdown">
+                <a href="#"><span>EPM</span> <i class="bi bi-chevron-right toggle-dropdown"></i></a>
+                <ul>
+                    <li><a href="#">Oracle EPM Cloud</a></li>
+                </ul>
+                </li>
+                <li><a href="#">CPM</a></li>
+                <li><a href="#">CRM</a></li>
+                <li class="dropdown">
+                <a href="#"><span>SCM</span> <i class="bi bi-chevron-right toggle-dropdown"></i></a>
+                <ul>
+                    <li><a href="#">Oracle SCM Cloud</a></li>
+                </ul>
+                </li>
+                <li><a href="#">HCM</a></li>
+                <li><a href="#">Oracle PaaS Cloud</a></li>
+            </ul>
+            </li>
+            
+            <li class="dropdown">
+            <a href="#"><span>Services</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+                <li><a href="transforming.html#services">Training</a></li>
+                <li><a href="support.html">Support</a></li>
+                <li><a href="consulting.html#services">Consulting</a></li>
+                <li><a href="transforming.html#services">Implementation & Deployment</a></li>
+                <li><a href="support.html#services">Infrastructure Support</a></li>
+                <li><a href="developmentServices.html#application-development">Application Maintenance</a></li>
+                <li><a href="support.html#services">Application Development</a></li>
+                <li><a href="developmentServices.html#api">API Development</a></li>
+                <li><a href="support.html#services">Customer Software Support</a></li>
+                <li><a href="transforming.html#services">DevOps</a></li>
+                <li><a href="consulting.html#services">Digital Transformation</a></li>
+                <li><a href="consulting.html#services">Migrations & Upgrades</a></li>
+                <li><a href="support.html#services">Partner Product Support</a></li>
+                <li><a href="developmentServices.html#mvp">Startup & MVP Services</a></li>
+                <li><a href="developmentServices.html#system">System Integration</a></li>
+                <li><a href="transforming.html#services">PLM</a></li>
+                <li><a href="transforming.html#services">QA Testing</a></li>
+            </ul>
+            </li>
+            
+            <li class="dropdown">
+            <a href="#"><span>Development</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+                <li><a href="Digital-Marketing.html">Digital Marketing</a></li>
+                <li class="dropdown">
+                <a href="WebDevelopment.html"><span>Web Development</span> <i class="bi bi-chevron-right toggle-dropdown"></i></a>
+                <ul>
+                    <li><a href="WebDevelopment.html#mern">MERN Stack</a></li>
+                    <li><a href="WebDevelopment.html#frontend">HTML, CSS, JavaScript</a></li>
+                    <li><a href="WebDevelopment.html#python">Python, PHP</a></li>
+                </ul>
+                </li>
+                <li><a href="MobileApp-Development.html">Mobile App Development</a></li>
+                <li class="dropdown">
+                <a href="database.html"><span>Databases</span> <i class="bi bi-chevron-right toggle-dropdown"></i></a>
+                <ul>
+                    <li><a href="database.html#oracle">Oracle</a></li>
+                    <li><a href="database.html#sql-server">SQL Server</a></li>
+                    <li><a href="database.html#teradata">Teradata</a></li>
+                    <li><a href="database.html#mysql">MySQL</a></li>
+                    <li><a href="database.html#postgresql">PostgreSQL</a></li>
+                    <li><a href="database.html#sybase">Sybase</a></li>
+                </ul>
+                </li>
+            </ul>
+            </li>
+            
+            <!-- industries -->
+            <li class="dropdown">
+            <a href="#"><span>Industries</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+                <li><a href="defence.html#defence">Defence</a></li>
+                <li><a href="defence.html#aerospace">Aerospace</a></li>
+                <li><a href="defence.html#space">Space Technology</a></li>
+                <li><a href="technologies.html#hightech">High Tech</a></li>
+                <li><a href="education-healthcare.html#education">Education</a></li>
+                <li><a href="education-healthcare.html#healthcare">Healthcare</a></li>
+                <li><a href="telecom.html#telecom">Telecommunication</a></li>
+                <li><a href="telecom.html#bfsi">BFSI</a></li>
+                <li><a href="agriculture.html#agri-tech">Agri-Tech</a></li>
+                <li><a href="agriculture.html#manufacturing">Manufacturing</a></li>
+                <li><a href="agriculture.html#industrial">Industrial</a></li>
+                <li><a href="agriculture.html#construction">Civil/Construction</a></li>
+                <li><a href="agriculture.html#metallurgy">Metallurgy</a></li>
+                <li><a href="technologies.html#computers">Computers/IT</a></li>
+                <li><a href="technologies.html#semiconductors">Semiconductors</a></li>
+                <li><a href="technologies.html#electronics">Electrical/Electronics</a></li>
+                <li><a href="media.html">Media & Entertainment</a></li>
+            </ul>
+            </li>
+            
+            <li class="dropdown">
+                <a href="affiliate.html"><span>Affiliates</span> </a>
+            </li>
+            
+            <!-- projects -->
+            <li class="dropdown">
+            <a href="projects.html"><span>Projects</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+                <li><a href="#">Educational Projects</a></li>
+                <li><a href="corporateservices.html#industry-projects">Industry Projects</a></li>
+                <li><a href="#">Technology Case Studies</a></li>
+                <li><a href="#">Integration Projects</a></li>
+                <li><a href="corporateservices.html#contract-projects">Contract Projects</a></li>
+                <li><a href="corporateservices.html#corp-to-corp">Corp to Corp Projects</a></li>
+                <li><a href="#">Offshore/Remote Projects</a></li>
+                <li><a href="#">Training Projects</a></li>
+            </ul>
+            </li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        </nav>
+
+        <div class="header-social-links">
+        <a href="https://x.com/BeeOptic?t=9XDIJ7pA-ZHlrJaPQkSm_Q&s=09" class="twitter"><i class="bi bi-twitter-x"></i></a>
+        <a href="https://www.facebook.com/share/1AeUNhhRDu/" class="facebook"><i class="bi bi-facebook"></i></a>
+        <a href="https://www.instagram.com/optic.bee?igsh=M3lpc2U5ajFpYTA1" class="instagram"><i class="bi bi-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/optic-bee-246554375?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="linkedin"><i class="bi bi-linkedin"></i></a>
+        </div>
+
+    </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="row justify-content-center text-center">
+                <div class="col-lg-8">
+                    <h1 class="display-3 fw-bold mb-4">Empowering Students & Professionals Through Academic & Training Projects</h1>
+                    <p class="lead mb-5">We prepare learners for real-world challenges through practical, industry-aligned projects that bridge the gap between theoretical knowledge and practical application. Our programs are designed to enhance employability and career growth.</p>
+                    <a href="#academic-overview" class="btn btn-primary btn-lg px-5 py-3 smooth-scroll">Explore Our Programs</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ACADEMIC & TRAINING OVERVIEW SECTION -->
+    <section id="academic-overview" class="section-padding light-bg">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-5 mb-lg-0">
+                    <h2 class="mb-4">Academic & Training Excellence</h2>
+                    <p class="lead">Bridging the gap between academia and industry through comprehensive project-based learning.</p>
+                    <p>At Opticbee, we understand that the modern job market demands more than just theoretical knowledge. Our academic and training programs are meticulously designed to provide hands-on experience with real-world applications, ensuring that students and professionals are industry-ready upon completion.</p>
+                    <p>We offer a diverse range of projects across emerging technologies, allowing participants to gain practical exposure while developing critical problem-solving skills. Our approach combines structured learning with creative freedom, enabling learners to explore their interests while building a robust portfolio.</p>
+                    <div class="d-flex flex-wrap mt-4">
+                        <span class="badge bg-primary me-2 mb-2 p-2">Hands-On Learning</span>
+                        <span class="badge bg-primary me-2 mb-2 p-2">Industry-Relevant Skills</span>
+                        <span class="badge bg-primary me-2 mb-2 p-2">Expert Mentorship</span>
+                        <span class="badge bg-primary me-2 mb-2 p-2">Career Advancement</span>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <img src="images/studentsworking.png" alt="Students working on a project together" class="img-fluid rounded shadow" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- EDUCATIONAL PROJECTS SECTION -->
+    <section class="section-padding" id="healthcare">
+        <div class="container">
+            <h2 class="text-center mb-5">Educational Projects</h2>
+            <p class="lead text-center mb-5">Our comprehensive educational projects are designed to provide students with practical experience across various domains of technology.</p>
+            
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="card service-card h-100">
+                        <img src="images/education-project-1.png" class="card-img-top" alt="Artificial Intelligence Project" loading="lazy">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-3">
+                                <i class="fas fa-brain fa-2x text-primary me-3"></i>
+                                <h3 class="h5 mb-0">Artificial Intelligence</h3>
+                            </div>
+                            <p class="card-text">Develop AI solutions including machine learning models, natural language processing systems, and computer vision applications. Work on real datasets to solve industry problems.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-4">
+                    <div class="card service-card h-100">
+                        <img src="images/educational-projects-2.png" class="card-img-top" alt="Internet of Things Project" loading="lazy">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-3">
+                                <i class="fas fa-microchip fa-2x text-primary me-3"></i>
+                                <h3 class="h5 mb-0">Internet of Things</h3>
+                            </div>
+                            <p class="card-text">Design and implement IoT systems with sensors, microcontrollers, and cloud connectivity. Create smart solutions for home automation, industrial monitoring, and environmental sensing.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-4">
+                    <div class="card service-card h-100">
+                        <img src="images/educational-project-3.png" class="card-img-top" alt="Cloud Computing Project" loading="lazy">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-3">
+                                <i class="fas fa-cloud fa-2x text-primary me-3"></i>
+                                <h3 class="h5 mb-0">Cloud Computing</h3>
+                            </div>
+                            <p class="card-text">Build scalable cloud infrastructure and applications using AWS, Azure, and Google Cloud platforms. Implement DevOps practices, containerization, and serverless architectures.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-4">
+                    <div class="card service-card h-100">
+                        <img src="images/educational-projects-4.png" class="card-img-top" alt="Data Science Project" loading="lazy">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-3">
+                                <i class="fas fa-chart-line fa-2x text-primary me-3"></i>
+                                <h3 class="h5 mb-0">Data Science</h3>
+                            </div>
+                            <p class="card-text">Work on data analysis, visualization, and predictive modeling projects. Use Python, R, and specialized libraries to extract insights from complex datasets and build data-driven solutions.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-4">
+                    <div class="card service-card h-100">
+                        <img src="images/educational-projects-5.png" class="card-img-top" alt="Cybersecurity Project" loading="lazy">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-3">
+                                <i class="fas fa-shield-alt fa-2x text-primary me-3"></i>
+                                <h3 class="h5 mb-0">Cybersecurity</h3>
+                            </div>
+                            <p class="card-text">Learn ethical hacking, vulnerability assessment, and security implementation techniques. Develop secure systems and practice defensive cybersecurity strategies.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-4">
+                    <div class="card service-card h-100">
+                        <img src="images/educational-projects-6.png" class="card-img-top" alt="Mobile App Development Project" loading="lazy">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-3">
+                                <i class="fas fa-mobile-alt fa-2x text-primary me-3"></i>
+                                <h3 class="h5 mb-0">Mobile Development</h3>
+                            </div>
+                            <p class="card-text">Create cross-platform and native mobile applications using Flutter, React Native, Swift, and Kotlin. Implement UI/UX best practices and integrate with backend services.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TRAINING PROJECTS SECTION -->
+    <section class="section-padding dark-bg" id="training">
+        <div class="container">
+            <h2 class="text-center mb-5">Training Projects (Hitaishi Trainings)</h2>
+            
+            <div class="row">
+                <div class="col-lg-6 mb-5 mb-lg-0">
+                    <p class="lead">Structured professional training programs designed for corporate teams and individual skill development.</p>
+                    <p>Our Hitaishi Trainings division specializes in creating customized learning experiences that address specific industry needs. We combine theoretical foundations with extensive hands-on practice, ensuring participants can immediately apply their new skills in professional settings.</p>
+                    <p>Each training program is developed in collaboration with industry experts and includes real-world projects, mentorship from seasoned professionals, and certification upon completion. Our approach focuses on not just teaching concepts but ensuring participants can implement solutions effectively.</p>
+                    <p>We serve diverse industries including Healthcare, IT, Finance, Manufacturing, and Education, with tailored programs that address sector-specific challenges and opportunities.</p>
+                    
+                    <h3 class="mt-5 mb-4">Our Training Process</h3>
+                    <div class="timeline">
+                        <div class="timeline-step">
+                            <h4>Discovery & Needs Assessment</h4>
+                            <p>We begin by understanding your organization's specific requirements and skill gaps.</p>
+                        </div>
+                        <div class="timeline-step">
+                            <h4>Customized Curriculum Design</h4>
+                            <p>Our experts create a tailored learning path addressing your unique needs.</p>
+                        </div>
+                        <div class="timeline-step">
+                            <h4>Hands-on Workshops</h4>
+                            <p>Interactive sessions with practical exercises and real-world examples.</p>
+                        </div>
+                        <div class="timeline-step">
+                            <h4>Project Assignment</h4>
+                            <p>Participants work on projects that mirror actual workplace challenges.</p>
+                        </div>
+                        <div class="timeline-step">
+                            <h4>Review & Feedback</h4>
+                            <p>Detailed evaluation with constructive feedback for continuous improvement.</p>
+                        </div>
+                        <div class="timeline-step">
+                            <h4>Certification & Follow-up</h4>
+                            <p>Recognize achievements and provide resources for ongoing learning.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6">
+                    <h3 class="mb-4">Training Domains</h3>
+                    <div class="row g-4">
+                        <div class="col-md-6">
+                            <div class="card bg-light text-dark h-100">
+                                <div class="card-body">
+                                    <div class="d-flex align-items-center mb-3">
+                                        <i class="fab fa-react fa-2x text-primary me-3"></i>
+                                        <h4 class="h5 mb-0">MERN Stack Development</h4>
+                                    </div>
+                                    <p>Complete training on MongoDB, Express.js, React, and Node.js for full-stack development.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-6">
+                            <div class="card bg-light text-dark h-100">
+                                <div class="card-body">
+                                    <div class="d-flex align-items-center mb-3">
+                                        <i class="fab fa-python fa-2x text-primary me-3"></i>
+                                        <h4 class="h5 mb-0">Python Programming</h4>
+                                    </div>
+                                    <p>From fundamentals to advanced topics including data analysis, automation, and web development.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-6">
+                            <div class="card bg-light text-dark h-100">
+                                <div class="card-body">
+                                    <div class="d-flex align-items-center mb-3">
+                                        <i class="fas fa-cloud fa-2x text-primary me-3"></i>
+                                        <h4 class="h5 mb-0">Cloud Technologies</h4>
+                                    </div>
+                                    <p>Comprehensive training on AWS, Azure, and Google Cloud platforms with certification preparation.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-6">
+                            <div class="card bg-light text-dark h-100">
+                                <div class="card-body">
+                                    <div class="d-flex align-items-center mb-3">
+                                        <i class="fas fa-mobile-alt fa-2x text-primary me-3"></i>
+                                        <h4 class="h5 mb-0">Mobile App Development</h4>
+                                    </div>
+                                    <p>Native and cross-platform mobile development using Flutter, React Native, iOS, and Android.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-6">
+                            <div class="card bg-light text-dark h-100">
+                                <div class="card-body">
+                                    <div class="d-flex align-items-center mb-3">
+                                        <i class="fas fa-database fa-2x text-primary me-3"></i>
+                                        <h4 class="h5 mb-0">Data Science & Analytics</h4>
+                                    </div>
+                                    <p>Machine learning, statistical analysis, and data visualization using Python and R.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-6">
+                            <div class="card bg-light text-dark h-100">
+                                <div class="card-body">
+                                    <div class="d-flex align-items-center mb-3">
+                                        <i class="fas fa-shield-alt fa-2x text-primary me-3"></i>
+                                        <h4 class="h5 mb-0">Cybersecurity</h4>
+                                    </div>
+                                    <p>Ethical hacking, network security, and vulnerability assessment training programs.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WHY CHOOSE US SECTION -->
+    <section class="section-padding light-bg">
+        <div class="container">
+            <h2 class="text-center mb-5">Why Choose Our Academic & Training Programs</h2>
+            
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3>Experienced Mentors</h3>
+                        <p>Learn from industry professionals with years of practical experience and teaching expertise.</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-4">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-briefcase"></i>
+                        </div>
+                        <h3>Real-World Projects</h3>
+                        <p>Work on projects that simulate actual industry challenges and build your portfolio.</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-4">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-handshake"></i>
+                        </div>
+                        <h3>Industry Tie-ups</h3>
+                        <p>Benefit from our partnerships with leading companies for internships and placements.</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-4">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-blender-phone"></i>
+                        </div>
+                        <h3>Blended Learning</h3>
+                        <p>Flexible learning options with both online and offline components to suit your schedule.</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-4">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <h3>Career Support</h3>
+                        <p>Get assistance with resume building, interview preparation, and job placement.</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-4">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-certificate"></i>
+                        </div>
+                        <h3>Industry Recognition</h3>
+                        <p>Earn certificates that are valued by employers and enhance your career prospects.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CASE HIGHLIGHTS SECTION -->
+    <section class="section-padding">
+        <div class="container">
+            <h2 class="text-center mb-5">Success Stories</h2>
+            
+            <div class="row g-4">
+                <div class="col-lg-6">
+                    <div class="case-study-card">
+                        <div class="card">
+                            <img src="images/aihealth.png" class="card-img-top" alt="AI Project Success" loading="lazy">
+                            <div class="card-body">
+                                <h3 class="h4">AI-Powered Healthcare Solution</h3>
+                                <p class="text-muted mb-3">Academic Project Success</p>
+                                
+                                <h4 class="h5 mt-4">Challenge</h4>
+                                <p>A group of computer science students needed to develop a meaningful project that could demonstrate practical AI applications in healthcare.</p>
+                                
+                                <h4 class="h5 mt-4">Approach</h4>
+                                <p>We guided them through developing a machine learning model to predict disease outbreaks based on environmental and demographic data.</p>
+                                
+                                <h4 class="h5 mt-4">Outcome</h4>
+                                <p>The project won first prize at a national tech festival, and all team members received internship offers from leading healthcare IT companies.</p>
+                                
+                                <div class="mt-4 p-3 bg-light rounded">
+                                    <h5 class="mb-0">85% of participating students secured internships</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6">
+                    <div class="case-study-card">
+                        <div class="card">
+                            <img src="images/enterprisecloud.png" class="card-img-top" alt="Corporate Training Success" loading="lazy">
+                            <div class="card-body">
+                                <h3 class="h4">Enterprise Cloud Migration</h3>
+                                <p class="text-muted mb-3">Corporate Training Success</p>
+                                
+                                <h4 class="h5 mt-4">Challenge</h4>
+                                <p>A financial services company needed to upskill their IT team in cloud technologies to facilitate a company-wide migration to AWS.</p>
+                                
+                                <h4 class="h5 mt-4">Approach</h4>
+                                <p>We developed a customized 12-week training program focused on AWS services, security best practices, and migration strategies.</p>
+                                
+                                <h4 class="h5 mt-4">Outcome</h4>
+                                <p>The team successfully migrated 85% of company infrastructure to AWS within projected timelines, reducing operational costs by 30%.</p>
+                                
+                                <div class="mt-4 p-3 bg-light rounded">
+                                    <h5 class="mb-0">92% of trainees passed AWS certification exams</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a.smooth-scroll').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 20,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+        
+        // Scroll animation for fade-in elements
+        function checkFade() {
+            const elements = document.querySelectorAll('.fade-in');
+            
+            elements.forEach(element => {
+                const position = element.getBoundingClientRect();
+                
+                // If element is in viewport
+                if(position.top < window.innerHeight - 50) {
+                    element.classList.add('visible');
+                }
+            });
+        }
+        
+        // Initially check and then on scroll
+        window.addEventListener('load', checkFade);
+        window.addEventListener('scroll', checkFade);
+        
+        // Add fade-in class to elements that should animate on scroll
+        document.querySelectorAll('section h2, .card, .feature-card').forEach(element => {
+            element.classList.add('fade-in');
+        });
+    </script>
+
+
+  <footer id="footer" class="footer dark-background">
+
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-4 col-md-6 footer-about">
+          <a href="index.html" class="logo d-flex align-items-center">
+            <span class="sitename">Optic Bee</span>
+          </a>
+          <div class="footer-contact pt-3">
+            <p>plot 21, flat 102, CVR Residency</p>
+            <p>Pragathi Nagar, Hyderabad, IN 500090</p>
+            <p class="mt-3"><strong>Phone:</strong> <span>+91 99087 93602</span></p>
+            <p><strong>Email:</strong> <span>support@opticbee.in</span></p>
+          </div>
+          <div class="social-links d-flex mt-4">
+            <a href="https://x.com/BeeOptic?t=9XDIJ7pA-ZHlrJaPQkSm_Q&s=09"><i class="bi bi-twitter-x"></i></a>
+            <a href="https://www.facebook.com/share/1AeUNhhRDu/"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.instagram.com/optic.bee?igsh=M3lpc2U5ajFpYTA1"><i class="bi bi-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/optic-bee-246554375?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="">Terms of service</a></li>
+            <li><a href="#">Privacy policy</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Our Services</h4>
+          <ul>
+            <li><a href="#">Web Design</a></li>
+            <li><a href="#">Web Development</a></li>
+            <li><a href="#">Product Management</a></li>
+            <li><a href="#">Marketing</a></li>
+            <li><a href="#">Graphic Design</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-4 col-md-12 footer-newsletter">
+          <h4>Our Newsletter</h4>
+          <p>Subscribe to our newsletter and receive the latest news about our products and services!</p>
+          <form action="forms/newsletter.php" method="post" class="php-email-form">
+            <div class="newsletter-form"><input type="email" name="email"><input type="submit" value="Subscribe"></div>
+            <div class="loading">Loading</div>
+            <div class="error-message"></div>
+            <div class="sent-message">Your subscription request has been sent. Thank you!</div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container copyright text-center mt-4">
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">Optic Bee</strong> <span>All Rights Reserved</span></p>
+      <div class="credits"></div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+
+</body>
+</html>
