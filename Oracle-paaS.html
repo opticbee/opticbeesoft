@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oracle PaaS Cloud Solutions | Enterprise Cloud Platforms | Opticbee</title>
+    <meta name="description" content="Discover Oracle PaaS Cloud solutions for enterprise transformation. Scalable, secure cloud platforms for application development, integration, and analytics.">
+    <link rel="canonical" href="https://opticbee.in/cloudplatforms.html">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Oracle PaaS Cloud Solutions | Enterprise Cloud Platforms | Opticbee">
+    <meta property="og:description" content="Discover Oracle PaaS Cloud solutions for enterprise transformation. Scalable, secure cloud platforms for application development, integration, and analytics.">
+    <meta property="og:url" content="https://opticbee.in/cloudplatforms.html">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://opticbee.in/images/cloud-hero.jpg">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Oracle PaaS Cloud Solutions | Enterprise Cloud Platforms | Opticbee">
+    <meta name="twitter:description" content="Discover Oracle PaaS Cloud solutions for enterprise transformation. Scalable, secure cloud platforms for application development, integration, and analytics.">
+    <meta name="twitter:image" content="https://opticbee.in/images/cloud-hero.jpg">
+    
+    <!-- Bootstrap 5 CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary: #0d6efd;
+            --secondary: #6c757d;
+            --dark: #212529;
+            --light: #f8f9fa;
+        }
+        
+        body {
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            color: #333;
+            overflow-x: hidden;
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('images/cloud-hero.jpg') no-repeat center center;
+            background-size: cover;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            color: white;
+        }
+        
+        /* Section Padding */
+        section {
+            padding: 5rem 0;
+        }
+        
+        .section-title {
+            position: relative;
+            margin-bottom: 3rem;
+            font-weight: 700;
+        }
+        
+        .section-title:after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 4px;
+            background: var(--primary);
+            margin-top: 15px;
+        }
+        
+        /* Cards */
+        .feature-card {
+            transition: transform 0.3s, box-shadow 0.3s;
+            height: 100%;
+            border: none;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        .feature-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: var(--primary);
+        }
+        
+        /* Timeline */
+        .timeline {
+            position: relative;
+            padding-left: 3rem;
+        }
+        
+        .timeline:before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 4px;
+            height: 100%;
+            background: var(--primary);
+        }
+        
+        .timeline-step {
+            position: relative;
+            margin-bottom: 2.5rem;
+        }
+        
+        .timeline-step:before {
+            content: '';
+            position: absolute;
+            left: -3.4rem;
+            top: 0.5rem;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background: var(--primary);
+            border: 4px solid white;
+            box-shadow: 0 0 0 3px var(--primary);
+        }
+        
+        /* Use Cases */
+        .use-case-card {
+            text-align: center;
+            padding: 2rem;
+            border-radius: 10px;
+            background: white;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s;
+            height: 100%;
+        }
+        
+        .use-case-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .use-case-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: var(--primary);
+        }
+        
+        /* Technologies Grid */
+        .tech-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+            gap: 2rem;
+            justify-items: center;
+        }
+        
+        .tech-item {
+            text-align: center;
+        }
+        
+        .tech-icon {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            color: var(--primary);
+        }
+        
+        /* Animations */
+        @media (prefers-reduced-motion: no-preference) {
+            .fade-in {
+                opacity: 0;
+                transform: translateY(20px);
+                transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+            }
+            
+            .fade-in.visible {
+                opacity: 1;
+                transform: translateY(0);
+            }
+            
+            .slide-in-left {
+                opacity: 0;
+                transform: translateX(-50px);
+                transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+            }
+            
+            .slide-in-left.visible {
+                opacity: 1;
+                transform: translateX(0);
+            }
+            
+            .slide-in-right {
+                opacity: 0;
+                transform: translateX(50px);
+                transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+            }
+            
+            .slide-in-right.visible {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        
+        /* CTA Section */
+        .cta-section {
+            background: linear-gradient(to right, #0d6efd, #0a58ca);
+            color: white;
+        }
+        
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .hero {
+                height: 80vh;
+                text-align: center;
+            }
+            
+            section {
+                padding: 3rem 0;
+            }
+            
+            .tech-grid {
+                grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+                gap: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center fade-in">
+                    <h1 class="display-4 fw-bold mb-4">Unlock the Power of Cloud Platforms with Oracle PaaS</h1>
+                    <p class="lead mb-5">Transform your enterprise with scalable, secure, and innovative cloud solutions that drive growth and efficiency.</p>
+                    <a href="#solutions" class="btn btn-primary btn-lg px-5 py-3 fw-bold">Explore Solutions</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Overview of Cloud Platforms -->
+    <section id="overview" class="bg-light">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h2 class="section-title">Why Cloud Platforms Matter</h2>
+                    <p class="lead">Cloud platforms have revolutionized how enterprises operate, innovate, and compete in today's digital economy.</p>
+                    <p>By leveraging cloud infrastructure, businesses can achieve unprecedented scalability, allowing them to quickly adapt to market changes and customer demands. The pay-as-you-go model transforms capital expenditure into operational expenditure, significantly reducing IT costs while providing access to enterprise-grade technology.</p>
+                    <p>Cloud platforms offer unparalleled flexibility, enabling remote work, global collaboration, and rapid deployment of new services. This agility allows organizations to experiment, innovate, and bring products to market faster than ever before, creating sustainable competitive advantages.</p>
+                </div>
+                <div class="col-lg-6">
+                    <!-- TODO: Replace images with real assets -->
+                    <div class="d-flex justify-content-center flex-wrap mt-5 mt-lg-0">
+                        <div class="m-3 text-center">
+                            <i class="bi bi-arrow-up-right-circle display-4 text-primary mb-3"></i>
+                            <h5>Scalability</h5>
+                        </div>
+                        <div class="m-3 text-center">
+                            <i class="bi bi-currency-dollar display-4 text-primary mb-3"></i>
+                            <h5>Cost Efficiency</h5>
+                        </div>
+                        <div class="m-3 text-center">
+                            <i class="bi bi-lightning-charge display-4 text-primary mb-3"></i>
+                            <h5>Flexibility</h5>
+                        </div>
+                        <div class="m-3 text-center">
+                            <i class="bi bi-shield-check display-4 text-primary mb-3"></i>
+                            <h5>Security</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Oracle PaaS Cloud -->
+    <section id="oracle-paas">
+        <div class="container">
+            <h2 class="section-title text-center">Oracle PaaS Cloud: Powering Digital Transformation</h2>
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <p class="lead">Oracle Platform as a Service (PaaS) provides a comprehensive cloud platform for application development, integration, and analytics.</p>
+                    <p>Oracle PaaS enables organizations to build, deploy, and manage applications without the complexity of maintaining underlying infrastructure. This accelerates time-to-market for new applications and services while reducing development costs.</p>
+                    
+                    <ul class="list-unstyled">
+                        <li class="mb-3"><i class="bi bi-check-circle-fill text-primary me-2"></i> <strong>Faster Application Development:</strong> Pre-built components and services reduce coding time by up to 70%</li>
+                        <li class="mb-3"><i class="bi bi-check-circle-fill text-primary me-2"></i> <strong>Seamless Integration:</strong> Connect cloud and on-premises applications with unified API management</li>
+                        <li class="mb-3"><i class="bi bi-check-circle-fill text-primary me-2"></i> <strong>Advanced Analytics:</strong> Gain actionable insights with built-in AI and machine learning capabilities</li>
+                        <li class="mb-3"><i class="bi bi-check-circle-fill text-primary me-2"></i> <strong>Enterprise-Grade Security:</strong> Multi-layered security with automatic encryption and compliance</li>
+                        <li class="mb-3"><i class="bi bi-check-circle-fill text-primary me-2"></i> <strong>Automated Scaling:</strong> Dynamic resource allocation based on application demands</li>
+                    </ul>
+                </div>
+                <div class="col-lg-6">
+                    <!-- TODO: Replace images with real assets -->
+                    <img src="images/oracle-paas.jpg" alt="Oracle PaaS Cloud Architecture" class="img-fluid rounded shadow" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Features & Benefits -->
+    <section id="features" class="bg-light">
+        <div class="container">
+            <h2 class="section-title text-center">Core Features & Benefits</h2>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="feature-card card h-100 p-4">
+                        <div class="feature-icon">
+                            <i class="bi bi-database"></i>
+                        </div>
+                        <h3>Database Cloud</h3>
+                        <p>Fully managed Oracle Database Cloud with autonomous capabilities that self-tune, self-patch, and self-secure, reducing administrative overhead by up to 90%.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="feature-card card h-100 p-4">
+                        <div class="feature-icon">
+                            <i class="bi bi-puzzle"></i>
+                        </div>
+                        <h3>Application Integration</h3>
+                        <p>Seamlessly connect applications, data, and business processes with a unified integration platform that simplifies complex hybrid integration scenarios.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="feature-card card h-100 p-4">
+                        <div class="feature-icon">
+                            <i class="bi bi-cpu"></i>
+                        </div>
+                        <h3>AI & ML Services</h3>
+                        <p>Embed artificial intelligence and machine learning capabilities into your applications with pre-built models and data science tools.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="feature-card card h-100 p-4">
+                        <div class="feature-icon">
+                            <i class="bi bi-shield-lock"></i>
+                        </div>
+                        <h3>Security & Identity</h3>
+                        <p>Comprehensive security services including identity management, data encryption, and threat detection that meet enterprise compliance requirements.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="feature-card card h-100 p-4">
+                        <div class="feature-icon">
+                            <i class="bi bi-graph-up"></i>
+                        </div>
+                        <h3>Monitoring & Analytics</h3>
+                        <p>Gain full visibility into application performance and user experience with advanced monitoring, logging, and analytics services.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="feature-card card h-100 p-4">
+                        <div class="feature-icon">
+                            <i class="bi bi-lightning-charge"></i>
+                        </div>
+                        <h3>API Management</h3>
+                        <p>Design, publish, and manage APIs with a full lifecycle management platform that ensures security, scalability, and developer engagement.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Architecture / Workflow Diagram -->
+    <section id="architecture">
+        <div class="container">
+            <h2 class="section-title text-center">Oracle Cloud Architecture</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <!-- TODO: Replace images with real assets -->
+                    <img src="images/oracle-architecture.jpg" alt="Oracle Cloud Architecture Layers - IaaS, PaaS, SaaS" class="img-fluid rounded shadow mb-4" loading="lazy">
+                    <div class="text-center">
+                        <p class="fst-italic">Oracle's layered cloud architecture provides a comprehensive suite of services across Infrastructure as a Service (IaaS), Platform as a Service (PaaS), and Software as a Service (SaaS), enabling enterprises to build, deploy, and manage applications with maximum flexibility and efficiency.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Use Cases -->
+    <section id="use-cases" class="bg-light">
+        <div class="container">
+            <h2 class="section-title text-center">Real-World Use Cases</h2>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="use-case-card">
+                        <div class="use-case-icon">
+                            <i class="bi bi-box-arrow-in-right"></i>
+                        </div>
+                        <h4>Legacy Application Migration</h4>
+                        <p>Modernize and migrate legacy applications to the cloud with minimal disruption, reducing maintenance costs and improving scalability.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="use-case-card">
+                        <div class="use-case-icon">
+                            <i class="bi bi-gear"></i>
+                        </div>
+                        <h4>Business Process Automation</h4>
+                        <p>Automate complex business workflows and processes to increase operational efficiency and reduce manual errors.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="use-case-card">
+                        <div class="use-case-icon">
+                            <i class="bi bi-people"></i>
+                        </div>
+                        <h4>Customer Experience Enhancement</h4>
+                        <p>Create personalized, seamless customer experiences across all channels with integrated data and analytics.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="use-case-card">
+                        <div class="use-case-icon">
+                            <i class="bi bi-bar-chart"></i>
+                        </div>
+                        <h4>Data-Driven Decision Making</h4>
+                        <p>Leverage advanced analytics and business intelligence tools to transform data into actionable insights.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Approach to Cloud Platforms -->
+    <section id="approach">
+        <div class="container">
+            <h2 class="section-title text-center">Our Approach to Cloud Platforms</h2>
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="timeline">
+                        <div class="timeline-step">
+                            <h4>Assessment & Strategy</h4>
+                            <p>We begin with a comprehensive analysis of your current infrastructure, applications, and business goals to develop a tailored cloud strategy.</p>
+                        </div>
+                        <div class="timeline-step">
+                            <h4>Migration Planning</h4>
+                            <p>Our experts create a detailed migration roadmap, prioritizing applications based on complexity, dependencies, and business value.</p>
+                        </div>
+                        <div class="timeline-step">
+                            <h4>Implementation & Migration</h4>
+                            <p>We execute the migration with minimal disruption, using proven methodologies to ensure security, compliance, and performance.</p>
+                        </div>
+                        <div class="timeline-step">
+                            <h4>Optimization & Innovation</h4>
+                            <p>After migration, we continuously optimize your cloud environment and help you leverage new capabilities for innovation and growth.</p>
+                        </div>
+                        <div class="timeline-step">
+                            <h4>Ongoing Support</h4>
+                            <p>Our managed services provide 24/7 monitoring, management, and support to ensure your cloud environment remains secure and efficient.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Case Studies -->
+    <section id="case-studies" class="bg-light">
+        <div class="container">
+            <h2 class="section-title text-center">Case Studies</h2>
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body">
+                            <h4 class="card-title">Global Retailer Modernizes Operations</h4>
+                            <h6 class="card-subtitle mb-3 text-primary">Problem</h6>
+                            <p class="card-text">A leading retailer struggled with legacy systems that couldn't handle seasonal demand spikes and provided poor customer insights.</p>
+                            <h6 class="card-subtitle mb-3 text-primary">Solution</h6>
+                            <p class="card-text">We migrated their e-commerce platform to Oracle PaaS, implementing autonomous database and analytics services.</p>
+                            <h6 class="card-subtitle mb-3 text-primary">Results</h6>
+                            <ul>
+                                <li>30% reduction in IT costs</li>
+                                <li>2x improvement in application performance</li>
+                                <li>40% faster reporting and analytics</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body">
+                            <h4 class="card-title">Financial Services Compliance Transformation</h4>
+                            <h6 class="card-subtitle mb-3 text-primary">Problem</h6>
+                            <p class="card-text">A financial institution needed to meet stringent regulatory requirements while improving customer digital experiences.</p>
+                            <h6 class="card-subtitle mb-3 text-primary">Solution</h6>
+                            <p class="card-text">We implemented Oracle's security and integration cloud services to create a compliant, seamless customer journey.</p>
+                            <h6 class="card-subtitle mb-3 text-primary">Results</h6>
+                            <ul>
+                                <li>100% compliance with regulatory requirements</li>
+                                <li>60% faster application development</li>
+                                <li>45% improvement in customer satisfaction</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body">
+                            <h4 class="card-title">Healthcare Provider Enhances Patient Care</h4>
+                            <h6 class="card-subtitle mb-3 text-primary">Problem</h6>
+                            <p class="card-text">A healthcare provider needed to integrate disparate systems to create a unified view of patient information.</p>
+                            <h6 class="card-subtitle mb-3 text-primary">Solution</h6>
+                            <p class="card-text">We deployed Oracle Integration Cloud to connect EHR, billing, and patient portal systems with advanced API management.</p>
+                            <h6 class="card-subtitle mb-3 text-primary">Results</h6>
+                            <ul>
+                                <li>70% faster data access for medical staff</li>
+                                <li>50% reduction in integration maintenance</li>
+                                <li>Improved patient outcomes through better data insights</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technologies & Tools -->
+    <section id="technologies">
+        <div class="container">
+            <h2 class="section-title text-center">Technologies & Tools</h2>
+            <div class="tech-grid mb-5">
+                <div class="tech-item">
+                    <i class="bi bi-database tech-icon"></i>
+                    <p>Oracle DB</p>
+                </div>
+                <div class="tech-item">
+                    <i class="bi bi-gear tech-icon"></i>
+                    <p>Kubernetes</p>
+                </div>
+                <div class="tech-item">
+                    <i class="bi bi-box tech-icon"></i>
+                    <p>Docker</p>
+                </div>
+                <div class="tech-item">
+                    <i class="bi bi-diagram-3 tech-icon"></i>
+                    <p>Terraform</p>
+                </div>
+                <div class="tech-item">
+                    <i class="bi bi-tools tech-icon"></i>
+                    <p>Jenkins</p>
+                </div>
+                <div class="tech-item">
+                    <i class="bi bi-plug tech-icon"></i>
+                    <p>APIs</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <p class="lead">We leverage industry-leading technologies and tools to deliver robust, scalable, and secure cloud solutions tailored to your business needs.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Closing CTA Section -->
+    <section id="solutions" class="cta-section">
+        <div class="container">
+            <div class="row justify-content-center text-center">
+                <div class="col-lg-8">
+                    <h2 class="mb-4">Future-proof your business with Oracle PaaS Cloud and Cloud Platforms</h2>
+                    <p class="lead mb-5">Ready to transform your enterprise? Our experts will help you harness the full potential of cloud technologies.</p>
+                    <a href="https://opticbee.in/contact.html" class="btn btn-light btn-lg px-5 py-3 fw-bold">Get Started with Opticbee</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- JSON-LD Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Oracle PaaS Cloud Solutions | Enterprise Cloud Platforms | Opticbee",
+        "description": "Discover Oracle PaaS Cloud solutions for enterprise transformation. Scalable, secure cloud platforms for application development, integration, and analytics.",
+        "url": "https://opticbee.in/cloudplatforms.html",
+        "breadcrumb": {
+            "@type": "BreadcrumbList",
+            "itemListElement": [{
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://opticbee.in"
+            }, {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Cloud Platforms",
+                "item": "https://opticbee.in/cloudplatforms.html"
+            }]
+        }
+    }
+    </script>
+
+    <!-- Bootstrap & JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Animation on scroll
+        document.addEventListener('DOMContentLoaded', function() {
+            const animatedElements = document.querySelectorAll('.fade-in, .slide-in-left, .slide-in-right');
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            }, {
+                threshold: 0.1
+            });
+            
+            animatedElements.forEach(element => {
+                observer.observe(element);
+            });
+            
+            // Smooth scrolling for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    
+                    const targetId = this.getAttribute('href');
+                    if (targetId === '#') return;
+                    
+                    const targetElement = document.querySelector(targetId);
+                    if (targetElement) {
+                        window.scrollTo({
+                            top: targetElement.offsetTop,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

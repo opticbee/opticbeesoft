@@ -1,0 +1,861 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Corporate Performance Management & CRM Solutions | Opticbee</title>
+    <meta name="description" content="Opticbee's integrated CPM & CRM solutions streamline operations, enhance customer relationships, and drive data-driven business growth with enterprise-grade tools.">
+    <link rel="canonical" href="https://opticbee.in/cpm-crm.html">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://opticbee.in/cpm-crm.html">
+    <meta property="og:title" content="Corporate Performance Management & CRM Solutions | Opticbee">
+    <meta property="og:description" content="Integrated CPM & CRM solutions to streamline operations and drive business growth with enterprise-grade tools.">
+    <meta property="og:image" content="https://opticbee.in/images/cpm-crm-og.jpg">
+    
+    <!-- Twitter Card -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://opticbee.in/cpm-crm.html">
+    <meta property="twitter:title" content="Corporate Performance Management & CRM Solutions | Opticbee">
+    <meta property="twitter:description" content="Integrated CPM & CRM solutions to streamline operations and drive business growth.">
+    <meta property="twitter:image" content="https://opticbee.in/images/cpm-crm-twitter.jpg">
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        :root {
+            --primary: #0d6efd;
+            --secondary: #6c757d;
+            --success: #198754;
+            --dark: #212529;
+            --light: #f8f9fa;
+            --opticbee-primary: #3a4fcc;
+            --opticbee-secondary: #6d7ae4;
+            --opticbee-accent: #34c3eb;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            overflow-x: hidden;
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('images/cpm-crm-hero.jpg') no-repeat center center;
+            background-size: cover;
+            padding: 180px 0 120px;
+            color: white;
+            position: relative;
+        }
+        
+        .hero h1 {
+            font-weight: 800;
+            font-size: 3.5rem;
+            margin-bottom: 1.5rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        
+        .hero p {
+            font-size: 1.35rem;
+            max-width: 700px;
+            margin: 0 auto 2.5rem;
+        }
+        
+        .btn-hero {
+            padding: 0.8rem 2rem;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 1.1rem;
+            margin: 0 10px 15px;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-hero-primary {
+            background-color: var(--opticbee-primary);
+            border-color: var(--opticbee-primary);
+        }
+        
+        .btn-hero-secondary {
+            background-color: transparent;
+            border: 2px solid white;
+        }
+        
+        .btn-hero-primary:hover {
+            background-color: #2a3db3;
+            border-color: #2a3db3;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+        
+        .btn-hero-secondary:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+        
+        /* Quick Navigation */
+        .quick-nav {
+            background-color: white;
+            padding: 15px 0;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        
+        .quick-nav .nav-link {
+            color: var(--dark);
+            font-weight: 600;
+            padding: 0.5rem 1.2rem;
+            transition: all 0.3s ease;
+        }
+        
+        .quick-nav .nav-link:hover, .quick-nav .nav-link.active {
+            color: var(--opticbee-primary);
+        }
+        
+        /* Section Styling */
+        section {
+            padding: 100px 0;
+        }
+        
+        section h2 {
+            font-weight: 700;
+            margin-bottom: 2rem;
+            color: var(--dark);
+            position: relative;
+        }
+        
+        section h2:after {
+            content: '';
+            display: block;
+            width: 80px;
+            height: 4px;
+            background: var(--opticbee-accent);
+            margin: 15px 0;
+            border-radius: 2px;
+        }
+        
+        .section-heading {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+        
+        .section-heading h2:after {
+            margin: 15px auto;
+        }
+        
+        /* Card Styling */
+        .feature-card {
+            border: none;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            transition: all 0.3s ease;
+            height: 100%;
+            overflow: hidden;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+        }
+        
+        .feature-card .card-icon {
+            font-size: 2.5rem;
+            color: var(--opticbee-primary);
+            margin-bottom: 1.5rem;
+        }
+        
+        /* CPM Section */
+        .cpm-section {
+            background-color: #f9fbfd;
+        }
+        
+        .chart-container {
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        /* CRM Section */
+        .crm-feature {
+            padding: 25px;
+            border-radius: 12px;
+            background: white;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            margin-bottom: 30px;
+            transition: all 0.3s ease;
+        }
+        
+        .crm-feature:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+        
+        .crm-feature i {
+            font-size: 2.2rem;
+            color: var(--opticbee-primary);
+            margin-bottom: 20px;
+        }
+        
+        /* Why Choose Us */
+        .why-choose-us {
+            background: linear-gradient(to bottom right, #f9fbfd, #fff);
+        }
+        
+        .differentiator {
+            padding: 25px 20px;
+            text-align: center;
+            border-radius: 12px;
+            background: white;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+            height: 100%;
+        }
+        
+        .differentiator:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+        
+        .differentiator i {
+            font-size: 2.5rem;
+            color: var(--opticbee-primary);
+            margin-bottom: 20px;
+        }
+        
+        .client-logo {
+            filter: grayscale(100%);
+            opacity: 0.7;
+            transition: all 0.3s ease;
+            max-width: 150px;
+            padding: 15px;
+        }
+        
+        .client-logo:hover {
+            filter: grayscale(0%);
+            opacity: 1;
+        }
+        
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translate3d(0, 40px, 0);
+            }
+            to {
+                opacity: 1;
+                transform: translate3d(0, 0, 0);
+            }
+        }
+        
+        .fade-in-up {
+            animation-name: fadeInUp;
+            animation-duration: 1s;
+            animation-fill-mode: both;
+        }
+        
+        /* Responsive Adjustments */
+        @media (max-width: 992px) {
+            .hero h1 {
+                font-size: 2.8rem;
+            }
+            
+            .hero p {
+                font-size: 1.2rem;
+            }
+            
+            section {
+                padding: 80px 0;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .hero {
+                padding: 120px 0 80px;
+            }
+            
+            .hero h1 {
+                font-size: 2.3rem;
+            }
+            
+            .hero p {
+                font-size: 1.1rem;
+            }
+            
+            section {
+                padding: 60px 0;
+            }
+            
+            .quick-nav .nav-item {
+                margin-bottom: 10px;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .btn-hero {
+                display: block;
+                margin: 0 auto 15px;
+                width: 80%;
+            }
+        }
+        
+        /* Accessibility */
+        @media (prefers-reduced-motion: reduce) {
+            * {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+            }
+            
+            .feature-card:hover, .crm-feature:hover, .differentiator:hover {
+                transform: none;
+            }
+        }
+        
+        .focus-visible:focus {
+            outline: 3px solid var(--opticbee-accent);
+            outline-offset: 3px;
+        }
+        
+        /* High contrast support */
+        @media (prefers-contrast: high) {
+            .hero {
+                background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url('images/cpm-crm-hero.jpg') no-repeat center center;
+            }
+            
+            .feature-card, .crm-feature, .differentiator {
+                border: 2px solid #000;
+            }
+        }
+    </style>
+    
+    <!-- JSON-LD Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "Corporate Performance Management & CRM Solutions | Opticbee",
+      "description": "Integrated CPM & CRM solutions to streamline operations and drive business growth with enterprise-grade tools.",
+      "url": "https://opticbee.in/cpm-crm.html",
+      "hasPart": {
+        "@type": "Service",
+        "name": "CPM & CRM Solutions",
+        "serviceType": "Business software solutions",
+        "provider": {
+          "@type": "Organization",
+          "name": "Opticbee"
+        },
+        "description": "Comprehensive Corporate Performance Management and Customer Relationship Management solutions designed to optimize business processes and drive growth.",
+        "areaServed": "Global"
+      }
+    }
+    </script>
+</head>
+<body>
+    <!-- HERO SECTION -->
+    <header class="hero" role="banner" aria-labelledby="main-heading">
+        <div class="container text-center">
+            <h1 id="main-heading">CPM & CRM Solutions to Streamline Business Growth</h1>
+            <p class="lead">Integrate corporate performance management with customer relationship insights to drive efficiency, enhance customer experience, and make data-driven decisions.</p>
+            <div class="mt-5">
+                <a href="#cpm-section" class="btn btn-hero btn-hero-primary focus-visible">Explore CPM Solutions</a>
+                <a href="#crm-section" class="btn btn-hero btn-hero-secondary focus-visible">Discover CRM Tools</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- QUICK NAVIGATION -->
+    <nav class="quick-nav" aria-label="Quick navigation">
+        <div class="container">
+            <ul class="nav justify-content-center">
+                <li class="nav-item">
+                    <a class="nav-link active focus-visible" href="#overview-section">Overview</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link focus-visible" href="#cpm-section">CPM</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link focus-visible" href="#crm-section">CRM</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link focus-visible" href="#why-choose-us">Why Opticbee</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- OVERVIEW SECTION -->
+    <section id="overview-section" class="overview-section" aria-labelledby="overview-heading">
+        <div class="container">
+            <div class="section-heading">
+                <h2 id="overview-heading">Integrated CPM & CRM: The Foundation of Modern Business Success</h2>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-6 mb-5 mb-lg-0">
+                    <p class="lead">In today's competitive business landscape, integrating Corporate Performance Management (CPM) and Customer Relationship Management (CRM) systems is no longer optional—it's essential for sustainable growth.</p>
+                    
+                    <p>CPM solutions provide the financial intelligence and strategic planning capabilities that organizations need to set goals, allocate resources effectively, and measure performance against objectives. Meanwhile, CRM systems offer the customer insights and engagement tools necessary to build lasting relationships, improve customer satisfaction, and drive sales growth.</p>
+                    
+                    <p>When these two powerful systems work together seamlessly, businesses gain a comprehensive view of both internal performance metrics and external customer interactions. This holistic approach enables leadership to make data-driven decisions that balance financial objectives with customer-centric strategies.</p>
+                </div>
+                
+                <div class="col-lg-6">
+                    <div class="card feature-card h-100">
+                        <div class="card-body p-5">
+                            <div class="card-icon">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <h3 class="h4 card-title mb-3">The Power of Integration</h3>
+                            <p class="card-text">Companies that integrate CPM and CRM systems experience an average of <strong>27% higher customer retention</strong> and <strong>23% improved operational efficiency</strong> within the first year of implementation.</p>
+                            <p class="card-text">By breaking down silos between financial data and customer insights, organizations can align departmental goals, streamline processes, and create a unified strategy for growth.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row mt-5">
+                <div class="col-md-4 mb-4">
+                    <div class="d-flex">
+                        <div class="me-4">
+                            <i class="fas fa-bullseye text-primary fa-2x"></i>
+                        </div>
+                        <div>
+                            <h4 class="h5">Strategic Alignment</h4>
+                            <p>Ensure every department works toward common business objectives with aligned KPIs and shared insights.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 mb-4">
+                    <div class="d-flex">
+                        <div class="me-4">
+                            <i class="fas fa-rocket text-primary fa-2x"></i>
+                        </div>
+                        <div>
+                            <h4 class="h5">Accelerated Growth</h4>
+                            <p>Identify growth opportunities faster by combining financial forecasting with customer behavior analysis.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 mb-4">
+                    <div class="d-flex">
+                        <div class="me-4">
+                            <i class="fas fa-shield-alt text-primary fa-2x"></i>
+                        </div>
+                        <div>
+                            <h4 class="h5">Risk Mitigation</h4>
+                            <p>Proactively identify and address potential business risks through comprehensive data analysis.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CPM SECTION -->
+    <section id="cpm-section" class="cpm-section" aria-labelledby="cpm-heading">
+        <div class="container">
+            <div class="section-heading">
+                <h2 id="cpm-heading">Corporate Performance Management Solutions</h2>
+                <p class="lead">Transform financial data into actionable business intelligence</p>
+            </div>
+            
+            <div class="row mb-5">
+                <div class="col-lg-6 order-lg-2 mb-4 mb-lg-0">
+                    <div class="chart-container">
+                        <!-- TODO: Replace images, update content with real client data -->
+                        <img src="images/cpm-dashboard.jpg" alt="CPM Dashboard showing financial metrics and performance indicators" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-lg-6 order-lg-1">
+                    <h3 class="h4 mb-4">Comprehensive Financial Planning & Analysis</h3>
+                    <p>Opticbee's CPM solutions provide organizations with the tools needed to streamline budgeting, forecasting, and financial reporting processes. Our platform integrates data from various sources to deliver a unified view of organizational performance.</p>
+                    
+                    <p>With advanced analytics and visualization capabilities, finance teams can identify trends, model scenarios, and make informed decisions that drive profitability and growth. Our solutions are designed to scale with your business, from initial implementation to enterprise-wide deployment.</p>
+                    
+                    <div class="mt-4">
+                        <a href="#" class="btn btn-primary me-2 focus-visible">Request Demo</a>
+                        <a href="#" class="btn btn-outline-primary focus-visible">Download Brochure</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row mt-5">
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="card feature-card h-100">
+                        <div class="card-body p-4 text-center">
+                            <div class="card-icon">
+                                <i class="fas fa-calculator"></i>
+                            </div>
+                            <h4 class="h5 card-title">Financial Planning</h4>
+                            <p class="card-text">Streamline budgeting, forecasting, and financial modeling with intuitive tools that reduce cycle times and improve accuracy.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="card feature-card h-100">
+                        <div class="card-body p-4 text-center">
+                            <div class="card-icon">
+                                <i class="fas fa-chart-pie"></i>
+                            </div>
+                            <h4 class="h5 card-title">Performance Tracking</h4>
+                            <p class="card-text">Monitor KPIs and performance metrics in real-time with customizable dashboards and automated reporting.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="card feature-card h-100">
+                        <div class="card-body p-4 text-center">
+                            <div class="card-icon">
+                                <i class="fas fa-project-diagram"></i>
+                            </div>
+                            <h4 class="h5 card-title">Scenario Modeling</h4>
+                            <p class="card-text">Evaluate different business scenarios and their potential outcomes to make informed strategic decisions.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="card feature-card h-100">
+                        <div class="card-body p-4 text-center">
+                            <div class="card-icon">
+                                <i class="fas fa-database"></i>
+                            </div>
+                            <h4 class="h5 card-title">Data Integration</h4>
+                            <p class="card-text">Connect with ERP, CRM, and other business systems to create a unified source of truth for performance data.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CRM SECTION -->
+    <section id="crm-section" class="crm-section" aria-labelledby="crm-heading">
+        <div class="container">
+            <div class="section-heading">
+                <h2 id="crm-heading">Customer Relationship Management Solutions</h2>
+                <p class="lead">Build stronger customer relationships and drive sales growth</p>
+            </div>
+            
+            <div class="row mb-5">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <div class="chart-container">
+                        <!-- TODO: Replace images, update content with real client data -->
+                        <img src="images/crm-interface.jpg" alt="CRM interface showing customer management dashboard" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <h3 class="h4 mb-4">Unified Customer Intelligence Platform</h3>
+                    <p>Opticbee's CRM solutions centralize customer data from all touchpoints, providing a 360-degree view of customer interactions, preferences, and behaviors. This comprehensive insight enables sales, marketing, and customer service teams to deliver personalized experiences that drive satisfaction and loyalty.</p>
+                    
+                    <p>Our CRM platform goes beyond basic contact management to offer advanced automation, analytics, and integration capabilities. By streamlining processes and eliminating data silos, organizations can improve efficiency, increase sales productivity, and enhance customer engagement across all channels.</p>
+                    
+                    <div class="mt-4">
+                        <a href="#" class="btn btn-primary me-2 focus-visible">View Features</a>
+                        <a href="#" class="btn btn-outline-primary focus-visible">Case Studies</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="crm-feature h-100">
+                        <i class="fas fa-users"></i>
+                        <h4>Centralized Customer Data</h4>
+                        <p>Consolidate customer information from multiple sources into a single, accessible profile with complete interaction history.</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="crm-feature h-100">
+                        <i class="fas fa-funnel-dollar"></i>
+                        <h4>Sales Pipeline Automation</h4>
+                        <p>Automate lead scoring, assignment, and follow-up processes to accelerate deal velocity and improve conversion rates.</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="crm-feature h-100">
+                        <i class="fas fa-headset"></i>
+                        <h4>Customer Service Tracking</h4>
+                        <p>Track and resolve customer issues efficiently with integrated service tools and knowledge base integration.</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="crm-feature h-100">
+                        <i class="fas fa-bullhorn"></i>
+                        <h4>Marketing Automation</h4>
+                        <p>Create targeted campaigns, automate customer journeys, and measure marketing ROI with precision.</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="crm-feature h-100">
+                        <i class="fas fa-mobile-alt"></i>
+                        <h4>Mobile Accessibility</h4>
+                        <p>Access customer data and manage relationships from anywhere with our fully responsive mobile interface.</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="crm-feature h-100">
+                        <i class="fas fa-chart-bar"></i>
+                        <h4>Analytics & Reporting</h4>
+                        <p>Gain actionable insights with customizable reports and dashboards that track sales performance and customer metrics.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WHY CHOOSE US SECTION -->
+    <section id="why-choose-us" class="why-choose-us" aria-labelledby="why-choose-heading">
+        <div class="container">
+            <div class="section-heading">
+                <h2 id="why-choose-heading">Why Choose Opticbee for CPM & CRM</h2>
+                <p class="lead">Enterprise-grade solutions tailored to your business needs</p>
+            </div>
+            
+            <div class="row mb-5">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <p class="lead">At Opticbee, we understand that every organization has unique challenges and goals. Our CPM and CRM solutions are designed to adapt to your specific requirements while providing the robust functionality needed to drive performance and growth.</p>
+                    
+                    <p>With decades of combined experience in business software implementation, our team brings expertise and best practices from across industries. We don't just provide technology—we deliver solutions that transform how you manage performance and customer relationships.</p>
+                </div>
+                
+                <div class="col-lg-6">
+                    <div class="card feature-card h-100">
+                        <div class="card-body p-4">
+                            <h3 class="h4 card-title mb-4">Proven Results Across Industries</h3>
+                            <div class="d-flex mb-3">
+                                <div class="bg-primary bg-opacity-10 p-3 rounded me-3">
+                                    <i class="fas fa-arrow-up-right-dots text-primary fa-2x"></i>
+                                </div>
+                                <div>
+                                    <h4 class="h6">27% Average Efficiency Gain</h4>
+                                    <p class="mb-0">Clients report significant improvements in operational efficiency within the first year.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="d-flex mb-3">
+                                <div class="bg-primary bg-opacity-10 p-3 rounded me-3">
+                                    <i class="fas fa-hand-holding-usd text-primary fa-2x"></i>
+                                </div>
+                                <div>
+                                    <h4 class="h6">3:1 Average ROI</h4>
+                                    <p class="mb-0">Our solutions deliver measurable return on investment through improved performance.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="d-flex">
+                                <div class="bg-primary bg-opacity-10 p-3 rounded me-3">
+                                    <i class="fas fa-user-check text-primary fa-2x"></i>
+                                </div>
+                                <div>
+                                    <h4 class="h6">95% Client Retention</h4>
+                                    <p class="mb-0">Our focus on long-term partnership results in industry-leading client satisfaction.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row mb-5">
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="differentiator">
+                        <i class="fas fa-expand-arrows-alt"></i>
+                        <h4>Scalability</h4>
+                        <p>Our solutions grow with your business, from small teams to enterprise deployments with thousands of users.</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="differentiator">
+                        <i class="fas fa-cogs"></i>
+                        <h4>Customization</h4>
+                        <p>Tailor our platforms to your specific workflows, terminology, and business processes without complex coding.</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="differentiator">
+                        <i class="fas fa-lock"></i>
+                        <h4>Data Security</h4>
+                        <p>Enterprise-grade security protocols ensure your sensitive business and customer data remains protected.</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="differentiator">
+                        <i class="fas fa-plug"></i>
+                        <h4>Integration Expertise</h4>
+                        <p>Seamlessly connect with your existing systems through our extensive integration capabilities and API framework.</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="differentiator">
+                        <i class="fas fa-headset"></i>
+                        <h4>Ongoing Support</h4>
+                        <p>Our dedicated customer success team provides training, troubleshooting, and strategic guidance.</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="differentiator">
+                        <i class="fas fa-rocket"></i>
+                        <h4>ROI Focus</h4>
+                        <p>We prioritize features and implementations that deliver measurable business value and rapid return on investment.</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="differentiator">
+                        <i class="fas fa-graduation-cap"></i>
+                        <h4>Comprehensive Training</h4>
+                        <p>Extensive training resources and personalized sessions ensure your team maximizes platform value.</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="differentiator">
+                        <i class="fas fa-sync-alt"></i>
+                        <h4>Continuous Innovation</h4>
+                        <p>Regular updates and new features keep your systems at the forefront of technology and business best practices.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-5">
+                <h3 class="h4 text-center mb-5">Trusted by Industry Leaders</h3>
+                <div class="row align-items-center justify-content-center">
+                    <div class="col-6 col-md-3 col-lg-2 text-center mb-4">
+                        <!-- TODO: Replace images, update content with real client data -->
+                        <img src="images/client-logo-1.png" alt="Client Company 1" class="img-fluid client-logo">
+                    </div>
+                    <div class="col-6 col-md-3 col-lg-2 text-center mb-4">
+                        <img src="images/client-logo-2.png" alt="Client Company 2" class="img-fluid client-logo">
+                    </div>
+                    <div class="col-6 col-md-3 col-lg-2 text-center mb-4">
+                        <img src="images/client-logo-3.png" alt="Client Company 3" class="img-fluid client-logo">
+                    </div>
+                    <div class="col-6 col-md-3 col-lg-2 text-center mb-4">
+                        <img src="images/client-logo-4.png" alt="Client Company 4" class="img-fluid client-logo">
+                    </div>
+                    <div class="col-6 col-md-3 col-lg-2 text-center mb-4">
+                        <img src="images/client-logo-5.png" alt="Client Company 5" class="img-fluid client-logo">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bootstrap JS and Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+    
+    <script>
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    // Check if reduced motion is preferred
+                    const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+                    
+                    if (reducedMotion) {
+                        targetElement.scrollIntoView();
+                    } else {
+                        targetElement.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                    
+                    // Update URL without scrolling
+                    history.pushState(null, null, targetId);
+                    
+                    // Update active state in quick nav
+                    document.querySelectorAll('.quick-nav .nav-link').forEach(link => {
+                        link.classList.remove('active');
+                    });
+                    this.classList.add('active');
+                }
+            });
+        });
+        
+        // Intersection Observer for scroll-triggered animations
+        const observerOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.1
+        };
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('fade-in-up');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+        
+        // Observe elements for animation
+        document.addEventListener('DOMContentLoaded', function() {
+            const elementsToAnimate = document.querySelectorAll('.feature-card, .crm-feature, .differentiator');
+            elementsToAnimate.forEach(el => {
+                observer.observe(el);
+            });
+            
+            // Update active nav link on scroll
+            const sections = document.querySelectorAll('section');
+            const navLinks = document.querySelectorAll('.quick-nav .nav-link');
+            
+            window.addEventListener('scroll', function() {
+                let current = '';
+                const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+                
+                sections.forEach(section => {
+                    const sectionTop = section.offsetTop;
+                    const sectionHeight = section.clientHeight;
+                    if (pageYOffset >= (sectionTop - 100)) {
+                        current = section.getAttribute('id');
+                    }
+                });
+                
+                navLinks.forEach(link => {
+                    link.classList.remove('active');
+                    if (link.getAttribute('href') === `#${current}`) {
+                        link.classList.add('active');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
