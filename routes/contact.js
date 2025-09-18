@@ -1,7 +1,7 @@
 const express = require('express');
 const nodemailer = require('nodemailer');
 const { v4: uuidv4 } = require('uuid');
-const db = require('./db'); // Import MySQL connection pool
+const db = require('../db'); // Import MySQL connection pool
 
 const router = express.Router();
 
@@ -35,7 +35,7 @@ db.query(createTableQuery, (err) => {
     if (err) {
         console.error('Error creating contacts table:', err);
     } else {
-        console.log('✅ Contacts table ready');
+        console.log('✅ OpticBee website Contacts table ready');
     }
 });
 
