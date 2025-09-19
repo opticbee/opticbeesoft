@@ -131,22 +131,6 @@
             margin-bottom: 30px;
         }
         
-        /* .section-title:after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 80px;
-            height: 3px;
-            background: var(--primary);
-        } */
-        
-        .text-center .section-title:after {
-            left: 50%;
-            transform: translateX(-50%);
-        }
-        
         @media (max-width: 768px) {
             .hero-section {
                 padding: 60px 0;
@@ -160,6 +144,7 @@
                 font-size: 2rem;
             }
         }
+        
     </style>
 </head>
 <body>
@@ -806,7 +791,7 @@
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About us</a></li>
             <li><a href="services.html">Services</a></li>
-            <li><a href="">Terms of service</a></li>
+            <li><a href="#">Terms of service</a></li>
             <li><a href="#">Privacy policy</a></li>
           </ul>
         </div>
@@ -940,7 +925,7 @@
                                 <div class="form-check">
                                     <input class="form-check-input" type="checkbox" id="terms" required>
                                     <label class="form-check-label" for="terms">
-                                        I agree to the <a href="#" class="text-decoration-none">terms and conditions</a>
+                                        I agree to the <a href="#" class="text-decoration-none" data-bs-toggle="modal" data-bs-target="#termsModal">terms and conditions</a>
                                     </label>
                                     <div class="invalid-feedback">
                                         You must agree before submitting.
@@ -951,43 +936,243 @@
                     </form>
                 </div>
                 <div class="modal-footer">
+                    <div id="form-feedback" class="w-100"></div>
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                     <button type="submit" form="partnershipForm" class="btn btn-primary">Submit Application</button>
                 </div>
             </div>
         </div>
     </div>
+    
+    <!-- Terms and Conditions Modal -->
+    <div class="modal fade" id="termsModal" tabindex="-1" aria-labelledby="termsModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="termsModalLabel">Terms & Conditions</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h2 class="fw-bold mb-4">OpticBee Affiliate / Partner Program Terms & Conditions</h2>
+                    <p>These Terms & Conditions govern your participation in the OpticBee Affiliate / Partner Program offered by OpticBee. By applying to or participating in the Program, you agree to be bound by these Terms.</p>
+                    
+                    <h4>1. Definitions</h4>
+                    <ul>
+                        <li><strong>Affiliate / Partner</strong> means the individual or legal entity who is accepted into the Program and agrees to these Terms.</li>
+                        <li><strong>Partner Program / Affiliate Program</strong> means the program through which the Partner refers business, collaborates or shares projects or resources with OpticBee under agreed terms.</li>
+                        <li><strong>Referral / Project</strong> means any project, work, inquiry, or client lead introduced to OpticBee by the Partner, in accordance with the Program rules.</li>
+                        <li><strong>Revenue Share</strong> means the agreed share or commission that the Partner receives for successful referrals or collaboration under the Program.</li>
+                        <li><strong>Term</strong> means the duration during which a Partner is active under this Program, from acceptance until termination.</li>
+                    </ul>
+                    
+                    <h4>2. Enrollment & Acceptance</h4>
+                    <ul>
+                        <li>To become a Partner, you must complete the application form on our website with accurate and complete information.</li>
+                        <li>OpticBee reserves the right to accept or reject any application for any reason, including but not limited to, applicant’s business model, skills, alignment with OpticBee’s services, or unwillingness to provide needed information.</li>
+                        <li>Once accepted, the Partner will receive confirmation of acceptance (by email or other means), and will be bound by these Terms.</li>
+                    </ul>
+
+                    <h4>3. Obligations of the Partner</h4>
+                    <ul>
+                        <li>Provide accurate, up-to-date contact, business and tax information.</li>
+                        <li>Maintain professionalism, quality, and integrity in all communications and referrals.</li>
+                        <li>Not to make false or misleading representations about OpticBee or its services.</li>
+                        <li>Comply with all applicable laws, regulations, and guidelines (including, but not limited to, advertising, data protection, privacy).</li>
+                        <li>Use marketing materials (if provided) in accordance with guidelines set by OpticBee.</li>
+                        <li>Refrain from any activity that could harm OpticBee’s reputation.</li>
+                    </ul>
+
+                    <h4>4. Referral / Project Sharing Process</h4>
+                    <ul>
+                        <li>Upon acceptance, the Partner may refer projects or leads to OpticBee.</li>
+                        <li>OpticBee will evaluate referred projects/leads to determine feasibility, timeline, resources required, and whether to accept the work.</li>
+                        <li>No referral is guaranteed to convert into a project; acceptance is subject to OpticBee’s discretion.</li>
+                        <li>Once a project is accepted, both parties will agree scope, deliverables, timeline, resource allocation, and revenue share terms in writing.</li>
+                    </ul>
+
+                    <h4>5. Revenue Share / Compensation</h4>
+                    <ul>
+                        <li>The revenue share amount, payment terms, and calculation method will be mutually agreed in writing for each project (or as per standard Program rates if applicable).</li>
+                        <li>Payments will be made only after OpticBee receives payment from the client and confirms completion of deliverables as per agreed scope.</li>
+                        <li>OpticBee may withhold payment until all conditions are met.</li>
+                        <li>Currency, method of payment, and frequency (e.g. monthly, quarterly) shall be agreed upon beforehand.</li>
+                    </ul>
+
+                    <h4>6. Intellectual Property</h4>
+                    <ul>
+                        <li>OpticBee retains ownership of all its trademarks, logos, service marks, methodologies, content, software, designs, and other intellectual property (“OpticBee IP”).</li>
+                        <li>The Partner has no rights to use OpticBee IP except as authorized in writing for the purpose of performing under this Program, and must follow any usage guidelines.</li>
+                        <li>Any content, feedback, or materials provided by the Partner to OpticBee in connection with the Program may be used by OpticBee, royalty-free, for any lawful business purpose.</li>
+                    </ul>
+
+                    <h4>7. Confidentiality</h4>
+                    <ul>
+                        <li>During the term, each party may have access to confidential or proprietary information of the other party. Each party agrees to keep such information confidential and not to disclose to any third party without prior written consent.</li>
+                        <li>Confidentiality obligations survive termination of the Terms.</li>
+                    </ul>
+
+                    <h4>8. Term & Termination</h4>
+                    <ul>
+                        <li>The Partner’s participation begins on acceptance and continues until terminated.</li>
+                        <li>Either party may terminate this agreement at any time, with or without cause, by providing written notice to the other.</li>
+                        <li>Upon termination, the Partner must cease representing themselves as a Partner of OpticBee, return or destroy confidential materials, and stop using OpticBee IP.</li>
+                        <li>Any pending or approved but unpaid revenue share that accrued before termination shall still be payable subject to the conditions in Section 5.</li>
+                    </ul>
+
+                    <h4>9. Representations & Warranties; Indemnification</h4>
+                    <ul>
+                        <li>The Partner represents and warrants that they have the full power and authority to enter into and perform under these Terms.</li>
+                        <li>The Partner’s referrals or activities will not infringe on any third party’s rights or violate any applicable laws.</li>
+                        <li>The Partner agrees to indemnify, defend, and hold harmless OpticBee from and against any disputes, claims, losses, liabilities, damages, or expenses arising from Partner’s breach of these Terms, or Partner’s activities under this Program.</li>
+                    </ul>
+                    
+                    <h4>10. Limitation of Liability</h4>
+                    <ul>
+                        <li>To the maximum extent permitted by applicable law, OpticBee shall not be liable for any indirect, incidental, consequential, special or punitive damages arising out of or related to the Program.</li>
+                        <li>OpticBee’s total liability under or in connection with these Terms shall not exceed the total amount of revenue share paid or payable to the Partner in the six (6) months preceding the event giving rise to liability.</li>
+                    </ul>
+
+                    <h4>11. Governing Law & Dispute Resolution</h4>
+                    <ul>
+                        <li>These Terms shall be governed by and construed in accordance with the laws of [State / Jurisdiction, e.g. Telangana, India].</li>
+                        <li>Any dispute arising under or relating to these Terms shall be resolved via negotiation in good faith. If no resolution is reached within [30] days, the dispute may be submitted to arbitration or the courts in [City], [State], as mutually agreed or as required by law.</li>
+                    </ul>
+
+                    <h4>12. Modification of Terms</h4>
+                    <ul>
+                        <li>OpticBee reserves the right to modify these Terms at any time, with notice to the Partner (via email or on the website).</li>
+                        <li>If the Partner does not agree to the changes, they may terminate their participation. Continued participation after notice constitutes acceptance of the updated Terms.</li>
+                    </ul>
+
+                    <h4>13. Miscellaneous</h4>
+                    <ul>
+                        <li><strong>Independent Contractor Relationship:</strong> The Partner is an independent contractor; nothing in these Terms creates an employment, agency, joint venture or partnership relationship beyond the referral/collaboration.</li>
+                        <li><strong>No Assignment:</strong> The Partner may not assign or transfer its rights or obligations under these Terms without OpticBee’s prior written consent.</li>
+                        <li><strong>Severability:</strong> If any provision of these Terms is held to be invalid or unenforceable, the remaining provisions will remain in full force and effect.</li>
+                        <li><strong>Entire Agreement:</strong> These Terms, together with any additional written agreement between the parties, represent the entire agreement between the parties regarding the subject matter hereof, and supersede all prior or contemporaneous agreements.</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
     <!-- Bootstrap & JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script>
-        // Form validation
+        // Form validation and submission
         (function () {
             'use strict'
             
-            var form = document.getElementById('partnershipForm')
+            const form = document.getElementById('partnershipForm');
+            const submitButton = form.querySelector('button[type="submit"]');
+            const feedbackContainer = document.getElementById('form-feedback');
             
             form.addEventListener('submit', function (event) {
+                event.preventDefault();
+                event.stopPropagation();
+                
                 if (!form.checkValidity()) {
-                    event.preventDefault()
-                    event.stopPropagation()
-                } else {
-                    event.preventDefault()
-                    // Here you would typically submit the form data to your server
-                    alert('Thank you for your partnership application! We will contact you shortly.')
-                    var modal = bootstrap.Modal.getInstance(document.getElementById('partnershipModal'))
-                    modal.hide()
+                     form.classList.add('was-validated');
+                     return;
                 }
                 
-                form.classList.add('was-validated')
-            }, false)
-        })()
+                form.classList.add('was-validated');
+
+                // --- Start API Submission ---
+                const originalButtonText = submitButton.innerHTML;
+                submitButton.disabled = true;
+                submitButton.innerHTML = `<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Submitting...`;
+                feedbackContainer.innerHTML = '';
+
+
+                const formData = {
+                    companyName: document.getElementById('companyName').value,
+                    contactName: document.getElementById('contactName').value,
+                    email: document.getElementById('email').value,
+                    phone: document.getElementById('phone').value,
+                    partnershipType: document.getElementById('partnershipType').value,
+                    website: document.getElementById('website').value,
+                    message: document.getElementById('message').value,
+                };
+
+                const apiEndpoint = 'https://www.hitaishihealthcare.com/api/opticbee/affiliate';
+
+                fetch(apiEndpoint, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(formData),
+                })
+                .then(response => {
+                    if (!response.ok) {
+                        return response.json().then(err => { throw new Error(err.message || 'Network response was not ok.') });
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    console.log('Success:', data);
+                    feedbackContainer.innerHTML = `<div class="alert alert-success" role="alert">Thank you! Your application has been submitted successfully.</div>`;
+                    form.reset();
+                    form.classList.remove('was-validated');
+
+                    setTimeout(() => {
+                         const modal = bootstrap.Modal.getInstance(document.getElementById('partnershipModal'));
+                         modal.hide();
+                         feedbackContainer.innerHTML = '';
+                    }, 4000); // Hide modal after 4 seconds
+                })
+                .catch((error) => {
+                    console.error('Error:', error);
+                    feedbackContainer.innerHTML = `<div class="alert alert-danger" role="alert"><strong>Error:</strong> ${error.message}. Please try again.</div>`;
+                })
+                .finally(() => {
+                    submitButton.disabled = false;
+                    submitButton.innerHTML = originalButtonText;
+                });
+
+            }, false);
+        })();
         
         // Initialize tooltips
         var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
         var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
             return new bootstrap.Tooltip(tooltipTriggerEl)
-        })
+        });
+
+        const termsModalEl = document.getElementById('termsModal');
+const partnershipModalEl = document.getElementById('partnershipModal');
+
+let wasPartnershipOpen = false;
+
+termsModalEl.addEventListener('show.bs.modal', () => {
+  // Check if partnership was already open
+  wasPartnershipOpen = partnershipModalEl.classList.contains('show');
+
+  if (wasPartnershipOpen) {
+    // Keep partnership modal visible in the background
+    partnershipModalEl.style.display = 'block';
+    partnershipModalEl.classList.add('modal-background');
+  }
+});
+
+termsModalEl.addEventListener('hidden.bs.modal', () => {
+  if (wasPartnershipOpen) {
+    // Restore partnership modal properly
+    const partnershipModal = bootstrap.Modal.getInstance(partnershipModalEl) 
+                          || new bootstrap.Modal(partnershipModalEl);
+    partnershipModal.show();
+    wasPartnershipOpen = false;
+  }
+});
+
+
+
     </script>
 </body>
 </html>
+
