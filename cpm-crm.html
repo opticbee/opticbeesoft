@@ -66,57 +66,117 @@
         
         /* Hero Section */
         .hero {
-            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('images/cpm-crm-hero.jpg') no-repeat center center;
-            background-size: cover;
-            padding: 180px 0 120px;
+            min-height: 60vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            background: url(images/crm.png) center/cover no-repeat;
             color: white;
             position: relative;
+            padding: 100px 20px;
         }
-        
+
+        /* Overlay for text contrast */
+        .hero .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.4);
+            z-index: 1;
+        }
+
+        .hero .container {
+            position: relative;
+            z-index: 2;
+            max-width: 900px;
+        }
+
         .hero h1 {
             font-weight: 800;
-            font-size: 3.5rem;
-            margin-bottom: 1.5rem;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            font-size: 3rem;
+            margin-bottom: 1.2rem;
+            text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+            line-height: 1.2;
         }
-        
+
         .hero p {
-            font-size: 1.35rem;
+            font-size: 1.25rem;
             max-width: 700px;
-            margin: 0 auto 2.5rem;
+            margin: 0 auto 2rem;
+            line-height: 1.6;
         }
-        
+
+        .hero-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        /* Buttons */
         .btn-hero {
             padding: 0.8rem 2rem;
             border-radius: 50px;
             font-weight: 600;
             font-size: 1.1rem;
-            margin: 0 10px 15px;
             transition: all 0.3s ease;
+            text-decoration: none;
         }
-        
+
         .btn-hero-primary {
-            background-color: var(--opticbee-primary);
-            border-color: var(--opticbee-primary);
+            background-color: var(--opticbee-primary, #3b4cca);
+            border: 2px solid var(--opticbee-primary, #3b4cca);
+            color: #fff;
         }
-        
+
         .btn-hero-secondary {
             background-color: transparent;
-            border: 2px solid white;
+            border: 2px solid #fff;
+            color: #fff;
         }
-        
-        .btn-hero-primary:hover {
+
+        /* Hover/Focus states */
+        .btn-hero-primary:hover,
+        .btn-hero-primary:focus {
             background-color: #2a3db3;
             border-color: #2a3db3;
             transform: translateY(-3px);
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
         }
-        
-        .btn-hero-secondary:hover {
-            background-color: rgba(255, 255, 255, 0.1);
+
+        .btn-hero-secondary:hover,
+        .btn-hero-secondary:focus {
+            background-color: rgba(255, 255, 255, 0.15);
             transform: translateY(-3px);
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
         }
+
+        /* Responsive adjustments */
+        @media (max-width: 992px) {
+        .hero h1 {
+            font-size: 2.5rem;
+        }
+        .hero p {
+            font-size: 1.1rem;
+        }
+        }
+
+        @media (max-width: 600px) {
+        .hero {
+            min-height: 70vh;
+            padding: 80px 15px;
+        }
+        .hero h1 {
+            font-size: 1.8rem;
+        }
+        .hero p {
+            font-size: 1rem;
+        }
+        }
+
         
         /* Quick Navigation */
         .quick-nav {
@@ -125,7 +185,7 @@
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
             position: sticky;
             top: 0;
-            z-index: 1000;
+            z-index: 10;
         }
         
         .quick-nav .nav-link {
@@ -557,15 +617,27 @@
 
     <!-- HERO SECTION -->
     <header class="hero" role="banner" aria-labelledby="main-heading">
-        <div class="container text-center">
-            <h1 id="main-heading">CPM & CRM Solutions to Streamline Business Growth</h1>
-            <p class="lead">Integrate corporate performance management with customer relationship insights to drive efficiency, enhance customer experience, and make data-driven decisions.</p>
-            <div class="mt-5">
-                <a href="#cpm-section" class="btn btn-hero btn-hero-primary focus-visible">Explore CPM Solutions</a>
-                <a href="#crm-section" class="btn btn-hero btn-hero-secondary focus-visible">Discover CRM Tools</a>
-            </div>
+    <div class="overlay"></div> <!-- Dark overlay for readability -->
+    <div class="container text-center">
+        <h1 id="main-heading">
+        CPM & CRM Solutions to Streamline Business Growth
+        </h1>
+        <p class="lead">
+        Integrate corporate performance management with customer relationship
+        insights to drive efficiency, enhance customer experience, and make
+        data-driven decisions.
+        </p>
+        <div class="hero-buttons">
+        <a href="#cpm-section" class="btn btn-hero btn-hero-primary focus-visible">
+            Explore CPM Solutions
+        </a>
+        <a href="#crm-section" class="btn btn-hero btn-hero-secondary focus-visible">
+            Discover CRM Tools
+        </a>
         </div>
+    </div>
     </header>
+
 
     <!-- QUICK NAVIGATION -->
     <nav class="quick-nav" aria-label="Quick navigation">
@@ -669,7 +741,7 @@
                 <div class="col-lg-6 order-lg-2 mb-4 mb-lg-0">
                     <div class="chart-container">
                         <!-- TODO: Replace images, update content with real client data -->
-                        <img src="images/cpm-dashboard.jpg" alt="CPM Dashboard showing financial metrics and performance indicators" class="img-fluid">
+                        <img src="images/cpm.png" alt="CPM Dashboard showing financial metrics and performance indicators" class="img-fluid">
                     </div>
                 </div>
                 <div class="col-lg-6 order-lg-1">
@@ -749,7 +821,7 @@
                 <div class="col-lg-6 mb-4 mb-lg-0">
                     <div class="chart-container">
                         <!-- TODO: Replace images, update content with real client data -->
-                        <img src="images/crm-interface.jpg" alt="CRM interface showing customer management dashboard" class="img-fluid">
+                        <img src="images/crm.png" alt="CRM interface showing customer management dashboard" class="img-fluid">
                     </div>
                 </div>
                 <div class="col-lg-6">
@@ -941,19 +1013,19 @@
                 <div class="row align-items-center justify-content-center">
                     <div class="col-6 col-md-3 col-lg-2 text-center mb-4">
                         <!-- TODO: Replace images, update content with real client data -->
-                        <img src="images/client-logo-1.png" alt="Client Company 1" class="img-fluid client-logo">
+                        <img src="images/rashmika.png" alt="Client Company 1" class="img-fluid client-logo">
                     </div>
                     <div class="col-6 col-md-3 col-lg-2 text-center mb-4">
-                        <img src="images/client-logo-2.png" alt="Client Company 2" class="img-fluid client-logo">
+                        <img src="images/rashmika.png" alt="Client Company 2" class="img-fluid client-logo">
                     </div>
                     <div class="col-6 col-md-3 col-lg-2 text-center mb-4">
-                        <img src="images/client-logo-3.png" alt="Client Company 3" class="img-fluid client-logo">
+                        <img src="images/rashmika.png" alt="Client Company 3" class="img-fluid client-logo">
                     </div>
                     <div class="col-6 col-md-3 col-lg-2 text-center mb-4">
-                        <img src="images/client-logo-4.png" alt="Client Company 4" class="img-fluid client-logo">
+                        <img src="images/rashmika.png" alt="Client Company 4" class="img-fluid client-logo">
                     </div>
                     <div class="col-6 col-md-3 col-lg-2 text-center mb-4">
-                        <img src="images/client-logo-5.png" alt="Client Company 5" class="img-fluid client-logo">
+                        <img src="images/rashmika.png" alt="Client Company 5" class="img-fluid client-logo">
                     </div>
                 </div>
             </div>
