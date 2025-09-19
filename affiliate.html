@@ -950,94 +950,99 @@
     <!-- Bootstrap & JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script>
-        // Form validation and submission
-        (function () {
-            'use strict'
-            
-            const form = document.getElementById('partnershipForm');
-            const submitButton = form.querySelector('button[type="submit"]');
-            const feedbackContainer = document.getElementById('form-feedback');
-            
-            form.addEventListener('submit', function (event) {
-                event.preventDefault();
-                event.stopPropagation();
+        // *** FIX APPLIED HERE ***
+        // Wait for the DOM to be fully loaded before running the form script
+        document.addEventListener('DOMContentLoaded', function () {
+            // Form validation and submission
+            (function () {
+                'use strict'
                 
-                if (!form.checkValidity()) {
-                     form.classList.add('was-validated');
-                     return;
+                const form = document.getElementById('partnershipForm');
+                // Null check for safety, though DOMContentLoaded should prevent this
+                if (!form) { 
+                    console.error('Partnership form not found!');
+                    return; 
                 }
                 
-                form.classList.add('was-validated');
-
-                // --- Start API Submission ---
-                const originalButtonText = submitButton.innerHTML;
-                submitButton.disabled = true;
-                submitButton.innerHTML = `<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Submitting...`;
-                feedbackContainer.innerHTML = '';
-
-
-                const formData = {
-                    companyName: document.getElementById('companyName').value,
-                    contactName: document.getElementById('contactName').value,
-                    email: document.getElementById('email').value,
-                    phone: document.getElementById('phone').value,
-                    partnershipType: document.getElementById('partnershipType').value,
-                    website: document.getElementById('website').value,
-                    message: document.getElementById('message').value,
-                };
-
-                const apiEndpoint = 'https://www.hitaishihealthcare.com/api/affiliate';
-
-                fetch(apiEndpoint, {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json',
-                    },
-                    body: JSON.stringify(formData),
-                })
-                .then(response => {
-                    if (!response.ok) {
-                        return response.json().then(err => { throw new Error(err.message || 'Network response was not ok.') });
+                const submitButton = form.closest('.modal-content').querySelector('button[type="submit"]');
+                const feedbackContainer = document.getElementById('form-feedback');
+                
+                form.addEventListener('submit', function (event) {
+                    event.preventDefault();
+                    event.stopPropagation();
+                    
+                    if (!form.checkValidity()) {
+                         form.classList.add('was-validated');
+                         return;
                     }
-                    return response.json();
-                })
-                .then(data => {
-                    console.log('Success:', data);
-                    feedbackContainer.innerHTML = `<div class="alert alert-success" role="alert">Thank you! Your application has been submitted successfully.</div>`;
-                    form.reset();
-                    form.classList.remove('was-validated');
+                    
+                    form.classList.add('was-validated');
 
-                    setTimeout(() => {
-                         const modal = bootstrap.Modal.getInstance(document.getElementById('partnershipModal'));
-                         modal.hide();
-                         feedbackContainer.innerHTML = '';
-                    }, 4000); // Hide modal after 4 seconds
-                })
-                .catch((error) => {
-                    console.error('Error:', error);
-                    feedbackContainer.innerHTML = `<div class="alert alert-danger" role="alert"><strong>Error:</strong> ${error.message}. Please try again.</div>`;
-                })
-                .finally(() => {
-                    submitButton.disabled = false;
-                    submitButton.innerHTML = originalButtonText;
-                });
-
-            }, false);
-        })();
-        
-        // Initialize tooltips
-        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
-        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
-            return new bootstrap.Tooltip(tooltipTriggerEl)
-        });
-
-        const termsModalEl = document.getElementById('termsModal');
-        const partnershipModalEl = document.getElementById('partnershipModal');
-
-        let wasPartnershipOpen = false;
+                    // --- Start API Submission ---
+                    const originalButtonText = submitButton.innerHTML;
+                    submitButton.disabled = true;
+                    submitButton.innerHTML = `<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Submitting...`;
+                    feedbackContainer.innerHTML = '';
 
 
+                    const formData = {
+                        companyName: document.getElementById('companyName').value,
+                        contactName: document.getElementById('contactName').value,
+                        email: document.getElementById('email').value,
+                        phone: document.getElementById('phone').value,
+                        partnershipType: document.getElementById('partnershipType').value,
+                        website: document.getElementById('website').value,
+                        message: document.getElementById('message').value,
+                    };
+
+                    const apiEndpoint = 'https://www.hitaishihealthcare.com/api/affiliate';
+
+                    fetch(apiEndpoint, {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                        },
+                        body: JSON.stringify(formData),
+                    })
+                    .then(response => {
+                        if (!response.ok) {
+                            return response.json().then(err => { throw new Error(err.message || 'Network response was not ok.') });
+                        }
+                        return response.json();
+                    })
+                    .then(data => {
+                        console.log('Success:', data);
+                        feedbackContainer.innerHTML = `<div class="alert alert-success" role="alert">Thank you! Your application has been submitted successfully.</div>`;
+                        form.reset();
+                        form.classList.remove('was-validated');
+
+                        setTimeout(() => {
+                             const modal = bootstrap.Modal.getInstance(document.getElementById('partnershipModal'));
+                             if (modal) {
+                                modal.hide();
+                             }
+                             feedbackContainer.innerHTML = '';
+                        }, 4000); // Hide modal after 4 seconds
+                    })
+                    .catch((error) => {
+                        console.error('Error:', error);
+                        feedbackContainer.innerHTML = `<div class="alert alert-danger" role="alert"><strong>Error:</strong> ${error.message}. Please try again.</div>`;
+                    })
+                    .finally(() => {
+                        submitButton.disabled = false;
+                        submitButton.innerHTML = originalButtonText;
+                    });
+
+                }, false);
+            })();
+            
+            // Initialize tooltips
+            var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+            var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+                return new bootstrap.Tooltip(tooltipTriggerEl)
+            });
+
+        }); // End of DOMContentLoaded
     </script>
 </body>
 </html>
-
