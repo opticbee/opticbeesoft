@@ -2,17 +2,30 @@ const express = require('express');
 const nodemailer = require('nodemailer');
 const { v4: uuidv4 } = require('uuid');
 const db = require('../db'); // Import MySQL connection pool
+const cors = require('cors'); // Import the CORS middleware
+const util = require('util'); // Import Node.js utility for promisify
 
 const router = express.Router();
 
-// Nodemailer transporter configuration
+// --- 1. CORS Configuration ---
+// Only allow requests from your frontend website
+const corsOptions = {
+  origin: 'https://opticbee.in',
+  optionsSuccessStatus: 200 // For legacy browser support
+};
+
+// Enable CORS with the specified options
+router.use(cors(corsOptions));
+
+
+// --- 2. Corrected Nodemailer Transporter Configuration ---
 const transporter = nodemailer.createTransport({
-    host: 'smtp.example.com', // Your SMTP host
+    host: 'smtp.gmail.com', // Corrected: Use Gmail's SMTP host
     port: 587,
     secure: false, 
     auth: {
         user: 'spltechnologycorp@gmail.com', // Your email address
-        pass: 'cbkm ntdm cuvp vygh'           // Your email password or app password
+        pass: 'cbkm ntdm cuvp vygh'           // Your app password
     },
     tls: {
         rejectUnauthorized: false
@@ -39,7 +52,8 @@ db.query(createTableQuery, (err) => {
     }
 });
 
-// Contact API
+
+// --- 3. Refactored Contact API with Promises and Proper Error Handling ---
 router.post('/contact', async (req, res) => {
     const { name, email, subject, message } = req.body;
 
@@ -51,20 +65,18 @@ router.post('/contact', async (req, res) => {
     const submissionDate = new Date();
 
     try {
-        // --- 1. Save to MySQL ---
+        // Promisify the db.query to use it with async/await
+        const query = util.promisify(db.query).bind(db);
+
+        // --- Save to MySQL (awaiting the result) ---
         const insertQuery = `
             INSERT INTO contacts (id, name, email, subject, message, submittedAt)
             VALUES (?, ?, ?, ?, ?, ?)
         `;
-            db.query(insertQuery, [submissionId, name, email, subject, message, submissionDate], (err, result) => {
-            if (err) { console.error(err); return res.status(500).json({ message: 'DB error' }); }
-         
-            });
-
-
+        await query(insertQuery, [submissionId, name, email, subject, message, submissionDate]);
         console.log('✅ Contact form saved to MySQL:', submissionId);
 
-        // --- 2. Send Confirmation Email to User ---
+        // --- Send Confirmation Email to User ---
         const userMailOptions = {
             from: '"Optic Bee" <no-reply@opticbee.in>',
             to: email,
@@ -83,7 +95,7 @@ router.post('/contact', async (req, res) => {
         await transporter.sendMail(userMailOptions);
         console.log(`📧 Confirmation email sent to ${email}`);
 
-        // --- 3. Send Notification Email to HR ---
+        // --- Send Notification Email to HR ---
         const hrMailOptions = {
             from: `"Contact Form" <form-notifications@opticbee.in>`,
             to: 'hr@opticbee.in',
@@ -107,8 +119,13 @@ router.post('/contact', async (req, res) => {
         res.status(200).json({ message: 'Your message has been sent successfully. Thank you!' });
 
     } catch (error) {
+        // --- 4. Improved Error Logging ---
         console.error('❌ Error processing contact form:', error);
-        res.status(500).json({ message: 'There was an error sending your message. Please try again later.' });
+        // Send back a more detailed error message for easier debugging
+        res.status(500).json({ 
+            message: 'There was an error sending your message. Please try again later.',
+            error: error.message // This provides the specific error reason
+        });
     }
 });
 
