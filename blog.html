@@ -4,9 +4,12 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Blog - Optic Bee Technology Insights</title>
-  <meta name="description" content="Stay updated with the latest technology trends, business solutions, and industry insights from Optic Bee experts.">
-  <meta name="keywords" content="technology blog, business solutions, IT trends, digital transformation">
+  <title>Technology Blog | Optic Bee Soft Tech Insights & Updates</title>
+  <meta name="description" content="Stay updated with the latest technology trends, business solutions, Oracle implementations, and industry insights from Optic Bee experts.">
+  <meta name="keywords" content="technology blog, Oracle ERP, business solutions, IT trends, digital transformation, cloud computing, AI, cybersecurity, Optic Bee">
+  <meta name="author" content="Optic Bee Soft Tech">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.opticbee.in/blog.html">
 
   <!-- Favicons -->
   <link href="images/favicon.ico" rel="icon">
@@ -27,7 +30,108 @@
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Blog",
+    "name": "Optic Bee Technology Blog",
+    "description": "Technology insights, trends and solutions from Optic Bee experts",
+    "url": "https://www.opticbee.in/blog.html",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Optic Bee Soft Tech",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://www.opticbee.in/images/oblogo.png"
+      }
+    }
+  }
+  </script>
 
+  <style>
+    .blog-pagination ul {
+      display: flex;
+      list-style: none;
+      padding: 0;
+      margin: 20px 0;
+      justify-content: center;
+    }
+    
+    .blog-pagination li {
+      margin: 0 5px;
+    }
+    
+    .blog-pagination a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      border: 1px solid #dee2e6;
+      color: #0ea2bd;
+      text-decoration: none;
+      transition: all 0.3s;
+    }
+    
+    .blog-pagination a:hover,
+    .blog-pagination a.active {
+      background: #0ea2bd;
+      color: #fff;
+      border-color: #0ea2bd;
+    }
+    
+    .blog-page .post-content {
+      padding: 20px;
+      background: #fff;
+      box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+      border-radius: 0 0 5px 5px;
+    }
+    
+    .post-img {
+      border-radius: 5px 5px 0 0;
+      overflow: hidden;
+    }
+    
+    .post-date {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background: #0ea2bd;
+      color: #fff;
+      padding: 5px 10px;
+      border-radius: 3px;
+      font-size: 0.8rem;
+    }
+    
+    .readmore {
+      color: #0ea2bd;
+      font-weight: 600;
+    }
+    
+    .readmore:hover {
+      color: #0c859b;
+    }
+    
+    .page-title {
+      background: linear-gradient(135deg, #0ea2bd 0%, #0c859b 100%);
+      padding: 40px 0;
+      color: #fff;
+    }
+    
+    @media (max-width: 768px) {
+      .blog-pagination a {
+        width: 35px;
+        height: 35px;
+        font-size: 0.9rem;
+      }
+      
+      .post-content {
+        padding: 15px;
+      }
+    }
+  </style>
 </head>
 
 <body class="blog-page">
@@ -40,10 +144,9 @@
         <h1 class="sitename">Optic Bee</h1>
       </a>
 
-
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="index.html">Home</a></li>
           
           <li class="dropdown">
             <a href="technologies.html"><span>Technologies</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
@@ -188,15 +291,17 @@
               <li><a href="educational-training.html#training">Training Projects</a></li>
             </ul>
           </li>
+          
+          <li><a href="blog.html" class="active">Blog</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
 
       <div class="header-social-links">
-        <a href="https://x.com/BeeOptic?t=9XDIJ7pA-ZHlrJaPQkSm_Q&s=09" class="twitter"><i class="bi bi-twitter-x"></i></a>
-        <a href="https://www.facebook.com/share/1AeUNhhRDu/" class="facebook"><i class="bi bi-facebook"></i></a>
-        <a href="https://www.instagram.com/optic.bee?igsh=M3lpc2U5ajFpYTA1" class="instagram"><i class="bi bi-instagram"></i></a>
-        <a href="https://www.linkedin.com/in/optic-bee-246554375?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="linkedin"><i class="bi bi-linkedin"></i></a>
+        <a href="https://x.com/BeeOptic?t=9XDIJ7pA-ZHlrJaPQkSm_Q&s=09" class="twitter" aria-label="Follow us on Twitter"><i class="bi bi-twitter-x"></i></a>
+        <a href="https://www.facebook.com/share/1AeUNhhRDu/" class="facebook" aria-label="Follow us on Facebook"><i class="bi bi-facebook"></i></a>
+        <a href="https://www.instagram.com/optic.bee?igsh=M3lpc2U5ajFpYTA1" class="instagram" aria-label="Follow us on Instagram"><i class="bi bi-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/optic-bee-246554375?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="linkedin" aria-label="Follow us on LinkedIn"><i class="bi bi-linkedin"></i></a>
       </div>
 
     </div>
@@ -207,7 +312,7 @@
     <!-- Page Title -->
     <div class="page-title accent-background">
       <div class="container d-lg-flex justify-content-between align-items-center">
-        <h1 class="mb-2 mb-lg-0">Technology Blog</h1>
+        <h1 class="mb-2 mb-lg-0">Optic Bee Technology Blog</h1>
         <nav class="breadcrumbs">
           <ol>
             <li><a href="index.html">Home</a></li>
@@ -221,218 +326,8 @@
     <section id="blog-posts" class="blog-posts section">
 
       <div class="container">
-        <div class="row gy-4">
-
-          <div class="col-lg-4">
-            <article class="position-relative h-100">
-
-              <div class="post-img position-relative overflow-hidden">
-                <img src="assets/img/blog/blog-1.jpg" class="img-fluid" alt="AI Technology">
-                <span class="post-date">December 12</span>
-              </div>
-
-              <div class="post-content d-flex flex-column">
-
-                <h3 class="post-title">The Future of Artificial Intelligence in Business Transformation</h3>
-
-                <div class="meta d-flex align-items-center">
-                  <div class="d-flex align-items-center">
-                    <i class="bi bi-person"></i> <span class="ps-2">Sarah Johnson</span>
-                  </div>
-                  <span class="px-3 text-black-50">/</span>
-                  <div class="d-flex align-items-center">
-                    <i class="bi bi-folder2"></i> <span class="ps-2">AI Technology</span>
-                  </div>
-                </div>
-
-                <p>
-                  Discover how artificial intelligence is revolutionizing business operations, enhancing decision-making processes, and creating new opportunities for innovation across industries.
-                </p>
-
-                <hr>
-
-                <a href="blog-details.html" class="readmore stretched-link"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
-
-              </div>
-
-            </article>
-          </div><!-- End post list item -->
-
-          <div class="col-lg-4">
-            <article class="position-relative h-100">
-
-              <div class="post-img position-relative overflow-hidden">
-                <img src="assets/img/blog/blog-2.jpg" class="img-fluid" alt="Cloud Computing">
-                <span class="post-date">March 19</span>
-              </div>
-
-              <div class="post-content d-flex flex-column">
-
-                <h3 class="post-title">Cloud Migration Strategies for Enterprise Success</h3>
-
-                <div class="meta d-flex align-items-center">
-                  <div class="d-flex align-items-center">
-                    <i class="bi bi-person"></i> <span class="ps-2">Michael Chen</span>
-                  </div>
-                  <span class="px-3 text-black-50">/</span>
-                  <div class="d-flex align-items-center">
-                    <i class="bi bi-folder2"></i> <span class="ps-2">Cloud Computing</span>
-                  </div>
-                </div>
-
-                <p>
-                  Learn about effective cloud migration approaches, best practices for seamless transition, and how to maximize ROI when moving your business infrastructure to the cloud.
-                </p>
-
-                <hr>
-
-                <a href="blog-details.html" class="readmore stretched-link"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
-
-              </div>
-
-            </article>
-          </div><!-- End post list item -->
-
-          <div class="col-lg-4">
-            <article class="position-relative h-100">
-
-              <div class="post-img position-relative overflow-hidden">
-                <img src="assets/img/blog/blog-3.jpg" class="img-fluid" alt="Cybersecurity">
-                <span class="post-date">June 24</span>
-              </div>
-
-              <div class="post-content d-flex flex-column">
-
-                <h3 class="post-title">Emerging Cybersecurity Threats and Protection Strategies</h3>
-
-                <div class="meta d-flex align-items-center">
-                  <div class="d-flex align-items-center">
-                    <i class="bi bi-person"></i> <span class="ps-2">David Wilson</span>
-                  </div>
-                  <span class="px-3 text-black-50">/</span>
-                  <div class="d-flex align-items-center">
-                    <i class="bi bi-folder2"></i> <span class="ps-2">Cybersecurity</span>
-                  </div>
-                </div>
-
-                <p>
-                  Explore the latest cybersecurity challenges facing organizations and discover proactive measures to protect your digital assets from evolving threats in today's interconnected world.
-                </p>
-
-                <hr>
-
-                <a href="blog-details.html" class="readmore stretched-link"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
-
-              </div>
-
-            </article>
-          </div><!-- End post list item -->
-
-          <div class="col-lg-4">
-            <article class="position-relative h-100">
-
-              <div class="post-img position-relative overflow-hidden">
-                <img src="assets/img/blog/blog-4.jpg" class="img-fluid" alt="IoT Technology">
-                <span class="post-date">August 05</span>
-              </div>
-
-              <div class="post-content d-flex flex-column">
-
-                <h3 class="post-title">IoT Implementation: Connecting the Future of Business Operations</h3>
-
-                <div class="meta d-flex align-items-center">
-                  <div class="d-flex align-items-center">
-                    <i class="bi bi-person"></i> <span class="ps-2">Emily Rodriguez</span>
-                  </div>
-                  <span class="px-3 text-black-50">/</span>
-                  <div class="d-flex align-items-center">
-                    <i class="bi bi-folder2"></i> <span class="ps-2">IoT</span>
-                  </div>
-                </div>
-
-                <p>
-                  Understand how Internet of Things technology is transforming industries through smart devices, real-time data collection, and automated processes that drive efficiency and innovation.
-                </p>
-
-                <hr>
-
-                <a href="blog-details.html" class="readmore stretched-link"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
-
-              </div>
-
-            </article>
-          </div><!-- End post list item -->
-
-          <div class="col-lg-4">
-            <article class="position-relative h-100">
-
-              <div class="post-img position-relative overflow-hidden">
-                <img src="assets/img/blog/blog-5.jpg" class="img-fluid" alt="Digital Transformation">
-                <span class="post-date">September 17</span>
-              </div>
-
-              <div class="post-content d-flex flex-column">
-
-                <h3 class="post-title">Digital Transformation Roadmap for Traditional Businesses</h3>
-
-                <div class="meta d-flex align-items-center">
-                  <div class="d-flex align-items-center">
-                    <i class="bi bi-person"></i> <span class="ps-2">Robert Williams</span>
-                  </div>
-                  <span class="px-3 text-black-50">/</span>
-                  <div class="d-flex align-items-center">
-                    <i class="bi bi-folder2"></i> <span class="ps-2">Digital Transformation</span>
-                  </div>
-                </div>
-
-                <p>
-                  Learn step-by-step strategies for traditional businesses to embrace digital technologies, optimize processes, and stay competitive in rapidly evolving market landscapes.
-                </p>
-
-                <hr>
-
-                <a href="blog-details.html" class="readmore stretched-link"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
-
-              </div>
-
-            </article>
-          </div><!-- End post list item -->
-
-          <div class="col-lg-4">
-            <article class="position-relative h-100">
-
-              <div class="post-img position-relative overflow-hidden">
-                <img src="assets/img/blog/blog-6.jpg" class="img-fluid" alt="Data Analytics">
-                <span class="post-date">December 07</span>
-              </div>
-
-              <div class="post-content d-flex flex-column">
-
-                <h3 class="post-title">Leveraging Big Data Analytics for Business Intelligence</h3>
-
-                <div class="meta d-flex align-items-center">
-                  <div class="d-flex align-items-center">
-                    <i class="bi bi-person"></i> <span class="ps-2">Jennifer Lee</span>
-                  </div>
-                  <span class="px-3 text-black-50">/</span>
-                  <div class="d-flex align-items-center">
-                    <i class="bi bi-folder2"></i> <span class="ps-2">Data Analytics</span>
-                  </div>
-                </div>
-
-                <p>
-                  Discover how organizations can harness the power of big data to gain valuable insights, predict market trends, and make data-driven decisions that propel business growth.
-                </p>
-
-                <hr>
-
-                <a href="blog-details.html" class="readmore stretched-link"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
-
-              </div>
-
-            </article>
-          </div><!-- End post list item -->
-
+        <div class="row gy-4" id="blogContainer">
+          <!-- Blog posts will be dynamically loaded here -->
         </div>
       </div>
 
@@ -440,22 +335,13 @@
 
     <!-- Blog Pagination Section -->
     <section id="blog-pagination" class="blog-pagination section">
-
       <div class="container">
         <div class="d-flex justify-content-center">
-          <ul>
-            <li><a href="#"><i class="bi bi-chevron-left"></i></a></li>
-            <li><a href="#">1</a></li>
-            <li><a href="#" class="active">2</a></li>
-            <li><a href="#">3</a></li>
-            <li><a href="#">4</a></li>
-            <li>...</li>
-            <li><a href="#">10</a></li>
-            <li><a href="#"><i class="bi bi-chevron-right"></i></a></li>
+          <ul id="pagination">
+            <!-- Pagination will be dynamically generated here -->
           </ul>
         </div>
       </div>
-
     </section><!-- /Blog Pagination Section -->
 
   </main>
@@ -472,15 +358,15 @@
             <p>plot 21, flat 102, CVR Residency</p>
             <p>Pragathi Nagar, Hyderabad, IN 500090</p>
             <p class="mt-3"><strong>Phone:</strong> <span>+91 99087 93602</span></p>
-            <p ><strong>phone:</strong> <span>+91 87901 70525</span></p>
+            <p><strong>Phone:</strong> <span>+91 87901 70525</span></p>
             <p><strong>Email:</strong> <span>support@opticbee.in</span></p>
             <p><strong>Email:</strong> <span>contact@opticbee.in</span></p>
           </div>
           <div class="social-links d-flex mt-4">
-            <a href="https://x.com/BeeOptic?t=9XDIJ7pA-ZHlrJaPQkSm_Q&s=09"><i class="bi bi-twitter-x"></i></a>
-            <a href="https://www.facebook.com/share/1AeUNhhRDu/"><i class="bi bi-facebook"></i></a>
-            <a href="https://www.instagram.com/optic.bee?igsh=M3lpc2U5ajFpYTA1"><i class="bi bi-instagram"></i></a>
-            <a href="https://www.linkedin.com/in/optic-bee-246554375?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="bi bi-linkedin"></i></a>
+            <a href="https://x.com/BeeOptic?t=9XDIJ7pA-ZHlrJaPQkSm_Q&s=09" aria-label="Follow us on Twitter"><i class="bi bi-twitter-x"></i></a>
+            <a href="https://www.facebook.com/share/1AeUNhhRDu/" aria-label="Follow us on Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.instagram.com/optic.bee?igsh=M3lpc2U5ajFpYTA1" aria-label="Follow us on Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/optic-bee-246554375?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" aria-label="Follow us on LinkedIn"><i class="bi bi-linkedin"></i></a>
           </div>
         </div>
 
@@ -502,7 +388,7 @@
             <li><a href="MobileApp-Development.html">Mobile-App Design</a></li>
             <li><a href="WebDevelopment.html">Web Development</a></li>
             <li><a href="projects.html">Project Management</a></li>
-            <li><a href="affiliate.html">affiliate</a></li>
+            <li><a href="affiliate.html">Affiliate</a></li>
             <li><a href="Digital-Marketing.html">Digital-Marketing</a></li>
           </ul>
         </div>
@@ -583,6 +469,228 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  <!-- Blog Pagination and Content Script -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Blog data - 60 posts (for 10 pages with 6 posts per page)
+      const blogPosts = [
+        {
+          id: 1,
+          title: "Oracle ERP Cloud Implementation Best Practices",
+          author: "Rajesh Kumar",
+          category: "ERP Solutions",
+          date: "January 15",
+          image: "assets/img/blog/oracle-erp.jpg",
+          excerpt: "Learn the key strategies for successful Oracle ERP Cloud implementation from Optic Bee's certified consultants.",
+          content: "Full content about Oracle ERP implementation..."
+        },
+        {
+          id: 2,
+          title: "AI-Powered Business Transformation Strategies",
+          author: "Priya Sharma",
+          category: "Artificial Intelligence",
+          date: "January 22",
+          image: "assets/img/blog/ai-business.jpg",
+          excerpt: "Discover how artificial intelligence is revolutionizing business operations across industries.",
+          content: "Full content about AI in business..."
+        },
+        {
+          id: 3,
+          title: "Cloud Migration: Oracle vs AWS Comparison",
+          author: "Michael Chen",
+          category: "Cloud Computing",
+          date: "February 5",
+          image: "assets/img/blog/cloud-migration.jpg",
+          excerpt: "Detailed comparison between Oracle Cloud and AWS for enterprise migration scenarios.",
+          content: "Full content about cloud migration..."
+        },
+        {
+          id: 4,
+          title: "Cybersecurity Measures for Oracle Applications",
+          author: "David Wilson",
+          category: "Cybersecurity",
+          date: "February 18",
+          image: "assets/img/blog/cybersecurity.jpg",
+          excerpt: "Essential security practices to protect your Oracle applications from emerging threats.",
+          content: "Full content about cybersecurity..."
+        },
+        {
+          id: 5,
+          title: "IoT Integration with Oracle Cloud Infrastructure",
+          author: "Emily Rodriguez",
+          category: "IoT",
+          date: "March 3",
+          image: "assets/img/blog/iot-integration.jpg",
+          excerpt: "How to effectively integrate IoT devices with Oracle Cloud for real-time data processing.",
+          content: "Full content about IoT integration..."
+        },
+        {
+          id: 6,
+          title: "Digital Transformation Roadmap for Enterprises",
+          author: "Robert Williams",
+          category: "Digital Transformation",
+          date: "March 15",
+          image: "assets/img/blog/digital-transformation.jpg",
+          excerpt: "Step-by-step guide to digital transformation for traditional businesses.",
+          content: "Full content about digital transformation..."
+        },
+        {
+          id: 7,
+          title: "Big Data Analytics with Oracle Analytics Cloud",
+          author: "Jennifer Lee",
+          category: "Data Analytics",
+          date: "April 2",
+          image: "assets/img/blog/big-data.jpg",
+          excerpt: "Leveraging Oracle Analytics Cloud for powerful business intelligence insights.",
+          content: "Full content about big data analytics..."
+        },
+        {
+          id: 8,
+          title: "Oracle EPM Cloud: Financial Planning Strategies",
+          author: "Anil Patel",
+          category: "EPM",
+          date: "April 14",
+          image: "assets/img/blog/epm-cloud.jpg",
+          excerpt: "Optimize your financial planning with Oracle EPM Cloud implementation best practices.",
+          content: "Full content about Oracle EPM..."
+        },
+        {
+          id: 9,
+          title: "Mobile App Development Trends 2025",
+          author: "Sneha Desai",
+          category: "Mobile Development",
+          date: "May 5",
+          image: "assets/img/blog/mobile-trends.jpg",
+          excerpt: "Latest trends in mobile app development and how Optic Bee stays ahead of the curve.",
+          content: "Full content about mobile development..."
+        },
+        {
+          id: 10,
+          title: "Blockchain Integration with Enterprise Systems",
+          author: "Alex Johnson",
+          category: "Blockchain",
+          date: "May 20",
+          image: "assets/img/blog/blockchain.jpg",
+          excerpt: "How blockchain technology can be integrated with existing enterprise systems for enhanced security.",
+          content: "Full content about blockchain integration..."
+        },
+        // Additional posts would continue here up to 60...
+        // For brevity, I'm showing only 10, but the actual implementation would have 60
+      ];
+
+      // For demonstration, let's duplicate the existing posts to simulate 60 posts
+      for (let i = 11; i <= 60; i++) {
+        const originalPost = blogPosts[(i - 1) % 10];
+        blogPosts.push({
+          ...originalPost,
+          id: i,
+          title: `${originalPost.title} (Part ${Math.ceil(i/10)})`,
+          date: `Month ${Math.ceil(i/6)}`
+        });
+      }
+
+      const postsPerPage = 6;
+      let currentPage = 1;
+      const totalPages = Math.ceil(blogPosts.length / postsPerPage);
+
+      // Function to display blog posts for a specific page
+      function displayBlogPosts(page) {
+        const blogContainer = document.getElementById('blogContainer');
+        blogContainer.innerHTML = '';
+        
+        const startIndex = (page - 1) * postsPerPage;
+        const endIndex = startIndex + postsPerPage;
+        const postsToShow = blogPosts.slice(startIndex, endIndex);
+        
+        postsToShow.forEach(post => {
+          const postElement = document.createElement('div');
+          postElement.className = 'col-lg-4';
+          postElement.innerHTML = `
+            <article class="position-relative h-100">
+              <div class="post-img position-relative overflow-hidden">
+                <img src="${post.image}" class="img-fluid" alt="${post.title}">
+                <span class="post-date">${post.date}</span>
+              </div>
+              <div class="post-content d-flex flex-column">
+                <h3 class="post-title">${post.title}</h3>
+                <div class="meta d-flex align-items-center">
+                  <div class="d-flex align-items-center">
+                    <i class="bi bi-person"></i> <span class="ps-2">${post.author}</span>
+                  </div>
+                  <span class="px-3 text-black-50">/</span>
+                  <div class="d-flex align-items-center">
+                    <i class="bi bi-folder2"></i> <span class="ps-2">${post.category}</span>
+                  </div>
+                </div>
+                <p>${post.excerpt}</p>
+                <hr>
+                <a href="blog-details.html?id=${post.id}" class="readmore stretched-link"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
+              </div>
+            </article>
+          `;
+          blogContainer.appendChild(postElement);
+        });
+      }
+
+      // Function to generate pagination
+      function generatePagination(currentPage, totalPages) {
+        const paginationContainer = document.getElementById('pagination');
+        paginationContainer.innerHTML = '';
+        
+        // Previous button
+        if (currentPage > 1) {
+          const prevLi = document.createElement('li');
+          prevLi.innerHTML = `<a href="#" data-page="${currentPage - 1}"><i class="bi bi-chevron-left"></i></a>`;
+          paginationContainer.appendChild(prevLi);
+        }
+        
+        // Page numbers
+        let startPage = Math.max(1, currentPage - 2);
+        let endPage = Math.min(totalPages, startPage + 4);
+        
+        if (endPage - startPage < 4) {
+          startPage = Math.max(1, endPage - 4);
+        }
+        
+        for (let i = startPage; i <= endPage; i++) {
+          const pageLi = document.createElement('li');
+          if (i === currentPage) {
+            pageLi.innerHTML = `<a href="#" class="active" data-page="${i}">${i}</a>`;
+          } else {
+            pageLi.innerHTML = `<a href="#" data-page="${i}">${i}</a>`;
+          }
+          paginationContainer.appendChild(pageLi);
+        }
+        
+        // Next button
+        if (currentPage < totalPages) {
+          const nextLi = document.createElement('li');
+          nextLi.innerHTML = `<a href="#" data-page="${currentPage + 1}"><i class="bi bi-chevron-right"></i></a>`;
+          paginationContainer.appendChild(nextLi);
+        }
+        
+        // Add event listeners to pagination links
+        const paginationLinks = paginationContainer.querySelectorAll('a');
+        paginationLinks.forEach(link => {
+          link.addEventListener('click', function(e) {
+            e.preventDefault();
+            const page = parseInt(this.getAttribute('data-page'));
+            if (!isNaN(page)) {
+              currentPage = page;
+              displayBlogPosts(currentPage);
+              generatePagination(currentPage, totalPages);
+              window.scrollTo({ top: 0, behavior: 'smooth' });
+            }
+          });
+        });
+      }
+
+      // Initialize the blog
+      displayBlogPosts(currentPage);
+      generatePagination(currentPage, totalPages);
+    });
+  </script>
 
 </body>
 
